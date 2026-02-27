@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffbf5;
+  --foreground: #1c1917;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Nunito', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: #fef3c7; }
+::-webkit-scrollbar-thumb { background: #f97316; border-radius: 99px; }
