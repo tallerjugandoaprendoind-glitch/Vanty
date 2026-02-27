@@ -519,7 +519,7 @@ function TestimonialSection({ t }: { t: typeof T['es'] }) {
         .testi-brand-dot-pulse { animation: pulse2 2s infinite; }
       `}</style>
       <div className={`testimonial-img-wrap testi-img-anim${visible?' in':''}`} style={{position:'relative',overflow:'hidden',minHeight:'420px'}}>
-        <img src="/images/testimonial.png" alt={t.testimonialName} style={{position:'absolute',top:0,left:0,width:'100%',height:'100%',objectFit:'cover',objectPosition:'center top'}}/>
+        <img src="/images/Testimonial.png" alt={t.testimonialName} style={{position:'absolute',top:0,left:0,width:'100%',height:'100%',objectFit:'cover',objectPosition:'center top'}}/>
         <div className="testimonial-name">
           {t.testimonialName}<br/>
           <span className="testimonial-role">{t.testimonialRole}</span>
