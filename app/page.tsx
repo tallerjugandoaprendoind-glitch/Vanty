@@ -10,7 +10,7 @@ import {
 } from 'lucide-react'
 
 const WA_NUM = '51924685557'
-const EMAIL  = 'andrewmanasias10@gmail.com'
+const EMAIL  = 'soporte@vanty.xyz'
 const HERO_VIDEO_SRC    = '/video/demo.mp4'
 const HERO_VIDEO_POSTER = '/images/video-poster.jpg'
 
@@ -28,7 +28,7 @@ const T = {
       slides: [
         { label:'Gestión ABA',    tag:'Primera plataforma ABA multi-rol en LATAM', title:'Gestión clínica ABA\nhecha para quienes\ntrabajan en campo' },
         { label:'ARIA IA',        tag:'ARIA — IA Clínica',                          title:'Reportes de sesión\ngenerados por IA\nen segundos' },
-        { label:'Portal Familiar',tag:'Portal Familiar',                            title:'Los padres conectados\nal progreso de\nsu hijo en tiempo real' },
+        { label:'Portal Familiar',tag:'Portal Familiar · Videollamadas · Push',     title:'Los padres conectados\nal progreso de\nsu hijo en tiempo real' },
       ],
     },
     trust: ['Primera plataforma ABA en LATAM','Datos 100% seguros','IA clínica integrada','Multi-rol nativo','100% en español'],
@@ -45,7 +45,7 @@ const T = {
     whyCards: [
       { icon:'🧠', title:'IA clínica para ABA, no un chatbot genérico', desc:'ARIA está entrenada en el flujo real de sesiones ABA. Genera reportes, notas y guías en segundos.' },
       { icon:'🔐', title:'Seguridad para que trabajes con tranquilidad', desc:'Tus datos de pacientes están protegidos con estándares clínicos. Nunca compartimos información.' },
-      { icon:'🌎', title:'Más que software. Una plataforma para LATAM', desc:'100% en español, precios en soles, soporte local. Pensado desde Perú para toda América Latina.' },
+      { icon:'🎥', title:'Videollamadas y notificaciones push nativas', desc:'Realiza sesiones remotas y mantén a padres y equipo informados en tiempo real con alertas automáticas.' },
       { icon:'👥', title:'Multi-rol real: analistas, especialistas y familias', desc:'Permisos diferenciados para cada rol. Cada quien ve exactamente lo que necesita.' },
       { icon:'📊', title:'Datos ABA visualizados automáticamente', desc:'Gráficos de dominio con alertas al alcanzar ≥80% por objetivo, sin trabajo manual extra.' },
       { icon:'⚡', title:'Tu plataforma activa en 24 horas', desc:'Activación rápida con setup completo incluido. Sin necesitar conocimientos técnicos.' },
@@ -62,6 +62,8 @@ const T = {
       ['Multi-rol: analista + especialista + familia','❌ Solo terapeuta','❌ No aplica','✅ Completo'],
       ['Módulos ABA específicos','⚠️ Parcial','❌ No','✅ Completo'],
       ['IA para reportes clínicos','❌ No','❌ No','✅ ARIA integrada'],
+      ['Videollamadas nativas','❌ No','❌ No','✅ Integradas'],
+      ['Notificaciones push','❌ No','⚠️ Básico','✅ Nativas'],
       ['Portal para familias','❌ No','❌ No','✅ Nativo'],
       ['100% en español','❌ Inglés','⚠️ Parcial','✅ Español'],
       ['Precio en soles (S/)','❌ USD alto','⚠️ Variable','✅ S/250/mes'],
@@ -77,7 +79,7 @@ const T = {
     plan1Features: ['Setup completo del sistema','Carga inicial de pacientes','Capacitación del equipo','Todos los módulos ABA','IA ARIA activada','Portal familiar','Soporte prioritario'],
     plan2Badge: 'Mes 2 en adelante', plan2Label: 'Mensual · Sin permanencia',
     plan2Desc: 'Acceso a todos los módulos, IA ilimitada, actualizaciones automáticas y soporte incluido.',
-    plan2Features: ['Todos los módulos activos','ARIA · IA clínica 24/7','Actualizaciones incluidas','Sin límite de usuarios','Portal familiar nativo','Reportes IA ilimitados','Soporte WhatsApp y email'],
+    plan2Features: ['Todos los módulos activos','ARIA · IA clínica 24/7','Videollamadas integradas','Notificaciones push','Actualizaciones incluidas','Sin límite de usuarios','Portal familiar nativo','Reportes IA ilimitados','Soporte WhatsApp y email'],
     faqLabel: 'Preguntas frecuentes', faqTitle: '¿Tienes dudas?\nLas respondemos.',
     faqs: [
       { q:'¿Cuánto cuesta Vanty para mi centro?', a:'El primer mes es S/350, que incluye configuración completa, carga inicial y capacitación. Desde el segundo mes la suscripción es S/250 mensuales sin permanencia mínima.' },
@@ -147,6 +149,8 @@ const T = {
       ['Multi-role: analyst + specialist + family','❌ Therapist only','❌ N/A','✅ Complete'],
       ['ABA-specific modules','⚠️ Partial','❌ No','✅ Complete'],
       ['AI for clinical reports','❌ No','❌ No','✅ ARIA integrated'],
+      ['Native video calls','❌ No','❌ No','✅ Integrated'],
+      ['Push notifications','❌ No','⚠️ Basic','✅ Native'],
       ['Family portal','❌ No','❌ No','✅ Native'],
       ['100% in Spanish','❌ English','⚠️ Partial','✅ Spanish'],
       ['Local currency pricing','❌ High USD','⚠️ Variable','✅ S/250/mo'],
@@ -162,7 +166,7 @@ const T = {
     plan1Features: ['Full system setup','Initial patient load','Team training','All ABA modules','ARIA AI activated','Family portal','Priority support'],
     plan2Badge: 'Month 2 onwards', plan2Label: 'Monthly · No commitment',
     plan2Desc: 'Access to all modules, unlimited AI, automatic updates and support included.',
-    plan2Features: ['All active modules','ARIA · Clinical AI 24/7','Updates included','Unlimited users','Native family portal','Unlimited AI reports','WhatsApp & email support'],
+    plan2Features: ['All active modules','ARIA · Clinical AI 24/7','Integrated video calls','Push notifications','Updates included','Unlimited users','Native family portal','Unlimited AI reports','WhatsApp & email support'],
     faqLabel: 'Frequently asked questions', faqTitle: 'Have questions?\nWe\'ll answer them.',
     faqs: [
       { q:'How much does Vanty cost for my center?', a:'The first month is S/350, which includes full configuration, initial load and training. From the second month the subscription is S/250 per month with no minimum commitment.' },
@@ -721,8 +725,8 @@ function TrustedCentersSection({ t }: { t: typeof T['es'] }) {
         {/* Stats */}
         <div className={`tc2-stats tc2-stats-row${visible?' in':''}`}>
           {[
-            {n:'1',  l:t.lang==='EN'?'Active center':t.lang==='PT'?'Centro ativo':t.lang==='FR'?'Centre actif':'Centro activo'},
-            {n:'∞',  l:t.lang==='EN'?'Potential':t.lang==='PT'?'Potencial':t.lang==='FR'?'Potentiel':'Potencial'},
+            {n:'6+',  l:t.lang==='EN'?'Modules active':t.lang==='PT'?'Módulos ativos':t.lang==='FR'?'Modules actifs':'Módulos activos'},
+            {n:'IA',  l:t.lang==='EN'?'ARIA + Reports':t.lang==='PT'?'ARIA + Relatórios':t.lang==='FR'?'ARIA + Rapports':'ARIA + Reportes'},
             {n:'24h',l:t.lang==='EN'?'Setup time':t.lang==='PT'?'Tempo de setup':t.lang==='FR'?'Temps de setup':'Tiempo de setup'},
           ].map((s,i)=>(
             <div key={i} className="tc2-stat-cell">
@@ -732,8 +736,15 @@ function TrustedCentersSection({ t }: { t: typeof T['es'] }) {
           ))}
         </div>
 
+        {/* Features used by Jugando Aprendo */}
+        <div className={visible?'tc2-soon':''} style={{opacity:visible?1:0,transition:'opacity .8s .8s',maxWidth:480,margin:'28px auto 0',display:'flex',flexWrap:'wrap',gap:8,justifyContent:'center'}}>
+          {['🎥 Videollamadas','🔔 Notificaciones push','📊 Analytics clínico','💬 Chat con padres','🤖 ARIA · IA','📋 Reportes ABA','⚡ Alertas clínicas','📅 Gestión de citas'].map((f,i)=>(
+            <span key={i} style={{padding:'4px 12px',borderRadius:99,border:'1.5px solid #e5e7eb',fontSize:11,color:'#374151',fontWeight:600,fontFamily:"'Poppins',sans-serif",background:'#fff'}}>{f}</span>
+          ))}
+        </div>
+
         {/* Coming soon */}
-        <div className={`tc2-soon tc2-soon-row${visible?' in':''}`}>
+        <div className={`tc2-soon tc2-soon-row${visible?' in':''}`} style={{marginTop:24}}>
           <div className="tc2-soon-chip">?</div>
           <span className="tc2-soon-text">{soon}</span>
           <div className="tc2-soon-chip">?</div>
@@ -991,6 +1002,9 @@ function CtaSection({ t, WA_URL, EMAIL }: { t: typeof T['es']; WA_URL: string; E
           </a>
           <a href={`mailto:${EMAIL}`} className="cta-btn-ghost">
             <Mail size={16}/> {EMAIL}
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61587764677406" className="cta-btn-ghost" target="_blank" rel="noopener noreferrer">
+            <Facebook size={16}/> Facebook
           </a>
         </div>
       </div>
@@ -1949,8 +1963,8 @@ export default function VantyLanding() {
             <div className="footer-socials">
               <a href={WA_URL} className="fsoc" target="_blank" rel="noopener noreferrer"><Phone size={16}/></a>
               <a href={`mailto:${EMAIL}`} className="fsoc"><Mail size={16}/></a>
-              <a href="#" className="fsoc"><Instagram size={16}/></a>
-              <a href="#" className="fsoc"><Facebook size={16}/></a>
+              <a href="https://www.instagram.com/vanty.app" className="fsoc" target="_blank" rel="noopener noreferrer"><Instagram size={16}/></a>
+              <a href="https://www.facebook.com/profile.php?id=61587764677406" className="fsoc" target="_blank" rel="noopener noreferrer"><Facebook size={16}/></a>
             </div>
           </div>
           {t.footerCols.map((col,i)=>(
