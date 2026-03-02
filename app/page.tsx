@@ -81,18 +81,18 @@ const T = {
     plan2Badge: 'Mes 2 en adelante', plan2Label: 'Mensual · Sin permanencia',
     plan2Desc: 'Acceso a todos los módulos, IA ilimitada, actualizaciones automáticas y soporte incluido.',
     plan2Features: ['Todos los módulos activos','ARIA · IA clínica 24/7','Videollamadas integradas','Notificaciones push','Actualizaciones incluidas','Sin límite de usuarios','Portal familiar nativo','Reportes IA ilimitados','Soporte WhatsApp y email'],
-    plan3Badge: 'MEJOR PRECIO · ANUAL', plan3Label: 'Plan Anual · Ahorra más',
-    plan3Desc: 'Todo lo del plan mensual, pero pagando una vez al año. Ahorra S/140 vs. pago mensual.',
-    plan3Features: ['Todo lo del plan mensual','Precio bloqueado 12 meses','Soporte VIP dedicado','Onboarding prioritario','Acceso a nuevas funciones beta','Facturación anual simplificada'],
+    plan3Badge: '🎁 2 MESES GRATIS · ANUAL', plan3Label: 'Plan Anual · Pagas 10, usas 12',
+    plan3Desc: 'Paga solo 10 meses y llévate 12. Ahorra S/260 vs. pago mensual — sin permanencias ni letras pequeñas.',
+    plan3Features: ['Todo lo del plan mensual incluido','2 meses completamente gratis','Precio bloqueado 12 meses','Soporte VIP dedicado','Onboarding prioritario','Acceso anticipado a funciones beta'],
     faqLabel: 'Preguntas frecuentes', faqTitle: '¿Tienes dudas?\nLas respondemos.',
     faqs: [
-      { q:'¿Cuánto cuesta Vanty para mi centro?', a:'El primer mes es S/200, que incluye configuración completa, carga inicial y capacitación. Desde el segundo mes la suscripción es S/120 mensuales sin permanencia mínima. También tenemos un plan anual de S/1,300 (ahorras S/140 vs. pago mensual).' },
-      { q:'¿Necesito conocimientos técnicos para usarlo?', a:'No. Vanty está diseñado para analistas y terapeutas conductuales, no para técnicos. La interfaz es 100% en español y el setup lo hacemos nosotros contigo en las primeras 24 horas.' },
-      { q:'¿Mis datos de pacientes están seguros?', a:'Sí. Tus datos son completamente tuyos, protegidos con estándares de seguridad clínica. Nunca compartimos información con terceros y tú tienes control total de tu información.' },
-      { q:'¿Cuántos usuarios puedo agregar?', a:'Sin límite de usuarios internos. El plan mensual cubre todo tu equipo (analistas, especialistas, administración) más los accesos familiares para cada paciente.' },
-      { q:'¿Puedo migrar mis datos actuales de Excel?', a:'Sí. Vanty tiene importador nativo de Excel para porcentajes de objetivos ABA. Durante el primer mes te ayudamos con la migración completa, sin costo adicional.' },
-      { q:'¿Cómo funciona el asistente ARIA?', a:'ARIA analiza datos de sesión y genera reportes, notas clínicas y resúmenes para padres en segundos. También detecta cuando un objetivo alcanza ≥80% y notifica al equipo en tiempo real.' },
-      { q:'¿Qué incluye el plan anual?', a:'El plan anual de S/1,300 incluye todo lo del plan mensual pero con precio bloqueado por 12 meses, soporte VIP dedicado, acceso anticipado a nuevas funciones y onboarding prioritario. Ahorras S/140 vs. pago mensual.' },
+      { q:'¿Cuánto cuesta Vanty para mi centro?', a:'El primer mes es S/200 e incluye configuración completa, carga inicial de pacientes y capacitación de tu equipo. Desde el segundo mes pagas S/120/mes sin permanencia mínima. Si eliges el plan anual, pagas solo S/1,180 (equivalente a 10 meses) y obtienes 2 meses gratis — un ahorro de S/260.' },
+      { q:'¿Necesito conocimientos técnicos para usarlo?', a:'Para nada. Vanty está diseñado para analistas de conducta y terapeutas, no para perfiles técnicos. La interfaz es 100% en español y nosotros hacemos el setup completo contigo en las primeras 24 horas.' },
+      { q:'¿Mis datos de pacientes están seguros?', a:'Absolutamente. Tus datos son 100% tuyos, almacenados con estándares de seguridad clínica. Nunca compartimos información con terceros y tienes control total en todo momento.' },
+      { q:'¿Cuántos usuarios puedo agregar?', a:'Sin límite. El plan mensual cubre a todo tu equipo —analistas, especialistas, administración— más los portales familiares de cada paciente, sin costo adicional por usuario.' },
+      { q:'¿Cómo funciona el asistente ARIA?', a:'ARIA analiza los datos de sesión y genera reportes, notas clínicas y resúmenes para padres en segundos. También detecta automáticamente cuando un objetivo alcanza ≥80% y notifica al equipo en tiempo real.' },
+      { q:'¿Qué incluye el plan anual y cómo funciona?', a:'Pagas S/1,180 una sola vez — equivale a 10 meses al precio mensual — y usas Vanty durante 12 meses completos. Los 2 meses extra son completamente gratis. Incluye todo lo del plan mensual más soporte VIP dedicado y acceso anticipado a nuevas funciones.' },
+      { q:'¿Puedo cancelar cuando quiera?', a:'Sí. El plan mensual no tiene permanencia mínima: cancelas cuando quieras desde el panel sin trámites. El plan anual es pago único por 12 meses, pasado ese período no se renueva automáticamente.' },
     ],
     ctaReady: '¿LISTO PARA EMPEZAR?',
     ctaTitle: 'Ordenemos el trabajo\nclínico ABA en LATAM, juntos.',
@@ -173,18 +173,18 @@ const T = {
     plan2Badge: 'Month 2 onwards', plan2Label: 'Monthly · No commitment',
     plan2Desc: 'Access to all modules, unlimited AI, automatic updates and support included.',
     plan2Features: ['All active modules','ARIA · Clinical AI 24/7','Integrated video calls','Push notifications','Updates included','Unlimited users','Native family portal','Unlimited AI reports','WhatsApp & email support'],
-    plan3Badge: 'BEST VALUE · ANNUAL', plan3Label: 'Annual Plan · Save more',
-    plan3Desc: 'Everything in the monthly plan, but pay once a year. Save S/140 vs. monthly.',
-    plan3Features: ['Everything in monthly plan','Price locked 12 months','Dedicated VIP support','Priority onboarding','Early access to beta features','Simplified annual billing'],
+    plan3Badge: '🎁 2 MONTHS FREE · ANNUAL', plan3Label: 'Annual Plan · Pay 10, use 12',
+    plan3Desc: 'Pay only 10 months and get 12. Save S/260 vs. monthly — no commitments, no fine print.',
+    plan3Features: ['Everything in the monthly plan','2 months completely free','Price locked 12 months','Dedicated VIP support','Priority onboarding','Early access to beta features'],
     faqLabel: 'Frequently asked questions', faqTitle: 'Have questions?\nWe\'ll answer them.',
     faqs: [
-      { q:'How much does Vanty cost for my center?', a:'The first month is S/200, which includes full configuration, initial load and training. From the second month the subscription is S/120 per month with no minimum commitment. We also have an annual plan for S/1,300 (save S/140 vs. monthly).' },
-      { q:'Do I need technical knowledge to use it?', a:'No. Vanty is designed for behavioral analysts and therapists, not technicians. The interface is 100% in Spanish and we do the setup with you in the first 24 hours.' },
-      { q:'Is my patient data secure?', a:'Yes. Your data is completely yours, protected with clinical security standards. We never share information with third parties and you have full control.' },
-      { q:'How many users can I add?', a:'No limit on internal users. The monthly plan covers your entire team plus family access for each patient.' },
-      { q:'Can I migrate my current Excel data?', a:'Yes. Vanty has a native Excel importer for ABA objective percentages. During the first month we help with the complete migration at no extra cost.' },
-      { q:'How does the ARIA assistant work?', a:'ARIA analyzes session data and generates reports, clinical notes and summaries for parents in seconds. It also detects when an objective reaches ≥80% and notifies the team in real time.' },
-      { q:'What does the annual plan include?', a:'The S/1,300 annual plan includes everything in the monthly plan with a price locked for 12 months, dedicated VIP support, early access to new features and priority onboarding. You save S/140 vs. monthly.' },
+      { q:'How much does Vanty cost for my center?', a:'The first month is S/200 and includes full configuration, initial patient load and team training. From the second month you pay S/120/mo with no minimum commitment. With the annual plan you pay just S/1,180 (10 months\' worth) and get 12 months — that\'s 2 months free and S/260 in savings.' },
+      { q:'Do I need technical knowledge to use it?', a:'Not at all. Vanty is built for behavioral analysts and therapists, not IT teams. The interface is fully in Spanish and we handle the complete setup with you within the first 24 hours.' },
+      { q:'Is my patient data secure?', a:'Absolutely. Your data is 100% yours, stored to clinical security standards. We never share information with third parties and you retain full control at all times.' },
+      { q:'How many users can I add?', a:'Unlimited. The monthly plan covers your entire team — analysts, specialists, admin staff — plus family portals for every patient, at no extra cost per user.' },
+      { q:'How does the ARIA assistant work?', a:'ARIA analyzes session data and generates reports, clinical notes and parent summaries in seconds. It also automatically detects when an objective reaches ≥80% and notifies the team in real time.' },
+      { q:'What does the annual plan include and how does it work?', a:'You pay S/1,180 once — the equivalent of 10 monthly payments — and use Vanty for a full 12 months. The extra 2 months are completely free. Includes everything in the monthly plan plus dedicated VIP support and early access to new features.' },
+      { q:'Can I cancel at any time?', a:'Yes. The monthly plan has no minimum commitment: cancel anytime from your dashboard. The annual plan is a one-time payment for 12 months; it does not auto-renew once the period ends.' },
     ],
     ctaReady: 'READY TO START?',
     ctaTitle: 'Let\'s organize ABA clinical\nwork in LATAM, together.',
@@ -263,18 +263,18 @@ const T = {
     plan2Badge: 'Mês 2 em diante', plan2Label: 'Mensal · Sem fidelidade',
     plan2Desc: 'Acesso a todos os módulos, IA ilimitada, atualizações automáticas e suporte incluído.',
     plan2Features: ['Todos os módulos ativos','ARIA · IA clínica 24/7','Atualizações incluídas','Sem limite de usuários','Portal familiar nativo','Relatórios IA ilimitados','Suporte WhatsApp e e-mail'],
-    plan3Badge: 'MELHOR PREÇO · ANUAL', plan3Label: 'Plano Anual · Economize mais',
-    plan3Desc: 'Tudo do plano mensal, pagando uma vez por ano. Economize S/140 vs. mensal.',
-    plan3Features: ['Tudo do plano mensal','Preço bloqueado 12 meses','Suporte VIP dedicado','Onboarding prioritário','Acesso antecipado a novas funções','Faturamento anual simplificado'],
+    plan3Badge: '🎁 2 MESES GRÁTIS · ANUAL', plan3Label: 'Plano Anual · Pague 10, use 12',
+    plan3Desc: 'Pague apenas 10 meses e use por 12. Economize S/260 vs. mensal — sem fidelidade nem letras miúdas.',
+    plan3Features: ['Tudo do plano mensal incluído','2 meses completamente grátis','Preço bloqueado 12 meses','Suporte VIP dedicado','Onboarding prioritário','Acesso antecipado a novas funções'],
     faqLabel: 'Perguntas frequentes', faqTitle: 'Tem dúvidas?\nNós respondemos.',
     faqs: [
-      { q:'Quanto custa a Vanty para o meu centro?', a:'O primeiro mês é S/200, que inclui configuração completa, carga inicial e treinamento. A partir do segundo mês a assinatura é S/120 mensais sem fidelidade mínima. Também temos um plano anual de S/1.300 (economize S/140 vs. mensal).' },
-      { q:'Preciso de conhecimentos técnicos para usar?', a:'Não. A Vanty foi projetada para analistas e terapeutas comportamentais, não para técnicos. A interface é 100% em espanhol e fazemos a configuração com você nas primeiras 24 horas.' },
-      { q:'Meus dados de pacientes estão seguros?', a:'Sim. Seus dados são completamente seus, protegidos com padrões de segurança clínica. Nunca compartilhamos informações com terceiros.' },
-      { q:'Quantos usuários posso adicionar?', a:'Sem limite de usuários internos. O plano mensal cobre toda a sua equipe mais os acessos familiares para cada paciente.' },
-      { q:'Posso migrar meus dados atuais do Excel?', a:'Sim. A Vanty tem importador nativo do Excel para percentuais de objetivos ABA. Durante o primeiro mês ajudamos com a migração completa sem custo adicional.' },
-      { q:'Como funciona o assistente ARIA?', a:'ARIA analisa dados de sessão e gera relatórios, notas clínicas e resumos para os pais em segundos. Também detecta quando um objetivo atinge ≥80% e notifica em tempo real.' },
-      { q:'O que inclui o plano anual?', a:'O plano anual de S/1.300 inclui tudo do plano mensal com preço bloqueado por 12 meses, suporte VIP dedicado e acesso antecipado a novas funções. Você economiza S/140 vs. mensal.' },
+      { q:'Quanto custa a Vanty para o meu centro?', a:'O primeiro mês é S/200 e inclui configuração completa, carga inicial de pacientes e treinamento da equipe. A partir do segundo mês você paga S/120/mês sem fidelidade mínima. Com o plano anual, paga apenas S/1.180 (equivalente a 10 meses) e usa por 12 — 2 meses grátis e uma economia de S/260.' },
+      { q:'Preciso de conhecimentos técnicos para usar?', a:'De jeito nenhum. A Vanty foi projetada para analistas e terapeutas comportamentais, não para TI. A interface é 100% em espanhol e fazemos a configuração completa com você nas primeiras 24 horas.' },
+      { q:'Meus dados de pacientes estão seguros?', a:'Absolutamente. Seus dados são 100% seus, armazenados com padrões de segurança clínica. Nunca compartilhamos informações com terceiros e você tem controle total a qualquer momento.' },
+      { q:'Quantos usuários posso adicionar?', a:'Ilimitado. O plano mensal cobre toda a sua equipe — analistas, especialistas, administrativo — mais os portais familiares de cada paciente, sem custo extra por usuário.' },
+      { q:'Como funciona o assistente ARIA?', a:'ARIA analisa os dados de sessão e gera relatórios, notas clínicas e resumos para os pais em segundos. Também detecta automaticamente quando um objetivo atinge ≥80% e notifica a equipe em tempo real.' },
+      { q:'O que inclui o plano anual e como funciona?', a:'Você paga S/1.180 uma única vez — equivalente a 10 pagamentos mensais — e usa a Vanty por 12 meses completos. Os 2 meses extras são totalmente grátis. Inclui tudo do plano mensal mais suporte VIP dedicado e acesso antecipado a novas funções.' },
+      { q:'Posso cancelar quando quiser?', a:'Sim. O plano mensal não tem fidelidade: cancele quando quiser pelo painel sem burocracia. O plano anual é um pagamento único por 12 meses; não é renovado automaticamente ao final do período.' },
     ],
     ctaReady: 'PRONTO PARA COMEÇAR?',
     ctaTitle: 'Vamos organizar o trabalho\nclínico ABA na LATAM, juntos.',
@@ -353,18 +353,18 @@ const T = {
     plan2Badge: 'Mois 2 et suivants', plan2Label: 'Mensuel · Sans engagement',
     plan2Desc: 'Accès à tous les modules, IA illimitée, mises à jour automatiques et support inclus.',
     plan2Features: ['Tous les modules actifs','ARIA · IA clinique 24/7','Mises à jour incluses','Utilisateurs illimités','Portail familial natif','Rapports IA illimités','Support WhatsApp et e-mail'],
-    plan3Badge: 'MEILLEUR PRIX · ANNUEL', plan3Label: 'Forfait Annuel · Économisez',
-    plan3Desc: 'Tout du forfait mensuel, en payant une fois par an. Économisez S/140 vs. mensuel.',
-    plan3Features: ['Tout du forfait mensuel','Prix bloqué 12 mois','Support VIP dédié','Onboarding prioritaire','Accès anticipé aux nouvelles fonctions','Facturation annuelle simplifiée'],
+    plan3Badge: '🎁 2 MOIS OFFERTS · ANNUEL', plan3Label: 'Forfait Annuel · Payez 10, profitez 12',
+    plan3Desc: 'Payez seulement 10 mois et utilisez Vanty 12 mois. Économisez S/260 vs. mensuel — sans engagement ni surprises.',
+    plan3Features: ['Tout du forfait mensuel inclus','2 mois complètement offerts','Prix bloqué 12 mois','Support VIP dédié','Onboarding prioritaire','Accès anticipé aux nouvelles fonctions'],
     faqLabel: 'Questions fréquentes', faqTitle: 'Des questions ?\nNous y répondons.',
     faqs: [
-      { q:'Combien coûte Vanty pour mon centre ?', a:'Le premier mois est S/200, qui comprend la configuration complète, le chargement initial et la formation. À partir du deuxième mois l\'abonnement est S/120 par mois sans engagement. Nous avons aussi un forfait annuel à S/1 300 (économisez S/140 vs. mensuel).' },
-      { q:'Ai-je besoin de connaissances techniques pour l\'utiliser ?', a:'Non. Vanty est conçu pour les analystes et thérapeutes comportementaux, pas pour les techniciens. L\'interface est 100% en espagnol et nous faisons la configuration avec vous en 24 heures.' },
-      { q:'Mes données patients sont-elles sécurisées ?', a:'Oui. Vos données vous appartiennent entièrement, protégées par des normes de sécurité clinique. Nous ne partageons jamais d\'informations avec des tiers.' },
-      { q:'Combien d\'utilisateurs puis-je ajouter ?', a:'Pas de limite d\'utilisateurs internes. Le forfait mensuel couvre toute votre équipe plus les accès familiaux pour chaque patient.' },
-      { q:'Puis-je migrer mes données Excel actuelles ?', a:'Oui. Vanty dispose d\'un importateur Excel natif pour les pourcentages d\'objectifs ABA. Pendant le premier mois, nous aidons avec la migration complète sans frais supplémentaires.' },
-      { q:'Comment fonctionne l\'assistant ARIA ?', a:'ARIA analyse les données de session et génère des rapports, des notes cliniques et des résumés pour les parents en secondes. Elle détecte aussi quand un objectif atteint ≥80% et notifie en temps réel.' },
-      { q:'Que comprend le forfait annuel ?', a:'Le forfait annuel de S/1 300 inclut tout du mensuel avec prix bloqué 12 mois, support VIP dédié et accès anticipé aux nouvelles fonctions. Vous économisez S/140 vs. mensuel.' },
+      { q:'Combien coûte Vanty pour mon centre ?', a:'Le premier mois est S/200 et comprend la configuration complète, le chargement initial des patients et la formation de l\'équipe. À partir du deuxième mois, vous payez S/120/mois sans engagement. Avec le forfait annuel, vous payez seulement S/1 180 (l\'équivalent de 10 mois) pour 12 mois complets — 2 mois offerts et S/260 d\'économies.' },
+      { q:'Ai-je besoin de compétences techniques pour l\'utiliser ?', a:'Pas du tout. Vanty est conçu pour les analystes et thérapeutes comportementaux, pas pour les équipes techniques. L\'interface est 100% en espagnol et nous faisons la configuration complète avec vous dans les 24 premières heures.' },
+      { q:'Mes données patients sont-elles sécurisées ?', a:'Absolument. Vos données vous appartiennent à 100%, stockées selon les normes de sécurité clinique. Nous ne partageons jamais d\'informations avec des tiers et vous gardez le contrôle total en permanence.' },
+      { q:'Combien d\'utilisateurs puis-je ajouter ?', a:'Illimité. Le forfait mensuel couvre toute votre équipe — analystes, spécialistes, administration — plus les portails familiaux de chaque patient, sans surcoût par utilisateur.' },
+      { q:'Comment fonctionne l\'assistant ARIA ?', a:'ARIA analyse les données de session et génère des rapports, des notes cliniques et des résumés pour les parents en quelques secondes. Il détecte aussi automatiquement quand un objectif atteint ≥80% et notifie l\'équipe en temps réel.' },
+      { q:'Que comprend le forfait annuel et comment ça marche ?', a:'Vous payez S/1 180 une seule fois — l\'équivalent de 10 paiements mensuels — et utilisez Vanty pendant 12 mois complets. Les 2 mois supplémentaires sont entièrement offerts. Comprend tout du forfait mensuel plus support VIP dédié et accès anticipé aux nouvelles fonctions.' },
+      { q:'Puis-je annuler à tout moment ?', a:'Oui. Le forfait mensuel n\'a pas d\'engagement minimum : annulez quand vous voulez depuis votre tableau de bord. Le forfait annuel est un paiement unique pour 12 mois ; il ne se renouvelle pas automatiquement.' },
     ],
     ctaReady: 'PRÊT À COMMENCER ?',
     ctaTitle: 'Organisons le travail\nclinique ABA en LATAM, ensemble.',
@@ -462,19 +462,19 @@ function PricingSection({ t }: { t: typeof T['es'] }) {
             </ul>
           </div>
           {/* Card 3 — Annual offer */}
-          <div className={`p-card annual-offer price-card-anim${visible?' in':''}`}
-            style={visible?{animationDelay:'.34s',background:'linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%)',borderColor:'#1D4ED8',borderWidth:'2px'}:{}}>
+          <div className={`p-card price-card-anim${visible?' in':''}`}
+            style={visible?{animationDelay:'.34s',animation:'priceCardIn .65s .34s cubic-bezier(0.22,1,0.36,1) both, offerPulse 2.5s 1s ease-in-out infinite',background:'linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%)',borderColor:'#1D4ED8',borderWidth:'2px'}:{}}>
             <div className="p-badge" style={{background:'linear-gradient(135deg,#1e40af,#1D4ED8)',fontSize:10,letterSpacing:'.03em'}}>{t.plan3Badge}</div>
             <div className="p-label" style={{marginTop:16}}>{t.plan3Label}</div>
             <div className="p-amt" style={{flexDirection:'column',alignItems:'flex-start',gap:2}}>
               <div style={{display:'flex',alignItems:'baseline',gap:4}}>
                 <span className="p-cur">S/</span>
-                <span className={`p-num price-num-anim${visible?' in':''}`} style={visible?{animationDelay:'.5s',color:'#1D4ED8'}:{}}>1,300</span>
+                <span className={`p-num price-num-anim${visible?' in':''}`} style={visible?{animationDelay:'.5s',color:'#1D4ED8'}:{}}>1,180</span>
                 <span className="p-per">/año</span>
               </div>
               <div style={{display:'flex',alignItems:'center',gap:6}}>
                 <span style={{fontSize:13,color:'#9ca3af',textDecoration:'line-through'}}>S/1,440</span>
-                <span className="savings-badge">⚡ Ahorras S/140</span>
+                <span className="savings-badge">🎁 2 meses gratis · Ahorras S/260</span>
               </div>
             </div>
             <p className="p-desc">{t.plan3Desc}</p>
