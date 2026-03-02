@@ -55,8 +55,8 @@ const T = {
     testimonialModules: 'Módulos que usa',
     testimonialProducts: ['Registro de sesiones ABA','ARIA · IA clínica','Portal familiar nativo','Dashboard de analista'],
     testimonialName: 'Ana M.', testimonialRole: 'Analista ABA · Lima, Perú',
-    compareLabel: 'Comparativa', compareTitle: 'Vanty vs. las alternativas',
-    compareSub: 'La única plataforma ABA con IA, multi-rol y portal familiar en América Latina.',
+    compareLabel: 'Por qué Vanty', compareTitle: '¿Por qué elegirnos\nsobre las alternativas?',
+    compareSub: 'La única plataforma ABA con IA, multi-rol y portal familiar, creada específicamente para LATAM.',
     compareHeaders: ['Característica','Software internacional','Otras Apps','✦ Vanty'],
     compareRows: [
       ['Multi-rol: analista + especialista + familia','❌ Solo terapeuta','❌ No aplica','✅ Completo'],
@@ -66,7 +66,8 @@ const T = {
       ['Notificaciones push','❌ No','⚠️ Básico','✅ Nativas'],
       ['Portal para familias','❌ No','❌ No','✅ Nativo'],
       ['100% en español','❌ Inglés','⚠️ Parcial','✅ Español'],
-      ['Precio en soles (S/)','❌ USD alto','⚠️ Variable','✅ S/250/mes'],
+      ['Precio justo en soles','❌ USD $200+/mes','⚠️ Variable','✅ S/120/mes'],
+      ['Setup incluido en el primer mes','❌ Costo extra','❌ No','✅ Incluido'],
     ],
     helpBrand: 'Vanty Guides', helpTeam: 'Equipo Vanty', helpRole: 'Soporte clínico ABA',
     helpTitle: 'Nos encanta ayudar.\nDe verdad.',
@@ -80,14 +81,18 @@ const T = {
     plan2Badge: 'Mes 2 en adelante', plan2Label: 'Mensual · Sin permanencia',
     plan2Desc: 'Acceso a todos los módulos, IA ilimitada, actualizaciones automáticas y soporte incluido.',
     plan2Features: ['Todos los módulos activos','ARIA · IA clínica 24/7','Videollamadas integradas','Notificaciones push','Actualizaciones incluidas','Sin límite de usuarios','Portal familiar nativo','Reportes IA ilimitados','Soporte WhatsApp y email'],
+    plan3Badge: 'MEJOR PRECIO · ANUAL', plan3Label: 'Plan Anual · Ahorra más',
+    plan3Desc: 'Todo lo del plan mensual, pero pagando una vez al año. Ahorra S/140 vs. pago mensual.',
+    plan3Features: ['Todo lo del plan mensual','Precio bloqueado 12 meses','Soporte VIP dedicado','Onboarding prioritario','Acceso a nuevas funciones beta','Facturación anual simplificada'],
     faqLabel: 'Preguntas frecuentes', faqTitle: '¿Tienes dudas?\nLas respondemos.',
     faqs: [
-      { q:'¿Cuánto cuesta Vanty para mi centro?', a:'El primer mes es S/350, que incluye configuración completa, carga inicial y capacitación. Desde el segundo mes la suscripción es S/250 mensuales sin permanencia mínima.' },
-      { q:'¿Necesito conocimientos técnicos para usarlo?', a:'No. Vanty está diseñado para analistas y terapeutas conductuales, no para técnicos. La interfaz es 100% en español y el setup lo hacemos nosotros contigo.' },
-      { q:'¿Mis datos de pacientes están seguros?', a:'Sí. Tus datos son completamente tuyos, protegidos con estándares de seguridad clínica. Nunca compartimos información con terceros.' },
-      { q:'¿Cuántos usuarios puedo agregar?', a:'Sin límite de usuarios internos. El plan mensual cubre todo tu equipo más los accesos familiares para cada paciente.' },
-      { q:'¿Puedo migrar mis datos actuales de Excel?', a:'Sí. Vanty tiene importador nativo de Excel para porcentajes de objetivos ABA. Durante el primer mes te ayudamos con la migración completa.' },
-      { q:'¿Cómo funciona el asistente ARIA?', a:'ARIA analiza datos de sesión y genera reportes, notas clínicas y resúmenes para padres. También detecta cuando un objetivo alcanza ≥80% y notifica en tiempo real.' },
+      { q:'¿Cuánto cuesta Vanty para mi centro?', a:'El primer mes es S/200, que incluye configuración completa, carga inicial y capacitación. Desde el segundo mes la suscripción es S/120 mensuales sin permanencia mínima. También tenemos un plan anual de S/1,300 (ahorras S/140 vs. pago mensual).' },
+      { q:'¿Necesito conocimientos técnicos para usarlo?', a:'No. Vanty está diseñado para analistas y terapeutas conductuales, no para técnicos. La interfaz es 100% en español y el setup lo hacemos nosotros contigo en las primeras 24 horas.' },
+      { q:'¿Mis datos de pacientes están seguros?', a:'Sí. Tus datos son completamente tuyos, protegidos con estándares de seguridad clínica. Nunca compartimos información con terceros y tú tienes control total de tu información.' },
+      { q:'¿Cuántos usuarios puedo agregar?', a:'Sin límite de usuarios internos. El plan mensual cubre todo tu equipo (analistas, especialistas, administración) más los accesos familiares para cada paciente.' },
+      { q:'¿Puedo migrar mis datos actuales de Excel?', a:'Sí. Vanty tiene importador nativo de Excel para porcentajes de objetivos ABA. Durante el primer mes te ayudamos con la migración completa, sin costo adicional.' },
+      { q:'¿Cómo funciona el asistente ARIA?', a:'ARIA analiza datos de sesión y genera reportes, notas clínicas y resúmenes para padres en segundos. También detecta cuando un objetivo alcanza ≥80% y notifica al equipo en tiempo real.' },
+      { q:'¿Qué incluye el plan anual?', a:'El plan anual de S/1,300 incluye todo lo del plan mensual pero con precio bloqueado por 12 meses, soporte VIP dedicado, acceso anticipado a nuevas funciones y onboarding prioritario. Ahorras S/140 vs. pago mensual.' },
     ],
     ctaReady: '¿LISTO PARA EMPEZAR?',
     ctaTitle: 'Ordenemos el trabajo\nclínico ABA en LATAM, juntos.',
@@ -142,8 +147,8 @@ const T = {
     testimonialModules: 'Modules she uses',
     testimonialProducts: ['ABA session recording','ARIA · Clinical AI','Native family portal','Analyst dashboard'],
     testimonialName: 'Ana M.', testimonialRole: 'ABA Analyst · Lima, Peru',
-    compareLabel: 'Comparison', compareTitle: 'Vanty vs. the alternatives',
-    compareSub: 'The only ABA platform with AI, multi-role and family portal in Latin America.',
+    compareLabel: 'Why Vanty', compareTitle: 'Why choose us\nover the alternatives?',
+    compareSub: 'The only ABA platform with AI, multi-role and family portal, built specifically for LATAM.',
     compareHeaders: ['Feature','International software','Appointment apps','✦ Vanty'],
     compareRows: [
       ['Multi-role: analyst + specialist + family','❌ Therapist only','❌ N/A','✅ Complete'],
@@ -153,7 +158,8 @@ const T = {
       ['Push notifications','❌ No','⚠️ Basic','✅ Native'],
       ['Family portal','❌ No','❌ No','✅ Native'],
       ['100% in Spanish','❌ English','⚠️ Partial','✅ Spanish'],
-      ['Local currency pricing','❌ High USD','⚠️ Variable','✅ S/250/mo'],
+      ['Fair local currency pricing','❌ USD $200+/mo','⚠️ Variable','✅ S/120/mo'],
+      ['Setup included first month','❌ Extra cost','❌ No','✅ Included'],
     ],
     helpBrand: 'Vanty Guides', helpTeam: 'Vanty Team', helpRole: 'ABA Clinical Support',
     helpTitle: 'We love helping.\nReally.',
@@ -167,14 +173,18 @@ const T = {
     plan2Badge: 'Month 2 onwards', plan2Label: 'Monthly · No commitment',
     plan2Desc: 'Access to all modules, unlimited AI, automatic updates and support included.',
     plan2Features: ['All active modules','ARIA · Clinical AI 24/7','Integrated video calls','Push notifications','Updates included','Unlimited users','Native family portal','Unlimited AI reports','WhatsApp & email support'],
+    plan3Badge: 'BEST VALUE · ANNUAL', plan3Label: 'Annual Plan · Save more',
+    plan3Desc: 'Everything in the monthly plan, but pay once a year. Save S/140 vs. monthly.',
+    plan3Features: ['Everything in monthly plan','Price locked 12 months','Dedicated VIP support','Priority onboarding','Early access to beta features','Simplified annual billing'],
     faqLabel: 'Frequently asked questions', faqTitle: 'Have questions?\nWe\'ll answer them.',
     faqs: [
-      { q:'How much does Vanty cost for my center?', a:'The first month is S/350, which includes full configuration, initial load and training. From the second month the subscription is S/250 per month with no minimum commitment.' },
-      { q:'Do I need technical knowledge to use it?', a:'No. Vanty is designed for behavioral analysts and therapists, not technicians. The interface is 100% in Spanish and we do the setup with you.' },
-      { q:'Is my patient data secure?', a:'Yes. Your data is completely yours, protected with clinical security standards. We never share information with third parties.' },
+      { q:'How much does Vanty cost for my center?', a:'The first month is S/200, which includes full configuration, initial load and training. From the second month the subscription is S/120 per month with no minimum commitment. We also have an annual plan for S/1,300 (save S/140 vs. monthly).' },
+      { q:'Do I need technical knowledge to use it?', a:'No. Vanty is designed for behavioral analysts and therapists, not technicians. The interface is 100% in Spanish and we do the setup with you in the first 24 hours.' },
+      { q:'Is my patient data secure?', a:'Yes. Your data is completely yours, protected with clinical security standards. We never share information with third parties and you have full control.' },
       { q:'How many users can I add?', a:'No limit on internal users. The monthly plan covers your entire team plus family access for each patient.' },
-      { q:'Can I migrate my current Excel data?', a:'Yes. Vanty has a native Excel importer for ABA objective percentages. During the first month we help with the complete migration.' },
-      { q:'How does the ARIA assistant work?', a:'ARIA analyzes session data and generates reports, clinical notes and summaries for parents. It also detects when an objective reaches ≥80% and notifies in real time.' },
+      { q:'Can I migrate my current Excel data?', a:'Yes. Vanty has a native Excel importer for ABA objective percentages. During the first month we help with the complete migration at no extra cost.' },
+      { q:'How does the ARIA assistant work?', a:'ARIA analyzes session data and generates reports, clinical notes and summaries for parents in seconds. It also detects when an objective reaches ≥80% and notifies the team in real time.' },
+      { q:'What does the annual plan include?', a:'The S/1,300 annual plan includes everything in the monthly plan with a price locked for 12 months, dedicated VIP support, early access to new features and priority onboarding. You save S/140 vs. monthly.' },
     ],
     ctaReady: 'READY TO START?',
     ctaTitle: 'Let\'s organize ABA clinical\nwork in LATAM, together.',
@@ -230,7 +240,7 @@ const T = {
     testimonialProducts: ['Registro de sessões ABA','ARIA · IA clínica','Portal familiar nativo','Dashboard de analista'],
     testimonialName: 'Ana M.', testimonialRole: 'Analista ABA · Lima, Peru',
     compareLabel: 'Comparativo', compareTitle: 'Vanty vs. as alternativas',
-    compareSub: 'A única plataforma ABA com IA, multi-papel e portal familiar na América Latina.',
+    compareSub: 'A única plataforma ABA com IA, multi-papel e portal familiar, criada especificamente para a LATAM.',
     compareHeaders: ['Característica','Software internacional','Apps de consultas','✦ Vanty'],
     compareRows: [
       ['Multi-papel: analista + especialista + família','❌ Só terapeuta','❌ N/A','✅ Completo'],
@@ -238,7 +248,8 @@ const T = {
       ['IA para relatórios clínicos','❌ Não','❌ Não','✅ ARIA integrada'],
       ['Portal para famílias','❌ Não','❌ Não','✅ Nativo'],
       ['100% em espanhol','❌ Inglês','⚠️ Parcial','✅ Espanhol'],
-      ['Preço em moeda local','❌ USD alto','⚠️ Variável','✅ S/250/mês'],
+      ['Preço justo em moeda local','❌ USD $200+/mês','⚠️ Variável','✅ S/120/mês'],
+      ['Setup incluído primeiro mês','❌ Custo extra','❌ Não','✅ Incluído'],
     ],
     helpBrand: 'Vanty Guides', helpTeam: 'Equipe Vanty', helpRole: 'Suporte clínico ABA',
     helpTitle: 'Adoramos ajudar.\nDe verdade.',
@@ -252,14 +263,18 @@ const T = {
     plan2Badge: 'Mês 2 em diante', plan2Label: 'Mensal · Sem fidelidade',
     plan2Desc: 'Acesso a todos os módulos, IA ilimitada, atualizações automáticas e suporte incluído.',
     plan2Features: ['Todos os módulos ativos','ARIA · IA clínica 24/7','Atualizações incluídas','Sem limite de usuários','Portal familiar nativo','Relatórios IA ilimitados','Suporte WhatsApp e e-mail'],
+    plan3Badge: 'MELHOR PREÇO · ANUAL', plan3Label: 'Plano Anual · Economize mais',
+    plan3Desc: 'Tudo do plano mensal, pagando uma vez por ano. Economize S/140 vs. mensal.',
+    plan3Features: ['Tudo do plano mensal','Preço bloqueado 12 meses','Suporte VIP dedicado','Onboarding prioritário','Acesso antecipado a novas funções','Faturamento anual simplificado'],
     faqLabel: 'Perguntas frequentes', faqTitle: 'Tem dúvidas?\nNós respondemos.',
     faqs: [
-      { q:'Quanto custa a Vanty para o meu centro?', a:'O primeiro mês é S/350, que inclui configuração completa, carga inicial e treinamento. A partir do segundo mês a assinatura é S/250 mensais sem fidelidade mínima.' },
-      { q:'Preciso de conhecimentos técnicos para usar?', a:'Não. A Vanty foi projetada para analistas e terapeutas comportamentais, não para técnicos. A interface é 100% em espanhol e fazemos a configuração com você.' },
+      { q:'Quanto custa a Vanty para o meu centro?', a:'O primeiro mês é S/200, que inclui configuração completa, carga inicial e treinamento. A partir do segundo mês a assinatura é S/120 mensais sem fidelidade mínima. Também temos um plano anual de S/1.300 (economize S/140 vs. mensal).' },
+      { q:'Preciso de conhecimentos técnicos para usar?', a:'Não. A Vanty foi projetada para analistas e terapeutas comportamentais, não para técnicos. A interface é 100% em espanhol e fazemos a configuração com você nas primeiras 24 horas.' },
       { q:'Meus dados de pacientes estão seguros?', a:'Sim. Seus dados são completamente seus, protegidos com padrões de segurança clínica. Nunca compartilhamos informações com terceiros.' },
       { q:'Quantos usuários posso adicionar?', a:'Sem limite de usuários internos. O plano mensal cobre toda a sua equipe mais os acessos familiares para cada paciente.' },
-      { q:'Posso migrar meus dados atuais do Excel?', a:'Sim. A Vanty tem importador nativo do Excel para percentuais de objetivos ABA. Durante o primeiro mês ajudamos com a migração completa.' },
-      { q:'Como funciona o assistente ARIA?', a:'ARIA analisa dados de sessão e gera relatórios, notas clínicas e resumos para os pais. Também detecta quando um objetivo atinge ≥80% e notifica em tempo real.' },
+      { q:'Posso migrar meus dados atuais do Excel?', a:'Sim. A Vanty tem importador nativo do Excel para percentuais de objetivos ABA. Durante o primeiro mês ajudamos com a migração completa sem custo adicional.' },
+      { q:'Como funciona o assistente ARIA?', a:'ARIA analisa dados de sessão e gera relatórios, notas clínicas e resumos para os pais em segundos. Também detecta quando um objetivo atinge ≥80% e notifica em tempo real.' },
+      { q:'O que inclui o plano anual?', a:'O plano anual de S/1.300 inclui tudo do plano mensal com preço bloqueado por 12 meses, suporte VIP dedicado e acesso antecipado a novas funções. Você economiza S/140 vs. mensal.' },
     ],
     ctaReady: 'PRONTO PARA COMEÇAR?',
     ctaTitle: 'Vamos organizar o trabalho\nclínico ABA na LATAM, juntos.',
@@ -323,7 +338,8 @@ const T = {
       ['IA pour rapports cliniques','❌ Non','❌ Non','✅ ARIA intégrée'],
       ['Portail pour familles','❌ Non','❌ Non','✅ Natif'],
       ['100% en espagnol','❌ Anglais','⚠️ Partiel','✅ Espagnol'],
-      ['Prix en monnaie locale','❌ USD élevé','⚠️ Variable','✅ S/250/mois'],
+      ['Prix juste en monnaie locale','❌ USD $200+/mois','⚠️ Variable','✅ S/120/mois'],
+      ['Setup inclus premier mois','❌ Coût extra','❌ Non','✅ Inclus'],
     ],
     helpBrand: 'Vanty Guides', helpTeam: 'Équipe Vanty', helpRole: 'Support clinique ABA',
     helpTitle: 'Nous adorons aider.\nVraiment.',
@@ -337,14 +353,18 @@ const T = {
     plan2Badge: 'Mois 2 et suivants', plan2Label: 'Mensuel · Sans engagement',
     plan2Desc: 'Accès à tous les modules, IA illimitée, mises à jour automatiques et support inclus.',
     plan2Features: ['Tous les modules actifs','ARIA · IA clinique 24/7','Mises à jour incluses','Utilisateurs illimités','Portail familial natif','Rapports IA illimités','Support WhatsApp et e-mail'],
+    plan3Badge: 'MEILLEUR PRIX · ANNUEL', plan3Label: 'Forfait Annuel · Économisez',
+    plan3Desc: 'Tout du forfait mensuel, en payant une fois par an. Économisez S/140 vs. mensuel.',
+    plan3Features: ['Tout du forfait mensuel','Prix bloqué 12 mois','Support VIP dédié','Onboarding prioritaire','Accès anticipé aux nouvelles fonctions','Facturation annuelle simplifiée'],
     faqLabel: 'Questions fréquentes', faqTitle: 'Des questions ?\nNous y répondons.',
     faqs: [
-      { q:'Combien coûte Vanty pour mon centre ?', a:'Le premier mois est S/350, qui comprend la configuration complète, le chargement initial et la formation. À partir du deuxième mois l\'abonnement est S/250 par mois sans engagement minimum.' },
-      { q:'Ai-je besoin de connaissances techniques pour l\'utiliser ?', a:'Non. Vanty est conçu pour les analystes et thérapeutes comportementaux, pas pour les techniciens. L\'interface est 100% en espagnol et nous faisons la configuration avec vous.' },
+      { q:'Combien coûte Vanty pour mon centre ?', a:'Le premier mois est S/200, qui comprend la configuration complète, le chargement initial et la formation. À partir du deuxième mois l\'abonnement est S/120 par mois sans engagement. Nous avons aussi un forfait annuel à S/1 300 (économisez S/140 vs. mensuel).' },
+      { q:'Ai-je besoin de connaissances techniques pour l\'utiliser ?', a:'Non. Vanty est conçu pour les analystes et thérapeutes comportementaux, pas pour les techniciens. L\'interface est 100% en espagnol et nous faisons la configuration avec vous en 24 heures.' },
       { q:'Mes données patients sont-elles sécurisées ?', a:'Oui. Vos données vous appartiennent entièrement, protégées par des normes de sécurité clinique. Nous ne partageons jamais d\'informations avec des tiers.' },
       { q:'Combien d\'utilisateurs puis-je ajouter ?', a:'Pas de limite d\'utilisateurs internes. Le forfait mensuel couvre toute votre équipe plus les accès familiaux pour chaque patient.' },
-      { q:'Puis-je migrer mes données Excel actuelles ?', a:'Oui. Vanty dispose d\'un importateur Excel natif pour les pourcentages d\'objectifs ABA. Pendant le premier mois, nous aidons avec la migration complète.' },
-      { q:'Comment fonctionne l\'assistant ARIA ?', a:'ARIA analyse les données de session et génère des rapports, des notes cliniques et des résumés pour les parents. Elle détecte aussi quand un objectif atteint ≥80% et notifie en temps réel.' },
+      { q:'Puis-je migrer mes données Excel actuelles ?', a:'Oui. Vanty dispose d\'un importateur Excel natif pour les pourcentages d\'objectifs ABA. Pendant le premier mois, nous aidons avec la migration complète sans frais supplémentaires.' },
+      { q:'Comment fonctionne l\'assistant ARIA ?', a:'ARIA analyse les données de session et génère des rapports, des notes cliniques et des résumés pour les parents en secondes. Elle détecte aussi quand un objectif atteint ≥80% et notifie en temps réel.' },
+      { q:'Que comprend le forfait annuel ?', a:'Le forfait annuel de S/1 300 inclut tout du mensuel avec prix bloqué 12 mois, support VIP dédié et accès anticipé aux nouvelles fonctions. Vous économisez S/140 vs. mensuel.' },
     ],
     ctaReady: 'PRÊT À COMMENCER ?',
     ctaTitle: 'Organisons le travail\nclinique ABA en LATAM, ensemble.',
@@ -384,56 +404,84 @@ function PricingSection({ t }: { t: typeof T['es'] }) {
       <style>{`
         @keyframes priceCardIn { from{opacity:0;transform:translateY(28px) scale(.97)} to{opacity:1;transform:translateY(0) scale(1)} }
         @keyframes priceNumCount { from{opacity:0;transform:scale(.7)} to{opacity:1;transform:scale(1)} }
-        @keyframes shimmerPrice { 0%{background-position:-200% center} 100%{background-position:200% center} }
+        @keyframes offerPulse { 0%,100%{box-shadow:0 0 0 0 rgba(29,78,216,.25)} 50%{box-shadow:0 0 0 8px rgba(29,78,216,0)} }
         .price-card-anim { opacity:0; }
         .price-card-anim.in { animation:priceCardIn .65s cubic-bezier(0.22,1,0.36,1) both; }
         .price-num-anim { opacity:0; }
         .price-num-anim.in { animation:priceNumCount .6s cubic-bezier(0.34,1.56,0.64,1) both; }
         .p-card { transition:all .25s cubic-bezier(0.22,1,0.36,1); }
         .p-card:hover { transform:translateY(-6px); box-shadow:0 20px 50px rgba(0,0,0,.12); }
-        .p-card.featured:hover { box-shadow:0 20px 60px rgba(29,111,66,.25); }
+        .p-card.featured:hover { box-shadow:0 20px 60px rgba(29,78,216,.25); }
+        .p-card.annual-offer { animation: offerPulse 2.5s ease-in-out infinite; }
+        .p-card.annual-offer:hover { box-shadow:0 20px 60px rgba(29,78,216,.3); animation:none; }
         .p-list li { opacity:0; transform:translateX(-8px); }
         .p-list li.in { opacity:1; transform:translateX(0); transition:all .35s; }
         .price-title-anim { opacity:0; }
         .price-title-anim.in { animation:priceCardIn .6s .05s both; }
+        .savings-badge { display:inline-flex; align-items:center; gap:5px; background:linear-gradient(135deg,#fef3c7,#fde68a); color:#92400e; font-size:11px; font-weight:800; padding:4px 10px; border-radius:99px; margin-top:8px; }
       `}</style>
       <div className="section-inner">
-        <div className={`price-title-anim${visible?' in':''}`} style={{textAlign:'center',maxWidth:520,margin:'0 auto'}}>
+        <div className={`price-title-anim${visible?' in':''}`} style={{textAlign:'center',maxWidth:580,margin:'0 auto'}}>
           <div className="section-label"><Star size={11}/> {t.pricingLabel}</div>
           <h2 className="section-h2" style={{whiteSpace:'pre-line'}}>{t.pricingTitle}</h2>
           <p className="section-sub" style={{marginTop:12}}>{t.pricingSub}</p>
         </div>
-        <div className="pricing-grid">
-          {/* Card 1 */}
-          <div className={`p-card price-card-anim${visible?' in':''}`} style={visible?{animationDelay:'.15s'}:{}}>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(260px,1fr))',gap:24,maxWidth:1020,margin:'48px auto 0'}}>
+          {/* Card 1 — First month */}
+          <div className={`p-card price-card-anim${visible?' in':''}`} style={visible?{animationDelay:'.1s'}:{}}>
             <div className="p-label">{t.plan1Label}</div>
             <div className="p-amt">
               <span className="p-cur">S/</span>
-              <span className={`p-num price-num-anim${visible?' in':''}`} style={visible?{animationDelay:'.3s'}:{}}>350</span>
+              <span className={`p-num price-num-anim${visible?' in':''}`} style={visible?{animationDelay:'.25s'}:{}}>200</span>
             </div>
             <p className="p-desc">{t.plan1Desc}</p>
             <ul className="p-list">
               {t.plan1Features.map((f,i)=>(
-                <li key={i} className={visible?'in':''} style={visible?{transitionDelay:`${0.4+i*0.07}s`}:{}}>
-                  <Check size={15} color="#16A34A" style={{flexShrink:0}}/>{f}
+                <li key={i} className={visible?'in':''} style={visible?{transitionDelay:`${0.35+i*0.07}s`}:{}}>
+                  <Check size={15} color="#1D4ED8" style={{flexShrink:0}}/>{f}
                 </li>
               ))}
             </ul>
           </div>
-          {/* Card 2 — featured */}
-          <div className={`p-card featured price-card-anim${visible?' in':''}`} style={visible?{animationDelay:'.28s'}:{}}>
-            <div className="p-badge">{t.plan2Badge}</div>
+          {/* Card 2 — Monthly featured */}
+          <div className={`p-card featured price-card-anim${visible?' in':''}`} style={visible?{animationDelay:'.22s',borderColor:'#1D4ED8',boxShadow:'0 8px 40px rgba(29,78,216,.18)'}:{}}>
+            <div className="p-badge" style={{background:'#1D4ED8'}}>{t.plan2Badge}</div>
             <div className="p-label" style={{marginTop:16}}>{t.plan2Label}</div>
             <div className="p-amt">
               <span className="p-cur">S/</span>
-              <span className={`p-num price-num-anim${visible?' in':''}`} style={visible?{animationDelay:'.42s'}:{}}>250</span>
+              <span className={`p-num price-num-anim${visible?' in':''}`} style={visible?{animationDelay:'.37s'}:{}}>120</span>
               <span className="p-per">/mes</span>
             </div>
             <p className="p-desc">{t.plan2Desc}</p>
             <ul className="p-list">
               {t.plan2Features.map((f,i)=>(
-                <li key={i} className={visible?'in':''} style={visible?{transitionDelay:`${0.5+i*0.07}s`}:{}}>
-                  <Check size={15} color="#16A34A" style={{flexShrink:0}}/>{f}
+                <li key={i} className={visible?'in':''} style={visible?{transitionDelay:`${0.45+i*0.07}s`}:{}}>
+                  <Check size={15} color="#1D4ED8" style={{flexShrink:0}}/>{f}
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* Card 3 — Annual offer */}
+          <div className={`p-card annual-offer price-card-anim${visible?' in':''}`}
+            style={visible?{animationDelay:'.34s',background:'linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%)',borderColor:'#1D4ED8',borderWidth:'2px'}:{}}>
+            <div className="p-badge" style={{background:'linear-gradient(135deg,#1e40af,#1D4ED8)',fontSize:10,letterSpacing:'.03em'}}>{t.plan3Badge}</div>
+            <div className="p-label" style={{marginTop:16}}>{t.plan3Label}</div>
+            <div className="p-amt" style={{flexDirection:'column',alignItems:'flex-start',gap:2}}>
+              <div style={{display:'flex',alignItems:'baseline',gap:4}}>
+                <span className="p-cur">S/</span>
+                <span className={`p-num price-num-anim${visible?' in':''}`} style={visible?{animationDelay:'.5s',color:'#1D4ED8'}:{}}>1,300</span>
+                <span className="p-per">/año</span>
+              </div>
+              <div style={{display:'flex',alignItems:'center',gap:6}}>
+                <span style={{fontSize:13,color:'#9ca3af',textDecoration:'line-through'}}>S/1,440</span>
+                <span className="savings-badge">⚡ Ahorras S/140</span>
+              </div>
+            </div>
+            <p className="p-desc">{t.plan3Desc}</p>
+            <ul className="p-list">
+              {t.plan3Features.map((f,i)=>(
+                <li key={i} className={visible?'in':''} style={visible?{transitionDelay:`${0.55+i*0.07}s`}:{}}>
+                  <Check size={15} color="#1D4ED8" style={{flexShrink:0}}/>{f}
                 </li>
               ))}
             </ul>
@@ -465,10 +513,10 @@ function FaqSection({ t, faq, setFaq }: { t: typeof T['es']; faq: number|null; s
         .faq-item-anim.in { animation:faqSlideIn .5s cubic-bezier(0.22,1,0.36,1) both; }
         .faq-body-animated { animation:faqBodyOpen .3s cubic-bezier(0.22,1,0.36,1) both; overflow:hidden; }
         .faq-item { transition:border-color .2s, box-shadow .2s; }
-        .faq-item:hover:not(.open) { border-color:#d1fae5; box-shadow:0 4px 16px rgba(29,111,66,.06); }
+        .faq-item:hover:not(.open) { border-color:#dbeafe; box-shadow:0 4px 16px rgba(29,78,216,.06); }
         .faq-head { transition:background .2s; }
-        .faq-item:hover .faq-head { background:rgba(240,253,244,.5); }
-        .faq-item.open .faq-head { background:#f0fdf4; }
+        .faq-item:hover .faq-head { background:rgba(239,246,255,.7); }
+        .faq-item.open .faq-head { background:#eff6ff; }
       `}</style>
       <div className="section-inner">
         <div style={{textAlign:'center',maxWidth:520,margin:'0 auto',opacity:visible?1:0,transition:'opacity .6s',transform:visible?'none':'translateY(16px)'}}>
@@ -558,8 +606,8 @@ function TrustedCentersSection({ t }: { t: typeof T['es'] }) {
     obs.observe(el); return () => obs.disconnect()
   }, [])
 
-  const label = t.lang==='EN'?'Betting on the future of ABA':t.lang==='PT'?'Apostando no futuro do ABA':t.lang==='FR'?'Parier sur l\'avenir de l\'ABA':'Apostando al avance del ABA'
-  const sub   = t.lang==='EN'?'Centers that chose to lead the change in Latin America':t.lang==='PT'?'Centros que escolheram liderar a mudança na América Latina':t.lang==='FR'?'Des centres qui ont choisi de mener le changement en Amérique latine':'Centros que eligieron liderar el cambio en América Latina'
+  const label = t.lang==='EN'?'Centers advancing with us':t.lang==='PT'?'Centros avançando conosco':t.lang==='FR'?'Centres qui avancent avec nous':'Centros que avanzan con nosotros'
+  const sub   = t.lang==='EN'?'Pioneers who bet on the future of ABA in Latin America':t.lang==='PT'?'Pioneiros que apostaram no futuro do ABA na América Latina':t.lang==='FR'?'Les pionniers qui misent sur le futur de l\'ABA en Amérique Latine':'Pioneros que apuestan al futuro del ABA en América Latina'
   const since = t.lang==='EN'?'Pioneer center · Since 2026':t.lang==='PT'?'Centro pioneiro · Desde 2026':t.lang==='FR'?'Centre pionnier · Depuis 2026':'Centro pionero · Desde 2026'
   const badge = t.lang==='EN'?'PIONEER PARTNER':t.lang==='PT'?'PARCEIRO PIONEIRO':t.lang==='FR'?'PARTENAIRE PIONNIER':'ALIADO PIONERO'
   const soon  = t.lang==='EN'?'More centers joining the movement':t.lang==='PT'?'Mais centros se juntando ao movimento':t.lang==='FR'?'Plus de centres rejoignant le mouvement':'Más centros uniéndose al movimiento'
@@ -611,15 +659,15 @@ function TrustedCentersSection({ t }: { t: typeof T['es'] }) {
         .tc2-badge {
           display:inline-flex; align-items:center; gap:7px;
           padding:5px 14px; border-radius:99px;
-          background:#f0fdf4; border:1px solid #bbf7d0;
-          font-size:10.5px; font-weight:800; color:#16a34a;
+          background:#eff6ff; border:1px solid #bfdbfe;
+          font-size:10.5px; font-weight:800; color:#2563eb;
           font-family:'Poppins',sans-serif; letter-spacing:.07em;
         }
-        .tc2-badge-dot { width:5px; height:5px; border-radius:50%; background:#22c55e; animation:pulse2 1.8s infinite; }
+        .tc2-badge-dot { width:5px; height:5px; border-radius:50%; background:#3b82f6; animation:pulse2 1.8s infinite; }
 
         .tc2-name  { font-family:'Poppins',sans-serif; font-size:24px; font-weight:800; color:#111; text-align:center; letter-spacing:-.02em; }
         .tc2-loc   { font-size:13px; color:#9ca3af; text-align:center; }
-        .tc2-since { font-size:12px; color:#16a34a; font-weight:600; text-align:center; }
+        .tc2-since { font-size:12px; color:#2563eb; font-weight:600; text-align:center; }
 
         /* Divider line animated */
         .tc2-divline {
@@ -683,8 +731,8 @@ function TrustedCentersSection({ t }: { t: typeof T['es'] }) {
 
         {/* Header */}
         <div style={{textAlign:'center',marginBottom:56}}>
-          <div className={`tc2-label${visible?' in':''}`} style={{display:'inline-flex',alignItems:'center',gap:8,padding:'5px 14px',borderRadius:99,background:'#f0fdf4',border:'1px solid #bbf7d0',fontSize:11,fontWeight:700,color:'#16a34a',letterSpacing:'.07em',textTransform:'uppercase',marginBottom:18,fontFamily:"'Poppins',sans-serif"}}>
-            <Heart size={10} fill="#16a34a" color="#16a34a"/> {t.lang==='EN'?'Our community':t.lang==='PT'?'Nossa comunidade':t.lang==='FR'?'Notre communauté':'Nuestra comunidad'}
+          <div className={`tc2-label${visible?' in':''}`} style={{display:'inline-flex',alignItems:'center',gap:8,padding:'5px 14px',borderRadius:99,background:'#eff6ff',border:'1px solid #bfdbfe',fontSize:11,fontWeight:700,color:'#2563eb',letterSpacing:'.07em',textTransform:'uppercase',marginBottom:18,fontFamily:"'Poppins',sans-serif"}}>
+            <Heart size={10} fill="#2563eb" color="#2563eb"/> {t.lang==='EN'?'Our community':t.lang==='PT'?'Nossa comunidade':t.lang==='FR'?'Notre communauté':'Nuestra comunidad'}
           </div>
           <h2 className={`tc2-title${visible?' in':''}`}
             style={{fontFamily:"'Poppins',sans-serif",fontSize:'clamp(28px,4vw,48px)',fontWeight:800,color:'#111',letterSpacing:'-.03em',lineHeight:1.1,marginBottom:14}}>
@@ -703,7 +751,7 @@ function TrustedCentersSection({ t }: { t: typeof T['es'] }) {
           <div className="tc2-logo-ring">
             {/* Spinning dashed ring */}
             <svg className="tc2-logo-ring-svg" width="196" height="196" viewBox="0 0 196 196">
-              <circle cx="98" cy="98" r="90" fill="none" stroke="#1D6F42" strokeWidth="1.5" strokeDasharray="6 10" strokeLinecap="round"/>
+              <circle cx="98" cy="98" r="90" fill="none" stroke="#1D4ED8" strokeWidth="1.5" strokeDasharray="6 10" strokeLinecap="round"/>
             </svg>
             <div className="tc2-logo-img">
               <img src="/images/aprendo.png" alt="Jugando Aprendo"/>
@@ -771,7 +819,7 @@ function CompareSection({ t }: { t: typeof T['es'] }) {
   }, [])
 
   return (
-    <section className="compare-section" ref={ref}>
+    <section className="compare-section" ref={ref} style={{background:'linear-gradient(180deg,#f0f4ff 0%,#fff 100%)'}}>
       <style>{`
         @keyframes cmpFadeIn { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
         .cmp-title-anim { opacity:0; }
@@ -779,21 +827,43 @@ function CompareSection({ t }: { t: typeof T['es'] }) {
         .cmp-table-anim { opacity:0; }
         .cmp-table-anim.in { animation:cmpFadeIn .7s .2s cubic-bezier(0.22,1,0.36,1) both; }
         .cmp-row-hover { transition:background .15s; }
-        .cmp-row-hover:hover td { background:#f0fdf4 !important; }
-        .cmp-row-hover:hover td:last-child { background:#e6f9ee !important; }
+        .cmp-row-hover:hover td { background:#eff6ff !important; }
+        .cmp-row-hover:hover td:last-child { background:#dbeafe !important; }
         .cmp-cell-anim { opacity:0; transform:scale(.85); }
         .cmp-cell-anim.in { opacity:1; transform:scale(1); transition:all .35s cubic-bezier(0.34,1.56,0.64,1); }
+        .cmp-vanty-th { background:linear-gradient(135deg,#1D4ED8,#2563eb); color:#fff !important; border-radius:8px 8px 0 0; }
+        .cmp-vanty-td { background:#eff6ff; font-weight:800 !important; color:#1D4ED8 !important; }
+        .cmp-win-bar { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:28px auto 0; max-width:680px; }
+        .cmp-win-chip { display:flex; align-items:center; gap:6px; background:#eff6ff; border:1.5px solid #bfdbfe; border-radius:99px; padding:7px 16px; font-size:12.5px; font-weight:700; color:#1D4ED8; font-family:'Poppins',sans-serif; animation:cmpFadeIn .5s both; }
       `}</style>
       <div className="section-inner">
-        <div className={`cmp-title-anim${visible?' in':''}`} style={{textAlign:'center',maxWidth:560,margin:'0 auto'}}>
+        <div className={`cmp-title-anim${visible?' in':''}`} style={{textAlign:'center',maxWidth:620,margin:'0 auto'}}>
           <div className="section-label"><Star size={11}/> {t.compareLabel}</div>
           <h2 className="section-h2">{t.compareTitle}</h2>
           <p className="section-sub" style={{marginTop:10}}>{t.compareSub}</p>
         </div>
-        <div className={`cmp-wrap cmp-table-anim${visible?' in':''}`}>
+
+        {/* Visual win chips */}
+        <div className="cmp-win-bar">
+          {(t.lang==='EN'?['✅ Native clinical AI','✅ Real multi-role','✅ Family portal','✅ Fair pricing in S/','✅ 100% in Spanish','✅ Setup included']:
+            t.lang==='PT'?['✅ IA clínica nativa','✅ Multi-papel real','✅ Portal familiar','✅ Preço justo em S/','✅ 100% em espanhol','✅ Setup incluído']:
+            t.lang==='FR'?['✅ IA clinique native','✅ Multi-rôles réel','✅ Portail familial','✅ Prix juste en S/','✅ 100% en espagnol','✅ Setup inclus']:
+            ['✅ IA clínica nativa','✅ Multi-rol real','✅ Portal familiar','✅ Precio justo en S/','✅ 100% en español','✅ Setup incluido']
+          ).map((chip,i)=>(
+            <div key={i} className="cmp-win-chip" style={visible?{animationDelay:`${0.1+i*0.08}s`}:{}}>{chip}</div>
+          ))}
+        </div>
+
+        <div className={`cmp-wrap cmp-table-anim${visible?' in':''}`} style={{marginTop:32}}>
           <table className="cmp-table">
             <thead>
-              <tr>{t.compareHeaders.map((h,i)=><th key={i} className={i===1||i===2?'hide-xs':''}>{h}</th>)}</tr>
+              <tr>
+                {t.compareHeaders.map((h,i)=>(
+                  <th key={i} className={`${i===1||i===2?'hide-xs':''} ${i===3?'cmp-vanty-th':''}`}>
+                    {i===3 ? '⭐ Vanty' : h}
+                  </th>
+                ))}
+              </tr>
             </thead>
             <tbody>
               {t.compareRows.map((row,i)=>(
@@ -803,7 +873,7 @@ function CompareSection({ t }: { t: typeof T['es'] }) {
                   <td style={{fontWeight:hovRow===i?700:600,transition:'font-weight .15s'}}>{row[0]}</td>
                   <td className={`hide-xs ${row[1].startsWith('❌')?'t-no':row[1].startsWith('⚠️')?'t-par':'t-yes'}`}>{row[1]}</td>
                   <td className={`hide-xs ${row[2].startsWith('❌')?'t-no':row[2].startsWith('⚠️')?'t-par':'t-yes'}`}>{row[2]}</td>
-                  <td className={`t-yes cmp-cell-anim${visible?' in':''}`}
+                  <td className={`t-yes cmp-cell-anim cmp-vanty-td${visible?' in':''}`}
                     style={visible?{transitionDelay:`${0.3+i*0.06}s`}:{}}>{row[3]}</td>
                 </tr>
               ))}
@@ -859,8 +929,8 @@ function WhySection({ t }: { t: typeof T['es'] }) {
           opacity: 1;
         }
         .why-card-animated:hover {
-          border-color:#d1fae5 !important;
-          box-shadow:0 12px 40px rgba(29,111,66,.12) !important;
+          border-color:#dbeafe !important;
+          box-shadow:0 12px 40px rgba(29,78,216,.12) !important;
           transform:translateY(-5px) scale(1.01) !important;
         }
         .why-icon-wrap {
@@ -870,8 +940,8 @@ function WhySection({ t }: { t: typeof T['es'] }) {
           transition: background .3s, border-color .3s;
         }
         .why-card-animated:hover .why-icon-wrap {
-          background:#f0fdf4;
-          border-color:#bbf7d0;
+          background:#eff6ff;
+          border-color:#bfdbfe;
         }
         .why-card-animated:hover .why-icon-inner {
           animation: iconBounce .5s cubic-bezier(0.34,1.56,0.64,1) both;
@@ -968,7 +1038,7 @@ function CtaSection({ t, WA_URL, EMAIL }: { t: typeof T['es']; WA_URL: string; E
         .cta-btn-white, .cta-btn-ghost { transition: all .2s cubic-bezier(0.34,1.56,0.64,1); }
         .cta-particle { position:absolute; border-radius:50%; background:#fff; animation: floatUp linear infinite; pointer-events:none; }
         @keyframes glowPulse { 0%,100%{opacity:.08} 50%{opacity:.18} }
-        .cta-glow { position:absolute; border-radius:50%; background:radial-gradient(circle, #4ade80 0%, transparent 70%); pointer-events:none; animation:glowPulse 4s ease-in-out infinite; }
+        .cta-glow { position:absolute; border-radius:50%; background:radial-gradient(circle, #60a5fa 0%, transparent 70%); pointer-events:none; animation:glowPulse 4s ease-in-out infinite; }
       `}</style>
 
       {/* Dot pattern */}
@@ -1028,10 +1098,10 @@ function ShowcaseAnimated({ t }: { t: typeof T['es'] }) {
   const typeRef = useRef<any>(null)
 
   const metrics = [
-    {name:'Comunicación funcional', pct:82, color:'#16A34A', done:true},
+    {name:'Comunicación funcional', pct:82, color:'#2563EB', done:true},
     {name:'Habilidades sociales',   pct:67, color:'#2563EB', done:false},
     {name:'Autorregulación',        pct:54, color:'#7C3AED', done:false},
-    {name:'Juego simbólico',        pct:91, color:'#16A34A', done:true},
+    {name:'Juego simbólico',        pct:91, color:'#2563EB', done:true},
   ]
 
   const navItems = ['Inicio','Pacientes','Reportes','ARIA']
@@ -1194,7 +1264,7 @@ function ShowcaseAnimated({ t }: { t: typeof T['es'] }) {
                       <span style={{fontSize:13, color:'#374151'}}>
                         {m.name}{' '}
                         {m.done && barWidths[i] >= m.pct && (
-                          <span style={{color:'#16A34A', fontWeight:700, animation:'fadeInUp .3s both'}}>✓ META</span>
+                          <span style={{color:'#2563EB', fontWeight:700, animation:'fadeInUp .3s both'}}>✓ META</span>
                         )}
                       </span>
                       <span style={{fontSize:13, fontWeight:700, color:m.color, transition:'color .3s'}}>
@@ -1342,7 +1412,7 @@ export default function VantyLanding() {
         .lang-dropdown { position:absolute; top:calc(100% + 8px); right:0; background:#fff; border:1.5px solid #e5e7eb; border-radius:12px; box-shadow:0 8px 32px rgba(0,0,0,.12); padding:6px; min-width:160px; z-index:500; }
         .lang-option { display:flex; align-items:center; gap:10px; padding:10px 14px; border-radius:8px; font-size:14px; font-weight:500; color:#374151; cursor:pointer; transition:background .15s; }
         .lang-option:hover { background:#f3f4f6; }
-        .lang-option.active { background:#f0fdf4; color:#166534; font-weight:700; }
+        .lang-option.active { background:#eff6ff; color:#1e40af; font-weight:700; }
 
         .mobile-menu { position:fixed; top:68px; left:0; right:0; z-index:299; background:#fff; border-bottom:1px solid #e5e7eb; padding:16px clamp(16px,4vw,48px) 24px; }
         .mobile-menu a { display:flex; align-items:center; justify-content:space-between; padding:14px 0; color:#374151; text-decoration:none; font-size:15px; font-weight:500; border-bottom:1px solid #f3f4f6; }
@@ -1353,7 +1423,7 @@ export default function VantyLanding() {
         .hero-overlay { position:absolute; inset:0; background:linear-gradient(to bottom,rgba(0,0,0,.5) 0%,rgba(0,0,0,.3) 45%,rgba(0,0,0,.6) 100%); }
         .hero-body { position:relative; z-index:10; flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:80px clamp(20px,6vw,80px) 56px; }
         .hero-pretitle { display:inline-flex; align-items:center; gap:8px; padding:6px 16px; border-radius:99px; border:1.5px solid rgba(255,255,255,.28); background:rgba(255,255,255,.12); backdrop-filter:blur(10px); font-size:12px; font-weight:700; color:#fff; letter-spacing:.06em; text-transform:uppercase; margin-bottom:24px; }
-        .hero-pretitle-dot { width:7px; height:7px; border-radius:50%; background:#4ade80; animation:pulse 2s infinite; flex-shrink:0; }
+        .hero-pretitle-dot { width:7px; height:7px; border-radius:50%; background:#60a5fa; animation:pulse 2s infinite; flex-shrink:0; }
         .hero-h1 { font-family:'Poppins',sans-serif; font-size:clamp(38px,6vw,78px); font-weight:800; color:#fff; line-height:1.06; letter-spacing:-.03em; white-space:pre-line; margin-bottom:22px; text-shadow:0 2px 24px rgba(0,0,0,.35); }
         .hero-sub { font-size:17px; color:rgba(255,255,255,.78); line-height:1.65; margin-bottom:16px; max-width:520px; }
         .hero-tabbar { position:relative; z-index:10; background:rgba(0,0,0,.38); backdrop-filter:blur(16px); border-top:1px solid rgba(255,255,255,.1); display:flex; align-items:center; padding:0 clamp(20px,5vw,60px); overflow-x:auto; }
@@ -1367,10 +1437,10 @@ export default function VantyLanding() {
 
         .trustbar { display:flex; align-items:center; justify-content:center; gap:32px; flex-wrap:wrap; padding:18px clamp(16px,4vw,48px); font-size:13px; font-weight:600; color:#374151; border-bottom:1px solid #e5e7eb; }
         .trustbar-item { display:flex; align-items:center; gap:8px; }
-        .trustbar-item svg { color:#1D6F42; }
+        .trustbar-item svg { color:#1D4ED8; }
 
         .section-inner { max-width:1280px; margin:0 auto; }
-        .section-label { display:inline-flex; align-items:center; gap:6px; padding:5px 14px; border-radius:99px; background:#f0fdf4; border:1px solid #bbf7d0; font-size:11.5px; font-weight:700; color:#166534; letter-spacing:.06em; text-transform:uppercase; margin-bottom:16px; }
+        .section-label { display:inline-flex; align-items:center; gap:6px; padding:5px 14px; border-radius:99px; background:#eff6ff; border:1px solid #bfdbfe; font-size:11.5px; font-weight:700; color:#1e40af; letter-spacing:.06em; text-transform:uppercase; margin-bottom:16px; }
         .section-h2 { font-family:'Poppins',sans-serif; font-size:clamp(28px,4vw,46px); font-weight:800; color:#111; letter-spacing:-.03em; line-height:1.1; margin-bottom:12px; }
         .section-sub { font-size:16px; color:#6b7280; line-height:1.7; }
 
@@ -1402,7 +1472,7 @@ export default function VantyLanding() {
         @media(max-width:800px){.showcase-screen-body{grid-template-columns:1fr}}
         .sc-main { padding:28px; }
         .sc-nav { display:flex; align-items:center; gap:20px; padding-bottom:20px; border-bottom:1px solid #f3f4f6; margin-bottom:20px; }
-        .sc-nav-logo { width:32px; height:32px; border-radius:7px; background:#1D6F42; display:flex; align-items:center; justify-content:center; }
+        .sc-nav-logo { width:32px; height:32px; border-radius:7px; background:#1D4ED8; display:flex; align-items:center; justify-content:center; }
         .sc-nav-link { font-size:13px; color:#6b7280; font-weight:500; }
         .sc-nav-link.active { color:#111; font-weight:700; }
         .sc-dash-title { font-family:'Poppins',sans-serif; font-size:18px; font-weight:800; color:#111; margin-bottom:4px; }
@@ -1419,7 +1489,7 @@ export default function VantyLanding() {
         .sc-stab:not(.active) { background:#f3f4f6; color:#6b7280; }
         .sc-label { font-size:11px; font-weight:700; color:#9ca3af; text-transform:uppercase; letter-spacing:.05em; }
         .sc-input { background:#fff; border:1.5px solid #e5e7eb; border-radius:8px; padding:10px 12px; font-size:13px; color:#111; }
-        .sc-answer { background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:12px; font-size:13px; color:#374151; line-height:1.6; }
+        .sc-answer { background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:12px; font-size:13px; color:#374151; line-height:1.6; }
         .sc-aria-chip { background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:10px 12px; font-size:12px; color:#1d4ed8; line-height:1.6; }
         .showcase-cols { display:grid; grid-template-columns:repeat(3,1fr); }
         @media(max-width:680px){.showcase-cols{grid-template-columns:1fr}}
@@ -1435,7 +1505,7 @@ export default function VantyLanding() {
         @media(max-width:860px){.why-grid{grid-template-columns:repeat(2,1fr)}}
         @media(max-width:560px){.why-grid{grid-template-columns:1fr}}
         .why-card { background:#f9fafb; border-radius:20px; padding:32px; display:flex; flex-direction:column; justify-content:space-between; min-height:240px; border:1px solid #f3f4f6; transition:all .2s; }
-        .why-card:hover { border-color:#d1fae5; box-shadow:0 8px 32px rgba(29,111,66,.08); transform:translateY(-3px); }
+        .why-card:hover { border-color:#dbeafe; box-shadow:0 8px 32px rgba(29,78,216,.08); transform:translateY(-3px); }
         .why-card-title { font-family:'Poppins',sans-serif; font-size:20px; font-weight:800; color:#111; margin-bottom:12px; line-height:1.2; }
         .why-card-desc { font-size:14px; color:#6b7280; line-height:1.7; }
         .why-card-visual { height:80px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:40px; background:#fff; border:1px solid #f3f4f6; margin-top:24px; }
@@ -1445,18 +1515,18 @@ export default function VantyLanding() {
         .testimonial-img-wrap { position:relative; background:#e0f2f1; overflow:hidden; min-height:420px; height:100%; }
         .testimonial-name { position:absolute; bottom:24px; left:24px; font-size:13px; font-weight:700; color:#111; background:rgba(255,255,255,.9); padding:6px 12px; border-radius:6px; z-index:2; }
         .testimonial-role { font-size:12px; font-weight:500; color:#374151; }
-        .testimonial-body { background:#f0fdf4; padding:60px 48px; display:flex; flex-direction:column; justify-content:center; gap:24px; }
+        .testimonial-body { background:#eff6ff; padding:60px 48px; display:flex; flex-direction:column; justify-content:center; gap:24px; }
         @media(max-width:760px){.testimonial-body{padding:40px 24px}}
         .testimonial-brand { display:flex; align-items:center; gap:8px; font-family:'Poppins',sans-serif; font-size:15px; font-weight:700; color:#111; }
-        .testimonial-brand-dot { width:8px; height:8px; border-radius:50%; background:#1D6F42; }
+        .testimonial-brand-dot { width:8px; height:8px; border-radius:50%; background:#1D4ED8; }
         .testimonial-quote { font-family:'Poppins',sans-serif; font-size:clamp(20px,3vw,28px); font-weight:800; color:#111; line-height:1.25; letter-spacing:-.02em; }
         .testimonial-quote::before { content:'"'; }
         .testimonial-quote::after { content:'"'; }
         .testimonial-products-label { font-size:12px; font-weight:700; color:#9ca3af; text-transform:uppercase; letter-spacing:.06em; margin-bottom:10px; }
         .testimonial-product-item { display:flex; align-items:center; gap:10px; font-size:14px; color:#374151; font-weight:500; margin-bottom:6px; }
-        .testimonial-product-item svg { color:#1D6F42; flex-shrink:0; }
+        .testimonial-product-item svg { color:#1D4ED8; flex-shrink:0; }
 
-        .marquee-section { background:#0d9488; padding:18px 0; overflow:hidden; border-top:1px solid #0f766e; border-bottom:1px solid #0f766e; }
+        .marquee-section { background:#1D4ED8; padding:18px 0; overflow:hidden; border-top:1px solid #1e40af; border-bottom:1px solid #1e40af; }
         .marquee-track { display:flex; white-space:nowrap; animation:marquee 28s linear infinite; width:max-content; }
         .marquee-item { padding:0 32px; font-family:'Poppins',sans-serif; font-size:14px; font-weight:700; color:#fff; letter-spacing:.04em; text-transform:uppercase; display:flex; align-items:center; gap:12px; }
         .marquee-dot { width:6px; height:6px; border-radius:50%; background:rgba(255,255,255,.5); flex-shrink:0; }
@@ -1465,12 +1535,12 @@ export default function VantyLanding() {
         .cmp-wrap { overflow-x:auto; margin-top:40px; border-radius:16px; border:1px solid #e5e7eb; overflow:hidden; }
         .cmp-table { width:100%; border-collapse:collapse; min-width:580px; }
         .cmp-table th { padding:16px 24px; text-align:left; font-size:13px; font-weight:700; color:#6b7280; background:#f9fafb; border-bottom:2px solid #e5e7eb; font-family:'Poppins',sans-serif; }
-        .cmp-table th:last-child { background:#f0fdf4; color:#166534; }
+        .cmp-table th:last-child { background:#eff6ff; color:#1e40af; }
         .cmp-table td { padding:15px 24px; font-size:14px; border-bottom:1px solid #f3f4f6; background:#fff; }
         .cmp-table td:first-child { font-weight:600; color:#111; }
         .cmp-table td:last-child { background:#f9fffe; font-weight:700; }
         .cmp-table tr:last-child td { border-bottom:none; }
-        .t-yes{color:#16a34a} .t-no{color:#dc2626} .t-par{color:#d97706}
+        .t-yes{color:#2563eb} .t-no{color:#dc2626} .t-par{color:#d97706}
         @media(max-width:600px){.hide-xs{display:none}}
 
         .help-section { display:grid; grid-template-columns:1fr 1fr; min-height:380px; align-items:stretch; background:#f0fdfa; overflow:hidden; }
@@ -1480,7 +1550,7 @@ export default function VantyLanding() {
         .help-role { font-size:11px; color:#374151; font-weight:500; }
         .help-body { padding:60px 48px; display:flex; flex-direction:column; justify-content:center; gap:16px; }
         @media(max-width:720px){.help-body{padding:40px 24px}}
-        .help-brand { font-family:'Poppins',sans-serif; font-size:14px; font-weight:700; color:#0d9488; display:flex; align-items:center; gap:6px; }
+        .help-brand { font-family:'Poppins',sans-serif; font-size:14px; font-weight:700; color:#1D4ED8; display:flex; align-items:center; gap:6px; }
         .help-h2 { font-family:'Poppins',sans-serif; font-size:clamp(24px,3.5vw,40px); font-weight:800; color:#111; line-height:1.15; letter-spacing:-.02em; white-space:pre-line; }
         .help-desc { font-size:15px; color:#374151; line-height:1.7; }
 
@@ -1488,9 +1558,9 @@ export default function VantyLanding() {
         .pricing-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:860px; margin:48px auto 0; }
         @media(max-width:620px){.pricing-grid{grid-template-columns:1fr}}
         .p-card { background:#fff; border:2px solid #e5e7eb; border-radius:20px; padding:36px; position:relative; overflow:hidden; transition:all .2s; }
-        .p-card:hover { border-color:#d1fae5; box-shadow:0 12px 40px rgba(29,111,66,.1); }
-        .p-card.featured { border-color:#1D6F42; box-shadow:0 8px 40px rgba(29,111,66,.15); }
-        .p-badge { position:absolute; top:0; right:28px; background:#1D6F42; color:#fff; font-size:11px; font-weight:700; padding:5px 14px; border-radius:0 0 10px 10px; letter-spacing:.04em; text-transform:uppercase; font-family:'Poppins',sans-serif; }
+        .p-card:hover { border-color:#dbeafe; box-shadow:0 12px 40px rgba(29,78,216,.1); }
+        .p-card.featured { border-color:#1D4ED8; box-shadow:0 8px 40px rgba(29,78,216,.15); }
+        .p-badge { position:absolute; top:0; right:28px; background:#1D4ED8; color:#fff; font-size:11px; font-weight:700; padding:5px 14px; border-radius:0 0 10px 10px; letter-spacing:.04em; text-transform:uppercase; font-family:'Poppins',sans-serif; }
         .p-label { font-size:12px; font-weight:700; color:#9ca3af; text-transform:uppercase; letter-spacing:.07em; margin-bottom:16px; }
         .p-amt { display:flex; align-items:baseline; gap:4px; margin-bottom:16px; }
         .p-cur { font-size:22px; font-weight:800; color:#111; font-family:'Poppins',sans-serif; }
@@ -1503,14 +1573,14 @@ export default function VantyLanding() {
         .faq-section { padding:80px clamp(20px,4vw,48px); background:#f9fafb; }
         .faq-list { max-width:760px; margin:40px auto 0; }
         .faq-item { background:#fff; border:1.5px solid #e5e7eb; border-radius:14px; margin-bottom:10px; overflow:hidden; cursor:pointer; transition:border-color .2s; }
-        .faq-item.open { border-color:#1D6F42; }
+        .faq-item.open { border-color:#1D4ED8; }
         .faq-head { display:flex; align-items:center; justify-content:space-between; padding:20px 24px; gap:12px; }
         .faq-q { font-family:'Poppins',sans-serif; font-size:15px; font-weight:700; color:#111; }
         .faq-chev { transition:transform .25s; color:#9ca3af; flex-shrink:0; }
         .faq-item.open .faq-chev { transform:rotate(180deg); }
         .faq-body { padding:0 24px 20px; font-size:14px; color:#6b7280; line-height:1.75; }
 
-        .cta-section { padding:96px clamp(20px,6vw,80px); text-align:center; background:linear-gradient(135deg,#052e16 0%,#1D6F42 50%,#052e16 100%); position:relative; overflow:hidden; }
+        .cta-section { padding:96px clamp(20px,6vw,80px); text-align:center; background:linear-gradient(135deg,#0c1a4a 0%,#1D4ED8 50%,#0c1a4a 100%); position:relative; overflow:hidden; }
         .cta-dots { position:absolute; inset:0; opacity:.05; background-image:radial-gradient(#fff 1px,transparent 1px); background-size:24px 24px; }
         .cta-inner { position:relative; z-index:2; max-width:680px; margin:0 auto; }
         .cta-h2 { font-family:'Poppins',sans-serif; font-size:clamp(30px,5vw,52px); font-weight:800; color:#fff; margin-bottom:16px; letter-spacing:-.03em; white-space:pre-line; }
@@ -1556,9 +1626,9 @@ export default function VantyLanding() {
           </ul>
           <div className="nav-right">
             <a href={WA_URL} className="nav-login" target="_blank" rel="noopener noreferrer">{t.nav.contact}</a>
-            <a href="/login" style={{display:'inline-flex',alignItems:'center',gap:'6px',padding:'9px 18px',background:'#1D6F42',color:'#fff',borderRadius:'8px',fontSize:'14px',fontWeight:700,textDecoration:'none',fontFamily:'Poppins,sans-serif',transition:'background .2s'}}
-               onMouseOver={e=>(e.currentTarget.style.background='#166534')}
-               onMouseOut={e=>(e.currentTarget.style.background='#1D6F42')}>
+            <a href="/login" style={{display:'inline-flex',alignItems:'center',gap:'6px',padding:'9px 18px',background:'#1D4ED8',color:'#fff',borderRadius:'8px',fontSize:'14px',fontWeight:700,textDecoration:'none',fontFamily:'Poppins,sans-serif',transition:'background .2s'}}
+               onMouseOver={e=>(e.currentTarget.style.background='#1e40af')}
+               onMouseOut={e=>(e.currentTarget.style.background='#1D4ED8')}>
               {t.lang==='EN'?'Log in':t.lang==='PT'?'Entrar':t.lang==='FR'?'Connexion':'Iniciar sesión'}
             </a>
             <div className="lang-wrap">
@@ -1737,7 +1807,7 @@ export default function VantyLanding() {
                   </ul>
                 </div>
               </div>
-              <div className="pri-small" style={{background:'#f0fdf4'}}>
+              <div className="pri-small" style={{background:'#eff6ff'}}>
                 <div>
                   <div style={{fontSize:30,marginBottom:12}}>📋</div>
                   <div className="pri-title" style={{fontSize:18}}>{lang==='es'?'Dashboard del analista':lang==='en'?'Analyst dashboard':lang==='pt'?'Dashboard do analista':'Tableau de bord analyste'}</div>
@@ -1985,10 +2055,10 @@ export default function VantyLanding() {
           ))}
           <div>
             <h4> </h4>
-            <div style={{padding:'14px 16px',background:'rgba(29,111,66,.12)',border:'1px solid rgba(29,111,66,.2)',borderRadius:12}}>
-              <p style={{fontSize:11,color:'#4ade80',fontWeight:700,marginBottom:4,fontFamily:'Poppins,sans-serif'}}>{t.footerAllied}</p>
+            <div style={{padding:'14px 16px',background:'rgba(29,78,216,.12)',border:'1px solid rgba(29,78,216,.2)',borderRadius:12}}>
+              <p style={{fontSize:11,color:'#60a5fa',fontWeight:700,marginBottom:4,fontFamily:'Poppins,sans-serif'}}>{t.footerAllied}</p>
               <p style={{fontSize:13,color:'#6b7280',marginBottom:8}}>{t.footerAlliedName}</p>
-              <a href="#aliados" style={{fontSize:11,color:'#4ade80',fontWeight:700,textDecoration:'none',display:'flex',alignItems:'center',gap:4}}>
+              <a href="#aliados" style={{fontSize:11,color:'#60a5fa',fontWeight:700,textDecoration:'none',display:'flex',alignItems:'center',gap:4}}>
                 {t.lang==='EN'?'See our network →':t.lang==='PT'?'Ver nossa rede →':t.lang==='FR'?'Voir notre réseau →':'Ver nuestra red →'}
               </a>
             </div>
