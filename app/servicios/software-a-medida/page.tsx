@@ -48,7 +48,7 @@ export default function SoftwareAMedidaPage() {
             </div>
           </div>
           <Reveal delay={0.1}>
-            <Figure src="/images/servicios/software-a-medida.png" alt="Software a medida de Vanty" caption="Plataforma a medida (mockup)" badge={<><Code2 size={15} color="#0f766e" /> A tu medida</>} />
+            <Figure src="/images/servicios/software-a-medida.svg" alt="Software a medida de Vanty" caption="Plataforma a medida (mockup)" badge={<><Code2 size={15} color="#0f766e" /> A tu medida</>} />
           </Reveal>
         </div>
       </header>

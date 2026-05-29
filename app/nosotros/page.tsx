@@ -68,7 +68,7 @@ export default function NosotrosPage() {
             <a href="/vanty-aba" className="vt-btn vt-btn-primary" style={{ marginTop: 24 }}>Conocer Vanty ABA <ArrowRight size={16} /></a>
           </Reveal>
           <Reveal delay={0.1}>
-            <Figure src="/images/nosotros.png" alt="El equipo de Vanty" caption="Foto del equipo / oficina (opcional)" light badge={<><HandHeart size={15} color="#1D4ED8" /> Primer aliado: Jugando Aprendo</>} />
+            <Figure src="/images/nosotros.svg" alt="El equipo de Vanty" caption="Foto del equipo / oficina (opcional)" light badge={<><HandHeart size={15} color="#1D4ED8" /> Primer aliado: Jugando Aprendo</>} />
           </Reveal>
         </div>
       </section>

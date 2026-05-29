@@ -67,7 +67,7 @@ export default function Home() {
           </div>
           <Reveal delay={0.1}>
             <Figure
-              src="/images/hero-home.png"
+              src="/images/hero-home.svg"
               alt="Productos y plataformas creados por Vanty"
               caption="Captura de producto Vanty (1200×900)"
               badge={<><Sparkles size={15} color="#1D4ED8" /> Potenciado con IA</>}
@@ -183,7 +183,7 @@ export default function Home() {
               <a href="/vanty-aba" className="vt-btn vt-btn-primary" style={{ marginTop: 24 }}>Explorar Vanty ABA <ArrowRight size={16} /></a>
             </Reveal>
             <Reveal className="vt-feature-media" delay={0.1}>
-              <Figure src="/images/vanty-aba/dashboard.png" alt="Dashboard de Vanty ABA" caption="Dashboard de Vanty ABA (1200×900)" light badge={<><Bot size={15} color="#1D4ED8" /> ARIA · IA clínica</>} />
+              <Figure src="/images/vanty-aba/dashboard.svg" alt="Dashboard de Vanty ABA" caption="Dashboard de Vanty ABA (1200×900)" light badge={<><Bot size={15} color="#1D4ED8" /> ARIA · IA clínica</>} />
             </Reveal>
           </div>
 
@@ -198,7 +198,7 @@ export default function Home() {
               <a href="/servicios/software-a-medida" className="vt-btn vt-btn-primary" style={{ marginTop: 24 }}>Ver software a medida <ArrowRight size={16} /></a>
             </Reveal>
             <Reveal className="vt-feature-media" delay={0.1}>
-              <Figure src="/images/servicios/software-a-medida.png" alt="Software a medida de Vanty" caption="Mockup de plataforma a medida (1200×900)" light badge={<><Code2 size={15} color="#0f766e" /> A tu medida</>} />
+              <Figure src="/images/servicios/software-a-medida.svg" alt="Software a medida de Vanty" caption="Mockup de plataforma a medida (1200×900)" light badge={<><Code2 size={15} color="#0f766e" /> A tu medida</>} />
             </Reveal>
           </div>
         </div>

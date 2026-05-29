@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfdf9"/>
+      <stop offset="1" stop-color="#e3effb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sbg)"/>
+  <circle cx="980" cy="200" r="200" fill="#99f6e4" opacity="0.5"/>
+  <circle cx="240" cy="720" r="170" fill="#bfdbfe" opacity="0.5"/>
+
+  <!-- browser window -->
+  <rect x="150" y="150" width="720" height="520" rx="18" fill="#ffffff" stroke="#e3e8f2" stroke-width="2"/>
+  <rect x="150" y="150" width="720" height="50" rx="18" fill="#0c1838"/>
+  <rect x="150" y="178" width="720" height="22" fill="#0c1838"/>
+  <circle cx="182" cy="175" r="6" fill="#ff5f57"/><circle cx="204" cy="175" r="6" fill="#febc2e"/><circle cx="226" cy="175" r="6" fill="#28c840"/>
+  <rect x="380" y="163" width="260" height="24" rx="12" fill="#1b2a52"/><text x="510" y="180" fill="#8ea3d6" font-size="11" text-anchor="middle">tu-plataforma.com</text>
+
+  <!-- web content -->
+  <rect x="178" y="228" width="664" height="90" rx="12" fill="#0f766e"/>
+  <text x="206" y="268" fill="#ffffff" font-size="18" font-weight="800">Tu plataforma, a tu medida</text>
+  <text x="206" y="294" fill="#a7f3d0" font-size="12">Diseñada para tu operación real</text>
+  <rect x="700" y="252" width="118" height="40" rx="10" fill="#ffffff"/><text x="759" y="277" fill="#0f766e" font-size="12" font-weight="700" text-anchor="middle">Empezar</text>
+
+  <rect x="178" y="338" width="206" height="120" rx="12" fill="#f6f8fc" stroke="#eef1f6"/>
+  <rect x="406" y="338" width="206" height="120" rx="12" fill="#f6f8fc" stroke="#eef1f6"/>
+  <rect x="634" y="338" width="208" height="120" rx="12" fill="#f6f8fc" stroke="#eef1f6"/>
+  <circle cx="212" cy="372" r="14" fill="#dbe6fb"/><circle cx="440" cy="372" r="14" fill="#ccfbf1"/><circle cx="668" cy="372" r="14" fill="#ede9fe"/>
+  <rect x="196" y="402" width="150" height="9" rx="4" fill="#e6ebf4"/><rect x="196" y="420" width="110" height="9" rx="4" fill="#eef1f6"/>
+  <rect x="424" y="402" width="150" height="9" rx="4" fill="#e6ebf4"/><rect x="424" y="420" width="110" height="9" rx="4" fill="#eef1f6"/>
+  <rect x="652" y="402" width="150" height="9" rx="4" fill="#e6ebf4"/><rect x="652" y="420" width="110" height="9" rx="4" fill="#eef1f6"/>
+
+  <rect x="178" y="478" width="500" height="160" rx="12" fill="#ffffff" stroke="#eef1f6"/>
+  <text x="200" y="512" fill="#0b1020" font-size="13" font-weight="700">Tabla de datos</text>
+  <g stroke="#eef1f6" stroke-width="1.5"><line x1="200" y1="528" x2="656" y2="528"/><line x1="200" y1="560" x2="656" y2="560"/><line x1="200" y1="592" x2="656" y2="592"/></g>
+  <rect x="200" y="540" width="120" height="10" rx="5" fill="#e6ebf4"/><rect x="360" y="540" width="80" height="10" rx="5" fill="#e6ebf4"/><rect x="520" y="540" width="100" height="10" rx="5" fill="#dcfce7"/>
+  <rect x="200" y="572" width="140" height="10" rx="5" fill="#eef1f6"/><rect x="360" y="572" width="70" height="10" rx="5" fill="#eef1f6"/><rect x="520" y="572" width="100" height="10" rx="5" fill="#dbe6fb"/>
+  <rect x="200" y="604" width="110" height="10" rx="5" fill="#eef1f6"/><rect x="360" y="604" width="90" height="10" rx="5" fill="#eef1f6"/><rect x="520" y="604" width="100" height="10" rx="5" fill="#fde68a"/>
+  <rect x="700" y="478" width="142" height="160" rx="12" fill="#0c1838"/>
+  <text x="722" y="512" fill="#aab6d4" font-size="11">Automatización</text>
+  <circle cx="771" cy="568" r="40" fill="none" stroke="#1b2a52" stroke-width="12"/>
+  <path d="M771 528 a40 40 0 0 1 34 60" fill="none" stroke="#60a5fa" stroke-width="12" stroke-linecap="round"/>
+  <text x="771" y="574" fill="#fff" font-size="16" font-weight="800" text-anchor="middle">78%</text>
+
+  <!-- phone overlap -->
+  <rect x="800" y="430" width="220" height="380" rx="32" fill="#0c1838"/>
+  <rect x="814" y="444" width="192" height="352" rx="22" fill="#ffffff"/>
+  <rect x="814" y="444" width="192" height="70" rx="22" fill="#0f766e"/>
+  <text x="838" y="486" fill="#fff" font-size="13" font-weight="700">App móvil</text>
+  <rect x="836" y="540" width="148" height="48" rx="12" fill="#f1f4fa"/>
+  <rect x="836" y="600" width="148" height="48" rx="12" fill="#f1f4fa"/>
+  <rect x="836" y="660" width="148" height="48" rx="12" fill="#ecfdf5"/>
+  <rect x="836" y="724" width="148" height="44" rx="12" fill="#0f766e"/><text x="910" y="751" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">Enviar</text>
+
+  <!-- code accent -->
+  <text x="150" y="730" fill="#0f766e" font-size="22" font-weight="800" font-family="monospace">&lt;/&gt;</text>
+  <text x="196" y="730" fill="#0b1020" font-size="20" font-weight="800">Del prototipo a producción</text>
+  <text x="196" y="758" fill="#5b647a" font-size="14">Web, móvil, dashboards e integraciones — con IA donde suma.</text>
+</svg>

@@ -98,7 +98,7 @@ export default function VantyAbaPage() {
             </p>
           </div>
           <Reveal delay={0.1}>
-            <Figure src="/images/vanty-aba/dashboard.png" alt="Dashboard de Vanty ABA" caption="Dashboard de Vanty ABA (1200×900)" badge={<><Bot size={15} color="#1D4ED8" /> ARIA · IA clínica</>} />
+            <Figure src="/images/vanty-aba/dashboard.svg" alt="Dashboard de Vanty ABA" caption="Dashboard de Vanty ABA (1200×900)" badge={<><Bot size={15} color="#1D4ED8" /> ARIA · IA clínica</>} />
           </Reveal>
         </div>
       </header>
@@ -226,7 +226,7 @@ export default function VantyAbaPage() {
               </ul>
             </Reveal>
             <Reveal className="vt-feature-media" delay={0.1}>
-              <Figure src="/images/vanty-aba/graficas.png" alt="Gráficas clínicas ABA en Vanty ABA" caption="Analítica y gráficas ABA (1200×900)" light badge={<><BarChart3 size={15} color="#1D4ED8" /> Analítica clínica</>} />
+              <Figure src="/images/vanty-aba/graficas.svg" alt="Gráficas clínicas ABA en Vanty ABA" caption="Analítica y gráficas ABA (1200×900)" light badge={<><BarChart3 size={15} color="#1D4ED8" /> Analítica clínica</>} />
             </Reveal>
           </div>
 
@@ -240,7 +240,7 @@ export default function VantyAbaPage() {
               </ul>
             </Reveal>
             <Reveal className="vt-feature-media" delay={0.1}>
-              <Figure src="/images/vanty-aba/portal-familiar.png" alt="Portal familiar de Vanty ABA" caption="Portal familiar (1200×900)" light badge={<><Users size={15} color="#ea580c" /> Portal familiar</>} />
+              <Figure src="/images/vanty-aba/portal-familiar.svg" alt="Portal familiar de Vanty ABA" caption="Portal familiar (1200×900)" light badge={<><Users size={15} color="#ea580c" /> Portal familiar</>} />
             </Reveal>
           </div>
         </div>

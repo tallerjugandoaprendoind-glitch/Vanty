@@ -41,7 +41,7 @@ export default function ProductosSaasPage() {
             </div>
           </div>
           <Reveal delay={0.1}>
-            <Figure src="/images/servicios/productos-saas.png" alt="Productos SaaS de Vanty" caption="Producto SaaS (mockup)" badge={<><Sparkles size={15} color="#7c3aed" /> IA aplicada</>} />
+            <Figure src="/images/servicios/productos-saas.svg" alt="Productos SaaS de Vanty" caption="Producto SaaS (mockup)" badge={<><Sparkles size={15} color="#7c3aed" /> IA aplicada</>} />
           </Reveal>
         </div>
       </header>
