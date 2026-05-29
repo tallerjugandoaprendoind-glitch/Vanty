@@ -8,6 +8,8 @@ import {
   Heart, X, Menu, Sparkles, ChevronRight,
   Play, Pause, Search, Facebook, Globe, Lock
 } from 'lucide-react'
+import SiteNav from '@/app/components/SiteNav'
+import SiteFooter from '@/app/components/SiteFooter'
 
 const WA_NUM = '51924685557'
 const EMAIL  = 'soporte@vanty.xyz'
@@ -1627,66 +1629,8 @@ export default function VantyLanding() {
         .footer-bottom p { font-size:12px; color:#4b5563; }
       `}</style>
 
-      {/* NAVBAR */}
-      <nav className={`nav${scrolled?' scrolled':''}`}>
-        <div className="nav-inner">
-          <a href="/" className="nav-logo">
-            <img src="/images/logo.png" alt="Vanty ABA" style={{height:'42px',width:'auto',display:'block'}}/>
-            <div style={{display:'flex',flexDirection:'column',lineHeight:1.15}}>
-              <span style={{display:'flex',alignItems:'center',gap:6}}>
-                <span style={{fontFamily:'Poppins,sans-serif',fontWeight:800,fontSize:'18px',color:'#111',letterSpacing:'-0.02em'}}>VANTY</span>
-                <span style={{fontFamily:'Poppins,sans-serif',fontWeight:800,fontSize:'10px',color:'#fff',background:'#1D4ED8',padding:'2px 7px',borderRadius:'6px',letterSpacing:'0.04em'}}>ABA</span>
-              </span>
-              <span style={{fontFamily:'Inter,sans-serif',fontWeight:400,fontSize:'10px',color:'#6b7280',letterSpacing:'0.01em'}}>{t.tagline}</span>
-            </div>
-          </a>
-          <ul className="nav-links">
-            <li><a href="/" style={{color:'#1D4ED8',fontWeight:700}}>← Vanty</a></li>
-            <li><a href="#roles">{t.nav.platform} <ChevronDown size={13}/></a></li>
-            <li><a href="#diferencial">{t.nav.features}</a></li>
-            <li><a href="#aria">{t.nav.aria}</a></li>
-            <li><a href="#precios">{t.nav.pricing}</a></li>
-            <li><a href="#faq">{t.nav.faq}</a></li>
-          </ul>
-          <div className="nav-right">
-            <a href={WA_URL} className="nav-login" target="_blank" rel="noopener noreferrer">{t.nav.contact}</a>
-            <a href="/login" style={{display:'inline-flex',alignItems:'center',gap:'6px',padding:'9px 18px',background:'#1D4ED8',color:'#fff',borderRadius:'8px',fontSize:'14px',fontWeight:700,textDecoration:'none',fontFamily:'Poppins,sans-serif',transition:'background .2s'}}
-               onMouseOver={e=>(e.currentTarget.style.background='#1e40af')}
-               onMouseOut={e=>(e.currentTarget.style.background='#1D4ED8')}>
-              {t.lang==='EN'?'Log in':t.lang==='PT'?'Entrar':t.lang==='FR'?'Connexion':'Iniciar sesión'}
-            </a>
-            <div className="lang-wrap">
-              <button className="lang-btn" onClick={()=>setLangOpen(o=>!o)}>
-                <Globe size={14}/> {FLAG[lang]} {t.lang} <ChevronDown size={11}/>
-              </button>
-              {langOpen && (
-                <div className="lang-dropdown">
-                  {LANGS.map(l=>(
-                    <div key={l} className={`lang-option${lang===l?' active':''}`}
-                      onClick={()=>{setLang(l);setLangOpen(false)}}>
-                      <span>{FLAG[l]}</span> {T[l].langLabel}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-            <button className="nav-burger" onClick={()=>setMenuOpen(m=>!m)}>
-              {menuOpen?<X size={20}/>:<Menu size={20}/>}
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      {menuOpen && (
-        <div className="mobile-menu" onClick={()=>setMenuOpen(false)}>
-          <a href="#roles">{t.nav.platform} <ChevronRight size={15}/></a>
-          <a href="#diferencial">{t.nav.features} <ChevronRight size={15}/></a>
-          <a href="#aria">{t.nav.aria} <ChevronRight size={15}/></a>
-          <a href="#precios">{t.nav.pricing} <ChevronRight size={15}/></a>
-          <a href="#faq">{t.nav.faq} <ChevronRight size={15}/></a>
-          <a href={WA_URL} target="_blank" rel="noopener noreferrer">{t.nav.whatsapp} <ChevronRight size={15}/></a>
-        </div>
-      )}
+      {/* NAVBAR — compartido con todo el sitio */}
+      <SiteNav />
 
       {/* HERO */}
       <section className="hero">
@@ -2115,57 +2059,8 @@ export default function VantyLanding() {
       {/* CTA FINAL — ANIMATED */}
       <CtaSection t={t} WA_URL={WA_URL} EMAIL={EMAIL} />
 
-      {/* FOOTER */}
-      <footer className="footer">
-        <div className="footer-grid">
-          <div>
-            <div className="footer-logo">
-              <img src="/images/logo.png" alt="Vanty" style={{height:'38px',width:'auto',display:'block'}}/>
-              <div style={{display:'flex',flexDirection:'column',lineHeight:1.15}}>
-                <span style={{fontFamily:'Poppins,sans-serif',fontWeight:800,fontSize:'18px',color:'#fff',letterSpacing:'-0.02em'}}>VANTY</span>
-                <span style={{fontFamily:'Inter,sans-serif',fontWeight:400,fontSize:'10px',color:'#9ca3af',letterSpacing:'0.01em'}}>{t.tagline}</span>
-              </div>
-            </div>
-            <p className="footer-tagline">{t.footerTagline}</p>
-            <div className="footer-socials">
-              <a href={WA_URL} className="fsoc" target="_blank" rel="noopener noreferrer"><Phone size={16}/></a>
-              <a href={`mailto:${EMAIL}`} className="fsoc"><Mail size={16}/></a>
-              <a href="https://www.instagram.com/vanty.app" className="fsoc" target="_blank" rel="noopener noreferrer"><Instagram size={16}/></a>
-              <a href="https://www.facebook.com/profile.php?id=61587764677406" className="fsoc" target="_blank" rel="noopener noreferrer"><Facebook size={16}/></a>
-            </div>
-          </div>
-          {t.footerCols.map((col,i)=>(
-            <div key={i}>
-              <h4>{col.title}</h4>
-              <ul>
-                {col.links.map((l,j)=>(
-                  <li key={j}>
-                    <a href={l.href==='wa'?WA_URL:l.href==='mail'?`mailto:${EMAIL}`:l.href}
-                       target={l.href==='wa'?'_blank':undefined}
-                       rel={l.href==='wa'?'noopener noreferrer':undefined}>
-                      {l.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-          <div>
-            <h4> </h4>
-            <div style={{padding:'14px 16px',background:'rgba(29,78,216,.12)',border:'1px solid rgba(29,78,216,.2)',borderRadius:12}}>
-              <p style={{fontSize:11,color:'#60a5fa',fontWeight:700,marginBottom:4,fontFamily:'Poppins,sans-serif'}}>{t.footerAllied}</p>
-              <p style={{fontSize:13,color:'#6b7280',marginBottom:8}}>{t.footerAlliedName}</p>
-              <a href="#aliados" style={{fontSize:11,color:'#60a5fa',fontWeight:700,textDecoration:'none',display:'flex',alignItems:'center',gap:4}}>
-                {t.lang==='EN'?'See our network →':t.lang==='PT'?'Ver nossa rede →':t.lang==='FR'?'Voir notre réseau →':'Ver nuestra red →'}
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>{t.footerCopy}</p>
-          <p>{t.footerMade}</p>
-        </div>
-      </footer>
+      {/* FOOTER — compartido con todo el sitio */}
+      <SiteFooter />
     </>
   )
 }

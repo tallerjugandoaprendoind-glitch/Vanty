@@ -2,8 +2,14 @@
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/admin/page": "app/admin/page.js",
+  "/como-trabajamos/page": "app/como-trabajamos/page.js",
+  "/contacto/page": "app/contacto/page.js",
   "/login/page": "app/login/page.js",
+  "/nosotros/page": "app/nosotros/page.js",
   "/page": "app/page.js",
+  "/servicios/page": "app/servicios/page.js",
+  "/servicios/productos-saas/page": "app/servicios/productos-saas/page.js",
+  "/servicios/software-a-medida/page": "app/servicios/software-a-medida/page.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/vanty-aba/page": "app/vanty-aba/page.js"
 }

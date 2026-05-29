@@ -47,10 +47,46 @@
       "namedRegex": "^/admin(?:/)?$"
     },
     {
+      "page": "/como-trabajamos",
+      "regex": "^/como\\-trabajamos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/como\\-trabajamos(?:/)?$"
+    },
+    {
+      "page": "/contacto",
+      "regex": "^/contacto(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contacto(?:/)?$"
+    },
+    {
       "page": "/login",
       "regex": "^/login(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/nosotros",
+      "regex": "^/nosotros(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/nosotros(?:/)?$"
+    },
+    {
+      "page": "/servicios",
+      "regex": "^/servicios(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/servicios(?:/)?$"
+    },
+    {
+      "page": "/servicios/productos-saas",
+      "regex": "^/servicios/productos\\-saas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/servicios/productos\\-saas(?:/)?$"
+    },
+    {
+      "page": "/servicios/software-a-medida",
+      "regex": "^/servicios/software\\-a\\-medida(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/servicios/software\\-a\\-medida(?:/)?$"
     },
     {
       "page": "/sitemap.xml",

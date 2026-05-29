@@ -2,8 +2,14 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/admin/page": "/admin",
+  "/como-trabajamos/page": "/como-trabajamos",
+  "/contacto/page": "/contacto",
   "/login/page": "/login",
+  "/nosotros/page": "/nosotros",
   "/page": "/",
+  "/servicios/page": "/servicios",
+  "/servicios/productos-saas/page": "/servicios/productos-saas",
+  "/servicios/software-a-medida/page": "/servicios/software-a-medida",
   "/sitemap.xml/route": "/sitemap.xml",
   "/vanty-aba/page": "/vanty-aba"
 }

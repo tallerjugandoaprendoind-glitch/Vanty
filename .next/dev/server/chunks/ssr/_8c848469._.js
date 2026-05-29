@@ -14,24 +14,22 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 const viewport = {
-    themeColor: "#f97316",
+    themeColor: "#070d23",
     width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false
+    initialScale: 1
 };
 const metadata = {
-    title: "Vanty — Plataforma ABA Multi-Rol en LATAM",
-    description: "La primera plataforma ABA multi-rol en América Latina. Conecta analistas, especialistas y familias en una sola plataforma. 100% en español, con IA integrada.",
-    keywords: "plataforma ABA LATAM, software terapia conductual, ABA software español, gestión terapeutas ABA, plataforma neurodivergencia",
+    title: "Vanty — Software e IA que resuelve problemas reales",
+    description: "Vanty es una empresa de tecnología que diseña software inteligente e IA para sectores con impacto: salud, educación y bienestar. Creamos soluciones a medida y productos propios como Vanty ABA. Desde Perú para toda América Latina.",
+    keywords: "Vanty, empresa de tecnología LATAM, software a medida, inteligencia artificial empresas, desarrollo de software Perú, productos SaaS, soluciones tecnológicas salud educación",
     authors: [
         {
             name: "Vanty"
         }
     ],
     openGraph: {
-        title: "Vanty — Plataforma ABA Multi-Rol en LATAM",
-        description: "La primera plataforma ABA multi-rol en América Latina. Con IA integrada (ARIA), portal familiar y 100% en español.",
+        title: "Vanty — Software e IA que resuelve problemas reales",
+        description: "Empresa de tecnología que crea software inteligente e IA para sectores con impacto. Soluciones a medida y productos propios como Vanty ABA. Desde Perú para toda América Latina.",
         type: "website",
         locale: "es_PE",
         siteName: "Vanty"
@@ -53,7 +51,7 @@ function RootLayout({ children }) {
                         href: "https://fonts.googleapis.com"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 31,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -62,21 +60,21 @@ function RootLayout({ children }) {
                         crossOrigin: "anonymous"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 32,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
-                        href: "https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap",
+                        href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap",
                         rel: "stylesheet"
                     }, void 0, false, {
                         fileName: "[project]/app/layout.tsx",
-                        lineNumber: 33,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 30,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
@@ -84,13 +82,13 @@ function RootLayout({ children }) {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 35,
+                lineNumber: 33,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 29,
+        lineNumber: 27,
         columnNumber: 5
     }, this);
 }
