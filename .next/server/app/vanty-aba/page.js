@@ -1,5 +1,6 @@
 var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/vanty-aba/page.js")
-R.c("server/chunks/ssr/[root-of-the-server]__ed8e648d._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__9e793b76._.js")
+R.c("server/chunks/ssr/app_6d7956e2._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_4b63a0e1._.js")
 R.c("server/chunks/ssr/_aaa4666b._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__9b01a216._.js")

@@ -1,6 +1,6 @@
 var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/vanty-aba/page.js")
-R.c("server/chunks/ssr/node_modules_next_dist_86391496._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__1d2058b8._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__b333ebf6._.js")
+R.c("server/chunks/ssr/node_modules_ec6f5a11._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_7381059c._.js")
 R.c("server/chunks/ssr/[externals]__7f148858._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_global-error_ece394eb.js")
