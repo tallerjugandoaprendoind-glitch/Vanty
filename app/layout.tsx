@@ -10,13 +10,13 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Vanty — Plataforma ABA Multi-Rol en LATAM",
-  description: "La primera plataforma ABA multi-rol en América Latina. Conecta analistas, especialistas y familias en una sola plataforma. 100% en español, con IA integrada.",
-  keywords: "plataforma ABA LATAM, software terapia conductual, ABA software español, gestión terapeutas ABA, plataforma neurodivergencia",
+  title: "Vanty — Software e IA que resuelve problemas reales",
+  description: "Vanty es una empresa de tecnología que diseña software inteligente e IA para sectores con impacto: salud, educación y bienestar. Creamos soluciones a medida y productos propios como Vanty ABA. Desde Perú para toda América Latina.",
+  keywords: "Vanty, empresa de tecnología LATAM, software a medida, inteligencia artificial empresas, desarrollo de software Perú, productos SaaS, soluciones tecnológicas salud educación",
   authors: [{ name: "Vanty" }],
   openGraph: {
-    title: "Vanty — Plataforma ABA Multi-Rol en LATAM",
-    description: "La primera plataforma ABA multi-rol en América Latina. Con IA integrada (ARIA), portal familiar y 100% en español.",
+    title: "Vanty — Software e IA que resuelve problemas reales",
+    description: "Empresa de tecnología que crea software inteligente e IA para sectores con impacto. Soluciones a medida y productos propios como Vanty ABA. Desde Perú para toda América Latina.",
     type: "website",
     locale: "es_PE",
     siteName: "Vanty",

@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: 'https://vanty.xyz/vanty-aba',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://vanty.xyz/login',
       lastModified: new Date(),
       changeFrequency: 'yearly',
