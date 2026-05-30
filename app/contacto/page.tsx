@@ -7,7 +7,7 @@ import { WA_URL, EMAIL, FB_URL, IG_URL } from '@/app/lib/site'
 
 export const metadata: Metadata = {
   title: 'Contacto — Vanty | Conversemos tu proyecto',
-  description: 'Hablemos. Escríbenos por WhatsApp o email y cuéntanos qué problema quieres resolver con tecnología. Respuesta cercana, en español.',
+  description: 'Hablemos. Escríbenos por WhatsApp o email y cuéntanos qué problema quieres resolver con tecnología. Respuesta rápida y cercana.',
 }
 
 const CHANNELS = [

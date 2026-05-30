@@ -53,7 +53,7 @@ export default function Home() {
               <a href="/servicios" className="vt-btn vt-btn-ghost">Descubre nuestros productos</a>
             </div>
             <p style={{ marginTop: 18, fontSize: 13.5, color: 'var(--muted-2)', display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Check size={15} color="#1D4ED8" /> Ingeniería sólida · Seguridad desde el día cero · Soporte en español
+              <Check size={15} color="#1D4ED8" /> Ingeniería sólida · Seguridad desde el día cero · Soporte dedicado
             </p>
           </div>
           <Reveal delay={0.1}>

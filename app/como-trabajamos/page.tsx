@@ -59,7 +59,7 @@ export default function ComoTrabajamosPage() {
             <ul className="vt-checks">
               {[
                 'Precios y alcance acordados desde el inicio — sin sorpresas.',
-                'Comunicación directa y cercana, en español.',
+                'Comunicación directa y cercana, en tu idioma.',
                 'Avances que puedes ver y probar durante el proceso.',
                 'Tu información y tu código te pertenecen.',
                 'Soporte y mejoras después del lanzamiento.',

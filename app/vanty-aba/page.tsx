@@ -59,8 +59,8 @@ const CMP_ROWS = [
   ['Facturación y pagos integrados', '⚠️ Módulo aparte', '❌ No', '✅ Incluido'],
   ['WhatsApp integrado para familias', '❌ No', '⚠️ Básico', '✅ Nativo'],
   ['Sincronización Google y Outlook', '⚠️ Parcial', '❌ No', '✅ Incluida'],
-  ['100% en español, pensado para LATAM', '❌ Inglés', '⚠️ Parcial', '✅ Español'],
-  ['Precio justo en soles', '❌ USD, caro', '⚠️ Variable', '✅ S/120/mes'],
+  ['Multilingüe, se adapta a tu idioma', '⚠️ Limitado', '⚠️ Parcial', '✅ Sí'],
+  ['Precio transparente, sin costos ocultos', '⚠️ Módulos extra', '⚠️ Variable', '✅ Todo incluido'],
   ['Setup completo incluido', '❌ Costo extra', '❌ No', '✅ Incluido'],
 ]
 const cellClass = (v: string) => v.startsWith('✅') ? 'yes' : v.startsWith('❌') ? 'no' : v.startsWith('⚠️') ? 'par' : ''
@@ -72,9 +72,9 @@ const PLANS = [
 ]
 
 const FAQS = [
-  { q: '¿En qué se diferencia Vanty ABA del software internacional?', a: 'El software ABA internacional suele estar en inglés, se paga en dólares y está pensado para Estados Unidos. Vanty ABA te ofrece lo mismo y más —Hub de IA clínica, facturación, agenda y portal familiar— 100% en español, en soles y con soporte cercano en LATAM. Además incluimos el setup completo y un rol de secretaría que otras plataformas no contemplan.' },
+  { q: '¿En qué se diferencia Vanty ABA del software internacional?', a: 'El software ABA internacional suele ser costoso, rígido y pensado para otra realidad operativa. Vanty ABA te ofrece lo mismo y más —Hub de IA clínica, facturación, agenda y portal familiar—, es multilingüe (se adapta a tu idioma) e incluye setup completo, un rol de secretaría y acompañamiento cercano que otras plataformas no contemplan.' },
   { q: '¿Cuánto cuesta Vanty ABA para mi centro?', a: 'El primer mes es S/200 e incluye configuración completa, carga inicial de pacientes y capacitación. Desde el segundo mes pagas S/120/mes sin permanencia. Con el plan anual pagas S/1,180 (equivale a 10 meses) y usas 12 — 2 meses gratis y S/260 de ahorro.' },
-  { q: '¿Necesito conocimientos técnicos para usarlo?', a: 'Para nada. Vanty ABA está diseñado para analistas y terapeutas, no para perfiles técnicos. La interfaz es 100% en español y nosotros hacemos el setup completo contigo en las primeras 24 horas.' },
+  { q: '¿Necesito conocimientos técnicos para usarlo?', a: 'Para nada. Vanty ABA está diseñado para analistas y terapeutas, no para perfiles técnicos. La interfaz es intuitiva y está en tu idioma, y nosotros hacemos el setup completo contigo en las primeras 24 horas.' },
   { q: '¿Qué es el Hub de IA y cómo me ayuda?', a: 'Es un equipo de asistentes de IA liderado por ARIA. Generan reportes y notas, auditan documentación, sugieren y evalúan objetivos, detectan patrones y anticipan alertas — para que tu equipo dedique su tiempo a los pacientes, no al papeleo.' },
   { q: '¿Mis datos de pacientes están seguros?', a: 'Absolutamente. Tus datos son 100% tuyos, almacenados con estándares de seguridad clínica. Nunca compartimos información con terceros y tienes control total en todo momento.' },
   { q: '¿Puedo cancelar cuando quiera?', a: 'Sí. El plan mensual no tiene permanencia mínima: cancelas cuando quieras desde el panel. El plan anual es un pago único por 12 meses y no se renueva automáticamente.' },
@@ -97,7 +97,7 @@ export default function VantyAbaPage() {
             <h1 className="vt-h1">La plataforma clínica <span className="vt-grad-ink">ABA con IA</span>, hecha para LATAM</h1>
             <p className="vt-lead">
               Dirección, especialistas, secretaría y familias en una sola plataforma. Con un hub de IA clínica,
-              facturación, agenda, evaluaciones y portal familiar. 100% en español, en uso real en centros como
+              facturación, agenda, evaluaciones y portal familiar. Multilingüe y en uso real en centros como
               <strong style={{ color: 'var(--ink)' }}> Jugando Aprendo</strong>.
             </p>
             <div className="vt-hero-btns">
@@ -105,7 +105,7 @@ export default function VantyAbaPage() {
               <a href="#precios" className="vt-btn vt-btn-ghost">Ver precios <ArrowRight size={16} /></a>
             </div>
             <p style={{ marginTop: 18, fontSize: 13.5, color: 'var(--muted-2)', display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Check size={15} color="#1D4ED8" /> Setup en 24 horas · Sin permanencia · Soporte en español
+              <Check size={15} color="#1D4ED8" /> Setup en 24 horas · Sin permanencia · Soporte dedicado
             </p>
           </div>
           <Reveal delay={0.1}>
@@ -134,7 +134,7 @@ export default function VantyAbaPage() {
               { n: '4', c: 'Roles en una sola plataforma' },
               { n: '8', c: 'Agentes de IA clínica' },
               { n: '9+', c: 'Módulos integrados' },
-              { n: '100%', c: 'En español, para LATAM' },
+              { n: '24h', c: 'Setup incluido' },
             ].map((s, i) => (
               <div key={i} className="vt-stat-cell2">
                 <div className="vt-stat-big">{s.n}</div>
@@ -264,7 +264,7 @@ export default function VantyAbaPage() {
           <Reveal className="vt-head-center">
             <span className="vt-eyebrow"><Star size={13} /> Por qué Vanty ABA</span>
             <h2 className="vt-h2" style={{ marginTop: 16 }}>La alternativa LATAM, hecha para tu centro</h2>
-            <p className="vt-lead">Todo lo que esperas de un software ABA internacional, pero en español, en soles y pensado para tu centro.</p>
+            <p className="vt-lead">Todo lo que esperas de un software ABA internacional —y más—, con IA integrada, multilingüe y pensado para tu equipo.</p>
           </Reveal>
           <Reveal className="vt-cmp-wrap">
             <table className="vt-cmp">
