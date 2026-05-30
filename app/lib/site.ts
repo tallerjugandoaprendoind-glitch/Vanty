@@ -9,18 +9,20 @@ export const WA_URL = `https://wa.me/${WA_NUM}?text=${WA_MSG}`
 export const FB_URL = 'https://www.facebook.com/profile.php?id=61587764677406'
 export const IG_URL = 'https://www.instagram.com/vanty.app'
 
-export type IconKey = 'brain' | 'code' | 'rocket'
+export type IconKey = 'brain' | 'school'
 
 export interface Service {
   slug: string
   href: string
   icon: IconKey
+  logo?: string
   name: string
   tagline: string
   desc: string
   badge: string
   accent: string
   tags: string[]
+  soon?: boolean
 }
 
 export const SERVICES: Service[] = [
@@ -28,6 +30,7 @@ export const SERVICES: Service[] = [
     slug: 'vanty-aba',
     href: '/vanty-aba',
     icon: 'brain',
+    logo: '/images/logos/vanty-aba.png',
     name: 'Vanty ABA',
     tagline: 'Plataforma clínica ABA con IA',
     desc: 'La primera plataforma ABA multi-rol de LATAM: dirección, especialistas, secretaría y familias en un solo lugar, con IA clínica, facturación y portal familiar.',
@@ -36,26 +39,17 @@ export const SERVICES: Service[] = [
     tags: ['Hub de IA clínica', 'Multi-rol nativo', 'Facturación', 'Portal familiar'],
   },
   {
-    slug: 'software-a-medida',
-    href: '/servicios/software-a-medida',
-    icon: 'code',
-    name: 'Software a medida',
-    tagline: 'Plataformas, apps y sistemas',
-    desc: 'Diseñamos y desarrollamos plataformas web, apps móviles y sistemas internos pensados para tu operación real. Del prototipo a producción.',
-    badge: 'A medida',
-    accent: '#0F766E',
-    tags: ['Web & móvil', 'Dashboards', 'Integraciones', 'Automatización'],
-  },
-  {
-    slug: 'productos-saas',
-    href: '/servicios/productos-saas',
-    icon: 'rocket',
-    name: 'Productos SaaS con IA',
-    tagline: 'Productos propios con IA',
-    desc: 'Creamos nuestros propios productos digitales potenciados con inteligencia artificial para resolver problemas concretos en sectores con impacto.',
-    badge: 'Productos propios',
-    accent: '#7C3AED',
-    tags: ['IA aplicada', 'Escalable', 'En la nube', 'Multi-tenant'],
+    slug: 'vanty-school',
+    href: '#',
+    icon: 'school',
+    logo: '/images/logos/vanty-school.png',
+    name: 'Vanty School',
+    tagline: 'Gestión educativa inteligente',
+    desc: 'La plataforma que llevará la inteligencia de Vanty a la gestión de colegios e instituciones educativas. En desarrollo.',
+    badge: 'Próximamente',
+    accent: '#64748B',
+    tags: ['Educación', 'En desarrollo'],
+    soon: true,
   },
 ]
 

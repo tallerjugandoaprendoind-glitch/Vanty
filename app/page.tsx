@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import {
-  Brain, Code2, Rocket, ArrowRight, Check, Bot, Database, Boxes,
+  ArrowRight, Check, Bot, Database, Boxes,
   Phone, ShieldCheck, Sparkles, HeartPulse, GraduationCap, Building2, Layers,
 } from 'lucide-react'
 import SiteNav from '@/app/components/SiteNav'
@@ -8,14 +8,14 @@ import SiteFooter from '@/app/components/SiteFooter'
 import Reveal from '@/app/components/Reveal'
 import Figure from '@/app/components/Figure'
 import Wave from '@/app/components/Wave'
-import { SERVICES, WA_URL, type IconKey } from '@/app/lib/site'
+import ServiceIcon from '@/app/components/ServiceIcon'
+import ClientChip from '@/app/components/ClientChip'
+import { SERVICES, WA_URL } from '@/app/lib/site'
 
 export const metadata: Metadata = {
   title: 'Vanty — Inteligencia que transforma la manera en que operas',
   description: 'Vanty construye ecosistemas de software B2B SaaS con inteligencia artificial nativa. Automatizamos la complejidad para que tu equipo se enfoque en lo que realmente importa. Desde Perú para LATAM.',
 }
-
-const SVC_ICONS: Record<IconKey, any> = { brain: Brain, code: Code2, rocket: Rocket }
 
 const PILLARS = [
   { icon: Bot, c: '#1D4ED8', bg: '#e6efff', title: 'Orquestación de agentes', desc: 'Asistentes y flujos de trabajo automatizados que reducen drásticamente la carga manual de tu equipo.' },
@@ -68,9 +68,8 @@ export default function Home() {
         <div className="vt-inner">
           <p className="vt-logos-label">Tecnología en operación real</p>
           <Reveal className="vt-logos">
-            <span className="vt-logo-chip"><img src="/images/aprendo.png" alt="Jugando Aprendo" /> Jugando Aprendo</span>
-            <span className="vt-logo-ghost">Gestión clínica</span>
-            <span className="vt-logo-ghost">Educación</span>
+            <ClientChip src="/images/clientes/santi.png" name="Neuropsicología y Terapias SANTI" />
+            <ClientChip src="/images/aprendo.png" name="Jugando Aprendo" />
             <span className="vt-logo-ghost">+ tu organización aquí</span>
           </Reveal>
         </div>
@@ -115,19 +114,25 @@ export default function Home() {
             </div>
             <a href="/servicios" className="vt-btn vt-btn-ghost">Ver todos <ArrowRight size={16} /></a>
           </Reveal>
-          <div className="vt-grid-3">
+          <div className="vt-grid-2" style={{ maxWidth: 860, margin: '0 auto' }}>
             {SERVICES.map((s, i) => {
-              const Icon = SVC_ICONS[s.icon]
+              const inner = (
+                <>
+                  <ServiceIcon iconKey={s.icon} logo={s.logo} accent={s.accent} />
+                  {s.soon
+                    ? <span className="vt-badge-soon">{s.badge}</span>
+                    : <span className="vt-badge-pill" style={{ color: s.accent, background: `${s.accent}15` }}>{s.badge}</span>}
+                  <h3 className="vt-h3">{s.name}</h3>
+                  <p className="vt-card-desc">{s.desc}</p>
+                  <div className="vt-tags">{s.tags.map(t => <span key={t} className="vt-tag">{t}</span>)}</div>
+                  {!s.soon && <span className="vt-link">Conocer más <ArrowRight size={15} /></span>}
+                </>
+              )
               return (
                 <Reveal key={s.slug} delay={i * 0.08}>
-                  <a href={s.href} className={`vt-card${s.slug === 'vanty-aba' ? ' featured' : ''}`} style={{ height: '100%' }}>
-                    <span className="vt-ico" style={{ background: s.accent }}><Icon size={24} /></span>
-                    <span className="vt-badge-pill" style={{ color: s.accent, background: `${s.accent}15` }}>{s.badge}</span>
-                    <h3 className="vt-h3">{s.name}</h3>
-                    <p className="vt-card-desc">{s.desc}</p>
-                    <div className="vt-tags">{s.tags.map(t => <span key={t} className="vt-tag">{t}</span>)}</div>
-                    <span className="vt-link">Conocer más <ArrowRight size={15} /></span>
-                  </a>
+                  {s.soon
+                    ? <div className="vt-card soon" style={{ height: '100%' }}>{inner}</div>
+                    : <a href={s.href} className={`vt-card${s.slug === 'vanty-aba' ? ' featured' : ''}`} style={{ height: '100%' }}>{inner}</a>}
                 </Reveal>
               )
             })}

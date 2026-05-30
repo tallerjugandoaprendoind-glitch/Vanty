@@ -1,17 +1,16 @@
 import type { Metadata } from 'next'
-import { Brain, Code2, Rocket, ArrowRight, Bot, Database, Boxes, Phone, Layers, Sparkles } from 'lucide-react'
+import { ArrowRight, Bot, Database, Boxes, Phone, Layers, Sparkles, Rocket } from 'lucide-react'
 import SiteNav from '@/app/components/SiteNav'
 import SiteFooter from '@/app/components/SiteFooter'
 import Reveal from '@/app/components/Reveal'
 import Wave from '@/app/components/Wave'
-import { SERVICES, WA_URL, type IconKey } from '@/app/lib/site'
+import ServiceIcon from '@/app/components/ServiceIcon'
+import { SERVICES, WA_URL } from '@/app/lib/site'
 
 export const metadata: Metadata = {
   title: 'Qué hacemos — Vanty | Software B2B SaaS de alto rendimiento',
   description: 'Vanty funciona como un laboratorio de innovación y una fábrica de software. Nos especializamos en aplicaciones B2B SaaS de alto rendimiento, con IA nativa. Conoce nuestros pilares y productos.',
 }
-
-const SVC_ICONS: Record<IconKey, any> = { brain: Brain, code: Code2, rocket: Rocket }
 
 const PILLARS = [
   { icon: Bot, c: '#1D4ED8', bg: '#e6efff', title: 'Orquestación de agentes de IA', desc: 'Creamos asistentes virtuales y flujos de trabajo automatizados que reducen drásticamente la carga manual de los equipos.' },
@@ -68,20 +67,25 @@ export default function ServiciosPage() {
             <span className="vt-eyebrow"><Rocket size={13} /> Productos y servicios</span>
             <h2 className="vt-h2" style={{ marginTop: 16 }}>Lo que construimos para el mercado</h2>
           </Reveal>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+          <div className="vt-grid-2" style={{ maxWidth: 860, margin: '0 auto' }}>
             {SERVICES.map((s, i) => {
-              const Icon = SVC_ICONS[s.icon]
+              const inner = (
+                <>
+                  <ServiceIcon iconKey={s.icon} logo={s.logo} accent={s.accent} />
+                  {s.soon
+                    ? <span className="vt-badge-soon">{s.badge}</span>
+                    : <span className="vt-badge-pill" style={{ color: s.accent, background: `${s.accent}15` }}>{s.badge}</span>}
+                  <h3 className="vt-h3" style={{ fontSize: 21 }}>{s.name}</h3>
+                  <p className="vt-card-desc">{s.desc}</p>
+                  <div className="vt-tags">{s.tags.map(t => <span key={t} className="vt-tag">{t}</span>)}</div>
+                  {!s.soon && <span className="vt-link">Conocer más <ArrowRight size={15} /></span>}
+                </>
+              )
               return (
-                <Reveal key={s.slug} delay={i * 0.06}>
-                  <a href={s.href} className={`vt-card${s.slug === 'vanty-aba' ? ' featured' : ''}`} style={{ display: 'grid', gridTemplateColumns: '64px 1fr auto', gap: 22, alignItems: 'center' }}>
-                    <span className="vt-ico" style={{ background: s.accent, marginBottom: 0 }}><Icon size={26} /></span>
-                    <span>
-                      <span className="vt-badge-pill" style={{ color: s.accent, background: `${s.accent}15` }}>{s.badge}</span>
-                      <h3 className="vt-h3" style={{ fontSize: 21 }}>{s.name}</h3>
-                      <p className="vt-card-desc">{s.desc}</p>
-                    </span>
-                    <span className="vt-btn vt-btn-ghost" style={{ alignSelf: 'center' }}>Ver <ArrowRight size={16} /></span>
-                  </a>
+                <Reveal key={s.slug} delay={i * 0.08}>
+                  {s.soon
+                    ? <div className="vt-card soon" style={{ height: '100%' }}>{inner}</div>
+                    : <a href={s.href} className={`vt-card${s.slug === 'vanty-aba' ? ' featured' : ''}`} style={{ height: '100%' }}>{inner}</a>}
                 </Reveal>
               )
             })}

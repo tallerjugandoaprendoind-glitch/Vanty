@@ -8,10 +8,10 @@
       <stop offset="0" stop-color="#7c3aed" stop-opacity="0.22"/>
       <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
     </linearGradient>
+    <filter id="gsh" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="22" stdDeviation="28" flood-color="#1b2a52" flood-opacity="0.16"/></filter>
   </defs>
 
-  <rect width="1200" height="900" fill="#e9eefa"/>
-  <rect x="40" y="40" width="1120" height="820" rx="22" fill="#ffffff" stroke="#e3e8f2" stroke-width="2"/>
+  <rect x="40" y="40" width="1120" height="820" rx="22" fill="#ffffff" stroke="#e3e8f2" stroke-width="2" filter="url(#gsh)"/>
 
   <!-- top bar -->
   <text x="72" y="92" fill="#0b1020" font-size="22" font-weight="800">Analítica clínica</text>

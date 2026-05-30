@@ -2,10 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
-import { ChevronDown, ChevronRight, Menu, X, Phone, Brain, Code2, Rocket, ArrowRight } from 'lucide-react'
-import { NAV_LINKS, SERVICES, WA_URL, type IconKey } from '@/app/lib/site'
-
-const ICONS: Record<IconKey, any> = { brain: Brain, code: Code2, rocket: Rocket }
+import { ChevronDown, ChevronRight, Menu, X, Phone, ArrowRight } from 'lucide-react'
+import { NAV_LINKS, SERVICES, WA_URL } from '@/app/lib/site'
+import ServiceIcon from '@/app/components/ServiceIcon'
 
 export default function SiteNav() {
   const pathname = usePathname()
@@ -30,7 +29,7 @@ export default function SiteNav() {
       <div className="vt-nav-row">
         {/* Logo */}
         <a href="/" className="vt-logo">
-          <img src="/images/logo.png" alt="Vanty" style={{ height: 40, width: 'auto', display: 'block' }} />
+          <img src="/vanty-logo.svg" alt="Vanty" style={{ height: 38, width: 'auto', display: 'block' }} />
           <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1 }}>
             <span className="vt-logo-name">VANTY</span>
             <span className="vt-logo-sub">software &amp; inteligencia artificial</span>
@@ -58,19 +57,22 @@ export default function SiteNav() {
                 <div className="vt-mega" role="menu">
                   <div className="vt-mega-grid">
                     {SERVICES.map(s => {
-                      const Icon = ICONS[s.icon]
-                      return (
-                        <a key={s.slug} href={s.href} className="vt-mega-card">
-                          <span className="vt-mega-ico" style={{ background: s.accent }}><Icon size={20} /></span>
+                      const inner = (
+                        <>
+                          <ServiceIcon iconKey={s.icon} logo={s.logo} accent={s.accent} variant="mega" />
                           <span>
                             <span className="vt-mega-name">
                               {s.name}
                               {s.slug === 'vanty-aba' && <span className="vt-mega-star">Estrella</span>}
+                              {s.soon && <span className="vt-mega-star" style={{ background: '#eef1f6', color: '#7b8499' }}>Próximamente</span>}
                             </span>
                             <span className="vt-mega-tag">{s.tagline}</span>
                           </span>
-                        </a>
+                        </>
                       )
+                      return s.soon
+                        ? <div key={s.slug} className="vt-mega-card" style={{ opacity: .7, filter: 'grayscale(.5)', cursor: 'default' }}>{inner}</div>
+                        : <a key={s.slug} href={s.href} className="vt-mega-card">{inner}</a>
                     })}
                     <a href="/contacto" className="vt-mega-card">
                       <span className="vt-mega-ico" style={{ background: 'linear-gradient(135deg,#1D4ED8,#7c3aed)' }}><ArrowRight size={20} /></span>

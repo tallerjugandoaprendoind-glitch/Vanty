@@ -8,13 +8,13 @@
       <stop offset="0" stop-color="#1D4ED8" stop-opacity="0.3"/>
       <stop offset="1" stop-color="#1D4ED8" stop-opacity="0"/>
     </linearGradient>
+    <filter id="psh" x="-15%" y="-15%" width="130%" height="130%"><feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#1b2a52" flood-opacity="0.16"/></filter>
   </defs>
-  <rect width="1200" height="900" fill="url(#pbg)"/>
-  <circle cx="990" cy="160" r="190" fill="#dbe6fb" opacity="0.6"/>
-  <circle cx="260" cy="760" r="150" fill="#e9defb" opacity="0.6"/>
+  <circle cx="980" cy="170" r="180" fill="#dbe6fb" opacity="0.45"/>
+  <circle cx="270" cy="760" r="150" fill="#e9defb" opacity="0.4"/>
 
   <!-- Phone -->
-  <rect x="120" y="120" width="380" height="700" rx="46" fill="#0c1838"/>
+  <rect x="120" y="120" width="380" height="700" rx="46" fill="#0c1838" filter="url(#psh)"/>
   <rect x="136" y="136" width="348" height="668" rx="34" fill="#f6f8fc"/>
   <rect x="136" y="136" width="348" height="92" rx="34" fill="#1D4ED8"/>
   <rect x="136" y="190" width="348" height="38" fill="#1D4ED8"/>
@@ -53,13 +53,13 @@
 
   <!-- floating cards -->
   <g>
-    <rect x="560" y="180" width="430" height="120" rx="18" fill="#ffffff" stroke="#e3e8f2"/>
+    <rect x="560" y="180" width="430" height="120" rx="18" fill="#ffffff" stroke="#e3e8f2" filter="url(#psh)"/>
     <circle cx="606" cy="240" r="22" fill="#25D366"/><path d="M597 240 a9 9 0 1 1 4 8 l-8 2 l2 -7 a9 9 0 0 1 2 -3" fill="#fff"/>
     <text x="644" y="226" fill="#0b1020" font-size="15" font-weight="700">Notificación por WhatsApp</text>
     <text x="644" y="250" fill="#5b647a" font-size="12.5">“Mateo alcanzó un nuevo objetivo 🎉”</text>
     <text x="644" y="272" fill="#9aa3b5" font-size="11">Enviado automáticamente · hoy 12:04</text>
 
-    <rect x="600" y="330" width="470" height="150" rx="18" fill="#ffffff" stroke="#e3e8f2"/>
+    <rect x="600" y="330" width="470" height="150" rx="18" fill="#ffffff" stroke="#e3e8f2" filter="url(#psh)"/>
     <text x="628" y="368" fill="#0b1020" font-size="15" font-weight="700">Reporte de sesión</text>
     <text x="628" y="392" fill="#9aa3b5" font-size="12">Generado por ARIA · 8 s</text>
     <rect x="628" y="408" width="414" height="9" rx="4.5" fill="#eef1f6"/><rect x="628" y="408" width="380" height="9" rx="4.5" fill="#1D4ED8"/>

@@ -7,7 +7,7 @@ export default function SiteFooter() {
       <div className="vt-footer-grid">
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 4 }}>
-            <img src="/images/logo.png" alt="Vanty" style={{ height: 38, width: 'auto', display: 'block' }} />
+            <img src="/vanty-logo.svg" alt="Vanty" style={{ height: 34, width: 'auto', display: 'block' }} />
             <span className="vt-display" style={{ fontWeight: 800, fontSize: 19, color: '#fff' }}>VANTY</span>
           </div>
           <p className="vt-footer-tag">Software e inteligencia artificial que resuelve problemas reales. Hecho con 💜 desde Perú para toda América Latina.</p>

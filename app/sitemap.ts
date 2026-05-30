@@ -8,8 +8,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '', priority: 1, freq: 'monthly' },
     { path: '/servicios', priority: 0.9, freq: 'monthly' },
     { path: '/vanty-aba', priority: 0.9, freq: 'monthly' },
-    { path: '/servicios/software-a-medida', priority: 0.8, freq: 'monthly' },
-    { path: '/servicios/productos-saas', priority: 0.8, freq: 'monthly' },
     { path: '/nosotros', priority: 0.7, freq: 'yearly' },
     { path: '/como-trabajamos', priority: 0.7, freq: 'yearly' },
     { path: '/contacto', priority: 0.7, freq: 'yearly' },

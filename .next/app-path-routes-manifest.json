@@ -8,8 +8,6 @@
   "/nosotros/page": "/nosotros",
   "/page": "/",
   "/servicios/page": "/servicios",
-  "/servicios/productos-saas/page": "/servicios/productos-saas",
-  "/servicios/software-a-medida/page": "/servicios/software-a-medida",
   "/sitemap.xml/route": "/sitemap.xml",
   "/vanty-aba/page": "/vanty-aba"
 }

@@ -99,24 +99,6 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
-// Validate ../../../app/servicios/productos-saas/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/servicios/productos-saas">> = Specific
-  const handler = {} as typeof import("../../../app/servicios/productos-saas/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../../app/servicios/software-a-medida/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/servicios/software-a-medida">> = Specific
-  const handler = {} as typeof import("../../../app/servicios/software-a-medida/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
 // Validate ../../../app/vanty-aba/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/vanty-aba">> = Specific

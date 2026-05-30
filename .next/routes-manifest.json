@@ -77,18 +77,6 @@
       "namedRegex": "^/servicios(?:/)?$"
     },
     {
-      "page": "/servicios/productos-saas",
-      "regex": "^/servicios/productos\\-saas(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/servicios/productos\\-saas(?:/)?$"
-    },
-    {
-      "page": "/servicios/software-a-medida",
-      "regex": "^/servicios/software\\-a\\-medida(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/servicios/software\\-a\\-medida(?:/)?$"
-    },
-    {
       "page": "/sitemap.xml",
       "regex": "^/sitemap\\.xml(?:/)?$",
       "routeKeys": {},

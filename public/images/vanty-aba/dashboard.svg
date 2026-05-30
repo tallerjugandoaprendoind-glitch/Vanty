@@ -5,10 +5,10 @@
       <stop offset="1" stop-color="#1D4ED8" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="win"><rect x="24" y="24" width="1152" height="852" rx="22"/></clipPath>
+    <filter id="dsh" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="22" stdDeviation="30" flood-color="#1b2a52" flood-opacity="0.18"/></filter>
   </defs>
 
-  <rect width="1200" height="900" fill="#e9eefa"/>
-  <rect x="24" y="24" width="1152" height="852" rx="22" fill="#ffffff"/>
+  <rect x="24" y="24" width="1152" height="852" rx="22" fill="#ffffff" filter="url(#dsh)"/>
 
   <g clip-path="url(#win)">
     <!-- Sidebar -->
