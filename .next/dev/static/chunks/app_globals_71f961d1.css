@@ -1471,13 +1471,8 @@ body {
   z-index: 400;
   background: none;
   padding: 14px clamp(12px, 3vw, 24px) 0;
-  transition: padding .25s;
   position: sticky;
   top: 0;
-}
-
-.vt-nav.scrolled {
-  padding-top: 8px;
 }
 
 .vt-nav-row {
@@ -1777,7 +1772,8 @@ body {
 .vt-hero {
   color: #fff;
   background: radial-gradient(140% 120% at 80% -10%, #16285f 0%, #0b1430 45%, #070d23 100%);
-  padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 48px) clamp(72px, 9vw, 112px);
+  margin-top: -76px;
+  padding: calc(clamp(64px, 8vw, 104px) + 88px) clamp(20px, 5vw, 48px) clamp(72px, 9vw, 112px);
   position: relative;
   overflow: hidden;
 }
