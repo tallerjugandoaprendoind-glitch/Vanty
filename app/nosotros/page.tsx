@@ -39,15 +39,16 @@ export default function NosotrosPage() {
       <section className="vt-section" style={{ background: '#eef4ff' }}>
         <div className="vt-inner vt-hero-split" style={{ alignItems: 'center' }}>
           <Reveal>
-            <span className="vt-eyebrow"><Sparkles size={13} /> Quiénes somos</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>Creadores independientes, asistidos por IA</h2>
+            <span className="vt-eyebrow"><Sparkles size={13} /> Nuestra visión</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>Transformando sectores críticos a través de la tecnología</h2>
             <p className="vt-lead" style={{ marginTop: 14 }}>
-              Entendemos que el mundo empresarial —especialmente en sectores críticos como la gestión clínica—
-              requiere herramientas que no solo sean funcionales, sino profundamente inteligentes e intuitivas.
-              Nuestro primer producto, <strong style={{ color: 'var(--ink)' }}>Vanty ABA</strong>, nació resolviendo
-              ese tipo de problema junto a centros reales.
+              Entendemos que el mundo empresarial de hoy exige más que simple digitalización; requiere
+              inteligencia operativa. Vanty nace con la misión de desarrollar soluciones tecnológicas de alto
+              rendimiento que optimicen los flujos de trabajo en sectores exigentes. Comenzamos este camino con
+              <strong style={{ color: 'var(--ink)' }}> Vanty ABA</strong>, una plataforma inteligente desarrollada
+              codo a codo con profesionales de la salud para revolucionar la gestión clínica moderna.
             </p>
-            <a href="/servicios" className="vt-btn vt-btn-primary" style={{ marginTop: 24 }}>Qué hacemos <ArrowRight size={16} /></a>
+            <a href="/vanty-aba" className="vt-btn vt-btn-primary" style={{ marginTop: 24 }}>Conoce Vanty ABA <ArrowRight size={16} /></a>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="vt-brandcard">
