@@ -249,7 +249,8 @@ a.vt-card { text-decoration:none; color:inherit; }
 .vt-trust-item svg { color:var(--blue); }
 
 /* ── CTA banner ────────────────────────────────── */
-.vt-cta { position:relative; overflow:hidden; text-align:center; padding:clamp(64px,8vw,100px) clamp(20px,6vw,48px); background:linear-gradient(120deg,#0c1838 0%,#1D4ED8 55%,#0c1838 100%); color:#fff; }
+.vt-cta { position:relative; overflow:hidden; text-align:center; padding:clamp(64px,8vw,100px) clamp(20px,6vw,48px); background:linear-gradient(180deg, #0c1838 0%, #0b1533 45%, #070d23 100%); color:#fff; }
+.vt-cta::after { content:''; position:absolute; top:-30%; left:50%; transform:translateX(-50%); width:80%; height:70%; background:radial-gradient(closest-side, rgba(37,99,235,.28), transparent 70%); pointer-events:none; }
 .vt-cta-dots { position:absolute; inset:0; opacity:.07; background-image:radial-gradient(#fff 1px,transparent 1px); background-size:22px 22px; }
 .vt-cta-inner { position:relative; z-index:2; max-width:680px; margin:0 auto; }
 .vt-cta .vt-h2 { color:#fff; }
