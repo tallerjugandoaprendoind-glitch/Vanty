@@ -1822,9 +1822,9 @@ body {
 }
 
 .vt-hero-split {
-  grid-template-columns: 1.05fr .95fr;
+  grid-template-columns: 1fr 1.08fr;
   align-items: center;
-  gap: clamp(32px, 5vw, 64px);
+  gap: clamp(28px, 4vw, 56px);
   display: grid;
 }
 
@@ -1933,7 +1933,9 @@ body {
 }
 
 .vt-open {
+  text-align: center;
   flex-direction: column;
+  align-items: center;
   display: flex;
 }
 
@@ -1989,21 +1991,22 @@ body {
 }
 
 .vt-media-free img {
-  width: 106%;
-  max-width: 106%;
-  margin-left: -3%;
+  width: 116%;
+  max-width: 116%;
+  margin-left: -8%;
 }
 
 .vt-hero-split .vt-media-free img {
-  width: 114%;
-  max-width: 114%;
+  width: 128%;
+  max-width: 128%;
+  margin-left: -6%;
 }
 
 @media (max-width: 880px) {
   .vt-media-free img, .vt-hero-split .vt-media-free img {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
+    width: 104%;
+    max-width: 104%;
+    margin-left: -2%;
   }
 }
 

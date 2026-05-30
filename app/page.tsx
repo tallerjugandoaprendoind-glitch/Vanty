@@ -43,7 +43,6 @@ export default function Home() {
         <div className="vt-arc" style={{ width: 130, height: 130, bottom: '14%', left: '7%', borderWidth: 2, borderColor: 'rgba(124,58,237,.2)' }} />
         <div className="vt-hero-inner vt-hero-split">
           <div>
-            <span className="vt-eyebrow"><span className="dot" /> Empresa de tecnología B2B · Perú → LATAM</span>
             <h1 className="vt-h1">Inteligencia que <span className="vt-grad-ink">transforma</span> la manera en que operas</h1>
             <p className="vt-lead">
               En Vanty construimos ecosistemas de software B2B SaaS con inteligencia artificial nativa.
@@ -70,6 +69,7 @@ export default function Home() {
           <Reveal className="vt-logos">
             <ClientChip src="/images/clientes/santi.png" name="Neuropsicología y Terapias SANTI" />
             <ClientChip src="/images/aprendo.png" name="Jugando Aprendo" />
+            <ClientChip src="/images/clientes/capyaba.png" alt="capyABA" name={<>capy<span style={{ color: '#e0959c' }}>ABA</span></>} />
             <span className="vt-logo-ghost">+ tu organización aquí</span>
           </Reveal>
         </div>

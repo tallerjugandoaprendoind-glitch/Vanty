@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { ChevronDown, ChevronRight, Menu, X, Phone, ArrowRight } from 'lucide-react'
 import { NAV_LINKS, SERVICES, WA_URL } from '@/app/lib/site'
 import ServiceIcon from '@/app/components/ServiceIcon'
+import Logo from '@/app/components/Logo'
 
 export default function SiteNav() {
   const pathname = usePathname()
@@ -29,7 +30,7 @@ export default function SiteNav() {
       <div className="vt-nav-row">
         {/* Logo */}
         <a href="/" className="vt-logo">
-          <img src="/vanty-logo.svg" alt="Vanty" style={{ height: 38, width: 'auto', display: 'block' }} />
+          <Logo height={38} />
           <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1 }}>
             <span className="vt-logo-name">VANTY</span>
             <span className="vt-logo-sub">software &amp; inteligencia artificial</span>

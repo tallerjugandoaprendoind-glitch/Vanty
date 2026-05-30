@@ -84,8 +84,7 @@ body {
 .vt-btn-sm { padding:10px 18px; font-size:14px; }
 
 /* ── Navbar ────────────────────────────────────── */
-.vt-nav { position:sticky; top:0; z-index:400; background:transparent; padding:14px clamp(12px,3vw,24px) 0; transition:padding .25s; }
-.vt-nav.scrolled { padding-top:8px; }
+.vt-nav { position:sticky; top:0; z-index:400; background:transparent; padding:14px clamp(12px,3vw,24px) 0; }
 .vt-nav-row { max-width:var(--maxw); margin:0 auto; height:62px; padding:0 14px 0 22px; display:flex; align-items:center; justify-content:space-between; gap:16px; background:rgba(255,255,255,.92); backdrop-filter:saturate(180%) blur(16px); border:1px solid var(--line); border-radius:18px; box-shadow:0 10px 34px rgba(11,16,32,.10); transition:box-shadow .25s; }
 .vt-nav.scrolled .vt-nav-row { box-shadow:0 14px 40px rgba(11,16,32,.14); }
 .vt-logo { display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0; }
@@ -128,12 +127,12 @@ body {
 .vt-mobile-cta .vt-btn { flex:1; justify-content:center; }
 
 /* ── Hero oscuro ───────────────────────────────── */
-.vt-hero { position:relative; overflow:hidden; background:radial-gradient(140% 120% at 80% -10%, #16285f 0%, #0b1430 45%, #070d23 100%); color:#fff; padding:clamp(64px,8vw,104px) clamp(20px,5vw,48px) clamp(72px,9vw,112px); }
+.vt-hero { position:relative; overflow:hidden; background:radial-gradient(140% 120% at 80% -10%, #16285f 0%, #0b1430 45%, #070d23 100%); color:#fff; margin-top:-76px; padding:calc(clamp(64px,8vw,104px) + 88px) clamp(20px,5vw,48px) clamp(72px,9vw,112px); }
 .vt-hero-grid { position:absolute; inset:0; background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px); background-size:30px 30px; mask-image:radial-gradient(ellipse 75% 65% at 50% 35%,#000,transparent); pointer-events:none; }
 .vt-blob { position:absolute; border-radius:50%; filter:blur(80px); pointer-events:none; animation:vtBlob 18s ease-in-out infinite; }
 @keyframes vtBlob { 0%,100%{ transform:translate(0,0) scale(1); } 33%{ transform:translate(40px,-30px) scale(1.12); } 66%{ transform:translate(-30px,24px) scale(.92); } }
 .vt-hero-inner { position:relative; z-index:2; max-width:var(--maxw); margin:0 auto; }
-.vt-hero-split { display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(32px,5vw,64px); align-items:center; }
+.vt-hero-split { display:grid; grid-template-columns:1fr 1.08fr; gap:clamp(28px,4vw,56px); align-items:center; }
 @media(max-width:900px){ .vt-hero-split{ grid-template-columns:1fr; } }
 .vt-hero h1 { color:#fff; margin:18px 0 0; }
 .vt-hero .vt-lead { color:rgba(255,255,255,.74); max-width:560px; margin-top:18px; }
@@ -164,7 +163,7 @@ body {
 .vt-tint-amber { background:#fef6ec; }
 
 /* ítem abierto (sin caja): solo ícono redondo + texto */
-.vt-open { display:flex; flex-direction:column; }
+.vt-open { display:flex; flex-direction:column; align-items:center; text-align:center; }
 .vt-ico-round { width:68px; height:68px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:18px; transition:transform .25s; }
 .vt-open:hover .vt-ico-round { transform:translateY(-4px) rotate(-4deg); }
 
@@ -178,9 +177,9 @@ body {
 .vt-media-blob { position:absolute; inset:-9% -7% -9% -7%; z-index:0; border-radius:46% 54% 58% 42% / 52% 44% 56% 48%; opacity:.55; }
 
 /* imágenes libres más grandes (rellenan el espacio) */
-.vt-media-free img { width:106%; max-width:106%; margin-left:-3%; }
-.vt-hero-split .vt-media-free img { width:114%; max-width:114%; }
-@media(max-width:880px){ .vt-media-free img, .vt-hero-split .vt-media-free img { width:100%; max-width:100%; margin-left:0; } }
+.vt-media-free img { width:116%; max-width:116%; margin-left:-8%; }
+.vt-hero-split .vt-media-free img { width:128%; max-width:128%; margin-left:-6%; }
+@media(max-width:880px){ .vt-media-free img, .vt-hero-split .vt-media-free img { width:104%; max-width:104%; margin-left:-2%; } }
 
 /* tile de logo de producto (en vez de ícono) */
 .vt-logo-tile { width:54px; height:54px; border-radius:14px; background:#fff; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; overflow:hidden; margin-bottom:18px; box-shadow:var(--shadow-sm); flex-shrink:0; }
