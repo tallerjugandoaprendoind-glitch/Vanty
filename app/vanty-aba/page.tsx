@@ -22,6 +22,15 @@ const AGENTS = [
   { icon: BookOpen, name: 'ConocimientoAI', desc: 'Tu base de conocimiento clínica, lista para responder al instante.' },
 ]
 
+const AGENT_COLORS = [
+  { bg: '#e6efff', fg: '#1D4ED8' },
+  { bg: '#efe7fe', fg: '#7c3aed' },
+  { bg: '#ddf7ef', fg: '#0f766e' },
+  { bg: '#fdeccf', fg: '#d97706' },
+  { bg: '#fde6ef', fg: '#e11d6b' },
+  { bg: '#e0f5fb', fg: '#0891b2' },
+]
+
 const CAPS = [
   { icon: ClipboardList, t: 'Registro de sesiones ABA', d: 'Toma de datos en tiempo real, por objetivo y dominio.' },
   { icon: Target, t: 'Programas ABA', d: 'Define objetivos, criterios y seguimiento por paciente.' },
@@ -41,7 +50,7 @@ const ROLES = [
   { icon: HeartHandshake, name: 'Familias', accent: '#ea580c', items: ['Progreso del paciente en vivo', 'Reportes y resúmenes de sesión', 'Actividades para el hogar', 'Mensajería con el especialista'] },
 ]
 
-const CMP_HEAD = ['Característica', 'CentralReach y similares', 'Otras apps', '⭐ Vanty ABA']
+const CMP_HEAD = ['Característica', 'Software internacional', 'Otras apps', '⭐ Vanty ABA']
 const CMP_ROWS = [
   ['Multi-rol (dirección, especialista, secretaría, familia)', '⚠️ Limitado', '❌ No aplica', '✅ 4 roles nativos'],
   ['Hub de IA con agentes clínicos (ARIA + más)', '❌ No', '❌ No', '✅ Suite completa'],
@@ -63,7 +72,7 @@ const PLANS = [
 ]
 
 const FAQS = [
-  { q: '¿En qué se diferencia Vanty ABA de CentralReach?', a: 'CentralReach es un gran software, pero está en inglés, se paga en dólares y está pensado para Estados Unidos. Vanty ABA te ofrece lo mismo y más —Hub de IA clínica, facturación, agenda y portal familiar— 100% en español, en soles y con soporte cercano en LATAM. Además incluimos el setup completo y un rol de secretaría que otras plataformas no contemplan.' },
+  { q: '¿En qué se diferencia Vanty ABA del software internacional?', a: 'El software ABA internacional suele estar en inglés, se paga en dólares y está pensado para Estados Unidos. Vanty ABA te ofrece lo mismo y más —Hub de IA clínica, facturación, agenda y portal familiar— 100% en español, en soles y con soporte cercano en LATAM. Además incluimos el setup completo y un rol de secretaría que otras plataformas no contemplan.' },
   { q: '¿Cuánto cuesta Vanty ABA para mi centro?', a: 'El primer mes es S/200 e incluye configuración completa, carga inicial de pacientes y capacitación. Desde el segundo mes pagas S/120/mes sin permanencia. Con el plan anual pagas S/1,180 (equivale a 10 meses) y usas 12 — 2 meses gratis y S/260 de ahorro.' },
   { q: '¿Necesito conocimientos técnicos para usarlo?', a: 'Para nada. Vanty ABA está diseñado para analistas y terapeutas, no para perfiles técnicos. La interfaz es 100% en español y nosotros hacemos el setup completo contigo en las primeras 24 horas.' },
   { q: '¿Qué es el Hub de IA y cómo me ayuda?', a: 'Es un equipo de asistentes de IA liderado por ARIA. Generan reportes y notas, auditan documentación, sugieren y evalúan objetivos, detectan patrones y anticipan alertas — para que tu equipo dedique su tiempo a los pacientes, no al papeleo.' },
@@ -77,25 +86,26 @@ export default function VantyAbaPage() {
       <SiteNav />
 
       {/* HERO */}
-      <header className="vt-hero">
+      <header className="vt-hero vt-hero-light vt-rel">
         <div className="vt-hero-grid" />
-        <div className="vt-blob" style={{ width: 460, height: 460, top: '-14%', left: '-6%', background: 'rgba(37,99,235,.42)' }} />
-        <div className="vt-blob" style={{ width: 360, height: 360, bottom: '-16%', right: '-4%', background: 'rgba(96,165,250,.28)', animationDelay: '5s' }} />
+        <div className="vt-blob" style={{ width: 460, height: 460, top: '-14%', left: '-6%', background: 'rgba(37,99,235,.16)' }} />
+        <div className="vt-blob" style={{ width: 360, height: 360, bottom: '-16%', right: '-4%', background: 'rgba(124,58,237,.14)', animationDelay: '5s' }} />
+        <div className="vt-arc" style={{ width: 260, height: 260, top: '14%', right: '6%', borderWidth: 2, borderColor: 'rgba(29,78,216,.16)' }} />
         <div className="vt-hero-inner vt-hero-split">
           <div>
-            <span className="vt-eyebrow on-dark"><Brain size={13} /> Producto · Vanty ABA</span>
-            <h1 className="vt-h1">La plataforma clínica <span className="vt-grad">ABA con IA</span>, hecha para LATAM</h1>
+            <span className="vt-eyebrow"><Brain size={13} /> Producto · Vanty ABA</span>
+            <h1 className="vt-h1">La plataforma clínica <span className="vt-grad-ink">ABA con IA</span>, hecha para LATAM</h1>
             <p className="vt-lead">
               Dirección, especialistas, secretaría y familias en una sola plataforma. Con un hub de IA clínica,
               facturación, agenda, evaluaciones y portal familiar. 100% en español, en uso real en centros como
-              <strong style={{ color: '#fff' }}> Jugando Aprendo</strong>.
+              <strong style={{ color: 'var(--ink)' }}> Jugando Aprendo</strong>.
             </p>
             <div className="vt-hero-btns">
-              <a href={WA_URL} className="vt-btn vt-btn-light" target="_blank" rel="noopener noreferrer"><Phone size={16} /> Agenda una demo</a>
-              <a href="#precios" className="vt-btn vt-btn-ghost-dark">Ver precios <ArrowRight size={16} /></a>
+              <a href={WA_URL} className="vt-btn vt-btn-primary" target="_blank" rel="noopener noreferrer"><Phone size={16} /> Agenda una demo</a>
+              <a href="#precios" className="vt-btn vt-btn-ghost">Ver precios <ArrowRight size={16} /></a>
             </div>
-            <p style={{ marginTop: 18, fontSize: 13.5, color: 'rgba(255,255,255,.55)', display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Check size={15} /> Setup en 24 horas · Sin permanencia · Soporte en español
+            <p style={{ marginTop: 18, fontSize: 13.5, color: 'var(--muted-2)', display: 'flex', alignItems: 'center', gap: 8 }}>
+              <Check size={15} color="#1D4ED8" /> Setup en 24 horas · Sin permanencia · Soporte en español
             </p>
           </div>
           <Reveal delay={0.1}>
@@ -135,31 +145,32 @@ export default function VantyAbaPage() {
         </div>
       </section>
 
-      {/* HUB DE IA (dark) */}
-      <section className="vt-section vt-dark" id="aria">
-        <div className="vt-hero-grid" />
-        <div className="vt-inner" style={{ position: 'relative', zIndex: 2 }}>
+      {/* HUB DE IA */}
+      <div style={{ background: '#ffffff' }}><Wave variant={2} fill="#f5f1fe" /></div>
+      <section className="vt-section vt-rel" id="aria" style={{ background: '#f5f1fe' }}>
+        <div className="vt-arc" style={{ width: 320, height: 320, top: '-10%', right: '-6%', borderWidth: 1.5, borderColor: 'rgba(124,58,237,.16)' }} />
+        <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow on-dark"><Sparkles size={13} /> Hub de IA clínica</span>
+            <span className="vt-eyebrow"><Sparkles size={13} /> Hub de IA clínica</span>
             <h2 className="vt-h2" style={{ marginTop: 16 }}>Conoce a ARIA y su equipo de agentes</h2>
             <p className="vt-lead">No es un chatbot genérico. Es un equipo de agentes de IA entrenados para el flujo real de un centro ABA — cada uno con una tarea concreta que le ahorra horas a tu equipo.</p>
           </Reveal>
-          <div className="vt-ai-grid">
+          <div className="vt-grid-4">
             {AGENTS.map((a, i) => {
               const Icon = a.icon
+              const c = AGENT_COLORS[i % AGENT_COLORS.length]
               return (
-                <Reveal key={a.name} delay={(i % 4) * 0.06}>
-                  <div className="vt-ai-card">
-                    <span className="vt-ai-ico"><Icon size={20} /></span>
-                    <div className="vt-ai-name">{a.name} <span className="vt-ai-tag">IA</span></div>
-                    <div className="vt-ai-desc">{a.desc}</div>
-                  </div>
+                <Reveal key={a.name} delay={(i % 4) * 0.06} className="vt-open" as="div">
+                  <span className="vt-ico-round" style={{ background: c.bg, color: c.fg }}><Icon size={26} /></span>
+                  <h3 className="vt-h3" style={{ fontSize: 17 }}>{a.name} <span style={{ fontSize: 10, fontWeight: 800, color: '#7c3aed', background: '#efe7fe', borderRadius: 6, padding: '2px 6px', marginLeft: 4, verticalAlign: 'middle' }}>IA</span></h3>
+                  <p className="vt-card-desc">{a.desc}</p>
                 </Reveal>
               )
             })}
           </div>
         </div>
       </section>
+      <div style={{ background: '#f5f1fe' }}><Wave flip fill="#ffffff" /></div>
 
       {/* CAPACIDADES */}
       <section className="vt-section">
@@ -251,8 +262,8 @@ export default function VantyAbaPage() {
       <section className="vt-section soft">
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><Star size={13} /> Vanty ABA vs CentralReach</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>La alternativa LATAM a CentralReach</h2>
+            <span className="vt-eyebrow"><Star size={13} /> Por qué Vanty ABA</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>La alternativa LATAM, hecha para tu centro</h2>
             <p className="vt-lead">Todo lo que esperas de un software ABA internacional, pero en español, en soles y pensado para tu centro.</p>
           </Reveal>
           <Reveal className="vt-cmp-wrap">
