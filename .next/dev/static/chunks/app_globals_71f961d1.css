@@ -2075,6 +2075,75 @@ body {
   display: inline-flex;
 }
 
+.vt-brandcard {
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.vt-brandcard .blob {
+  z-index: 0;
+  background: radial-gradient(circle at 50% 38%, #d4e1ff, #ece2fb);
+  border-radius: 46% 54% 58% 42% / 52% 44% 56% 48%;
+  position: absolute;
+  inset: -12%;
+}
+
+.vt-brandcard .inner {
+  z-index: 1;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  background: #fff;
+  border-radius: 26px;
+  flex-direction: column;
+  align-items: center;
+  padding: 46px 36px;
+  display: flex;
+  position: relative;
+}
+
+.vt-brandcard img {
+  width: auto;
+  height: 86px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.vt-brandcard .nm {
+  letter-spacing: -.02em;
+  color: var(--ink);
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.vt-brandcard .tg {
+  color: var(--muted);
+  margin-top: 8px;
+  font-size: 13.5px;
+}
+
+.vt-brandcard .chips {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 22px;
+  display: flex;
+}
+
+.vt-brandcard .chips span {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+  border-radius: 99px;
+  padding: 7px 14px;
+  font-family: Poppins, sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
 .vt-steps-flow {
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;

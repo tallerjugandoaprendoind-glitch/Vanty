@@ -192,6 +192,16 @@ body {
 .vt-card.soon:hover { transform:none; box-shadow:var(--shadow-sm); border-color:var(--line); }
 .vt-badge-soon { display:inline-flex; align-items:center; font-family:'Poppins',sans-serif; font-size:11px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; padding:4px 11px; border-radius:99px; margin-bottom:12px; background:#eef1f6; color:#7b8499; width:max-content; }
 
+/* tarjeta de marca (Nosotros) */
+.vt-brandcard { position:relative; max-width:480px; margin:0 auto; }
+.vt-brandcard .blob { position:absolute; inset:-12%; border-radius:46% 54% 58% 42% / 52% 44% 56% 48%; background:radial-gradient(circle at 50% 38%, #d4e1ff, #ece2fb); z-index:0; }
+.vt-brandcard .inner { position:relative; z-index:1; background:#fff; border:1px solid var(--line); border-radius:26px; box-shadow:var(--shadow-lg); padding:46px 36px; display:flex; flex-direction:column; align-items:center; text-align:center; }
+.vt-brandcard img { height:86px; width:auto; display:block; margin-bottom:14px; }
+.vt-brandcard .nm { font-family:'Poppins',sans-serif; font-weight:900; font-size:30px; letter-spacing:-.02em; color:var(--ink); line-height:1; }
+.vt-brandcard .tg { font-size:13.5px; color:var(--muted); margin-top:8px; }
+.vt-brandcard .chips { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:22px; }
+.vt-brandcard .chips span { font-family:'Poppins',sans-serif; font-weight:600; font-size:12.5px; padding:7px 14px; border-radius:99px; background:var(--soft); border:1px solid var(--line); color:var(--ink-2); }
+
 /* línea/curva conectora para pasos */
 .vt-steps-flow { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; position:relative; }
 @media(max-width:880px){ .vt-steps-flow{ grid-template-columns:repeat(2,1fr);} }

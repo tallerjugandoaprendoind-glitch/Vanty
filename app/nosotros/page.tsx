@@ -3,7 +3,6 @@ import { Heart, ArrowRight, Phone, Target, Eye, Cpu, Wrench, Users, Sparkles } f
 import SiteNav from '@/app/components/SiteNav'
 import SiteFooter from '@/app/components/SiteFooter'
 import Reveal from '@/app/components/Reveal'
-import Figure from '@/app/components/Figure'
 import Wave from '@/app/components/Wave'
 import { WA_URL } from '@/app/lib/site'
 
@@ -51,7 +50,20 @@ export default function NosotrosPage() {
             <a href="/servicios" className="vt-btn vt-btn-primary" style={{ marginTop: 24 }}>Qué hacemos <ArrowRight size={16} /></a>
           </Reveal>
           <Reveal delay={0.1}>
-            <Figure src="/images/nosotros.svg" alt="Vanty, tecnología con propósito" caption="Vanty" frameless blob="radial-gradient(circle at 50% 40%, #c9dbff, #e7defb)" />
+            <div className="vt-brandcard">
+              <span className="blob" />
+              <div className="inner">
+                <img src="/images/logos/vanty.png" alt="Vanty" />
+                <div className="nm">VANTY</div>
+                <div className="tg">Tecnología con propósito · Perú → LATAM</div>
+                <div className="chips">
+                  <span>🩺 Salud</span>
+                  <span>🎓 Educación</span>
+                  <span>🏢 Empresas</span>
+                  <span>💜 Bienestar</span>
+                </div>
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>

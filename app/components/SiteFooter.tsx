@@ -11,7 +11,7 @@ export default function SiteFooter() {
             <Logo height={34} />
             <span className="vt-display" style={{ fontWeight: 800, fontSize: 19, color: '#fff' }}>VANTY</span>
           </div>
-          <p className="vt-footer-tag">Software e inteligencia artificial que resuelve problemas reales. Hecho con 💜 desde Perú para toda América Latina.</p>
+          <p className="vt-footer-tag">Software e inteligencia artificial que resuelve problemas reales.</p>
           <div className="vt-socials">
             <a href={WA_URL} className="vt-soc" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><Phone size={17} /></a>
             <a href={`mailto:${EMAIL}`} className="vt-soc" aria-label="Email"><Mail size={17} /></a>
@@ -44,8 +44,7 @@ export default function SiteFooter() {
         </div>
       </div>
       <div className="vt-footer-bottom">
-        <p>© 2026 Vanty · Software e inteligencia artificial para LATAM</p>
-        <p>Hecho con 💜 desde Perú</p>
+        <p>© 2026 Vanty · Software e inteligencia artificial</p>
       </div>
     </footer>
   )
