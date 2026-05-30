@@ -813,7 +813,7 @@ function NosotrosPage() {
                                             lineNumber: 42,
                                             columnNumber: 42
                                         }, this),
-                                        " Quiénes somos"
+                                        " Nuestra visión"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/nosotros/page.tsx",
@@ -825,7 +825,7 @@ function NosotrosPage() {
                                     style: {
                                         marginTop: 16
                                     },
-                                    children: "Creadores independientes, asistidos por IA"
+                                    children: "Transformando sectores críticos a través de la tecnología"
                                 }, void 0, false, {
                                     fileName: "[project]/app/nosotros/page.tsx",
                                     lineNumber: 43,
@@ -837,18 +837,18 @@ function NosotrosPage() {
                                         marginTop: 14
                                     },
                                     children: [
-                                        "Entendemos que el mundo empresarial —especialmente en sectores críticos como la gestión clínica— requiere herramientas que no solo sean funcionales, sino profundamente inteligentes e intuitivas. Nuestro primer producto, ",
+                                        "Entendemos que el mundo empresarial de hoy exige más que simple digitalización; requiere inteligencia operativa. Vanty nace con la misión de desarrollar soluciones tecnológicas de alto rendimiento que optimicen los flujos de trabajo en sectores exigentes. Comenzamos este camino con",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                             style: {
                                                 color: 'var(--ink)'
                                             },
-                                            children: "Vanty ABA"
+                                            children: " Vanty ABA"
                                         }, void 0, false, {
                                             fileName: "[project]/app/nosotros/page.tsx",
-                                            lineNumber: 47,
-                                            columnNumber: 40
+                                            lineNumber: 48,
+                                            columnNumber: 15
                                         }, this),
-                                        ", nació resolviendo ese tipo de problema junto a centros reales."
+                                        ", una plataforma inteligente desarrollada codo a codo con profesionales de la salud para revolucionar la gestión clínica moderna."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/nosotros/page.tsx",
@@ -856,24 +856,24 @@ function NosotrosPage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "/servicios",
+                                    href: "/vanty-aba",
                                     className: "vt-btn vt-btn-primary",
                                     style: {
                                         marginTop: 24
                                     },
                                     children: [
-                                        "Qué hacemos ",
+                                        "Conoce Vanty ABA ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                             size: 16
                                         }, void 0, false, {
                                             fileName: "[project]/app/nosotros/page.tsx",
-                                            lineNumber: 50,
-                                            columnNumber: 106
+                                            lineNumber: 51,
+                                            columnNumber: 111
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/nosotros/page.tsx",
-                                    lineNumber: 50,
+                                    lineNumber: 51,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -891,7 +891,7 @@ function NosotrosPage() {
                                         className: "blob"
                                     }, void 0, false, {
                                         fileName: "[project]/app/nosotros/page.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 55,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -902,7 +902,7 @@ function NosotrosPage() {
                                                 alt: "Vanty"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/nosotros/page.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 57,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -910,7 +910,7 @@ function NosotrosPage() {
                                                 children: "VANTY"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/nosotros/page.tsx",
-                                                lineNumber: 57,
+                                                lineNumber: 58,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -918,7 +918,7 @@ function NosotrosPage() {
                                                 children: "Tecnología con propósito · Perú → LATAM"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/nosotros/page.tsx",
-                                                lineNumber: 58,
+                                                lineNumber: 59,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -928,51 +928,51 @@ function NosotrosPage() {
                                                         children: "🩺 Salud"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/nosotros/page.tsx",
-                                                        lineNumber: 60,
+                                                        lineNumber: 61,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "🎓 Educación"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/nosotros/page.tsx",
-                                                        lineNumber: 61,
+                                                        lineNumber: 62,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "🏢 Empresas"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/nosotros/page.tsx",
-                                                        lineNumber: 62,
+                                                        lineNumber: 63,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "💜 Bienestar"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/nosotros/page.tsx",
-                                                        lineNumber: 63,
+                                                        lineNumber: 64,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/nosotros/page.tsx",
-                                                lineNumber: 59,
+                                                lineNumber: 60,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/nosotros/page.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 56,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/nosotros/page.tsx",
-                                lineNumber: 53,
+                                lineNumber: 54,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/nosotros/page.tsx",
-                            lineNumber: 52,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this)
                     ]
@@ -995,12 +995,12 @@ function NosotrosPage() {
                     fill: "#ffffff"
                 }, void 0, false, {
                     fileName: "[project]/app/nosotros/page.tsx",
-                    lineNumber: 71,
+                    lineNumber: 72,
                     columnNumber: 46
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/nosotros/page.tsx",
-                lineNumber: 71,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1022,12 +1022,12 @@ function NosotrosPage() {
                                         size: 28
                                     }, void 0, false, {
                                         fileName: "[project]/app/nosotros/page.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 78,
                                         columnNumber: 96
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/nosotros/page.tsx",
-                                    lineNumber: 77,
+                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1038,7 +1038,7 @@ function NosotrosPage() {
                                     children: "Nuestra misión"
                                 }, void 0, false, {
                                     fileName: "[project]/app/nosotros/page.tsx",
-                                    lineNumber: 78,
+                                    lineNumber: 79,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1049,13 +1049,13 @@ function NosotrosPage() {
                                     children: "Resolver problemas reales con tecnología e inteligencia artificial, poniendo herramientas de nivel mundial al alcance de las organizaciones de América Latina — en su idioma y a un precio justo."
                                 }, void 0, false, {
                                     fileName: "[project]/app/nosotros/page.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 80,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/nosotros/page.tsx",
-                            lineNumber: 76,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1073,12 +1073,12 @@ function NosotrosPage() {
                                         size: 28
                                     }, void 0, false, {
                                         fileName: "[project]/app/nosotros/page.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 83,
                                         columnNumber: 96
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/nosotros/page.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1089,7 +1089,7 @@ function NosotrosPage() {
                                     children: "Nuestra visión"
                                 }, void 0, false, {
                                     fileName: "[project]/app/nosotros/page.tsx",
-                                    lineNumber: 83,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1100,24 +1100,24 @@ function NosotrosPage() {
                                     children: "Ser el motor tecnológico invisible detrás de las instituciones más eficientes del mañana, democratizando el acceso a la IA avanzada en plataformas SaaS listas para usar, seguras y escalables."
                                 }, void 0, false, {
                                     fileName: "[project]/app/nosotros/page.tsx",
-                                    lineNumber: 84,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/nosotros/page.tsx",
-                            lineNumber: 81,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/nosotros/page.tsx",
-                    lineNumber: 75,
+                    lineNumber: 76,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/nosotros/page.tsx",
-                lineNumber: 74,
+                lineNumber: 75,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1129,12 +1129,12 @@ function NosotrosPage() {
                     fill: "#f5f1fe"
                 }, void 0, false, {
                     fileName: "[project]/app/nosotros/page.tsx",
-                    lineNumber: 89,
+                    lineNumber: 90,
                     columnNumber: 46
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/nosotros/page.tsx",
-                lineNumber: 89,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1155,7 +1155,7 @@ function NosotrosPage() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/nosotros/page.tsx",
-                        lineNumber: 93,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1171,14 +1171,14 @@ function NosotrosPage() {
                                                 size: 13
                                             }, void 0, false, {
                                                 fileName: "[project]/app/nosotros/page.tsx",
-                                                lineNumber: 96,
+                                                lineNumber: 97,
                                                 columnNumber: 42
                                             }, this),
                                             " Valores fundamentales"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/nosotros/page.tsx",
-                                        lineNumber: 96,
+                                        lineNumber: 97,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1189,13 +1189,13 @@ function NosotrosPage() {
                                         children: "Lo que nos mueve todos los días"
                                     }, void 0, false, {
                                         fileName: "[project]/app/nosotros/page.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 98,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/nosotros/page.tsx",
-                                lineNumber: 95,
+                                lineNumber: 96,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1220,12 +1220,12 @@ function NosotrosPage() {
                                                     size: 28
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/nosotros/page.tsx",
-                                                    lineNumber: 104,
+                                                    lineNumber: 105,
                                                     columnNumber: 91
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/nosotros/page.tsx",
-                                                lineNumber: 104,
+                                                lineNumber: 105,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1236,7 +1236,7 @@ function NosotrosPage() {
                                                 children: v.title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/nosotros/page.tsx",
-                                                lineNumber: 105,
+                                                lineNumber: 106,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1244,31 +1244,31 @@ function NosotrosPage() {
                                                 children: v.desc
                                             }, void 0, false, {
                                                 fileName: "[project]/app/nosotros/page.tsx",
-                                                lineNumber: 106,
+                                                lineNumber: 107,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, v.title, true, {
                                         fileName: "[project]/app/nosotros/page.tsx",
-                                        lineNumber: 103,
+                                        lineNumber: 104,
                                         columnNumber: 17
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/app/nosotros/page.tsx",
-                                lineNumber: 99,
+                                lineNumber: 100,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/nosotros/page.tsx",
-                        lineNumber: 94,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/nosotros/page.tsx",
-                lineNumber: 92,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1280,12 +1280,12 @@ function NosotrosPage() {
                     fill: "#0c1838"
                 }, void 0, false, {
                     fileName: "[project]/app/nosotros/page.tsx",
-                    lineNumber: 114,
+                    lineNumber: 115,
                     columnNumber: 46
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/nosotros/page.tsx",
-                lineNumber: 114,
+                lineNumber: 115,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1298,7 +1298,7 @@ function NosotrosPage() {
                         className: "vt-cta-dots"
                     }, void 0, false, {
                         fileName: "[project]/app/nosotros/page.tsx",
-                        lineNumber: 117,
+                        lineNumber: 118,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1309,7 +1309,7 @@ function NosotrosPage() {
                                 children: "Construyamos algo que importe"
                             }, void 0, false, {
                                 fileName: "[project]/app/nosotros/page.tsx",
-                                lineNumber: 119,
+                                lineNumber: 120,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1317,7 +1317,7 @@ function NosotrosPage() {
                                 children: "Ya seas un centro, una empresa o tengas una idea de producto: conversemos sobre cómo la tecnología puede transformar tu operación."
                             }, void 0, false, {
                                 fileName: "[project]/app/nosotros/page.tsx",
-                                lineNumber: 120,
+                                lineNumber: 121,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1333,14 +1333,14 @@ function NosotrosPage() {
                                                 size: 16
                                             }, void 0, false, {
                                                 fileName: "[project]/app/nosotros/page.tsx",
-                                                lineNumber: 122,
+                                                lineNumber: 123,
                                                 columnNumber: 104
                                             }, this),
                                             " Hablemos del futuro"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/nosotros/page.tsx",
-                                        lineNumber: 122,
+                                        lineNumber: 123,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1352,36 +1352,36 @@ function NosotrosPage() {
                                                 size: 16
                                             }, void 0, false, {
                                                 fileName: "[project]/app/nosotros/page.tsx",
-                                                lineNumber: 123,
+                                                lineNumber: 124,
                                                 columnNumber: 82
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/nosotros/page.tsx",
-                                        lineNumber: 123,
+                                        lineNumber: 124,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/nosotros/page.tsx",
-                                lineNumber: 121,
+                                lineNumber: 122,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/nosotros/page.tsx",
-                        lineNumber: 118,
+                        lineNumber: 119,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/nosotros/page.tsx",
-                lineNumber: 116,
+                lineNumber: 117,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$SiteFooter$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/nosotros/page.tsx",
-                lineNumber: 128,
+                lineNumber: 129,
                 columnNumber: 7
             }, this)
         ]
