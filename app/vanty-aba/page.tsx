@@ -293,7 +293,7 @@ export default function VantyAbaPage() {
               <img className="vt-quote-av" src="/images/Testimonial.png" alt="Ana M." />
               <div style={{ textAlign: 'left' }}>
                 <div className="vt-quote-name">Ana M.</div>
-                <div className="vt-quote-role">Analista ABA · Lima, Perú</div>
+                <div className="vt-quote-role">Analista ABA</div>
               </div>
             </div>
           </Reveal>
@@ -347,7 +347,7 @@ export default function VantyAbaPage() {
         <div className="vt-cta-dots" />
         <div className="vt-cta-inner">
           <h2 className="vt-h2">Ordenemos el trabajo clínico ABA, juntos</h2>
-          <p className="vt-cta-sub">Un solo sistema para dirección, especialistas, secretaría y familias. Hecho en Perú para toda América Latina. 💜</p>
+          <p className="vt-cta-sub">Un solo sistema para dirección, especialistas, secretaría y familias.</p>
           <div className="vt-cta-btns">
             <a href={WA_URL} className="vt-btn vt-btn-light" target="_blank" rel="noopener noreferrer"><Phone size={16} /> Agenda una demo</a>
             <a href={`mailto:${EMAIL}`} className="vt-btn vt-btn-ghost-dark">{EMAIL}</a>

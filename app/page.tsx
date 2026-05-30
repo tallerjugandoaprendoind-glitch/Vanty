@@ -14,7 +14,7 @@ import { SERVICES, WA_URL } from '@/app/lib/site'
 
 export const metadata: Metadata = {
   title: 'Vanty — Inteligencia que transforma la manera en que operas',
-  description: 'Vanty construye ecosistemas de software B2B SaaS con inteligencia artificial nativa. Automatizamos la complejidad para que tu equipo se enfoque en lo que realmente importa. Desde Perú para LATAM.',
+  description: 'Vanty construye ecosistemas de software B2B SaaS con inteligencia artificial nativa. Automatizamos la complejidad para que tu equipo se enfoque en lo que realmente importa.',
 }
 
 const PILLARS = [
