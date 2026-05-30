@@ -265,8 +265,7 @@ a.vt-card { text-decoration:none; color:inherit; }
 .vt-trust-item svg { color:var(--blue); }
 
 /* ── CTA banner ────────────────────────────────── */
-.vt-cta { position:relative; overflow:hidden; text-align:center; padding:clamp(64px,8vw,100px) clamp(20px,6vw,48px); background:linear-gradient(180deg, #0c1838 0%, #0b1533 45%, #070d23 100%); color:#fff; }
-.vt-cta::after { content:''; position:absolute; top:-30%; left:50%; transform:translateX(-50%); width:80%; height:70%; background:radial-gradient(closest-side, rgba(37,99,235,.28), transparent 70%); pointer-events:none; }
+.vt-cta { position:relative; overflow:hidden; text-align:center; padding:clamp(64px,8vw,100px) clamp(20px,6vw,48px); background:#0c1838; color:#fff; }
 .vt-cta-dots { position:absolute; inset:0; opacity:.07; background-image:radial-gradient(#fff 1px,transparent 1px); background-size:22px 22px; }
 .vt-cta-inner { position:relative; z-index:2; max-width:680px; margin:0 auto; }
 .vt-cta .vt-h2 { color:#fff; }
@@ -274,7 +273,7 @@ a.vt-card { text-decoration:none; color:inherit; }
 .vt-cta-btns { display:flex; gap:13px; justify-content:center; flex-wrap:wrap; }
 
 /* ── Footer ────────────────────────────────────── */
-.vt-footer { background:#070b16; color:#fff; padding:62px clamp(20px,4vw,48px) 0; }
+.vt-footer { background:#0c1838; color:#fff; padding:62px clamp(20px,4vw,48px) 0; }
 .vt-footer-grid { max-width:var(--maxw); margin:0 auto; display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; padding-bottom:48px; }
 @media(max-width:840px){ .vt-footer-grid{ grid-template-columns:repeat(2,1fr); } }
 @media(max-width:520px){ .vt-footer-grid{ grid-template-columns:1fr; } }

@@ -93,7 +93,9 @@ export default function ServiciosPage() {
         </div>
       </section>
 
-      <section className="vt-cta">
+      <div style={{ background: '#ffffff' }}><Wave variant={2} fill="#0c1838" /></div>
+
+      <section className="vt-cta" style={{ paddingTop: 40 }}>
         <div className="vt-cta-dots" />
         <div className="vt-cta-inner">
           <h2 className="vt-h2">¿Tienes un problema que resolver?</h2>

@@ -8,6 +8,7 @@ import SiteFooter from '@/app/components/SiteFooter'
 import Reveal from '@/app/components/Reveal'
 import Figure from '@/app/components/Figure'
 import FaqList from '@/app/components/FaqList'
+import Wave from '@/app/components/Wave'
 import { WA_URL, EMAIL } from '@/app/lib/site'
 
 const AGENTS = [
@@ -330,7 +331,8 @@ export default function VantyAbaPage() {
       </section>
 
       {/* CTA */}
-      <section className="vt-cta">
+      <div style={{ background: '#ffffff' }}><Wave variant={2} fill="#0c1838" /></div>
+      <section className="vt-cta" style={{ paddingTop: 40 }}>
         <div className="vt-cta-dots" />
         <div className="vt-cta-inner">
           <h2 className="vt-h2">Ordenemos el trabajo clínico ABA, juntos</h2>

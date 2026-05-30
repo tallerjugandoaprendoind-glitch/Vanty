@@ -1,6 +1,3 @@
-[00:00:01.288] Server  LOG     ✓ Ready in 881ms
-[00:00:03.437] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:52.927] Server  ERROR   ⨯ ReferenceError: ClientChip is not defined
-[00:00:54.064] Browser ERROR   uncaughtError: ReferenceError: ClientChip is not defined
-[00:00:58.908] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:59.078] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.095] Server  LOG     ✓ Ready in 796ms
+[00:00:02.139] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.793] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

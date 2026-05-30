@@ -2448,22 +2448,10 @@ a.vt-card {
 .vt-cta {
   text-align: center;
   color: #fff;
-  background: linear-gradient(#0c1838 0%, #0b1533 45%, #070d23 100%);
+  background: #0c1838;
   padding: clamp(64px, 8vw, 100px) clamp(20px, 6vw, 48px);
   position: relative;
   overflow: hidden;
-}
-
-.vt-cta:after {
-  content: "";
-  pointer-events: none;
-  background: radial-gradient(closest-side, #2563eb47, #0000 70%);
-  width: 80%;
-  height: 70%;
-  position: absolute;
-  top: -30%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .vt-cta-dots {
@@ -2501,7 +2489,7 @@ a.vt-card {
 
 .vt-footer {
   color: #fff;
-  background: #070b16;
+  background: #0c1838;
   padding: 62px clamp(20px, 4vw, 48px) 0;
 }
 
