@@ -84,9 +84,10 @@ body {
 .vt-btn-sm { padding:10px 18px; font-size:14px; }
 
 /* ── Navbar ────────────────────────────────────── */
-.vt-nav { position:sticky; top:0; z-index:400; background:rgba(255,255,255,.85); backdrop-filter:saturate(180%) blur(14px); border-bottom:1px solid var(--line); transition:box-shadow .25s, background .25s; }
-.vt-nav.scrolled { box-shadow:0 6px 26px rgba(11,16,32,.08); }
-.vt-nav-row { max-width:var(--maxw); margin:0 auto; height:72px; padding:0 clamp(16px,4vw,40px); display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.vt-nav { position:sticky; top:0; z-index:400; background:transparent; padding:14px clamp(12px,3vw,24px) 0; transition:padding .25s; }
+.vt-nav.scrolled { padding-top:8px; }
+.vt-nav-row { max-width:var(--maxw); margin:0 auto; height:62px; padding:0 14px 0 22px; display:flex; align-items:center; justify-content:space-between; gap:16px; background:rgba(255,255,255,.92); backdrop-filter:saturate(180%) blur(16px); border:1px solid var(--line); border-radius:18px; box-shadow:0 10px 34px rgba(11,16,32,.10); transition:box-shadow .25s; }
+.vt-nav.scrolled .vt-nav-row { box-shadow:0 14px 40px rgba(11,16,32,.14); }
 .vt-logo { display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0; }
 .vt-logo-name { font-family:'Poppins',sans-serif; font-weight:800; font-size:19px; color:var(--ink); letter-spacing:-.02em; line-height:1.05; }
 .vt-logo-sub { font-size:9.5px; color:var(--muted-2); letter-spacing:.02em; }
@@ -120,7 +121,7 @@ body {
 .vt-mega-foot a { font-family:'Poppins',sans-serif; font-weight:700; font-size:13.5px; color:var(--blue); text-decoration:none; display:inline-flex; align-items:center; gap:6px; }
 
 /* ── Menú móvil ────────────────────────────────── */
-.vt-mobile { position:fixed; inset:72px 0 auto 0; z-index:399; background:#fff; border-bottom:1px solid var(--line); padding:14px clamp(16px,4vw,40px) 26px; box-shadow:var(--shadow); }
+.vt-mobile { position:fixed; inset:86px 12px auto 12px; z-index:399; background:#fff; border:1px solid var(--line); border-radius:18px; padding:10px 20px 20px; box-shadow:var(--shadow-lg); }
 .vt-mobile a, .vt-mobile button { display:flex; align-items:center; justify-content:space-between; width:100%; padding:14px 4px; color:var(--ink-2); text-decoration:none; font-size:15.5px; font-weight:600; border-bottom:1px solid var(--line-2); background:none; border-left:none; border-right:none; border-top:none; cursor:pointer; font-family:'Inter',sans-serif; }
 .vt-mobile-sub a { padding:11px 4px 11px 18px; font-size:14px; font-weight:500; color:var(--muted); border-bottom:none; }
 .vt-mobile-cta { display:flex; gap:10px; margin-top:18px; }
@@ -140,6 +141,48 @@ body {
 .vt-hero-center { max-width:820px; margin:0 auto; text-align:center; }
 .vt-hero-center .vt-lead { margin-left:auto; margin-right:auto; }
 .vt-hero-center .vt-hero-btns { justify-content:center; }
+
+/* ── Hero CLARO (estilo aireado) ───────────────── */
+.vt-hero.vt-hero-light { background:linear-gradient(180deg,#eef1fb 0%, #f6f8fe 55%, #ffffff 100%); color:var(--ink); }
+.vt-hero.vt-hero-light .vt-hero-grid { background-image:radial-gradient(rgba(29,78,216,.07) 1px,transparent 1px); mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,#000,transparent); }
+.vt-hero.vt-hero-light h1, .vt-hero.vt-hero-light .vt-h1 { color:var(--ink); }
+.vt-hero.vt-hero-light .vt-lead { color:var(--muted); }
+.vt-hero.vt-hero-light .vt-blob { filter:blur(90px); }
+.vt-grad-ink { background:linear-gradient(95deg,#1d4ed8,#7c3aed); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+/* franja de logos sobre hero claro */
+.vt-hero.vt-hero-light .vt-stat-cap { color:var(--muted); }
+
+/* ── Sistemas Fluidos: curvas, color y composición abierta ── */
+.vt-rel { position:relative; overflow:hidden; }
+.vt-wave { display:block; width:100%; height:clamp(48px,7vw,90px); }
+.vt-wave-tight { height:clamp(36px,5vw,64px); }
+
+/* tintes suaves por color para secciones */
+.vt-tint-blue { background:#eef4ff; }
+.vt-tint-violet { background:#f5f1fe; }
+.vt-tint-teal { background:#ecfaf5; }
+.vt-tint-amber { background:#fef6ec; }
+
+/* ítem abierto (sin caja): solo ícono redondo + texto */
+.vt-open { display:flex; flex-direction:column; }
+.vt-ico-round { width:68px; height:68px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:18px; transition:transform .25s; }
+.vt-open:hover .vt-ico-round { transform:translateY(-4px) rotate(-4deg); }
+
+/* arcos / círculos decorativos */
+.vt-arc { position:absolute; border-radius:50%; border-style:solid; pointer-events:none; }
+.vt-dotline { position:absolute; pointer-events:none; opacity:.5; }
+
+/* media que respira (imagen sin marco rígido) */
+.vt-media-free { position:relative; z-index:0; }
+.vt-media-free img { position:relative; z-index:1; width:100%; height:auto; display:block; border-radius:24px; filter:drop-shadow(0 30px 60px rgba(11,16,32,.16)); }
+.vt-media-blob { position:absolute; inset:-9% -7% -9% -7%; z-index:0; border-radius:46% 54% 58% 42% / 52% 44% 56% 48%; opacity:.55; }
+
+/* línea/curva conectora para pasos */
+.vt-steps-flow { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; position:relative; }
+@media(max-width:880px){ .vt-steps-flow{ grid-template-columns:repeat(2,1fr);} }
+@media(max-width:520px){ .vt-steps-flow{ grid-template-columns:1fr;} }
+.vt-stepc { text-align:center; }
+.vt-stepc-num { width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 16px; font-family:'Poppins',sans-serif; font-weight:800; font-size:20px; color:#fff; }
 
 /* Marco de imagen / mockup */
 .vt-frame { position:relative; border-radius:var(--radius-lg); overflow:hidden; background:linear-gradient(150deg,#1c2c5f,#0e1c44); border:1px solid rgba(255,255,255,.12); box-shadow:0 30px 80px rgba(0,0,0,.45); aspect-ratio:4/3; }

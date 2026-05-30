@@ -754,9 +754,81 @@ var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
-function Figure({ src, alt, caption, light = false, badge, ratio }) {
+function Figure({ src, alt, caption, light = false, frameless = false, blob, badge, ratio }) {
     _s();
     const [err, setErr] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Imagen "libre": sin marco rígido, con sombra y forma orgánica detrás.
+    if (frameless) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "vt-media-free",
+            children: [
+                blob && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "vt-media-blob",
+                    style: {
+                        background: blob
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/app/components/Figure.tsx",
+                    lineNumber: 31,
+                    columnNumber: 18
+                }, this),
+                !err ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    src: src,
+                    alt: alt,
+                    onError: ()=>setErr(true)
+                }, void 0, false, {
+                    fileName: "[project]/app/components/Figure.tsx",
+                    lineNumber: 33,
+                    columnNumber: 11
+                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "vt-frame light",
+                    style: {
+                        aspectRatio: ratio || '4/3'
+                    },
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "vt-frame-ph",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ImageIcon$3e$__["ImageIcon"], {
+                                size: 30,
+                                strokeWidth: 1.6
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/Figure.tsx",
+                                lineNumber: 36,
+                                columnNumber: 42
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: caption || alt
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/Figure.tsx",
+                                lineNumber: 36,
+                                columnNumber: 83
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/components/Figure.tsx",
+                        lineNumber: 36,
+                        columnNumber: 13
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/app/components/Figure.tsx",
+                    lineNumber: 35,
+                    columnNumber: 11
+                }, this),
+                badge && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "vt-frame-badge",
+                    children: badge
+                }, void 0, false, {
+                    fileName: "[project]/app/components/Figure.tsx",
+                    lineNumber: 39,
+                    columnNumber: 19
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/app/components/Figure.tsx",
+            lineNumber: 30,
+            columnNumber: 7
+        }, this);
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: `vt-frame${light ? ' light' : ''}`,
         style: ratio ? {
@@ -769,7 +841,7 @@ function Figure({ src, alt, caption, light = false, badge, ratio }) {
                 onError: ()=>setErr(true)
             }, void 0, false, {
                 fileName: "[project]/app/components/Figure.tsx",
-                lineNumber: 24,
+                lineNumber: 46,
                 columnNumber: 16
             }, this),
             err && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -780,20 +852,20 @@ function Figure({ src, alt, caption, light = false, badge, ratio }) {
                         strokeWidth: 1.6
                     }, void 0, false, {
                         fileName: "[project]/app/components/Figure.tsx",
-                        lineNumber: 27,
+                        lineNumber: 49,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         children: caption || alt
                     }, void 0, false, {
                         fileName: "[project]/app/components/Figure.tsx",
-                        lineNumber: 28,
+                        lineNumber: 50,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Figure.tsx",
-                lineNumber: 26,
+                lineNumber: 48,
                 columnNumber: 9
             }, this),
             badge && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -801,13 +873,13 @@ function Figure({ src, alt, caption, light = false, badge, ratio }) {
                 children: badge
             }, void 0, false, {
                 fileName: "[project]/app/components/Figure.tsx",
-                lineNumber: 31,
+                lineNumber: 53,
                 columnNumber: 17
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/Figure.tsx",
-        lineNumber: 23,
+        lineNumber: 45,
         columnNumber: 5
     }, this);
 }

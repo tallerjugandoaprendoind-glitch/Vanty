@@ -21,16 +21,17 @@ export default function ContactoPage() {
     <>
       <SiteNav />
 
-      <header className="vt-hero">
+      <header className="vt-hero vt-hero-light vt-rel">
         <div className="vt-hero-grid" />
-        <div className="vt-blob" style={{ width: 420, height: 420, top: '-14%', right: '-6%', background: 'rgba(37,99,235,.36)' }} />
+        <div className="vt-blob" style={{ width: 420, height: 420, top: '-14%', right: '-6%', background: 'rgba(37,99,235,.16)' }} />
+        <div className="vt-arc" style={{ width: 200, height: 200, bottom: '8%', left: '8%', borderWidth: 2, borderColor: 'rgba(124,58,237,.18)' }} />
         <div className="vt-hero-inner vt-hero-center">
-          <span className="vt-eyebrow on-dark"><MessageSquare size={13} /> Contacto</span>
-          <h1 className="vt-h1" style={{ marginTop: 18 }}>Conversemos tu <span className="vt-grad">proyecto</span></h1>
+          <span className="vt-eyebrow"><MessageSquare size={13} /> Contacto</span>
+          <h1 className="vt-h1" style={{ marginTop: 18 }}>Hablemos del <span className="vt-grad-ink">futuro</span></h1>
           <p className="vt-lead">Cuéntanos qué quieres resolver. Te respondemos con honestidad y cercanía — incluso antes de ser cliente.</p>
           <div className="vt-hero-btns">
-            <a href={WA_URL} className="vt-btn vt-btn-light" target="_blank" rel="noopener noreferrer"><Phone size={16} /> Hablar por WhatsApp</a>
-            <a href={`mailto:${EMAIL}`} className="vt-btn vt-btn-ghost-dark"><Mail size={16} /> {EMAIL}</a>
+            <a href={WA_URL} className="vt-btn vt-btn-primary" target="_blank" rel="noopener noreferrer"><Phone size={16} /> Hablar por WhatsApp</a>
+            <a href={`mailto:${EMAIL}`} className="vt-btn vt-btn-ghost"><Mail size={16} /> {EMAIL}</a>
           </div>
         </div>
       </header>

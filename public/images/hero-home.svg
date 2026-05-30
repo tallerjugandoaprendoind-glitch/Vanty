@@ -1,66 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Inter, Arial, sans-serif">
   <defs>
-    <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0e1a40"/>
-      <stop offset="1" stop-color="#0a1230"/>
-    </linearGradient>
     <linearGradient id="harea" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#60a5fa" stop-opacity="0.5"/>
-      <stop offset="1" stop-color="#60a5fa" stop-opacity="0"/>
+      <stop offset="0" stop-color="#1D4ED8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#1D4ED8" stop-opacity="0"/>
     </linearGradient>
+    <filter id="hsh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#1b2a52" flood-opacity="0.16"/>
+    </filter>
   </defs>
-  <rect width="1200" height="900" fill="url(#hbg)"/>
-  <circle cx="980" cy="180" r="220" fill="#1d4ed8" opacity="0.28"/>
-  <circle cx="240" cy="740" r="200" fill="#7c3aed" opacity="0.22"/>
-  <g stroke="#ffffff" opacity="0.05"><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="600" x2="1200" y2="600"/><line x1="400" y1="0" x2="400" y2="900"/><line x1="800" y1="0" x2="800" y2="900"/></g>
+  <rect width="1200" height="900" fill="#eef1fb"/>
+  <circle cx="940" cy="220" r="240" fill="#dbe6fb" opacity="0.7"/>
+  <circle cx="300" cy="720" r="200" fill="#e9defb" opacity="0.6"/>
 
-  <!-- main window -->
-  <rect x="180" y="170" width="840" height="560" rx="20" fill="#ffffff"/>
-  <rect x="180" y="170" width="840" height="54" rx="20" fill="#f1f4fa"/>
-  <rect x="180" y="200" width="840" height="24" fill="#f1f4fa"/>
-  <circle cx="214" cy="197" r="7" fill="#ff5f57"/><circle cx="238" cy="197" r="7" fill="#febc2e"/><circle cx="262" cy="197" r="7" fill="#28c840"/>
-  <rect x="430" y="184" width="340" height="26" rx="13" fill="#e6ebf4"/><text x="600" y="202" fill="#9aa3b5" font-size="12" text-anchor="middle">app.vanty.xyz</text>
-
-  <!-- mini sidebar -->
-  <rect x="180" y="224" width="190" height="506" fill="#0c1838"/>
-  <circle cx="216" cy="266" r="11" fill="#1D4ED8"/><text x="236" y="271" fill="#fff" font-size="13" font-weight="700">VANTY</text>
-  <rect x="204" y="312" width="142" height="34" rx="9" fill="#1D4ED8"/>
-  <rect x="216" y="368" width="100" height="10" rx="5" fill="#33406b"/>
-  <rect x="216" y="404" width="120" height="10" rx="5" fill="#33406b"/>
-  <rect x="216" y="440" width="90" height="10" rx="5" fill="#33406b"/>
-  <rect x="216" y="476" width="110" height="10" rx="5" fill="#33406b"/>
-
-  <!-- content -->
-  <text x="402" y="270" fill="#0b1020" font-size="18" font-weight="800">Panel de control</text>
-  <rect x="402" y="290" width="178" height="92" rx="13" fill="#f6f8fc" stroke="#eef1f6"/>
-  <text x="420" y="320" fill="#5b647a" font-size="11">Activos</text><text x="420" y="356" fill="#0b1020" font-size="26" font-weight="800">24</text>
-  <rect x="596" y="290" width="178" height="92" rx="13" fill="#f6f8fc" stroke="#eef1f6"/>
-  <text x="614" y="320" fill="#5b647a" font-size="11">Hoy</text><text x="614" y="356" fill="#1D4ED8" font-size="26" font-weight="800">18</text>
-  <rect x="790" y="290" width="200" height="92" rx="13" fill="#eff6ff" stroke="#dbe6fb"/>
-  <text x="808" y="320" fill="#1e40af" font-size="11">Metas ≥80%</text><text x="808" y="356" fill="#1D4ED8" font-size="26" font-weight="800">7</text>
-
-  <rect x="402" y="398" width="588" height="312" rx="14" fill="#ffffff" stroke="#eef1f6"/>
-  <text x="424" y="432" fill="#0b1020" font-size="14" font-weight="700">Progreso</text>
-  <g stroke="#eef1f6" stroke-width="1.5"><line x1="424" y1="470" x2="966" y2="470"/><line x1="424" y1="540" x2="966" y2="540"/><line x1="424" y1="610" x2="966" y2="610"/></g>
-  <path d="M424 600 L510 560 L596 575 L682 510 L768 470 L854 430 L966 392 L966 670 L424 670 Z" fill="url(#harea)"/>
-  <polyline points="424,600 510,560 596,575 682,510 768,470 854,430 966,392" fill="none" stroke="#1D4ED8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- floating: IA chip -->
-  <g>
-    <rect x="60" y="360" width="240" height="120" rx="18" fill="#ffffff"/>
-    <circle cx="100" cy="402" r="20" fill="#1D4ED8"/><text x="100" y="407" fill="#fff" font-size="12" font-weight="800" text-anchor="middle">AI</text>
-    <text x="132" y="398" fill="#0b1020" font-size="14" font-weight="700">ARIA</text>
-    <text x="132" y="418" fill="#9aa3b5" font-size="11">Reporte en 8 s</text>
-    <rect x="84" y="436" width="180" height="8" rx="4" fill="#dbe6fb"/><rect x="84" y="436" width="150" height="8" rx="4" fill="#1D4ED8"/>
+  <!-- main product window (light) -->
+  <g filter="url(#hsh)">
+    <rect x="250" y="170" width="700" height="470" rx="20" fill="#ffffff"/>
   </g>
-  <!-- floating: mobile -->
-  <g>
-    <rect x="900" y="560" width="200" height="280" rx="26" fill="#0c1838"/>
-    <rect x="912" y="572" width="176" height="256" rx="18" fill="#ffffff"/>
-    <rect x="912" y="572" width="176" height="56" rx="18" fill="#7c3aed"/>
-    <text x="934" y="606" fill="#fff" font-size="12" font-weight="700">Portal familiar</text>
-    <rect x="930" y="648" width="140" height="40" rx="10" fill="#f1f4fa"/>
-    <rect x="930" y="700" width="140" height="40" rx="10" fill="#f1f4fa"/>
-    <rect x="930" y="752" width="140" height="40" rx="10" fill="#eff6ff"/>
-  </g>
+  <rect x="250" y="170" width="700" height="52" rx="20" fill="#f4f6fb"/>
+  <rect x="250" y="198" width="700" height="24" fill="#f4f6fb"/>
+  <circle cx="284" cy="196" r="6" fill="#ff5f57"/><circle cx="306" cy="196" r="6" fill="#febc2e"/><circle cx="328" cy="196" r="6" fill="#28c840"/>
+  <rect x="500" y="183" width="200" height="26" rx="13" fill="#e6ebf4"/><text x="600" y="201" fill="#9aa3b5" font-size="11" text-anchor="middle">app.vanty.xyz</text>
+
+  <rect x="250" y="222" width="170" height="418" fill="#0c1838"/>
+  <circle cx="284" cy="262" r="10" fill="#1D4ED8"/><text x="302" y="267" fill="#fff" font-size="12" font-weight="700">VANTY</text>
+  <rect x="270" y="300" width="130" height="30" rx="8" fill="#1D4ED8"/>
+  <rect x="282" y="352" width="92" height="9" rx="4" fill="#33406b"/>
+  <rect x="282" y="384" width="108" height="9" rx="4" fill="#33406b"/>
+  <rect x="282" y="416" width="80" height="9" rx="4" fill="#33406b"/>
+  <rect x="282" y="448" width="100" height="9" rx="4" fill="#33406b"/>
+
+  <text x="448" y="266" fill="#0b1020" font-size="17" font-weight="800">Panel de control</text>
+  <rect x="448" y="286" width="150" height="82" rx="12" fill="#f6f8fc" stroke="#eef1f6"/>
+  <text x="466" y="314" fill="#5b647a" font-size="11">Eficiencia</text><text x="466" y="348" fill="#0b1020" font-size="24" font-weight="800">+38%</text>
+  <rect x="612" y="286" width="150" height="82" rx="12" fill="#f6f8fc" stroke="#eef1f6"/>
+  <text x="630" y="314" fill="#5b647a" font-size="11">Tareas auto.</text><text x="630" y="348" fill="#1D4ED8" font-size="24" font-weight="800">1.2k</text>
+  <rect x="776" y="286" width="150" height="82" rx="12" fill="#eef6ff" stroke="#dbe6fb"/>
+  <text x="794" y="314" fill="#1e40af" font-size="11">Tiempo ahorro</text><text x="794" y="348" fill="#1D4ED8" font-size="24" font-weight="800">9h</text>
+
+  <rect x="448" y="384" width="478" height="232" rx="13" fill="#ffffff" stroke="#eef1f6"/>
+  <text x="468" y="416" fill="#0b1020" font-size="13" font-weight="700">Rendimiento operativo</text>
+  <g stroke="#eef1f6" stroke-width="1.5"><line x1="468" y1="448" x2="906" y2="448"/><line x1="468" y1="508" x2="906" y2="508"/><line x1="468" y1="568" x2="906" y2="568"/></g>
+  <path d="M468 560 L540 524 L612 538 L684 482 L756 452 L828 416 L906 388 L906 588 L468 588 Z" fill="url(#harea)"/>
+  <polyline points="468,560 540,524 612,538 684,482 756,452 828,416 906,388" fill="none" stroke="#1D4ED8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- floating card: agente IA -->
+  <g filter="url(#hsh)"><rect x="70" y="300" width="250" height="120" rx="18" fill="#ffffff"/></g>
+  <circle cx="112" cy="344" r="20" fill="#1D4ED8"/><path d="M104 350 q8 -16 16 0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="106" cy="340" r="2.4" fill="#fff"/><circle cx="118" cy="340" r="2.4" fill="#fff"/>
+  <text x="146" y="338" fill="#0b1020" font-size="14" font-weight="700">Agente inteligente</text>
+  <text x="146" y="358" fill="#9aa3b5" font-size="11">Automatiza lo repetitivo</text>
+  <rect x="96" y="378" width="200" height="8" rx="4" fill="#dbe6fb"/><rect x="96" y="378" width="160" height="8" rx="4" fill="#1D4ED8"/>
+
+  <!-- floating card: seguridad -->
+  <g filter="url(#hsh)"><rect x="880" y="540" width="240" height="120" rx="18" fill="#ffffff"/></g>
+  <rect x="906" y="566" width="40" height="40" rx="11" fill="#ecfdf5"/><path d="M926 574 l14 6 v8 q0 12 -14 18 q-14 -6 -14 -18 v-8 z" fill="none" stroke="#16a34a" stroke-width="2.4" stroke-linejoin="round"/>
+  <text x="960" y="582" fill="#0b1020" font-size="14" font-weight="700">Seguro por diseño</text>
+  <text x="960" y="602" fill="#9aa3b5" font-size="11">Datos protegidos</text>
+  <text x="906" y="640" fill="#16a34a" font-size="12" font-weight="700">99.9% disponibilidad</text>
 </svg>

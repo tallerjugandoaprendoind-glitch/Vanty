@@ -8,6 +8,8 @@ export default function Figure({
   alt,
   caption,
   light = false,
+  frameless = false,
+  blob,
   badge,
   ratio,
 }: {
@@ -15,10 +17,30 @@ export default function Figure({
   alt: string
   caption?: string
   light?: boolean
+  frameless?: boolean
+  blob?: string
   badge?: React.ReactNode
   ratio?: string
 }) {
   const [err, setErr] = useState(false)
+
+  // Imagen "libre": sin marco rígido, con sombra y forma orgánica detrás.
+  if (frameless) {
+    return (
+      <div className="vt-media-free">
+        {blob && <span className="vt-media-blob" style={{ background: blob }} />}
+        {!err ? (
+          <img src={src} alt={alt} onError={() => setErr(true)} />
+        ) : (
+          <div className="vt-frame light" style={{ aspectRatio: ratio || '4/3' }}>
+            <div className="vt-frame-ph"><ImageIcon size={30} strokeWidth={1.6} /><span>{caption || alt}</span></div>
+          </div>
+        )}
+        {badge && <div className="vt-frame-badge">{badge}</div>}
+      </div>
+    )
+  }
+
   return (
     <div className={`vt-frame${light ? ' light' : ''}`} style={ratio ? { aspectRatio: ratio } : undefined}>
       {!err && <img src={src} alt={alt} onError={() => setErr(true)} />}
