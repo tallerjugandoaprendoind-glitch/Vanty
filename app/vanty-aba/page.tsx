@@ -16,8 +16,8 @@ import { WA_URL, EMAIL } from '@/app/lib/site'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-      title: 'Vanty ABA | Automatización Inteligente para Terapia Conductual',
-      description: 'Optimiza la gestión clínica y el análisis de conducta aplicado con las herramientas inteligentes de Vanty ABA.',
+      title: 'Vanty ABA | Plataforma de Gestión Clínica Multi-Rol en LATAM',
+      description: 'Herramientas de IA para el flujo clínico ABA. ARIA analiza datos de sesión, genera reportes y notas clínicas en segundos.',
     }
 
 const AGENTS = [
