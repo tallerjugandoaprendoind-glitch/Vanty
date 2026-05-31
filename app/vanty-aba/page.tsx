@@ -15,14 +15,14 @@ import PricingABA from '@/app/components/PricingABA'
 import { WA_URL, EMAIL } from '@/app/lib/site'
 
 const AGENTS = [
-  { icon: Bot, name: 'ARIA', desc: 'El asistente clínico que conversa contigo y coordina a todos los agentes.' },
-  { icon: FileText, name: 'NotaIA', desc: 'Genera reportes de sesión y notas clínicas completas en segundos.' },
-  { icon: ShieldAlert, name: 'GuardiánAI', desc: 'Audita la documentación y alerta lo que falta o no cuadra.' },
-  { icon: Target, name: 'ObjetivoAI', desc: 'Sugiere y evalúa objetivos ABA por dominio para cada paciente.' },
-  { icon: Activity, name: 'PatrónAI', desc: 'Detecta patrones en los datos de sesión que el ojo no ve.' },
-  { icon: TrendingUp, name: 'PredicciónAI', desc: 'Anticipa el progreso y avisa de riesgos antes de que ocurran.' },
-  { icon: Lightbulb, name: 'SugerenciasAI', desc: 'Recomendaciones clínicas accionables según cada caso.' },
-  { icon: BookOpen, name: 'ConocimientoAI', desc: 'Tu base de conocimiento clínica, lista para responder al instante.' },
+  { icon: Bot, name: 'ARIA', desc: 'Tu copiloto clínico: conversa contigo y coordina todo el trabajo inteligente del centro.' },
+  { icon: FileText, name: 'Notas y reportes', desc: 'Genera reportes de sesión y notas clínicas completas en segundos.' },
+  { icon: ShieldAlert, name: 'Auditoría inteligente', desc: 'Revisa la documentación y te avisa lo que falta o no cuadra.' },
+  { icon: Target, name: 'Objetivos a medida', desc: 'Sugiere y evalúa objetivos ABA por dominio para cada paciente.' },
+  { icon: Activity, name: 'Detección de patrones', desc: 'Encuentra patrones en los datos de sesión que el ojo no ve.' },
+  { icon: TrendingUp, name: 'Anticipación de avances', desc: 'Proyecta el progreso y avisa de riesgos antes de que ocurran.' },
+  { icon: Lightbulb, name: 'Recomendaciones clínicas', desc: 'Sugerencias accionables al instante, según cada caso.' },
+  { icon: BookOpen, name: 'Base de conocimiento', desc: 'Tu conocimiento clínico, listo para responder cuando lo necesites.' },
 ]
 
 const AGENT_COLORS = [
@@ -39,11 +39,11 @@ const CAPS = [
   { icon: Target, t: 'Programas ABA', d: 'Define objetivos, criterios y seguimiento por paciente.' },
   { icon: BarChart3, t: 'Analítica y gráficas', d: 'Gráficos de dominio con alertas automáticas al ≥80%.' },
   { icon: CalendarDays, t: 'Agenda y calendario', d: 'Sesiones y citas, sincronizadas con Google y Outlook.' },
-  { icon: CreditCard, t: 'Facturación y pagos', d: 'Cobros, comprobantes y reportes financieros integrados.' },
+  { icon: CreditCard, t: 'Gestión de pagos', d: 'Administra los pagos de tu centro, emite comprobantes y reportes financieros.' },
   { icon: Stethoscope, t: 'Evaluaciones + CIE-11', d: 'Evaluaciones iniciales con IA y buscador diagnóstico CIE-11.' },
   { icon: Users, t: 'Portal familiar', d: 'Las familias siguen el progreso y reciben actividades para casa.' },
   { icon: MessageSquare, t: 'Comunicación + WhatsApp', d: 'Chat interno y notificaciones a familias por WhatsApp.' },
-  { icon: Video, t: 'Videollamadas y push', d: 'Sesiones remotas y notificaciones push nativas.' },
+  { icon: Video, t: 'Videollamadas', d: 'Sesiones remotas en alta calidad, dentro de la misma plataforma.' },
 ]
 
 const ROLES = [
@@ -116,28 +116,9 @@ export default function VantyAbaPage() {
         <div className="vt-inner">
           <p className="vt-logos-label">En uso real en centros terapéuticos</p>
           <Reveal className="vt-logos">
+            <span className="vt-logo-chip"><img src="/images/clientes/santi.png" alt="SANTI" /> Neuropsicología y Terapias SANTI</span>
             <span className="vt-logo-chip"><img src="/images/aprendo.png" alt="Jugando Aprendo" /> Jugando Aprendo</span>
-            <span className="vt-logo-ghost">Centro pionero · Lima 🇵🇪</span>
             <span className="vt-logo-ghost">+ tu centro aquí</span>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* STAT BAND */}
-      <section className="vt-section">
-        <div className="vt-inner">
-          <Reveal className="vt-statband">
-            {[
-              { n: '4', c: 'Roles en una sola plataforma' },
-              { n: '8', c: 'Agentes de IA clínica' },
-              { n: '9+', c: 'Módulos integrados' },
-              { n: '24h', c: 'Setup incluido' },
-            ].map((s, i) => (
-              <div key={i} className="vt-stat-cell2">
-                <div className="vt-stat-big">{s.n}</div>
-                <div className="vt-stat-cap">{s.c}</div>
-              </div>
-            ))}
           </Reveal>
         </div>
       </section>
@@ -148,9 +129,9 @@ export default function VantyAbaPage() {
         <div className="vt-arc" style={{ width: 320, height: 320, top: '-10%', right: '-6%', borderWidth: 1.5, borderColor: 'rgba(124,58,237,.16)' }} />
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><Sparkles size={13} /> Hub de IA clínica</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>Conoce a ARIA y su equipo de agentes</h2>
-            <p className="vt-lead">No es un chatbot genérico. Es un equipo de agentes de IA entrenados para el flujo real de un centro ABA — cada uno con una tarea concreta que le ahorra horas a tu equipo.</p>
+            <span className="vt-eyebrow"><Sparkles size={13} /> Inteligencia clínica</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>ARIA, tu copiloto clínico</h2>
+            <p className="vt-lead">Más que un chatbot: una inteligencia entrenada en el flujo real de un centro ABA. ARIA se encarga del trabajo repetitivo —notas, reportes, alertas y análisis— para que tu equipo dedique su tiempo a los pacientes.</p>
           </Reveal>
           <div className="vt-grid-4">
             {AGENTS.map((a, i) => {
@@ -159,7 +140,7 @@ export default function VantyAbaPage() {
               return (
                 <Reveal key={a.name} delay={(i % 4) * 0.06} className="vt-open" as="div">
                   <span className="vt-ico-round" style={{ background: c.bg, color: c.fg }}><Icon size={26} /></span>
-                  <h3 className="vt-h3" style={{ fontSize: 17 }}>{a.name} <span style={{ fontSize: 10, fontWeight: 800, color: '#7c3aed', background: '#efe7fe', borderRadius: 6, padding: '2px 6px', marginLeft: 4, verticalAlign: 'middle' }}>IA</span></h3>
+                  <h3 className="vt-h3" style={{ fontSize: 17 }}>{a.name}</h3>
                   <p className="vt-card-desc">{a.desc}</p>
                 </Reveal>
               )

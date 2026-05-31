@@ -67,12 +67,15 @@ __turbopack_context__.s([
     "WA_NUM",
     ()=>WA_NUM,
     "WA_URL",
-    ()=>WA_URL
+    ()=>WA_URL,
+    "waLink",
+    ()=>waLink
 ]);
-const WA_NUM = '51924685557';
+const WA_NUM = '51994196916';
 const EMAIL = 'soporte@vanty.xyz';
 const WA_MSG = encodeURIComponent('Hola, vi la página de Vanty y quiero conocer más sobre lo que hacen.');
 const WA_URL = `https://wa.me/${WA_NUM}?text=${WA_MSG}`;
+const waLink = (msg)=>`https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`;
 const FB_URL = 'https://www.facebook.com/profile.php?id=61587764677406';
 const IG_URL = 'https://www.instagram.com/vanty.app';
 const SERVICES = [

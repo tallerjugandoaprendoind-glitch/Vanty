@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Check, CreditCard, Globe } from 'lucide-react'
+import { Check, CreditCard, Globe, Phone } from 'lucide-react'
 import { PLANS, REGIONS, countryToRegion, regionFromLanguage, type RegionKey, type Plan } from '@/app/lib/pricing'
-import { WA_URL } from '@/app/lib/site'
+import { waLink } from '@/app/lib/site'
 
 export default function PricingABA() {
   const [region, setRegion] = useState<RegionKey>('sudamerica')
@@ -24,6 +24,11 @@ export default function PricingABA() {
 
   const card = (p: Plan) => {
     const price = billing === 'm' ? p.m[region] : p.y[region]
+    const href = waLink(
+      price === null
+        ? `Hola, me interesa el plan ${p.name} de Vanty ABA y quisiera una cotización.`
+        : `Hola, me interesa adquirir el plan ${p.name} de Vanty ABA.`
+    )
     return (
       <div key={p.id} className={`vt-price${p.featured ? ' feat' : ''}`}>
         {p.featured && <span className="vt-price-badge">Más elegido</span>}
@@ -45,7 +50,7 @@ export default function PricingABA() {
         <ul className="vt-checks">
           {p.features.map(f => <li key={f} style={{ fontSize: 13 }}><Check size={15} /> {f}</li>)}
         </ul>
-        <a href={WA_URL} target="_blank" rel="noopener noreferrer" className={`vt-btn ${p.featured ? 'vt-btn-primary' : 'vt-btn-ghost'}`} style={{ marginTop: 20, width: '100%', justifyContent: 'center' }}>
+        <a href={href} target="_blank" rel="noopener noreferrer" className={`vt-btn ${p.featured ? 'vt-btn-primary' : 'vt-btn-ghost'}`} style={{ marginTop: 20, width: '100%', justifyContent: 'center' }}>
           {price === null ? 'Hablar con ventas' : 'Empezar'}
         </a>
       </div>
@@ -83,7 +88,16 @@ export default function PricingABA() {
           {plans.map(card)}
         </div>
 
-        <p style={{ textAlign: 'center', fontSize: 13, color: 'var(--muted-2)', marginTop: 28 }}>🔐 Activación en 24 h · Software multilingüe, se adapta a tu idioma · IA propia: ARIA</p>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap', marginTop: 32 }}>
+          <a href={waLink('Hola, quiero solicitar una demo de Vanty ABA.')} target="_blank" rel="noopener noreferrer" className="vt-btn vt-btn-primary">
+            <Phone size={16} /> Solicitar una demo
+          </a>
+          <a href={waLink('Hola, tengo dudas sobre los planes de Vanty ABA.')} target="_blank" rel="noopener noreferrer" className="vt-btn vt-btn-ghost">
+            Tengo dudas
+          </a>
+        </div>
+
+        <p style={{ textAlign: 'center', fontSize: 13, color: 'var(--muted-2)', marginTop: 24 }}>🔐 Activación en 24 h · Software multilingüe, se adapta a tu idioma · IA propia: ARIA</p>
       </div>
     </section>
   )
