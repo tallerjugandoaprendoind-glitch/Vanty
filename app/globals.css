@@ -126,6 +126,16 @@ body {
 .vt-mobile-cta { display:flex; gap:10px; margin-top:18px; }
 .vt-mobile-cta .vt-btn { flex:1; justify-content:center; }
 
+/* selector de idioma */
+.vt-lang { position:relative; }
+.vt-lang-btn { display:inline-flex; align-items:center; gap:6px; padding:8px 11px; border-radius:10px; border:1.5px solid var(--line); background:#fff; font-family:'Poppins',sans-serif; font-size:13px; color:var(--ink-2); cursor:pointer; transition:border-color .15s; }
+.vt-lang-btn:hover { border-color:var(--ink); }
+.vt-lang-menu { position:absolute; top:calc(100% + 8px); right:0; background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow-lg); padding:6px; min-width:168px; z-index:500; }
+.vt-lang-menu button { display:flex; align-items:center; gap:10px; width:100%; padding:9px 12px; border:none; background:none; border-radius:8px; font-size:14px; color:var(--ink-2); cursor:pointer; text-align:left; font-family:'Inter',sans-serif; }
+.vt-lang-menu button:hover { background:var(--soft); }
+.vt-lang-menu button.on { background:var(--blue-50); color:var(--blue); font-weight:700; }
+@media(max-width:980px){ .vt-nav-right .vt-lang { display:none; } }
+
 /* ── Hero oscuro ───────────────────────────────── */
 .vt-hero { position:relative; overflow:hidden; background:radial-gradient(140% 120% at 80% -10%, #16285f 0%, #0b1430 45%, #070d23 100%); color:#fff; margin-top:-76px; padding:calc(clamp(64px,8vw,104px) + 88px) clamp(20px,5vw,48px) clamp(72px,9vw,112px); }
 .vt-hero-grid { position:absolute; inset:0; background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px); background-size:30px 30px; mask-image:radial-gradient(ellipse 75% 65% at 50% 35%,#000,transparent); pointer-events:none; }
@@ -245,6 +255,8 @@ body {
 .vt-brandcard .tg { font-size:13.5px; color:var(--muted); margin-top:8px; }
 .vt-brandcard .chips { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:22px; }
 .vt-brandcard .chips span { font-family:'Poppins',sans-serif; font-weight:600; font-size:12.5px; padding:7px 14px; border-radius:99px; background:var(--soft); border:1px solid var(--line); color:var(--ink-2); }
+@keyframes vtFloatY { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-7px) } }
+.vt-brandcard img { animation:vtFloatY 5s ease-in-out infinite; }
 
 /* línea/curva conectora para pasos */
 .vt-steps-flow { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; position:relative; }

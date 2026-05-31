@@ -1,4 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="130 138 928 700" font-family="Inter, Arial, sans-serif">
+  <style>
+    .ln{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s ease forwards .5s}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    .bar{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1s cubic-bezier(.22,1,.36,1) forwards .6s}
+    @keyframes grow{to{transform:scaleX(1)}}
+    .rise{opacity:0;transform:translateY(12px);animation:rise .6s cubic-bezier(.22,1,.36,1) forwards}
+    @keyframes rise{to{opacity:1;transform:none}}
+    .pulse{animation:pulse 2.4s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+  </style>
   <defs>
     <filter id="ssh" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#1b2a52" flood-opacity="0.16"/>
@@ -29,13 +39,13 @@
   <rect x="178" y="478" width="500" height="160" rx="12" fill="#ffffff" stroke="#eef1f6"/>
   <text x="200" y="512" fill="#0b1020" font-size="13" font-weight="700">Tabla de datos</text>
   <g stroke="#eef1f6" stroke-width="1.5"><line x1="200" y1="528" x2="656" y2="528"/><line x1="200" y1="560" x2="656" y2="560"/><line x1="200" y1="592" x2="656" y2="592"/></g>
-  <rect x="200" y="540" width="120" height="10" rx="5" fill="#e6ebf4"/><rect x="360" y="540" width="80" height="10" rx="5" fill="#e6ebf4"/><rect x="520" y="540" width="100" height="10" rx="5" fill="#dcfce7"/>
-  <rect x="200" y="572" width="140" height="10" rx="5" fill="#eef1f6"/><rect x="360" y="572" width="70" height="10" rx="5" fill="#eef1f6"/><rect x="520" y="572" width="100" height="10" rx="5" fill="#dbe6fb"/>
-  <rect x="200" y="604" width="110" height="10" rx="5" fill="#eef1f6"/><rect x="360" y="604" width="90" height="10" rx="5" fill="#eef1f6"/><rect x="520" y="604" width="100" height="10" rx="5" fill="#fde68a"/>
+  <rect x="200" y="540" width="120" height="10" rx="5" fill="#e6ebf4"/><rect x="360" y="540" width="80" height="10" rx="5" fill="#e6ebf4"/><rect class="bar" x="520" y="540" width="100" height="10" rx="5" fill="#dcfce7"/>
+  <rect x="200" y="572" width="140" height="10" rx="5" fill="#eef1f6"/><rect x="360" y="572" width="70" height="10" rx="5" fill="#eef1f6"/><rect class="bar" x="520" y="572" width="100" height="10" rx="5" fill="#dbe6fb"/>
+  <rect x="200" y="604" width="110" height="10" rx="5" fill="#eef1f6"/><rect x="360" y="604" width="90" height="10" rx="5" fill="#eef1f6"/><rect class="bar" x="520" y="604" width="100" height="10" rx="5" fill="#fde68a"/>
   <rect x="700" y="478" width="142" height="160" rx="12" fill="#0c1838"/>
   <text x="722" y="512" fill="#aab6d4" font-size="11">Automatización</text>
   <circle cx="771" cy="568" r="40" fill="none" stroke="#1b2a52" stroke-width="12"/>
-  <path d="M771 528 a40 40 0 0 1 34 60" fill="none" stroke="#60a5fa" stroke-width="12" stroke-linecap="round"/>
+  <path class="ln" pathLength="1" d="M771 528 a40 40 0 0 1 34 60" fill="none" stroke="#60a5fa" stroke-width="12" stroke-linecap="round"/>
   <text x="771" y="574" fill="#fff" font-size="16" font-weight="800" text-anchor="middle">78%</text>
 
   <!-- phone overlap -->
@@ -43,9 +53,9 @@
   <rect x="814" y="444" width="192" height="352" rx="22" fill="#ffffff"/>
   <rect x="814" y="444" width="192" height="70" rx="22" fill="#0f766e"/>
   <text x="838" y="486" fill="#fff" font-size="13" font-weight="700">App móvil</text>
-  <rect x="836" y="540" width="148" height="48" rx="12" fill="#f1f4fa"/>
-  <rect x="836" y="600" width="148" height="48" rx="12" fill="#f1f4fa"/>
-  <rect x="836" y="660" width="148" height="48" rx="12" fill="#ecfdf5"/>
+  <rect class="rise" style="animation-delay:.6s" x="836" y="540" width="148" height="48" rx="12" fill="#f1f4fa"/>
+  <rect class="rise" style="animation-delay:.78s" x="836" y="600" width="148" height="48" rx="12" fill="#f1f4fa"/>
+  <rect class="rise" style="animation-delay:.96s" x="836" y="660" width="148" height="48" rx="12" fill="#ecfdf5"/>
   <rect x="836" y="724" width="148" height="44" rx="12" fill="#0f766e"/><text x="910" y="751" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">Enviar</text>
 
   <!-- code accent -->
