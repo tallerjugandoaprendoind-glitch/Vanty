@@ -1,23 +1,22 @@
-import type { Metadata } from 'next'
+'use client'
+
 import { Heart, ArrowRight, Phone, Target, Eye, Cpu, Wrench, Users, Sparkles } from 'lucide-react'
 import SiteNav from '@/app/components/SiteNav'
 import SiteFooter from '@/app/components/SiteFooter'
 import Reveal from '@/app/components/Reveal'
 import Wave from '@/app/components/Wave'
+import { useT } from '@/app/components/LangProvider'
 import { WA_URL } from '@/app/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Nosotros — Vanty | Redefiniendo el estándar del software B2B',
-  description: 'Vanty es una startup tecnológica que cierra la brecha entre operaciones empresariales complejas y la tecnología de última generación. Conoce nuestra historia, visión y valores.',
-}
-
-const VALUES = [
-  { icon: Cpu, c: '#1D4ED8', bg: '#e6efff', title: 'Innovación AI-First', desc: 'La inteligencia artificial no es un complemento: es el núcleo desde donde diseñamos cada solución.' },
-  { icon: Wrench, c: '#0f766e', bg: '#ddf7ef', title: 'Excelencia en ingeniería', desc: 'Construimos con arquitecturas modernas, limpias y robustas, asegurando un rendimiento impecable.' },
-  { icon: Users, c: '#7c3aed', bg: '#efe7fe', title: 'Empatía operativa', desc: 'Desarrollamos pensando en el humano que usa la herramienta, eliminando la fricción administrativa para potenciar el talento real.' },
+const VALUE_ICONS = [
+  { icon: Cpu, c: '#1D4ED8', bg: '#e6efff' },
+  { icon: Wrench, c: '#0f766e', bg: '#ddf7ef' },
+  { icon: Users, c: '#7c3aed', bg: '#efe7fe' },
 ]
 
 export default function NosotrosPage() {
+  const { t, tr } = useT()
+  const vals = tr<{ t: string; d: string }[]>('nosotros.vals') || []
   return (
     <>
       <SiteNav />
@@ -27,9 +26,9 @@ export default function NosotrosPage() {
         <div className="vt-blob" style={{ width: 420, height: 420, top: '-14%', left: '-6%', background: 'rgba(124,58,237,.16)' }} />
         <div className="vt-arc" style={{ width: 240, height: 240, bottom: '6%', right: '7%', borderWidth: 2, borderColor: 'rgba(29,78,216,.18)' }} />
         <div className="vt-hero-inner vt-hero-center">
-          <span className="vt-eyebrow"><Heart size={13} /> Nosotros</span>
-          <h1 className="vt-h1" style={{ marginTop: 18 }}>Redefiniendo el estándar del <span className="vt-grad-ink">software B2B</span></h1>
-          <p className="vt-lead">Una startup tecnológica de vanguardia nacida con una misión clara: cerrar la brecha entre las operaciones empresariales complejas y la tecnología de última generación.</p>
+          <span className="vt-eyebrow"><Heart size={13} /> {t('nosotros.eyebrow')}</span>
+          <h1 className="vt-h1" style={{ marginTop: 18 }}>{t('nosotros.h1a')}<span className="vt-grad-ink">{t('nosotros.h1grad')}</span></h1>
+          <p className="vt-lead">{t('nosotros.lead')}</p>
         </div>
       </header>
 
@@ -39,16 +38,14 @@ export default function NosotrosPage() {
       <section className="vt-section" style={{ background: '#eef4ff' }}>
         <div className="vt-inner vt-hero-split" style={{ alignItems: 'center' }}>
           <Reveal>
-            <span className="vt-eyebrow"><Sparkles size={13} /> Nuestra visión</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>Transformando sectores críticos a través de la tecnología</h2>
+            <span className="vt-eyebrow"><Sparkles size={13} /> {t('nosotros.vEyebrow')}</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('nosotros.vTitle')}</h2>
             <p className="vt-lead" style={{ marginTop: 14 }}>
-              Entendemos que el mundo empresarial de hoy exige más que simple digitalización; requiere
-              inteligencia operativa. Vanty nace con la misión de desarrollar soluciones tecnológicas de alto
-              rendimiento que optimicen los flujos de trabajo en sectores exigentes. Comenzamos este camino con
-              <strong style={{ color: 'var(--ink)' }}> Vanty ABA</strong>, una plataforma inteligente desarrollada
-              codo a codo con profesionales de la salud para revolucionar la gestión clínica moderna.
+              {t('nosotros.vLead1')}
+              <strong style={{ color: 'var(--ink)' }}> {t('nosotros.vLeadStrong')}</strong>
+              {t('nosotros.vLead2')}
             </p>
-            <a href="/vanty-aba" className="vt-btn vt-btn-primary" style={{ marginTop: 24 }}>Conoce Vanty ABA <ArrowRight size={16} /></a>
+            <a href="/vanty-aba" className="vt-btn vt-btn-primary" style={{ marginTop: 24 }}>{t('nosotros.vCta')} <ArrowRight size={16} /></a>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="vt-brandcard">
@@ -56,12 +53,9 @@ export default function NosotrosPage() {
               <div className="inner">
                 <img src="/images/logos/vanty.png" alt="Vanty" />
                 <div className="nm">VANTY</div>
-                <div className="tg">Tecnología con propósito · Perú → LATAM</div>
+                <div className="tg">{t('nosotros.brandTag')}</div>
                 <div className="chips">
-                  <span>🩺 Salud</span>
-                  <span>🎓 Educación</span>
-                  <span>🏢 Empresas</span>
-                  <span>💜 Bienestar</span>
+                  {(tr<string[]>('nosotros.chips') || []).map(c => <span key={c}>{c}</span>)}
                 </div>
               </div>
             </div>
@@ -76,13 +70,13 @@ export default function NosotrosPage() {
         <div className="vt-inner vt-grid-2">
           <Reveal className="vt-open" as="div">
             <span className="vt-ico-round" style={{ background: '#e6efff', color: '#1D4ED8' }}><Target size={28} /></span>
-            <h2 className="vt-h3" style={{ fontSize: 22 }}>Nuestra misión</h2>
-            <p className="vt-card-desc" style={{ fontSize: 15.5 }}>Resolver problemas reales con tecnología e inteligencia artificial, poniendo herramientas de nivel mundial al alcance de las organizaciones de América Latina — en su idioma y a un precio justo.</p>
+            <h2 className="vt-h3" style={{ fontSize: 22 }}>{t('nosotros.misionT')}</h2>
+            <p className="vt-card-desc" style={{ fontSize: 15.5 }}>{t('nosotros.misionD')}</p>
           </Reveal>
           <Reveal className="vt-open" as="div" delay={0.1}>
             <span className="vt-ico-round" style={{ background: '#efe7fe', color: '#7c3aed' }}><Eye size={28} /></span>
-            <h2 className="vt-h3" style={{ fontSize: 22 }}>Nuestra visión</h2>
-            <p className="vt-card-desc" style={{ fontSize: 15.5 }}>Ser el motor tecnológico invisible detrás de las instituciones más eficientes del mañana, democratizando el acceso a la IA avanzada en plataformas SaaS listas para usar, seguras y escalables.</p>
+            <h2 className="vt-h3" style={{ fontSize: 22 }}>{t('nosotros.visionT')}</h2>
+            <p className="vt-card-desc" style={{ fontSize: 15.5 }}>{t('nosotros.visionD')}</p>
           </Reveal>
         </div>
       </section>
@@ -94,17 +88,17 @@ export default function NosotrosPage() {
         <div className="vt-arc" style={{ width: 300, height: 300, top: '-10%', right: '-6%', borderWidth: 1.5, borderColor: 'rgba(124,58,237,.16)' }} />
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><Heart size={13} /> Valores fundamentales</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>Lo que nos mueve todos los días</h2>
+            <span className="vt-eyebrow"><Heart size={13} /> {t('nosotros.valEyebrow')}</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('nosotros.valTitle')}</h2>
           </Reveal>
           <div className="vt-grid-3" style={{ marginTop: 8 }}>
-            {VALUES.map((v, i) => {
+            {VALUE_ICONS.map((v, i) => {
               const Icon = v.icon
               return (
-                <Reveal key={v.title} delay={i * 0.08} className="vt-open" as="div">
+                <Reveal key={i} delay={i * 0.08} className="vt-open" as="div">
                   <span className="vt-ico-round" style={{ background: v.bg, color: v.c }}><Icon size={28} /></span>
-                  <h3 className="vt-h3" style={{ fontSize: 19 }}>{v.title}</h3>
-                  <p className="vt-card-desc">{v.desc}</p>
+                  <h3 className="vt-h3" style={{ fontSize: 19 }}>{vals[i]?.t}</h3>
+                  <p className="vt-card-desc">{vals[i]?.d}</p>
                 </Reveal>
               )
             })}
@@ -117,11 +111,11 @@ export default function NosotrosPage() {
       <section className="vt-cta" style={{ paddingTop: 40 }}>
         <div className="vt-cta-dots" />
         <div className="vt-cta-inner">
-          <h2 className="vt-h2">Construyamos algo que importe</h2>
-          <p className="vt-cta-sub">Ya seas un centro, una empresa o tengas una idea de producto: conversemos sobre cómo la tecnología puede transformar tu operación.</p>
+          <h2 className="vt-h2">{t('nosotros.ctaTitle')}</h2>
+          <p className="vt-cta-sub">{t('nosotros.ctaSub')}</p>
           <div className="vt-cta-btns">
-            <a href={WA_URL} className="vt-btn vt-btn-light" target="_blank" rel="noopener noreferrer"><Phone size={16} /> Hablemos del futuro</a>
-            <a href="/contacto" className="vt-btn vt-btn-ghost-dark">Contáctanos <ArrowRight size={16} /></a>
+            <a href={WA_URL} className="vt-btn vt-btn-light" target="_blank" rel="noopener noreferrer"><Phone size={16} /> {t('common.hablemosFuturo')}</a>
+            <a href="/contacto" className="vt-btn vt-btn-ghost-dark">{t('common.contactanos')} <ArrowRight size={16} /></a>
           </div>
         </div>
       </section>

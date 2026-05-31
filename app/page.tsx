@@ -26,7 +26,7 @@ const SECTORS = [
 ]
 
 export default function Home() {
-  const { t } = useT()
+  const { t, tr } = useT()
   return (
     <>
       <SiteNav />
@@ -64,7 +64,7 @@ export default function Home() {
             <ClientChip src="/images/clientes/santi.png" name="Neuropsicología y Terapias SANTI" />
             <ClientChip src="/images/aprendo.png" name="Jugando Aprendo" />
             <ClientChip src="/images/clientes/capyaba.png" alt="capyABA" name={<>capy<span style={{ color: '#e0959c' }}>ABA</span></>} />
-            <span className="vt-logo-ghost">+ tu organización aquí</span>
+            <span className="vt-logo-ghost">{t('home.tuOrg')}</span>
           </Reveal>
         </div>
       </section>
@@ -110,16 +110,18 @@ export default function Home() {
           </Reveal>
           <div className="vt-grid-2" style={{ maxWidth: 860, margin: '0 auto' }}>
             {SERVICES.map((s, i) => {
+              const k = s.slug === 'vanty-aba' ? 'aba' : 'school'
+              const tags = tr<string[]>(`svc.${k}.tags`) || []
               const inner = (
                 <>
                   <ServiceIcon iconKey={s.icon} logo={s.logo} accent={s.accent} />
                   {s.soon
-                    ? <span className="vt-badge-soon">{s.badge}</span>
-                    : <span className="vt-badge-pill" style={{ color: s.accent, background: `${s.accent}15` }}>{s.badge}</span>}
+                    ? <span className="vt-badge-soon">{t(`svc.${k}.badge`)}</span>
+                    : <span className="vt-badge-pill" style={{ color: s.accent, background: `${s.accent}15` }}>{t(`svc.${k}.badge`)}</span>}
                   <h3 className="vt-h3">{s.name}</h3>
-                  <p className="vt-card-desc">{s.desc}</p>
-                  <div className="vt-tags">{s.tags.map(tag => <span key={tag} className="vt-tag">{tag}</span>)}</div>
-                  {!s.soon && <span className="vt-link">{t('home.ctaProductos') === 'Discover our products' ? 'Learn more' : 'Conocer más'} <ArrowRight size={15} /></span>}
+                  <p className="vt-card-desc">{t(`svc.${k}.desc`)}</p>
+                  <div className="vt-tags">{tags.map(tag => <span key={tag} className="vt-tag">{tag}</span>)}</div>
+                  {!s.soon && <span className="vt-link">{t('common.conocerMas')} <ArrowRight size={15} /></span>}
                 </>
               )
               return (

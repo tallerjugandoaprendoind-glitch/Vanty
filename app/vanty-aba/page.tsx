@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Brain, Bot, FileText, ShieldAlert, Target, Activity, TrendingUp, Lightbulb, BookOpen,
   ClipboardList, BarChart3, CalendarDays, CreditCard, Stethoscope, Users, MessageSquare,
@@ -12,25 +14,10 @@ import FaqList from '@/app/components/FaqList'
 import Wave from '@/app/components/Wave'
 import Avatar from '@/app/components/Avatar'
 import PricingABA from '@/app/components/PricingABA'
+import { useT } from '@/app/components/LangProvider'
 import { WA_URL, EMAIL } from '@/app/lib/site'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-      title: 'Vanty ABA | Plataforma de Gestión Clínica Multi-Rol en LATAM',
-      description: 'Herramientas de IA para el flujo clínico ABA. ARIA analiza datos de sesión, genera reportes y notas clínicas en segundos.',
-    }
-
-const AGENTS = [
-  { icon: Bot, name: 'ARIA', desc: 'Tu copiloto clínico: conversa contigo y coordina todo el trabajo inteligente del centro.' },
-  { icon: FileText, name: 'Notas y reportes', desc: 'Genera reportes de sesión y notas clínicas completas en segundos.' },
-  { icon: ShieldAlert, name: 'Auditoría inteligente', desc: 'Revisa la documentación y te avisa lo que falta o no cuadra.' },
-  { icon: Target, name: 'Objetivos a medida', desc: 'Sugiere y evalúa objetivos ABA por dominio para cada paciente.' },
-  { icon: Activity, name: 'Detección de patrones', desc: 'Encuentra patrones en los datos de sesión que el ojo no ve.' },
-  { icon: TrendingUp, name: 'Anticipación de avances', desc: 'Proyecta el progreso y avisa de riesgos antes de que ocurran.' },
-  { icon: Lightbulb, name: 'Recomendaciones clínicas', desc: 'Sugerencias accionables al instante, según cada caso.' },
-  { icon: BookOpen, name: 'Base de conocimiento', desc: 'Tu conocimiento clínico, listo para responder cuando lo necesites.' },
-]
-
+const AGENT_ICONS = [Bot, FileText, ShieldAlert, Target, Activity, TrendingUp, Lightbulb, BookOpen]
 const AGENT_COLORS = [
   { bg: '#e6efff', fg: '#1D4ED8' },
   { bg: '#efe7fe', fg: '#7c3aed' },
@@ -39,51 +26,26 @@ const AGENT_COLORS = [
   { bg: '#fde6ef', fg: '#e11d6b' },
   { bg: '#e0f5fb', fg: '#0891b2' },
 ]
-
-const CAPS = [
-  { icon: ClipboardList, t: 'Registro de sesiones ABA', d: 'Toma de datos en tiempo real, por objetivo y dominio.' },
-  { icon: Target, t: 'Programas ABA', d: 'Define objetivos, criterios y seguimiento por paciente.' },
-  { icon: BarChart3, t: 'Analítica y gráficas', d: 'Gráficos de dominio con alertas automáticas al ≥80%.' },
-  { icon: CalendarDays, t: 'Agenda y calendario', d: 'Sesiones y citas, sincronizadas con Google y Outlook.' },
-  { icon: CreditCard, t: 'Gestión de pagos', d: 'Administra los pagos de tu centro, emite comprobantes y reportes financieros.' },
-  { icon: Stethoscope, t: 'Evaluaciones + CIE-11', d: 'Evaluaciones iniciales con IA y buscador diagnóstico CIE-11.' },
-  { icon: Users, t: 'Portal familiar', d: 'Las familias siguen el progreso y reciben actividades para casa.' },
-  { icon: MessageSquare, t: 'Comunicación + WhatsApp', d: 'Chat interno y notificaciones a familias por WhatsApp.' },
-  { icon: Video, t: 'Videollamadas', d: 'Sesiones remotas en alta calidad, dentro de la misma plataforma.' },
-]
-
-const ROLES = [
-  { icon: UserCog, name: 'Dirección y analistas', accent: '#1D4ED8', items: ['Dashboard de todo el centro', 'Programas y supervisión clínica', 'Reportes con IA y analítica', 'Gestión de equipo y permisos'] },
-  { icon: Stethoscope, name: 'Especialistas', accent: '#7c3aed', items: ['Registro de sus sesiones', 'Historial clínico del paciente', 'Notas clínicas con ARIA', 'Agenda y comunicación'] },
-  { icon: Headset, name: 'Secretaría', accent: '#0891b2', items: ['Agenda y cronograma del centro', 'Pagos, cobros y comprobantes', 'WhatsApp con familias', 'Sin acceso clínico sensible'] },
-  { icon: HeartHandshake, name: 'Familias', accent: '#ea580c', items: ['Progreso del paciente en vivo', 'Reportes y resúmenes de sesión', 'Actividades para el hogar', 'Mensajería con el especialista'] },
-]
-
-const CMP_HEAD = ['Característica', 'Software internacional', 'Otras apps', '⭐ Vanty ABA']
-const CMP_ROWS = [
-  ['Multi-rol (dirección, especialista, secretaría, familia)', '⚠️ Limitado', '❌ No aplica', '✅ 4 roles nativos'],
-  ['Hub de IA con agentes clínicos (ARIA + más)', '❌ No', '❌ No', '✅ Suite completa'],
-  ['Reportes clínicos con IA en segundos', '⚠️ Manual', '❌ No', '✅ Automáticos'],
-  ['Evaluaciones iniciales + diagnóstico CIE-11', '⚠️ Parcial', '❌ No', '✅ Con IA'],
-  ['Facturación y pagos integrados', '⚠️ Módulo aparte', '❌ No', '✅ Incluido'],
-  ['WhatsApp integrado para familias', '❌ No', '⚠️ Básico', '✅ Nativo'],
-  ['Sincronización Google y Outlook', '⚠️ Parcial', '❌ No', '✅ Incluida'],
-  ['Multilingüe, se adapta a tu idioma', '⚠️ Limitado', '⚠️ Parcial', '✅ Sí'],
-  ['Precio transparente, sin costos ocultos', '⚠️ Módulos extra', '⚠️ Variable', '✅ Todo incluido'],
-  ['Setup completo incluido', '❌ Costo extra', '❌ No', '✅ Incluido'],
+const CAP_ICONS = [ClipboardList, Target, BarChart3, CalendarDays, CreditCard, Stethoscope, Users, MessageSquare, Video]
+const ROLE_META = [
+  { icon: UserCog, accent: '#1D4ED8' },
+  { icon: Stethoscope, accent: '#7c3aed' },
+  { icon: Headset, accent: '#0891b2' },
+  { icon: HeartHandshake, accent: '#ea580c' },
 ]
 const cellClass = (v: string) => v.startsWith('✅') ? 'yes' : v.startsWith('❌') ? 'no' : v.startsWith('⚠️') ? 'par' : ''
 
-const FAQS = [
-  { q: '¿En qué se diferencia Vanty ABA del software internacional?', a: 'El software ABA internacional suele ser costoso, rígido y pensado para otra realidad operativa. Vanty ABA te ofrece lo mismo y más —Hub de IA clínica, facturación, agenda y portal familiar—, es multilingüe (se adapta a tu idioma) e incluye setup completo, un rol de secretaría y acompañamiento cercano que otras plataformas no contemplan.' },
-  { q: '¿Cuánto cuesta Vanty ABA para mi centro?', a: 'Hay planes desde Basic hasta Enterprise, y el precio se ajusta automáticamente a tu región (Sudamérica, Norteamérica o Europa) — puedes verlo en la sección de Precios. El plan anual incluye 1 mes gratis y el plan Enterprise se cotiza a medida.' },
-  { q: '¿Necesito conocimientos técnicos para usarlo?', a: 'Para nada. Vanty ABA está diseñado para analistas y terapeutas, no para perfiles técnicos. La interfaz es intuitiva y está en tu idioma, y nosotros hacemos el setup completo contigo en las primeras 24 horas.' },
-  { q: '¿Qué es el Hub de IA y cómo me ayuda?', a: 'Es un equipo de asistentes de IA liderado por ARIA. Generan reportes y notas, auditan documentación, sugieren y evalúan objetivos, detectan patrones y anticipan alertas — para que tu equipo dedique su tiempo a los pacientes, no al papeleo.' },
-  { q: '¿Mis datos de pacientes están seguros?', a: 'Absolutamente. Tus datos son 100% tuyos, almacenados con estándares de seguridad clínica. Nunca compartimos información con terceros y tienes control total en todo momento.' },
-  { q: '¿Puedo cancelar cuando quiera?', a: 'Sí. El plan mensual no tiene permanencia mínima: cancelas cuando quieras desde el panel. El plan anual es un pago único por 12 meses y no se renueva automáticamente.' },
-]
-
 export default function VantyAbaPage() {
+  const { t, tr } = useT()
+  const agents = tr<{ n: string; d: string }[]>('aba.agents') || []
+  const caps = tr<{ t: string; d: string }[]>('aba.caps') || []
+  const roles = tr<{ n: string; items: string[] }[]>('aba.roles') || []
+  const cmpHead = tr<string[]>('aba.cmpHead') || []
+  const cmpRows = tr<string[][]>('aba.cmpRows') || []
+  const faqs = tr<{ q: string; a: string }[]>('aba.faqs') || []
+  const f1Checks = tr<string[]>('aba.f1Checks') || []
+  const f2Checks = tr<string[]>('aba.f2Checks') || []
+
   return (
     <>
       <SiteNav />
@@ -96,23 +58,22 @@ export default function VantyAbaPage() {
         <div className="vt-arc" style={{ width: 260, height: 260, top: '14%', right: '6%', borderWidth: 2, borderColor: 'rgba(29,78,216,.16)' }} />
         <div className="vt-hero-inner vt-hero-split">
           <div>
-            <span className="vt-eyebrow"><Brain size={13} /> Producto · Vanty ABA</span>
-            <h1 className="vt-h1">La plataforma clínica <span className="vt-grad-ink">ABA con IA</span>, hecha para LATAM</h1>
+            <span className="vt-eyebrow"><Brain size={13} /> {t('aba.eyebrow')}</span>
+            <h1 className="vt-h1">{t('aba.h1a')}<span className="vt-grad-ink">{t('aba.h1grad')}</span>{t('aba.h1b')}</h1>
             <p className="vt-lead">
-              Dirección, especialistas, secretaría y familias en una sola plataforma. Con un hub de IA clínica,
-              facturación, agenda, evaluaciones y portal familiar. Multilingüe y en uso real en centros como
-              <strong style={{ color: 'var(--ink)' }}> Jugando Aprendo</strong>.
+              {t('aba.lead1')}
+              <strong style={{ color: 'var(--ink)' }}> {t('aba.leadStrong')}</strong>.
             </p>
             <div className="vt-hero-btns">
-              <a href={WA_URL} className="vt-btn vt-btn-primary" target="_blank" rel="noopener noreferrer"><Phone size={16} /> Agenda una demo</a>
-              <a href="#precios" className="vt-btn vt-btn-ghost">Ver precios <ArrowRight size={16} /></a>
+              <a href={WA_URL} className="vt-btn vt-btn-primary" target="_blank" rel="noopener noreferrer"><Phone size={16} /> {t('common.agendaDemo')}</a>
+              <a href="#precios" className="vt-btn vt-btn-ghost">{t('common.verPrecios')} <ArrowRight size={16} /></a>
             </div>
             <p style={{ marginTop: 18, fontSize: 13.5, color: 'var(--muted-2)', display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Check size={15} color="#1D4ED8" /> Setup en 24 horas · Sin permanencia · Soporte dedicado
+              <Check size={15} color="#1D4ED8" /> {t('aba.micro')}
             </p>
           </div>
           <Reveal delay={0.1}>
-            <Figure src="/images/vanty-aba/dashboard.svg" alt="Dashboard de Vanty ABA" caption="Dashboard de Vanty ABA" frameless blob="radial-gradient(circle at 45% 40%, rgba(96,165,250,.35), rgba(124,58,237,.18))" badge={<><Bot size={15} color="#1D4ED8" /> ARIA · IA clínica</>} />
+            <Figure src="/images/vanty-aba/dashboard.svg" alt="Dashboard de Vanty ABA" caption="Dashboard de Vanty ABA" frameless blob="radial-gradient(circle at 45% 40%, rgba(96,165,250,.35), rgba(124,58,237,.18))" badge={<><Bot size={15} color="#1D4ED8" /> ARIA · IA</>} />
           </Reveal>
         </div>
       </header>
@@ -120,11 +81,11 @@ export default function VantyAbaPage() {
       {/* LOGOS + USO REAL */}
       <section className="vt-section" style={{ paddingTop: 52, paddingBottom: 0 }}>
         <div className="vt-inner">
-          <p className="vt-logos-label">En uso real en centros terapéuticos</p>
+          <p className="vt-logos-label">{t('aba.logos')}</p>
           <Reveal className="vt-logos">
             <span className="vt-logo-chip"><img src="/images/clientes/santi.png" alt="SANTI" /> Neuropsicología y Terapias SANTI</span>
             <span className="vt-logo-chip"><img src="/images/aprendo.png" alt="Jugando Aprendo" /> Jugando Aprendo</span>
-            <span className="vt-logo-ghost">+ tu centro aquí</span>
+            <span className="vt-logo-ghost">{t('aba.tuCentro')}</span>
           </Reveal>
         </div>
       </section>
@@ -135,19 +96,19 @@ export default function VantyAbaPage() {
         <div className="vt-arc" style={{ width: 320, height: 320, top: '-10%', right: '-6%', borderWidth: 1.5, borderColor: 'rgba(124,58,237,.16)' }} />
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><Sparkles size={13} /> Inteligencia clínica</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>ARIA, tu copiloto clínico</h2>
-            <p className="vt-lead">Más que un chatbot: una inteligencia entrenada en el flujo real de un centro ABA. ARIA se encarga del trabajo repetitivo —notas, reportes, alertas y análisis— para que tu equipo dedique su tiempo a los pacientes.</p>
+            <span className="vt-eyebrow"><Sparkles size={13} /> {t('aba.hubEyebrow')}</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('aba.hubTitle')}</h2>
+            <p className="vt-lead">{t('aba.hubLead')}</p>
           </Reveal>
           <div className="vt-grid-4">
-            {AGENTS.map((a, i) => {
-              const Icon = a.icon
+            {agents.map((a, i) => {
+              const Icon = AGENT_ICONS[i % AGENT_ICONS.length]
               const c = AGENT_COLORS[i % AGENT_COLORS.length]
               return (
-                <Reveal key={a.name} delay={(i % 4) * 0.06} className="vt-open" as="div">
+                <Reveal key={a.n} delay={(i % 4) * 0.06} className="vt-open" as="div">
                   <span className="vt-ico-round" style={{ background: c.bg, color: c.fg }}><Icon size={26} /></span>
-                  <h3 className="vt-h3" style={{ fontSize: 17 }}>{a.name}</h3>
-                  <p className="vt-card-desc">{a.desc}</p>
+                  <h3 className="vt-h3" style={{ fontSize: 17 }}>{a.n}</h3>
+                  <p className="vt-card-desc">{a.d}</p>
                 </Reveal>
               )
             })}
@@ -160,13 +121,13 @@ export default function VantyAbaPage() {
       <section className="vt-section">
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><LayoutGrid size={13} /> La plataforma</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>Toda la operación de tu centro, en un solo lugar</h2>
-            <p className="vt-lead">Deja de saltar entre apps, hojas de cálculo y chats sueltos. Vanty ABA conecta lo clínico, lo administrativo y a las familias.</p>
+            <span className="vt-eyebrow"><LayoutGrid size={13} /> {t('aba.capEyebrow')}</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('aba.capTitle')}</h2>
+            <p className="vt-lead">{t('aba.capLead')}</p>
           </Reveal>
           <div className="vt-caps">
-            {CAPS.map((c, i) => {
-              const Icon = c.icon
+            {caps.map((c, i) => {
+              const Icon = CAP_ICONS[i % CAP_ICONS.length]
               return (
                 <Reveal key={c.t} delay={(i % 3) * 0.06}>
                   <div className="vt-cap">
@@ -200,45 +161,34 @@ export default function VantyAbaPage() {
         <div className="vt-inner" style={{ position: 'relative', zIndex: 1 }}>
           <Reveal>
             <div style={{ textAlign: 'center', maxWidth: 980, margin: '0 auto' }}>
-              <span className="vt-eyebrow"><ShieldCheck size={13} /> Respaldo clínico</span>
-              <h2 className="vt-h2" style={{ marginTop: 16, fontSize: 'clamp(30px,4.4vw,52px)' }}>Diseñado desde la experiencia clínica, potenciado por Inteligencia Artificial</h2>
-              <p className="vt-lead" style={{ marginTop: 14, maxWidth: 720, marginLeft: 'auto', marginRight: 'auto' }}>Vanty ABA no es una adaptación genérica. Es una plataforma nativa construida sobre los estándares y exigencias reales del día a día en los centros de terapia, garantizando que la tecnología se adapte al terapeuta, y no al revés.</p>
+              <span className="vt-eyebrow"><ShieldCheck size={13} /> {t('aba.respEyebrow')}</span>
+              <h2 className="vt-h2" style={{ marginTop: 16, fontSize: 'clamp(30px,4.4vw,52px)' }}>{t('aba.respTitle')}</h2>
+              <p className="vt-lead" style={{ marginTop: 14, maxWidth: 720, marginLeft: 'auto', marginRight: 'auto' }}>{t('aba.respLead')}</p>
             </div>
           </Reveal>
 
           <div className="vt-respaldo-grid" style={{ marginTop: 'clamp(40px,6vw,64px)' }}>
             <Reveal>
               <div className="vt-cutout">
-                <img src="/images/equipo/francesca.png" alt="Francesca Ramírez Bontá — Co-CEO & Dirección Clínica" />
+                <img src="/images/equipo/francesca.png" alt="Francesca Ramírez Bontá" />
               </div>
             </Reveal>
             <Reveal delay={0.1}>
-              <span className="vt-badge-pill" style={{ color: '#1D4ED8', background: '#eff6ff' }}>Co-CEO &amp; Dirección Clínica</span>
-              <h3 className="vt-h3" style={{ fontSize: 26 }}>Francesca Ramírez Bontá</h3>
-              <p className="vt-card-desc" style={{ fontSize: 15, marginTop: 10 }}>
-                La adopción de software en el entorno de la salud a menudo falla por la desconexión entre el
-                desarrollo técnico y la realidad del terapeuta. Bajo la dirección de Francesca, cada flujo de
-                trabajo y agente de IA en Vanty ABA ha sido auditado y estructurado para responder a las
-                normativas de la terapia ABA. Su enfoque garantiza que la plataforma resuelva la carga
-                administrativa real, manteniendo la rigurosidad ética y clínica que los centros requieren.
-              </p>
-              <blockquote className="vt-blockquote">
-                “Nuestra prioridad es devolverle a los especialistas el tiempo que pertenece a los pacientes.
-                La tecnología debe ser invisible, pero sus resultados, medibles.”
-              </blockquote>
+              <span className="vt-badge-pill" style={{ color: '#1D4ED8', background: '#eff6ff' }}>{t('aba.fRole')}</span>
+              <h3 className="vt-h3" style={{ fontSize: 26 }}>{t('aba.fName')}</h3>
+              <p className="vt-card-desc" style={{ fontSize: 15, marginTop: 10 }}>{t('aba.fBio')}</p>
+              <blockquote className="vt-blockquote">{t('aba.fQuote')}</blockquote>
             </Reveal>
           </div>
 
           <Reveal>
             <div className="vt-credential">
-              <Avatar src="/images/equipo/andrew.png" alt="Andrew Martinez Albitres — CEO de Vanty" />
+              <Avatar src="/images/equipo/andrew.png" alt="Andrew Martinez Albitres" />
               <div>
-                <h4>Ingeniería de grado empresarial</h4>
+                <h4>{t('aba.aTitle')}</h4>
                 <p>
-                  Esta visión clínica se sostiene sobre una arquitectura sólida y escalable liderada por
-                  <strong style={{ color: 'var(--ink)' }}> Andrew Martinez Albitres</strong>, CEO de Vanty.
-                  Con un enfoque en el desarrollo nativo con IA, Vanty ABA asegura despliegues rápidos, alta
-                  disponibilidad y un entorno donde los datos de cada centro están protegidos bajo estándares modernos.
+                  {t('aba.aBio1')}
+                  <strong style={{ color: 'var(--ink)' }}>{t('aba.aName')}</strong>, {t('aba.aRole')}. {t('aba.aBio2')}
                 </p>
               </div>
             </div>
@@ -250,17 +200,18 @@ export default function VantyAbaPage() {
       <section className="vt-section soft" id="roles">
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><Users size={13} /> Para todo tu equipo</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>Cada rol ve exactamente lo que necesita</h2>
+            <span className="vt-eyebrow"><Users size={13} /> {t('aba.rolesEyebrow')}</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('aba.rolesTitle')}</h2>
           </Reveal>
           <div className="vt-grid-4">
-            {ROLES.map((r, i) => {
-              const Icon = r.icon
+            {roles.map((r, i) => {
+              const Icon = ROLE_META[i % ROLE_META.length].icon
+              const accent = ROLE_META[i % ROLE_META.length].accent
               return (
-                <Reveal key={r.name} delay={i * 0.07}>
+                <Reveal key={r.n} delay={i * 0.07}>
                   <div className="vt-card" style={{ height: '100%' }}>
-                    <span className="vt-ico" style={{ background: r.accent }}><Icon size={22} /></span>
-                    <h3 className="vt-h3" style={{ fontSize: 17 }}>{r.name}</h3>
+                    <span className="vt-ico" style={{ background: accent }}><Icon size={22} /></span>
+                    <h3 className="vt-h3" style={{ fontSize: 17 }}>{r.n}</h3>
                     <ul className="vt-checks" style={{ marginTop: 12 }}>
                       {r.items.map(it => <li key={it} style={{ fontSize: 13.5 }}><Check size={16} /> {it}</li>)}
                     </ul>
@@ -277,29 +228,29 @@ export default function VantyAbaPage() {
         <div className="vt-inner">
           <div className="vt-feature">
             <Reveal className="vt-feature-text">
-              <span className="vt-eyebrow"><BarChart3 size={13} /> Datos clínicos</span>
-              <h2 className="vt-h2" style={{ marginTop: 16 }}>Datos ABA que se entienden solos</h2>
-              <p className="vt-lead" style={{ marginTop: 14 }}>Gráficas de dominio por objetivo, generadas automáticamente desde el registro de sesión. Alertas cuando un objetivo alcanza ≥80% y resúmenes listos para supervisión, sin trabajo manual extra.</p>
+              <span className="vt-eyebrow"><BarChart3 size={13} /> {t('aba.f1Eyebrow')}</span>
+              <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('aba.f1Title')}</h2>
+              <p className="vt-lead" style={{ marginTop: 14 }}>{t('aba.f1Lead')}</p>
               <ul className="vt-checks" style={{ marginTop: 18 }}>
-                {['Gráficos por objetivo y dominio', 'Alertas automáticas de metas alcanzadas', 'Importación desde Excel'].map(t => <li key={t}><Check size={18} /> {t}</li>)}
+                {f1Checks.map(c => <li key={c}><Check size={18} /> {c}</li>)}
               </ul>
             </Reveal>
             <Reveal className="vt-feature-media" delay={0.1}>
-              <Figure src="/images/vanty-aba/graficas.svg" alt="Gráficas clínicas ABA en Vanty ABA" caption="Analítica y gráficas ABA" frameless blob="radial-gradient(circle at 55% 40%, #cfe0fb, #e7defb)" badge={<><BarChart3 size={15} color="#1D4ED8" /> Analítica clínica</>} />
+              <Figure src="/images/vanty-aba/graficas.svg" alt="Gráficas clínicas ABA" caption={t('aba.f1Title')} frameless blob="radial-gradient(circle at 55% 40%, #cfe0fb, #e7defb)" badge={<><BarChart3 size={15} color="#1D4ED8" /> {t('aba.f1Eyebrow')}</>} />
             </Reveal>
           </div>
 
           <div className="vt-feature reverse">
             <Reveal className="vt-feature-text">
-              <span className="vt-eyebrow"><HeartHandshake size={13} /> Familias</span>
-              <h2 className="vt-h2" style={{ marginTop: 16 }}>La familia, dentro del proceso</h2>
-              <p className="vt-lead" style={{ marginTop: 14 }}>Un portal familiar nativo donde los padres ven el progreso en tiempo real, reciben reportes y actividades para casa, y se comunican con el especialista — con notificaciones por WhatsApp.</p>
+              <span className="vt-eyebrow"><HeartHandshake size={13} /> {t('aba.f2Eyebrow')}</span>
+              <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('aba.f2Title')}</h2>
+              <p className="vt-lead" style={{ marginTop: 14 }}>{t('aba.f2Lead')}</p>
               <ul className="vt-checks" style={{ marginTop: 18 }}>
-                {['Progreso del paciente en tiempo real', 'Actividades recomendadas para el hogar', 'Mensajería y WhatsApp con el equipo'].map(t => <li key={t}><Check size={18} /> {t}</li>)}
+                {f2Checks.map(c => <li key={c}><Check size={18} /> {c}</li>)}
               </ul>
             </Reveal>
             <Reveal className="vt-feature-media" delay={0.1}>
-              <Figure src="/images/vanty-aba/portal-familiar.svg" alt="Portal familiar de Vanty ABA" caption="Portal familiar" frameless blob="radial-gradient(circle at 50% 40%, #fde6ef, #cfe0fb)" />
+              <Figure src="/images/vanty-aba/portal-familiar.svg" alt="Portal familiar de Vanty ABA" caption={t('aba.f2Title')} frameless blob="radial-gradient(circle at 50% 40%, #fde6ef, #cfe0fb)" />
             </Reveal>
           </div>
         </div>
@@ -309,17 +260,17 @@ export default function VantyAbaPage() {
       <section className="vt-section soft">
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><Star size={13} /> Por qué Vanty ABA</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>La alternativa LATAM, hecha para tu centro</h2>
-            <p className="vt-lead">Todo lo que esperas de un software ABA internacional —y más—, con IA integrada, multilingüe y pensado para tu equipo.</p>
+            <span className="vt-eyebrow"><Star size={13} /> {t('aba.cmpEyebrow')}</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('aba.cmpTitle')}</h2>
+            <p className="vt-lead">{t('aba.cmpLead')}</p>
           </Reveal>
           <Reveal className="vt-cmp-wrap">
             <table className="vt-cmp">
               <thead>
-                <tr>{CMP_HEAD.map((h, i) => <th key={i}>{h}</th>)}</tr>
+                <tr>{cmpHead.map((h, i) => <th key={i}>{h}</th>)}</tr>
               </thead>
               <tbody>
-                {CMP_ROWS.map((row, i) => (
+                {cmpRows.map((row, i) => (
                   <tr key={i}>
                     {row.map((cell, j) => <td key={j} className={j > 0 ? cellClass(cell) : ''}>{cell}</td>)}
                   </tr>
@@ -335,12 +286,12 @@ export default function VantyAbaPage() {
         <div className="vt-inner">
           <Reveal className="vt-quote">
             <div className="vt-quote-mark">“</div>
-            <p className="vt-quote-text">Antes tardaba horas escribiendo reportes. Con ARIA lo hago en minutos y puedo enfocarme en lo que importa: mis pacientes.</p>
+            <p className="vt-quote-text">{t('aba.testimQuote')}</p>
             <div className="vt-quote-who">
               <img className="vt-quote-av" src="/images/Testimonial.png" alt="Ana M." />
               <div style={{ textAlign: 'left' }}>
                 <div className="vt-quote-name">Ana M.</div>
-                <div className="vt-quote-role">Analista ABA</div>
+                <div className="vt-quote-role">{t('aba.testimRole')}</div>
               </div>
             </div>
           </Reveal>
@@ -354,10 +305,10 @@ export default function VantyAbaPage() {
       <section className="vt-section" id="faq">
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><MessageSquare size={13} /> Preguntas frecuentes</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>¿Tienes dudas? Las respondemos</h2>
+            <span className="vt-eyebrow"><MessageSquare size={13} /> {t('aba.faqEyebrow')}</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('aba.faqTitle')}</h2>
           </Reveal>
-          <FaqList items={FAQS} />
+          <FaqList items={faqs} />
         </div>
       </section>
 
@@ -366,10 +317,10 @@ export default function VantyAbaPage() {
       <section className="vt-cta" style={{ paddingTop: 40 }}>
         <div className="vt-cta-dots" />
         <div className="vt-cta-inner">
-          <h2 className="vt-h2">Ordenemos el trabajo clínico ABA, juntos</h2>
-          <p className="vt-cta-sub">Un solo sistema para dirección, especialistas, secretaría y familias.</p>
+          <h2 className="vt-h2">{t('aba.ctaTitle')}</h2>
+          <p className="vt-cta-sub">{t('aba.ctaSub')}</p>
           <div className="vt-cta-btns">
-            <a href={WA_URL} className="vt-btn vt-btn-light" target="_blank" rel="noopener noreferrer"><Phone size={16} /> Agenda una demo</a>
+            <a href={WA_URL} className="vt-btn vt-btn-light" target="_blank" rel="noopener noreferrer"><Phone size={16} /> {t('common.agendaDemo')}</a>
             <a href={`mailto:${EMAIL}`} className="vt-btn vt-btn-ghost-dark">{EMAIL}</a>
           </div>
         </div>

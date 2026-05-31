@@ -2,13 +2,22 @@
 
 import { createContext, useContext, useEffect, useState } from 'react'
 import { DICT, langFromCountry, langFromNavigator, type Lang } from '@/app/lib/dict'
+import { MORE } from '@/app/lib/dict-more'
 
-type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: (path: string) => string }
-const LangContext = createContext<Ctx>({ lang: 'es', setLang: () => {}, t: (p) => p })
+type Ctx = {
+  lang: Lang
+  setLang: (l: Lang) => void
+  t: (path: string) => string
+  tr: <T = any>(path: string) => T
+}
+const LangContext = createContext<Ctx>({ lang: 'es', setLang: () => {}, t: (p) => p, tr: (() => undefined) as any })
 
 function resolve(obj: any, path: string): any {
   return path.split('.').reduce((a, k) => (a == null ? a : a[k]), obj)
 }
+
+const merged = (lang: Lang) => ({ ...DICT[lang], ...MORE[lang] })
+const mergedEs = { ...DICT.es, ...MORE.es }
 
 export function LangProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<Lang>('es')
@@ -31,11 +40,16 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
   }
 
   const t = (path: string) => {
-    const v = resolve(DICT[lang], path)
-    return (typeof v === 'string' ? v : resolve(DICT.es, path)) ?? path
+    const v = resolve(merged(lang), path)
+    return (typeof v === 'string' ? v : resolve(mergedEs, path)) ?? path
   }
 
-  return <LangContext.Provider value={{ lang, setLang, t }}>{children}</LangContext.Provider>
+  const tr = <T = any,>(path: string): T => {
+    const v = resolve(merged(lang), path)
+    return (v != null ? v : resolve(mergedEs, path)) as T
+  }
+
+  return <LangContext.Provider value={{ lang, setLang, t, tr }}>{children}</LangContext.Provider>
 }
 
 export const useT = () => useContext(LangContext)

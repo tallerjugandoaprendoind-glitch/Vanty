@@ -1,24 +1,25 @@
-import type { Metadata } from 'next'
+'use client'
+
 import { ArrowRight, Bot, Database, Boxes, Phone, Layers, Sparkles, Rocket } from 'lucide-react'
 import SiteNav from '@/app/components/SiteNav'
 import SiteFooter from '@/app/components/SiteFooter'
 import Reveal from '@/app/components/Reveal'
 import Wave from '@/app/components/Wave'
 import ServiceIcon from '@/app/components/ServiceIcon'
+import { useT } from '@/app/components/LangProvider'
 import { SERVICES, WA_URL } from '@/app/lib/site'
 
-export const metadata: Metadata = {
-  title: 'Qué hacemos — Vanty | Software B2B SaaS de alto rendimiento',
-  description: 'Vanty funciona como un laboratorio de innovación y una fábrica de software. Nos especializamos en aplicaciones B2B SaaS de alto rendimiento, con IA nativa. Conoce nuestros pilares y productos.',
-}
-
-const PILLARS = [
-  { icon: Bot, c: '#1D4ED8', bg: '#e6efff', title: 'Orquestación de agentes de IA', desc: 'Creamos asistentes virtuales y flujos de trabajo automatizados que reducen drásticamente la carga manual de los equipos.' },
-  { icon: Database, c: '#0f766e', bg: '#ddf7ef', title: 'Arquitecturas modernas', desc: 'Usamos las herramientas más avanzadas del ecosistema (Next.js, TypeScript, Node.js) sobre infraestructura de última generación para garantizar velocidad y estabilidad.' },
-  { icon: Boxes, c: '#7c3aed', bg: '#efe7fe', title: 'Soluciones de nicho', desc: 'A través de nuestra infraestructura principal damos vida a productos especializados que transforman la gestión clínica y operativa.' },
+const PILLAR_ICONS = [
+  { icon: Bot, c: '#1D4ED8', bg: '#e6efff' },
+  { icon: Database, c: '#0f766e', bg: '#ddf7ef' },
+  { icon: Boxes, c: '#7c3aed', bg: '#efe7fe' },
 ]
 
+const svcKey = (slug: string) => (slug === 'vanty-aba' ? 'aba' : 'school')
+
 export default function ServiciosPage() {
+  const { t, tr } = useT()
+  const pils = tr<{ t: string; d: string }[]>('servicios.pils') || []
   return (
     <>
       <SiteNav />
@@ -28,9 +29,9 @@ export default function ServiciosPage() {
         <div className="vt-blob" style={{ width: 420, height: 420, top: '-14%', right: '-6%', background: 'rgba(37,99,235,.16)' }} />
         <div className="vt-arc" style={{ width: 200, height: 200, bottom: '8%', left: '8%', borderWidth: 2, borderColor: 'rgba(124,58,237,.18)' }} />
         <div className="vt-hero-inner vt-hero-center">
-          <span className="vt-eyebrow"><Layers size={13} /> Qué hacemos</span>
-          <h1 className="vt-h1" style={{ marginTop: 18 }}>Software creado para <span className="vt-grad-ink">escalar</span></h1>
-          <p className="vt-lead">En Vanty funcionamos como un laboratorio de innovación y una fábrica de software. Nos especializamos en la creación de aplicaciones B2B SaaS de alto rendimiento.</p>
+          <span className="vt-eyebrow"><Layers size={13} /> {t('servicios.eyebrow')}</span>
+          <h1 className="vt-h1" style={{ marginTop: 18 }}>{t('servicios.h1a')}<span className="vt-grad-ink">{t('servicios.h1grad')}</span></h1>
+          <p className="vt-lead">{t('servicios.lead')}</p>
         </div>
       </header>
 
@@ -40,17 +41,17 @@ export default function ServiciosPage() {
       <section className="vt-section vt-rel" style={{ background: '#eef4ff' }}>
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><Sparkles size={13} /> Nuestros pilares tecnológicos</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>La ingeniería detrás de cada solución</h2>
+            <span className="vt-eyebrow"><Sparkles size={13} /> {t('servicios.pilEyebrow')}</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('servicios.pilTitle')}</h2>
           </Reveal>
           <div className="vt-grid-3" style={{ marginTop: 8 }}>
-            {PILLARS.map((p, i) => {
+            {PILLAR_ICONS.map((p, i) => {
               const Icon = p.icon
               return (
-                <Reveal key={p.title} delay={i * 0.08} className="vt-open" as="div">
+                <Reveal key={i} delay={i * 0.08} className="vt-open" as="div">
                   <span className="vt-ico-round" style={{ background: p.bg, color: p.c }}><Icon size={28} /></span>
-                  <h3 className="vt-h3" style={{ fontSize: 19 }}>{p.title}</h3>
-                  <p className="vt-card-desc">{p.desc}</p>
+                  <h3 className="vt-h3" style={{ fontSize: 19 }}>{pils[i]?.t}</h3>
+                  <p className="vt-card-desc">{pils[i]?.d}</p>
                 </Reveal>
               )
             })}
@@ -64,21 +65,23 @@ export default function ServiciosPage() {
       <section className="vt-section">
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><Rocket size={13} /> Productos y servicios</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>Lo que construimos para el mercado</h2>
+            <span className="vt-eyebrow"><Rocket size={13} /> {t('servicios.prodEyebrow')}</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('servicios.prodTitle')}</h2>
           </Reveal>
           <div className="vt-grid-2" style={{ maxWidth: 860, margin: '0 auto' }}>
             {SERVICES.map((s, i) => {
+              const k = svcKey(s.slug)
+              const tags = tr<string[]>(`svc.${k}.tags`) || []
               const inner = (
                 <>
                   <ServiceIcon iconKey={s.icon} logo={s.logo} accent={s.accent} />
                   {s.soon
-                    ? <span className="vt-badge-soon">{s.badge}</span>
-                    : <span className="vt-badge-pill" style={{ color: s.accent, background: `${s.accent}15` }}>{s.badge}</span>}
+                    ? <span className="vt-badge-soon">{t(`svc.${k}.badge`)}</span>
+                    : <span className="vt-badge-pill" style={{ color: s.accent, background: `${s.accent}15` }}>{t(`svc.${k}.badge`)}</span>}
                   <h3 className="vt-h3" style={{ fontSize: 21 }}>{s.name}</h3>
-                  <p className="vt-card-desc">{s.desc}</p>
-                  <div className="vt-tags">{s.tags.map(t => <span key={t} className="vt-tag">{t}</span>)}</div>
-                  {!s.soon && <span className="vt-link">Conocer más <ArrowRight size={15} /></span>}
+                  <p className="vt-card-desc">{t(`svc.${k}.desc`)}</p>
+                  <div className="vt-tags">{tags.map(tag => <span key={tag} className="vt-tag">{tag}</span>)}</div>
+                  {!s.soon && <span className="vt-link">{t('common.conocerMas')} <ArrowRight size={15} /></span>}
                 </>
               )
               return (
@@ -98,11 +101,11 @@ export default function ServiciosPage() {
       <section className="vt-cta" style={{ paddingTop: 40 }}>
         <div className="vt-cta-dots" />
         <div className="vt-cta-inner">
-          <h2 className="vt-h2">¿Tienes un problema que resolver?</h2>
-          <p className="vt-cta-sub">Cuéntanos tu reto operativo y te decimos con honestidad qué solución de Vanty encaja mejor — o si vale la pena crear una nueva.</p>
+          <h2 className="vt-h2">{t('servicios.ctaTitle')}</h2>
+          <p className="vt-cta-sub">{t('servicios.ctaSub')}</p>
           <div className="vt-cta-btns">
-            <a href={WA_URL} className="vt-btn vt-btn-light" target="_blank" rel="noopener noreferrer"><Phone size={16} /> Hablemos del futuro</a>
-            <a href="/contacto" className="vt-btn vt-btn-ghost-dark">Contáctanos <ArrowRight size={16} /></a>
+            <a href={WA_URL} className="vt-btn vt-btn-light" target="_blank" rel="noopener noreferrer"><Phone size={16} /> {t('common.hablemosFuturo')}</a>
+            <a href="/contacto" className="vt-btn vt-btn-ghost-dark">{t('common.contactanos')} <ArrowRight size={16} /></a>
           </div>
         </div>
       </section>

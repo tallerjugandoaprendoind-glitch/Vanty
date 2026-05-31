@@ -4,8 +4,10 @@ import { useEffect, useState } from 'react'
 import { Check, CreditCard, Globe, Phone } from 'lucide-react'
 import { PLANS, REGIONS, countryToRegion, regionFromLanguage, type RegionKey, type Plan } from '@/app/lib/pricing'
 import { waLink } from '@/app/lib/site'
+import { useT } from '@/app/components/LangProvider'
 
 export default function PricingABA() {
+  const { t, tr } = useT()
   const [region, setRegion] = useState<RegionKey>('sudamerica')
   const [billing, setBilling] = useState<'m' | 'y'>('m')
   const [group, setGroup] = useState<'Personal' | 'Vanty Empresa'>('Personal')
@@ -24,34 +26,35 @@ export default function PricingABA() {
 
   const card = (p: Plan) => {
     const price = billing === 'm' ? p.m[region] : p.y[region]
+    const pacientes = t(`pricing.plans.${p.id}.pacientes`)
+    const desc = t(`pricing.plans.${p.id}.desc`)
+    const feats = tr<string[]>(`pricing.plans.${p.id}.feats`) || p.features
     const href = waLink(
-      price === null
-        ? `Hola, me interesa el plan ${p.name} de Vanty ABA y quisiera una cotización.`
-        : `Hola, me interesa adquirir el plan ${p.name} de Vanty ABA.`
+      (price === null ? t('pricing.waQuote') : t('pricing.waPlan')).replace('{p}', p.name)
     )
     return (
       <div key={p.id} className={`vt-price${p.featured ? ' feat' : ''}`}>
-        {p.featured && <span className="vt-price-badge">Más elegido</span>}
+        {p.featured && <span className="vt-price-badge">{t('pricing.masElegido')}</span>}
         <div className="vt-price-name" style={{ textTransform: 'none', fontSize: 19, color: 'var(--ink)', letterSpacing: '-.01em' }}>{p.name}</div>
-        <div style={{ fontSize: 12.5, color: 'var(--muted)', marginBottom: 8 }}>{p.pacientes}</div>
+        <div style={{ fontSize: 12.5, color: 'var(--muted)', marginBottom: 8 }}>{pacientes}</div>
         {price === null ? (
-          <div className="vt-price-amt"><span className="vt-price-num" style={{ fontSize: 36 }}>Consultar</span></div>
+          <div className="vt-price-amt"><span className="vt-price-num" style={{ fontSize: 36 }}>{t('pricing.consultar')}</span></div>
         ) : (
           <>
             <div className="vt-price-amt">
               <span className="vt-price-cur">{R.cur}</span>
               <span className="vt-price-num" style={{ fontSize: 42 }}>{fmt(price)}</span>
-              <span className="vt-price-per">/{billing === 'm' ? 'mes' : 'año'}</span>
+              <span className="vt-price-per">{billing === 'm' ? t('pricing.perMes') : t('pricing.perAno')}</span>
             </div>
-            {billing === 'y' && <span className="vt-price-save">🎁 1 mes gratis</span>}
+            {billing === 'y' && <span className="vt-price-save">{t('pricing.mesGratis')}</span>}
           </>
         )}
-        <p className="vt-price-desc" style={{ marginTop: 12 }}>{p.desc}</p>
+        <p className="vt-price-desc" style={{ marginTop: 12 }}>{desc}</p>
         <ul className="vt-checks">
-          {p.features.map(f => <li key={f} style={{ fontSize: 13 }}><Check size={15} /> {f}</li>)}
+          {feats.map(f => <li key={f} style={{ fontSize: 13 }}><Check size={15} /> {f}</li>)}
         </ul>
         <a href={href} target="_blank" rel="noopener noreferrer" className={`vt-btn ${p.featured ? 'vt-btn-primary' : 'vt-btn-ghost'}`} style={{ marginTop: 20, width: '100%', justifyContent: 'center' }}>
-          {price === null ? 'Hablar con ventas' : 'Empezar'}
+          {price === null ? t('common.hablarVentas') : t('common.empezar')}
         </a>
       </div>
     )
@@ -64,24 +67,24 @@ export default function PricingABA() {
     <section className="vt-section soft" id="precios">
       <div className="vt-inner">
         <div className="vt-head-center">
-          <span className="vt-eyebrow"><CreditCard size={13} /> Precios</span>
-          <h2 className="vt-h2" style={{ marginTop: 16 }}>Planes Vanty</h2>
-          <p className="vt-lead">El precio se ajusta automáticamente a tu región. Plan anual con <strong style={{ color: 'var(--ink)' }}>1 mes gratis</strong>.</p>
+          <span className="vt-eyebrow"><CreditCard size={13} /> {t('pricing.eyebrow')}</span>
+          <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('pricing.title')}</h2>
+          <p className="vt-lead">{t('pricing.lead1')}<strong style={{ color: 'var(--ink)' }}>{t('pricing.leadStrong')}</strong>{t('pricing.lead2')}</p>
         </div>
 
         {/* Selectores: Personal/Empresa + Mensual/Anual */}
         <div className="vt-pricebar">
           <div className="vt-bill-toggle" role="group" aria-label="Tipo de plan">
-            <button className={isPersonal ? 'on' : ''} onClick={() => setGroup('Personal')}>Personal</button>
-            <button className={!isPersonal ? 'on' : ''} onClick={() => setGroup('Vanty Empresa')}>Empresa</button>
+            <button className={isPersonal ? 'on' : ''} onClick={() => setGroup('Personal')}>{t('pricing.personal')}</button>
+            <button className={!isPersonal ? 'on' : ''} onClick={() => setGroup('Vanty Empresa')}>{t('pricing.empresa')}</button>
           </div>
           <div className="vt-bill-toggle" role="group" aria-label="Facturación">
-            <button className={billing === 'm' ? 'on' : ''} onClick={() => setBilling('m')}>Mensual</button>
-            <button className={billing === 'y' ? 'on' : ''} onClick={() => setBilling('y')}>Anual</button>
+            <button className={billing === 'm' ? 'on' : ''} onClick={() => setBilling('m')}>{t('pricing.mensual')}</button>
+            <button className={billing === 'y' ? 'on' : ''} onClick={() => setBilling('y')}>{t('pricing.anual')}</button>
           </div>
         </div>
         <p className="vt-region-note">
-          <Globe size={13} /> Región detectada automáticamente: {R.flag} {R.label} · precios en {R.code}
+          <Globe size={13} /> {t('pricing.regionNote')} {R.flag} {t(`pricing.regions.${region}`)} · {t('pricing.precios')} {R.code}
         </p>
 
         <div className={isPersonal ? 'vt-plans-3' : 'vt-plans-2'} style={{ marginTop: 36, ...(isPersonal ? {} : { marginLeft: 'auto', marginRight: 'auto' }) }}>
@@ -89,15 +92,15 @@ export default function PricingABA() {
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap', marginTop: 32 }}>
-          <a href={waLink('Hola, quiero solicitar una demo de Vanty ABA.')} target="_blank" rel="noopener noreferrer" className="vt-btn vt-btn-primary">
-            <Phone size={16} /> Solicitar una demo
+          <a href={waLink(t('pricing.waDemo'))} target="_blank" rel="noopener noreferrer" className="vt-btn vt-btn-primary">
+            <Phone size={16} /> {t('common.solicitarDemo')}
           </a>
-          <a href={waLink('Hola, tengo dudas sobre los planes de Vanty ABA.')} target="_blank" rel="noopener noreferrer" className="vt-btn vt-btn-ghost">
-            Tengo dudas
+          <a href={waLink(t('pricing.waDudas'))} target="_blank" rel="noopener noreferrer" className="vt-btn vt-btn-ghost">
+            {t('common.tengoDudas')}
           </a>
         </div>
 
-        <p style={{ textAlign: 'center', fontSize: 13, color: 'var(--muted-2)', marginTop: 24 }}>🔐 Activación en 24 h · Software multilingüe, se adapta a tu idioma · IA propia: ARIA</p>
+        <p style={{ textAlign: 'center', fontSize: 13, color: 'var(--muted-2)', marginTop: 24 }}>{t('pricing.activacion')}</p>
       </div>
     </section>
   )
