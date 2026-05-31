@@ -718,6 +718,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$cog$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__UserCog$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user-cog.js [app-rsc] (ecmascript) <export default as UserCog>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$headset$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Headset$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/headset.js [app-rsc] (ecmascript) <export default as Headset>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2d$handshake$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__HeartHandshake$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart-handshake.js [app-rsc] (ecmascript) <export default as HeartHandshake>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-rsc] (ecmascript) <export default as ShieldCheck>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$SiteNav$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/SiteNav.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$SiteFooter$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/SiteFooter.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/Reveal.tsx [app-rsc] (ecmascript)");
@@ -897,7 +898,7 @@ const ROLES = [
 ];
 const CMP_HEAD = [
     'Característica',
-    'CentralReach y similares',
+    'Software internacional',
     'Otras apps',
     '⭐ Vanty ABA'
 ];
@@ -945,16 +946,16 @@ const CMP_ROWS = [
         '✅ Incluida'
     ],
     [
-        '100% en español, pensado para LATAM',
-        '❌ Inglés',
+        'Multilingüe, se adapta a tu idioma',
+        '⚠️ Limitado',
         '⚠️ Parcial',
-        '✅ Español'
+        '✅ Sí'
     ],
     [
-        'Precio justo en soles',
-        '❌ USD, caro',
+        'Precio transparente, sin costos ocultos',
+        '⚠️ Módulos extra',
         '⚠️ Variable',
-        '✅ S/120/mes'
+        '✅ Todo incluido'
     ],
     [
         'Setup completo incluido',
@@ -1014,8 +1015,8 @@ const PLANS = [
 ];
 const FAQS = [
     {
-        q: '¿En qué se diferencia Vanty ABA de CentralReach?',
-        a: 'CentralReach es un gran software, pero está en inglés, se paga en dólares y está pensado para Estados Unidos. Vanty ABA te ofrece lo mismo y más —Hub de IA clínica, facturación, agenda y portal familiar— 100% en español, en soles y con soporte cercano en LATAM. Además incluimos el setup completo y un rol de secretaría que otras plataformas no contemplan.'
+        q: '¿En qué se diferencia Vanty ABA del software internacional?',
+        a: 'El software ABA internacional suele ser costoso, rígido y pensado para otra realidad operativa. Vanty ABA te ofrece lo mismo y más —Hub de IA clínica, facturación, agenda y portal familiar—, es multilingüe (se adapta a tu idioma) e incluye setup completo, un rol de secretaría y acompañamiento cercano que otras plataformas no contemplan.'
     },
     {
         q: '¿Cuánto cuesta Vanty ABA para mi centro?',
@@ -1023,7 +1024,7 @@ const FAQS = [
     },
     {
         q: '¿Necesito conocimientos técnicos para usarlo?',
-        a: 'Para nada. Vanty ABA está diseñado para analistas y terapeutas, no para perfiles técnicos. La interfaz es 100% en español y nosotros hacemos el setup completo contigo en las primeras 24 horas.'
+        a: 'Para nada. Vanty ABA está diseñado para analistas y terapeutas, no para perfiles técnicos. La interfaz es intuitiva y está en tu idioma, y nosotros hacemos el setup completo contigo en las primeras 24 horas.'
     },
     {
         q: '¿Qué es el Hub de IA y cómo me ayuda?',
@@ -1043,7 +1044,7 @@ function VantyAbaPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$SiteNav$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 86,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -1053,7 +1054,7 @@ function VantyAbaPage() {
                         className: "vt-hero-grid"
                     }, void 0, false, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 90,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1067,7 +1068,7 @@ function VantyAbaPage() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 91,
+                        lineNumber: 92,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1082,7 +1083,7 @@ function VantyAbaPage() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 92,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1097,7 +1098,7 @@ function VantyAbaPage() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 93,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1112,14 +1113,14 @@ function VantyAbaPage() {
                                                 size: 13
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 96,
+                                                lineNumber: 97,
                                                 columnNumber: 42
                                             }, this),
                                             " Producto · Vanty ABA"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 96,
+                                        lineNumber: 97,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -1131,20 +1132,20 @@ function VantyAbaPage() {
                                                 children: "ABA con IA"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 97,
+                                                lineNumber: 98,
                                                 columnNumber: 57
                                             }, this),
                                             ", hecha para LATAM"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 98,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "vt-lead",
                                         children: [
-                                            "Dirección, especialistas, secretaría y familias en una sola plataforma. Con un hub de IA clínica, facturación, agenda, evaluaciones y portal familiar. 100% en español, en uso real en centros como",
+                                            "Dirección, especialistas, secretaría y familias en una sola plataforma. Con un hub de IA clínica, facturación, agenda, evaluaciones y portal familiar. Multilingüe y en uso real en centros como",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                                 style: {
                                                     color: 'var(--ink)'
@@ -1152,14 +1153,14 @@ function VantyAbaPage() {
                                                 children: " Jugando Aprendo"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 101,
+                                                lineNumber: 102,
                                                 columnNumber: 15
                                             }, this),
                                             "."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 99,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1175,14 +1176,14 @@ function VantyAbaPage() {
                                                         size: 16
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 104,
+                                                        lineNumber: 105,
                                                         columnNumber: 108
                                                     }, this),
                                                     " Agenda una demo"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 104,
+                                                lineNumber: 105,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1194,19 +1195,19 @@ function VantyAbaPage() {
                                                         size: 16
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 105,
+                                                        lineNumber: 106,
                                                         columnNumber: 78
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 105,
+                                                lineNumber: 106,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 103,
+                                        lineNumber: 104,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1224,20 +1225,20 @@ function VantyAbaPage() {
                                                 color: "#1D4ED8"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 109,
                                                 columnNumber: 15
                                             }, this),
-                                            " Setup en 24 horas · Sin permanencia · Soporte en español"
+                                            " Setup en 24 horas · Sin permanencia · Soporte dedicado"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 107,
+                                        lineNumber: 108,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 95,
+                                lineNumber: 96,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1255,7 +1256,7 @@ function VantyAbaPage() {
                                                 color: "#1D4ED8"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 113,
                                                 columnNumber: 226
                                             }, void 0),
                                             " ARIA · IA clínica"
@@ -1263,24 +1264,24 @@ function VantyAbaPage() {
                                     }, void 0, true)
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 113,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 111,
+                                lineNumber: 112,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 94,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 89,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1297,7 +1298,7 @@ function VantyAbaPage() {
                             children: "En uso real en centros terapéuticos"
                         }, void 0, false, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 120,
+                            lineNumber: 121,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1311,14 +1312,14 @@ function VantyAbaPage() {
                                             alt: "Jugando Aprendo"
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 122,
+                                            lineNumber: 123,
                                             columnNumber: 44
                                         }, this),
                                         " Jugando Aprendo"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 122,
+                                    lineNumber: 123,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1326,7 +1327,7 @@ function VantyAbaPage() {
                                     children: "Centro pionero · Lima 🇵🇪"
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 123,
+                                    lineNumber: 124,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1334,24 +1335,24 @@ function VantyAbaPage() {
                                     children: "+ tu centro aquí"
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 125,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 121,
+                            lineNumber: 122,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 119,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 118,
+                lineNumber: 119,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1374,8 +1375,8 @@ function VantyAbaPage() {
                                 c: 'Módulos integrados'
                             },
                             {
-                                n: '100%',
-                                c: 'En español, para LATAM'
+                                n: '24h',
+                                c: 'Setup incluido'
                             }
                         ].map((s, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "vt-stat-cell2",
@@ -1385,7 +1386,7 @@ function VantyAbaPage() {
                                         children: s.n
                                     }, void 0, false, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 140,
+                                        lineNumber: 141,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1393,28 +1394,28 @@ function VantyAbaPage() {
                                         children: s.c
                                     }, void 0, false, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 141,
+                                        lineNumber: 142,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, i, true, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 139,
+                                lineNumber: 140,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 132,
+                        lineNumber: 133,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 131,
+                    lineNumber: 132,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 130,
+                lineNumber: 131,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1426,12 +1427,12 @@ function VantyAbaPage() {
                     fill: "#f5f1fe"
                 }, void 0, false, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 149,
+                    lineNumber: 150,
                     columnNumber: 46
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 149,
+                lineNumber: 150,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1453,7 +1454,7 @@ function VantyAbaPage() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 151,
+                        lineNumber: 152,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1469,14 +1470,14 @@ function VantyAbaPage() {
                                                 size: 13
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 154,
+                                                lineNumber: 155,
                                                 columnNumber: 42
                                             }, this),
                                             " Hub de IA clínica"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 154,
+                                        lineNumber: 155,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1487,7 +1488,7 @@ function VantyAbaPage() {
                                         children: "Conoce a ARIA y su equipo de agentes"
                                     }, void 0, false, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 155,
+                                        lineNumber: 156,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1495,13 +1496,13 @@ function VantyAbaPage() {
                                         children: "No es un chatbot genérico. Es un equipo de agentes de IA entrenados para el flujo real de un centro ABA — cada uno con una tarea concreta que le ahorra horas a tu equipo."
                                     }, void 0, false, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 156,
+                                        lineNumber: 157,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 153,
+                                lineNumber: 154,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1524,12 +1525,12 @@ function VantyAbaPage() {
                                                     size: 26
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                                    lineNumber: 164,
+                                                    lineNumber: 165,
                                                     columnNumber: 92
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 164,
+                                                lineNumber: 165,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1554,13 +1555,13 @@ function VantyAbaPage() {
                                                         children: "IA"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 165,
+                                                        lineNumber: 166,
                                                         columnNumber: 75
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 166,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1568,31 +1569,31 @@ function VantyAbaPage() {
                                                 children: a.desc
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 166,
+                                                lineNumber: 167,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, a.name, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 163,
+                                        lineNumber: 164,
                                         columnNumber: 17
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 158,
+                                lineNumber: 159,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 152,
+                        lineNumber: 153,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 150,
+                lineNumber: 151,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1604,12 +1605,12 @@ function VantyAbaPage() {
                     fill: "#ffffff"
                 }, void 0, false, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 173,
+                    lineNumber: 174,
                     columnNumber: 46
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 173,
+                lineNumber: 174,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1627,14 +1628,14 @@ function VantyAbaPage() {
                                             size: 13
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 179,
+                                            lineNumber: 180,
                                             columnNumber: 42
                                         }, this),
                                         " La plataforma"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 179,
+                                    lineNumber: 180,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1645,7 +1646,7 @@ function VantyAbaPage() {
                                     children: "Toda la operación de tu centro, en un solo lugar"
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 180,
+                                    lineNumber: 181,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1653,13 +1654,13 @@ function VantyAbaPage() {
                                     children: "Deja de saltar entre apps, hojas de cálculo y chats sueltos. Vanty ABA conecta lo clínico, lo administrativo y a las familias."
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 181,
+                                    lineNumber: 182,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 178,
+                            lineNumber: 179,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1677,12 +1678,12 @@ function VantyAbaPage() {
                                                     size: 22
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                                    lineNumber: 189,
+                                                    lineNumber: 190,
                                                     columnNumber: 50
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 189,
+                                                lineNumber: 190,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1692,7 +1693,7 @@ function VantyAbaPage() {
                                                         children: c.t
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 191,
+                                                        lineNumber: 192,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1703,41 +1704,257 @@ function VantyAbaPage() {
                                                         children: c.d
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 192,
+                                                        lineNumber: 193,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 190,
+                                                lineNumber: 191,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 188,
+                                        lineNumber: 189,
                                         columnNumber: 19
                                     }, this)
                                 }, c.t, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 187,
+                                    lineNumber: 188,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 183,
+                            lineNumber: 184,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 177,
+                    lineNumber: 178,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 176,
+                lineNumber: 177,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "vt-section vt-rel",
+                id: "respaldo",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "vt-inner",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                            className: "vt-head-center",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "vt-eyebrow",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
+                                            size: 13
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/vanty-aba/page.tsx",
+                                            lineNumber: 207,
+                                            columnNumber: 42
+                                        }, this),
+                                        " Respaldo clínico"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/vanty-aba/page.tsx",
+                                    lineNumber: 207,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "vt-h2",
+                                    style: {
+                                        marginTop: 16
+                                    },
+                                    children: [
+                                        "Diseñado desde la experiencia clínica.",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                            fileName: "[project]/app/vanty-aba/page.tsx",
+                                            lineNumber: 208,
+                                            columnNumber: 99
+                                        }, this),
+                                        "Potenciado por Inteligencia Artificial."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/vanty-aba/page.tsx",
+                                    lineNumber: 208,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "vt-lead",
+                                    children: "Vanty ABA no es una adaptación genérica. Es una plataforma nativa construida sobre los estándares y exigencias reales del día a día en los centros de terapia, garantizando que la tecnología se adapte al terapeuta, y no al revés."
+                                }, void 0, false, {
+                                    fileName: "[project]/app/vanty-aba/page.tsx",
+                                    lineNumber: 209,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/vanty-aba/page.tsx",
+                            lineNumber: 206,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "vt-respaldo-grid",
+                            style: {
+                                marginTop: 'clamp(40px,6vw,64px)'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Figure$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/images/equipo/francesca.png",
+                                        alt: "Francesca Ramírez Bontá — Co-CEO & Dirección Clínica",
+                                        caption: "Retrato profesional de Francesca",
+                                        frameless: true,
+                                        portrait: true,
+                                        blob: "radial-gradient(circle at 50% 35%, #cfe0fb, #e7defb)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/vanty-aba/page.tsx",
+                                        lineNumber: 214,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/vanty-aba/page.tsx",
+                                    lineNumber: 213,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                    delay: 0.1,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "vt-badge-pill",
+                                            style: {
+                                                color: '#1D4ED8',
+                                                background: '#eff6ff'
+                                            },
+                                            children: "Co-CEO & Dirección Clínica"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/vanty-aba/page.tsx",
+                                            lineNumber: 217,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "vt-h3",
+                                            style: {
+                                                fontSize: 26
+                                            },
+                                            children: "Francesca Ramírez Bontá"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/vanty-aba/page.tsx",
+                                            lineNumber: 218,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "vt-card-desc",
+                                            style: {
+                                                fontSize: 15,
+                                                marginTop: 10
+                                            },
+                                            children: "La adopción de software en el entorno de la salud a menudo falla por la desconexión entre el desarrollo técnico y la realidad del terapeuta. Bajo la dirección de Francesca, cada flujo de trabajo y agente de IA en Vanty ABA ha sido auditado y estructurado para responder a las normativas de la terapia ABA. Su enfoque garantiza que la plataforma resuelva la carga administrativa real, manteniendo la rigurosidad ética y clínica que los centros requieren."
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/vanty-aba/page.tsx",
+                                            lineNumber: 219,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
+                                            className: "vt-blockquote",
+                                            children: "“Nuestra prioridad es devolverle a los especialistas el tiempo que pertenece a los pacientes. La tecnología debe ser invisible, pero sus resultados, medibles.”"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/vanty-aba/page.tsx",
+                                            lineNumber: 226,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/vanty-aba/page.tsx",
+                                    lineNumber: 216,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/vanty-aba/page.tsx",
+                            lineNumber: 212,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "vt-credential",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "ico",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
+                                            size: 22
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/vanty-aba/page.tsx",
+                                            lineNumber: 235,
+                                            columnNumber: 37
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/vanty-aba/page.tsx",
+                                        lineNumber: 235,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                children: "Ingeniería de grado empresarial"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/vanty-aba/page.tsx",
+                                                lineNumber: 237,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                children: [
+                                                    "Esta visión clínica se sostiene sobre una arquitectura sólida y escalable liderada por",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                        style: {
+                                                            color: 'var(--ink)'
+                                                        },
+                                                        children: " Andrew Jonathan Manasias Martinez Albitres"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/vanty-aba/page.tsx",
+                                                        lineNumber: 240,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    ", CEO de Vanty. Con un enfoque en el desarrollo nativo con IA, Vanty ABA asegura despliegues rápidos, alta disponibilidad y un entorno donde los datos de cada centro están protegidos bajo estándares modernos."
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/vanty-aba/page.tsx",
+                                                lineNumber: 238,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/vanty-aba/page.tsx",
+                                        lineNumber: 236,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/vanty-aba/page.tsx",
+                                lineNumber: 234,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/app/vanty-aba/page.tsx",
+                            lineNumber: 233,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/vanty-aba/page.tsx",
+                    lineNumber: 205,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/vanty-aba/page.tsx",
+                lineNumber: 204,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1756,14 +1973,14 @@ function VantyAbaPage() {
                                             size: 13
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 206,
+                                            lineNumber: 254,
                                             columnNumber: 42
                                         }, this),
                                         " Para todo tu equipo"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 206,
+                                    lineNumber: 254,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1774,13 +1991,13 @@ function VantyAbaPage() {
                                     children: "Cada rol ve exactamente lo que necesita"
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 207,
+                                    lineNumber: 255,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 205,
+                            lineNumber: 253,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1804,12 +2021,12 @@ function VantyAbaPage() {
                                                     size: 22
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                                    lineNumber: 215,
+                                                    lineNumber: 263,
                                                     columnNumber: 79
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 215,
+                                                lineNumber: 263,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1820,7 +2037,7 @@ function VantyAbaPage() {
                                                 children: r.name
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 216,
+                                                lineNumber: 264,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1837,7 +2054,7 @@ function VantyAbaPage() {
                                                                 size: 16
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                                lineNumber: 218,
+                                                                lineNumber: 266,
                                                                 columnNumber: 82
                                                             }, this),
                                                             " ",
@@ -1845,40 +2062,40 @@ function VantyAbaPage() {
                                                         ]
                                                     }, it, true, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 218,
+                                                        lineNumber: 266,
                                                         columnNumber: 42
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 217,
+                                                lineNumber: 265,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 214,
+                                        lineNumber: 262,
                                         columnNumber: 19
                                     }, this)
                                 }, r.name, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 213,
+                                    lineNumber: 261,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 209,
+                            lineNumber: 257,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 204,
+                    lineNumber: 252,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 203,
+                lineNumber: 251,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1900,14 +2117,14 @@ function VantyAbaPage() {
                                                     size: 13
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                                    lineNumber: 233,
+                                                    lineNumber: 281,
                                                     columnNumber: 44
                                                 }, this),
                                                 " Datos clínicos"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 233,
+                                            lineNumber: 281,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1918,7 +2135,7 @@ function VantyAbaPage() {
                                             children: "Datos ABA que se entienden solos"
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 234,
+                                            lineNumber: 282,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1929,7 +2146,7 @@ function VantyAbaPage() {
                                             children: "Gráficas de dominio por objetivo, generadas automáticamente desde el registro de sesión. Alertas cuando un objetivo alcanza ≥80% y resúmenes listos para supervisión, sin trabajo manual extra."
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 235,
+                                            lineNumber: 283,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1947,7 +2164,7 @@ function VantyAbaPage() {
                                                             size: 18
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                                            lineNumber: 237,
+                                                            lineNumber: 285,
                                                             columnNumber: 145
                                                         }, this),
                                                         " ",
@@ -1955,18 +2172,18 @@ function VantyAbaPage() {
                                                     ]
                                                 }, t, true, {
                                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                                    lineNumber: 237,
+                                                    lineNumber: 285,
                                                     columnNumber: 133
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 236,
+                                            lineNumber: 284,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 232,
+                                    lineNumber: 280,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1985,7 +2202,7 @@ function VantyAbaPage() {
                                                     color: "#1D4ED8"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                                    lineNumber: 241,
+                                                    lineNumber: 289,
                                                     columnNumber: 215
                                                 }, void 0),
                                                 " Analítica clínica"
@@ -1993,18 +2210,18 @@ function VantyAbaPage() {
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 241,
+                                        lineNumber: 289,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 240,
+                                    lineNumber: 288,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 231,
+                            lineNumber: 279,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2020,14 +2237,14 @@ function VantyAbaPage() {
                                                     size: 13
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                                    lineNumber: 247,
+                                                    lineNumber: 295,
                                                     columnNumber: 44
                                                 }, this),
                                                 " Familias"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 247,
+                                            lineNumber: 295,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2038,7 +2255,7 @@ function VantyAbaPage() {
                                             children: "La familia, dentro del proceso"
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 248,
+                                            lineNumber: 296,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2049,7 +2266,7 @@ function VantyAbaPage() {
                                             children: "Un portal familiar nativo donde los padres ven el progreso en tiempo real, reciben reportes y actividades para casa, y se comunican con el especialista — con notificaciones por WhatsApp."
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 249,
+                                            lineNumber: 297,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2067,7 +2284,7 @@ function VantyAbaPage() {
                                                             size: 18
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                                            lineNumber: 251,
+                                                            lineNumber: 299,
                                                             columnNumber: 161
                                                         }, this),
                                                         " ",
@@ -2075,18 +2292,18 @@ function VantyAbaPage() {
                                                     ]
                                                 }, t, true, {
                                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                                    lineNumber: 251,
+                                                    lineNumber: 299,
                                                     columnNumber: 149
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 250,
+                                            lineNumber: 298,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 246,
+                                    lineNumber: 294,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -2100,29 +2317,29 @@ function VantyAbaPage() {
                                         blob: "radial-gradient(circle at 50% 40%, #fde6ef, #cfe0fb)"
                                     }, void 0, false, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 255,
+                                        lineNumber: 303,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 254,
+                                    lineNumber: 302,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 245,
+                            lineNumber: 293,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 230,
+                    lineNumber: 278,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 229,
+                lineNumber: 277,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2140,14 +2357,14 @@ function VantyAbaPage() {
                                             size: 13
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 265,
+                                            lineNumber: 313,
                                             columnNumber: 42
                                         }, this),
-                                        " Vanty ABA vs CentralReach"
+                                        " Por qué Vanty ABA"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 265,
+                                    lineNumber: 313,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2155,24 +2372,24 @@ function VantyAbaPage() {
                                     style: {
                                         marginTop: 16
                                     },
-                                    children: "La alternativa LATAM a CentralReach"
+                                    children: "La alternativa LATAM, hecha para tu centro"
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 266,
+                                    lineNumber: 314,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "vt-lead",
-                                    children: "Todo lo que esperas de un software ABA internacional, pero en español, en soles y pensado para tu centro."
+                                    children: "Todo lo que esperas de un software ABA internacional —y más—, con IA integrada, multilingüe y pensado para tu equipo."
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 267,
+                                    lineNumber: 315,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 264,
+                            lineNumber: 312,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Reveal$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -2186,17 +2403,17 @@ function VantyAbaPage() {
                                                     children: h
                                                 }, i, false, {
                                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                                    lineNumber: 272,
+                                                    lineNumber: 320,
                                                     columnNumber: 45
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 272,
+                                            lineNumber: 320,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 271,
+                                        lineNumber: 319,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -2206,39 +2423,39 @@ function VantyAbaPage() {
                                                         children: cell
                                                     }, j, false, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 277,
+                                                        lineNumber: 325,
                                                         columnNumber: 43
                                                     }, this))
                                             }, i, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 276,
+                                                lineNumber: 324,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 274,
+                                        lineNumber: 322,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 270,
+                                lineNumber: 318,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 269,
+                            lineNumber: 317,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 263,
+                    lineNumber: 311,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 262,
+                lineNumber: 310,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2253,7 +2470,7 @@ function VantyAbaPage() {
                                 children: "“"
                             }, void 0, false, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 290,
+                                lineNumber: 338,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2261,7 +2478,7 @@ function VantyAbaPage() {
                                 children: "Antes tardaba horas escribiendo reportes. Con ARIA lo hago en minutos y puedo enfocarme en lo que importa: mis pacientes."
                             }, void 0, false, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 291,
+                                lineNumber: 339,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2273,7 +2490,7 @@ function VantyAbaPage() {
                                         alt: "Ana M."
                                     }, void 0, false, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 293,
+                                        lineNumber: 341,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2286,43 +2503,43 @@ function VantyAbaPage() {
                                                 children: "Ana M."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 295,
+                                                lineNumber: 343,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "vt-quote-role",
-                                                children: "Analista ABA · Lima, Perú"
+                                                children: "Analista ABA"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 296,
+                                                lineNumber: 344,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 294,
+                                        lineNumber: 342,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 292,
+                                lineNumber: 340,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 289,
+                        lineNumber: 337,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 288,
+                    lineNumber: 336,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 287,
+                lineNumber: 335,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2341,14 +2558,14 @@ function VantyAbaPage() {
                                             size: 13
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 307,
+                                            lineNumber: 355,
                                             columnNumber: 42
                                         }, this),
                                         " Precios"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 307,
+                                    lineNumber: 355,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2359,7 +2576,7 @@ function VantyAbaPage() {
                                     children: "Planes claros, sin sorpresas"
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 308,
+                                    lineNumber: 356,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2367,13 +2584,13 @@ function VantyAbaPage() {
                                     children: "Sin contratos anuales obligatorios. Tu plataforma activa en 24 horas desde el primer pago."
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 309,
+                                    lineNumber: 357,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 306,
+                            lineNumber: 354,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2388,7 +2605,7 @@ function VantyAbaPage() {
                                                 children: p.badge
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 315,
+                                                lineNumber: 363,
                                                 columnNumber: 31
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2396,7 +2613,7 @@ function VantyAbaPage() {
                                                 children: p.name
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 316,
+                                                lineNumber: 364,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2407,7 +2624,7 @@ function VantyAbaPage() {
                                                         children: p.cur
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 318,
+                                                        lineNumber: 366,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2415,7 +2632,7 @@ function VantyAbaPage() {
                                                         children: p.num
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 319,
+                                                        lineNumber: 367,
                                                         columnNumber: 21
                                                     }, this),
                                                     p.per && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2423,13 +2640,13 @@ function VantyAbaPage() {
                                                         children: p.per
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 320,
+                                                        lineNumber: 368,
                                                         columnNumber: 31
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 317,
+                                                lineNumber: 365,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2437,7 +2654,7 @@ function VantyAbaPage() {
                                                 children: p.desc
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 322,
+                                                lineNumber: 370,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2451,7 +2668,7 @@ function VantyAbaPage() {
                                                                 size: 16
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                                lineNumber: 323,
+                                                                lineNumber: 371,
                                                                 columnNumber: 102
                                                             }, this),
                                                             " ",
@@ -2459,12 +2676,12 @@ function VantyAbaPage() {
                                                         ]
                                                     }, f, true, {
                                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                                        lineNumber: 323,
+                                                        lineNumber: 371,
                                                         columnNumber: 63
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 323,
+                                                lineNumber: 371,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2480,23 +2697,23 @@ function VantyAbaPage() {
                                                 children: "Empezar"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 324,
+                                                lineNumber: 372,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 314,
+                                        lineNumber: 362,
                                         columnNumber: 17
                                     }, this)
                                 }, p.name, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 313,
+                                    lineNumber: 361,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 311,
+                            lineNumber: 359,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2509,18 +2726,18 @@ function VantyAbaPage() {
                             children: "🔐 Activación en 24 h · Gestionado directamente con el equipo Vanty"
                         }, void 0, false, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 329,
+                            lineNumber: 377,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 305,
+                    lineNumber: 353,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 304,
+                lineNumber: 352,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2539,14 +2756,14 @@ function VantyAbaPage() {
                                             size: 13
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
-                                            lineNumber: 337,
+                                            lineNumber: 385,
                                             columnNumber: 42
                                         }, this),
                                         " Preguntas frecuentes"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 337,
+                                    lineNumber: 385,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2557,31 +2774,31 @@ function VantyAbaPage() {
                                     children: "¿Tienes dudas? Las respondemos"
                                 }, void 0, false, {
                                     fileName: "[project]/app/vanty-aba/page.tsx",
-                                    lineNumber: 338,
+                                    lineNumber: 386,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 336,
+                            lineNumber: 384,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$FaqList$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                             items: FAQS
                         }, void 0, false, {
                             fileName: "[project]/app/vanty-aba/page.tsx",
-                            lineNumber: 340,
+                            lineNumber: 388,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 335,
+                    lineNumber: 383,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 334,
+                lineNumber: 382,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2593,12 +2810,12 @@ function VantyAbaPage() {
                     fill: "#0c1838"
                 }, void 0, false, {
                     fileName: "[project]/app/vanty-aba/page.tsx",
-                    lineNumber: 345,
+                    lineNumber: 393,
                     columnNumber: 46
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 345,
+                lineNumber: 393,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2611,7 +2828,7 @@ function VantyAbaPage() {
                         className: "vt-cta-dots"
                     }, void 0, false, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 347,
+                        lineNumber: 395,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2622,15 +2839,15 @@ function VantyAbaPage() {
                                 children: "Ordenemos el trabajo clínico ABA, juntos"
                             }, void 0, false, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 349,
+                                lineNumber: 397,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "vt-cta-sub",
-                                children: "Un solo sistema para dirección, especialistas, secretaría y familias. Hecho en Perú para toda América Latina. 💜"
+                                children: "Un solo sistema para dirección, especialistas, secretaría y familias."
                             }, void 0, false, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 350,
+                                lineNumber: 398,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2646,14 +2863,14 @@ function VantyAbaPage() {
                                                 size: 16
                                             }, void 0, false, {
                                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                                lineNumber: 352,
+                                                lineNumber: 400,
                                                 columnNumber: 104
                                             }, this),
                                             " Agenda una demo"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 352,
+                                        lineNumber: 400,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2662,30 +2879,30 @@ function VantyAbaPage() {
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["EMAIL"]
                                     }, void 0, false, {
                                         fileName: "[project]/app/vanty-aba/page.tsx",
-                                        lineNumber: 353,
+                                        lineNumber: 401,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/vanty-aba/page.tsx",
-                                lineNumber: 351,
+                                lineNumber: 399,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/vanty-aba/page.tsx",
-                        lineNumber: 348,
+                        lineNumber: 396,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 346,
+                lineNumber: 394,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$SiteFooter$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/vanty-aba/page.tsx",
-                lineNumber: 358,
+                lineNumber: 406,
                 columnNumber: 7
             }, this)
         ]

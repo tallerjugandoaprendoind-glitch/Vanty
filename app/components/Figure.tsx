@@ -9,6 +9,7 @@ export default function Figure({
   caption,
   light = false,
   frameless = false,
+  portrait = false,
   blob,
   badge,
   ratio,
@@ -18,6 +19,7 @@ export default function Figure({
   caption?: string
   light?: boolean
   frameless?: boolean
+  portrait?: boolean
   blob?: string
   badge?: React.ReactNode
   ratio?: string
@@ -27,12 +29,12 @@ export default function Figure({
   // Imagen "libre": sin marco rígido, con sombra y forma orgánica detrás.
   if (frameless) {
     return (
-      <div className="vt-media-free">
+      <div className={`vt-media-free${portrait ? ' portrait' : ''}`}>
         {blob && <span className="vt-media-blob" style={{ background: blob }} />}
         {!err ? (
           <img src={src} alt={alt} onError={() => setErr(true)} />
         ) : (
-          <div className="vt-frame light" style={{ aspectRatio: ratio || '4/3' }}>
+          <div className="vt-frame light" style={{ aspectRatio: portrait ? '4/5' : (ratio || '4/3') }}>
             <div className="vt-frame-ph"><ImageIcon size={30} strokeWidth={1.6} /><span>{caption || alt}</span></div>
           </div>
         )}

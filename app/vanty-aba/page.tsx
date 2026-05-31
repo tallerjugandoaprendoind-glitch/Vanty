@@ -2,6 +2,7 @@ import {
   Brain, Bot, FileText, ShieldAlert, Target, Activity, TrendingUp, Lightbulb, BookOpen,
   ClipboardList, BarChart3, CalendarDays, CreditCard, Stethoscope, Users, MessageSquare,
   Video, ArrowRight, Check, Phone, Star, Sparkles, LayoutGrid, UserCog, Headset, HeartHandshake,
+  ShieldCheck,
 } from 'lucide-react'
 import SiteNav from '@/app/components/SiteNav'
 import SiteFooter from '@/app/components/SiteFooter'
@@ -9,6 +10,7 @@ import Reveal from '@/app/components/Reveal'
 import Figure from '@/app/components/Figure'
 import FaqList from '@/app/components/FaqList'
 import Wave from '@/app/components/Wave'
+import Avatar from '@/app/components/Avatar'
 import { WA_URL, EMAIL } from '@/app/lib/site'
 
 const AGENTS = [
@@ -196,6 +198,53 @@ export default function VantyAbaPage() {
               )
             })}
           </div>
+        </div>
+      </section>
+
+      {/* RESPALDO CLÍNICO */}
+      <section className="vt-section vt-rel" id="respaldo">
+        <div className="vt-inner">
+          <Reveal className="vt-head-center">
+            <span className="vt-eyebrow"><ShieldCheck size={13} /> Respaldo clínico</span>
+            <h2 className="vt-h2" style={{ marginTop: 16 }}>Diseñado desde la experiencia clínica.<br />Potenciado por Inteligencia Artificial.</h2>
+            <p className="vt-lead">Vanty ABA no es una adaptación genérica. Es una plataforma nativa construida sobre los estándares y exigencias reales del día a día en los centros de terapia, garantizando que la tecnología se adapte al terapeuta, y no al revés.</p>
+          </Reveal>
+
+          <div className="vt-respaldo-grid" style={{ marginTop: 'clamp(40px,6vw,64px)' }}>
+            <Reveal>
+              <Figure src="/images/equipo/francesca.png" alt="Francesca Ramírez Bontá — Co-CEO & Dirección Clínica" caption="Retrato profesional de Francesca" frameless portrait blob="radial-gradient(circle at 50% 35%, #cfe0fb, #e7defb)" />
+            </Reveal>
+            <Reveal delay={0.1}>
+              <span className="vt-badge-pill" style={{ color: '#1D4ED8', background: '#eff6ff' }}>Co-CEO &amp; Dirección Clínica</span>
+              <h3 className="vt-h3" style={{ fontSize: 26 }}>Francesca Ramírez Bontá</h3>
+              <p className="vt-card-desc" style={{ fontSize: 15, marginTop: 10 }}>
+                La adopción de software en el entorno de la salud a menudo falla por la desconexión entre el
+                desarrollo técnico y la realidad del terapeuta. Bajo la dirección de Francesca, cada flujo de
+                trabajo y agente de IA en Vanty ABA ha sido auditado y estructurado para responder a las
+                normativas de la terapia ABA. Su enfoque garantiza que la plataforma resuelva la carga
+                administrativa real, manteniendo la rigurosidad ética y clínica que los centros requieren.
+              </p>
+              <blockquote className="vt-blockquote">
+                “Nuestra prioridad es devolverle a los especialistas el tiempo que pertenece a los pacientes.
+                La tecnología debe ser invisible, pero sus resultados, medibles.”
+              </blockquote>
+            </Reveal>
+          </div>
+
+          <Reveal>
+            <div className="vt-credential">
+              <Avatar src="/images/equipo/andrew.png" alt="Andrew Jonathan Manasias Martinez Albitres — CEO de Vanty" />
+              <div>
+                <h4>Ingeniería de grado empresarial</h4>
+                <p>
+                  Esta visión clínica se sostiene sobre una arquitectura sólida y escalable liderada por
+                  <strong style={{ color: 'var(--ink)' }}> Andrew Jonathan Manasias Martinez Albitres</strong>, CEO de Vanty.
+                  Con un enfoque en el desarrollo nativo con IA, Vanty ABA asegura despliegues rápidos, alta
+                  disponibilidad y un entorno donde los datos de cada centro están protegidos bajo estándares modernos.
+                </p>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 

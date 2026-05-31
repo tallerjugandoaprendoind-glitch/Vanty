@@ -840,12 +840,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-function Figure({ src, alt, caption, light = false, frameless = false, blob, badge, ratio }) {
+function Figure({ src, alt, caption, light = false, frameless = false, portrait = false, blob, badge, ratio }) {
     const [err, setErr] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     // Imagen "libre": sin marco rígido, con sombra y forma orgánica detrás.
     if (frameless) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "vt-media-free",
+            className: `vt-media-free${portrait ? ' portrait' : ''}`,
             children: [
                 blob && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: "vt-media-blob",
@@ -854,7 +854,7 @@ function Figure({ src, alt, caption, light = false, frameless = false, blob, bad
                     }
                 }, void 0, false, {
                     fileName: "[project]/app/components/Figure.tsx",
-                    lineNumber: 31,
+                    lineNumber: 33,
                     columnNumber: 18
                 }, this),
                 !err ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -863,12 +863,12 @@ function Figure({ src, alt, caption, light = false, frameless = false, blob, bad
                     onError: ()=>setErr(true)
                 }, void 0, false, {
                     fileName: "[project]/app/components/Figure.tsx",
-                    lineNumber: 33,
+                    lineNumber: 35,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "vt-frame light",
                     style: {
-                        aspectRatio: ratio || '4/3'
+                        aspectRatio: portrait ? '4/5' : ratio || '4/3'
                     },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "vt-frame-ph",
@@ -878,25 +878,25 @@ function Figure({ src, alt, caption, light = false, frameless = false, blob, bad
                                 strokeWidth: 1.6
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Figure.tsx",
-                                lineNumber: 36,
+                                lineNumber: 38,
                                 columnNumber: 42
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: caption || alt
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Figure.tsx",
-                                lineNumber: 36,
+                                lineNumber: 38,
                                 columnNumber: 83
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Figure.tsx",
-                        lineNumber: 36,
+                        lineNumber: 38,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/Figure.tsx",
-                    lineNumber: 35,
+                    lineNumber: 37,
                     columnNumber: 11
                 }, this),
                 badge && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -904,13 +904,13 @@ function Figure({ src, alt, caption, light = false, frameless = false, blob, bad
                     children: badge
                 }, void 0, false, {
                     fileName: "[project]/app/components/Figure.tsx",
-                    lineNumber: 39,
+                    lineNumber: 41,
                     columnNumber: 19
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Figure.tsx",
-            lineNumber: 30,
+            lineNumber: 32,
             columnNumber: 7
         }, this);
     }
@@ -926,7 +926,7 @@ function Figure({ src, alt, caption, light = false, frameless = false, blob, bad
                 onError: ()=>setErr(true)
             }, void 0, false, {
                 fileName: "[project]/app/components/Figure.tsx",
-                lineNumber: 46,
+                lineNumber: 48,
                 columnNumber: 16
             }, this),
             err && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -937,20 +937,20 @@ function Figure({ src, alt, caption, light = false, frameless = false, blob, bad
                         strokeWidth: 1.6
                     }, void 0, false, {
                         fileName: "[project]/app/components/Figure.tsx",
-                        lineNumber: 49,
+                        lineNumber: 51,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         children: caption || alt
                     }, void 0, false, {
                         fileName: "[project]/app/components/Figure.tsx",
-                        lineNumber: 50,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Figure.tsx",
-                lineNumber: 48,
+                lineNumber: 50,
                 columnNumber: 9
             }, this),
             badge && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -958,13 +958,13 @@ function Figure({ src, alt, caption, light = false, frameless = false, blob, bad
                 children: badge
             }, void 0, false, {
                 fileName: "[project]/app/components/Figure.tsx",
-                lineNumber: 53,
+                lineNumber: 55,
                 columnNumber: 17
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/Figure.tsx",
-        lineNumber: 45,
+        lineNumber: 47,
         columnNumber: 5
     }, this);
 }

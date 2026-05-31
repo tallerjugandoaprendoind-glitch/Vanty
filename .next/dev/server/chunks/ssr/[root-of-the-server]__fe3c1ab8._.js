@@ -758,7 +758,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$site$2e$ts__$5
 ;
 const metadata = {
     title: 'Vanty — Inteligencia que transforma la manera en que operas',
-    description: 'Vanty construye ecosistemas de software B2B SaaS con inteligencia artificial nativa. Automatizamos la complejidad para que tu equipo se enfoque en lo que realmente importa. Desde Perú para LATAM.'
+    description: 'Vanty construye ecosistemas de software B2B SaaS con inteligencia artificial nativa. Automatizamos la complejidad para que tu equipo se enfoque en lo que realmente importa.'
 };
 const PILLARS = [
     {
@@ -969,7 +969,7 @@ function Home() {
                                                 lineNumber: 56,
                                                 columnNumber: 15
                                             }, this),
-                                            " Ingeniería sólida · Seguridad desde el día cero · Soporte en español"
+                                            " Ingeniería sólida · Seguridad desde el día cero · Soporte dedicado"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/page.tsx",
