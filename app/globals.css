@@ -203,9 +203,10 @@ body {
 .vt-credential-av img { width:100%; height:100%; object-fit:cover; object-position:center 20%; }
 .vt-media-free.portrait img { object-position:center 18%; }
 
-/* foto recortada (sin fondo) en círculo, más grande */
-.vt-cutout { position:relative; width:min(100%,500px); aspect-ratio:1; margin:0 auto; border-radius:50%; overflow:hidden; background:radial-gradient(circle at 50% 36%, #dfe7ff, #ece2fb); box-shadow:0 30px 60px rgba(11,16,32,.12); }
-.vt-cutout img { width:100%; height:100%; object-fit:cover; object-position:center 14%; display:block; }
+/* foto recortada (sin fondo): círculo detrás y ella sobresaliendo por arriba */
+.vt-cutout { position:relative; width:min(100%,540px); margin:0 auto; padding-top:12%; }
+.vt-cutout::before { content:''; position:absolute; left:50%; bottom:0; transform:translateX(-50%); width:94%; aspect-ratio:1; border-radius:50%; background:radial-gradient(circle at 50% 42%, #dfe7ff, #ece2fb); z-index:0; }
+.vt-cutout img { position:relative; z-index:1; display:block; width:94%; margin:0 auto; height:auto; -webkit-mask-image:linear-gradient(to bottom,#000 88%,transparent); mask-image:linear-gradient(to bottom,#000 88%,transparent); }
 /* decoración de red de nodos (sutil) */
 .vt-netdeco { position:absolute; top:6%; right:3%; width:clamp(150px,17vw,250px); height:auto; opacity:.28; pointer-events:none; z-index:0; }
 .vt-credential h4 { font-family:'Poppins',sans-serif; font-weight:800; font-size:16px; color:var(--ink); margin:0 0 6px; }

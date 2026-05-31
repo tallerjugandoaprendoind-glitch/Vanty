@@ -217,9 +217,11 @@ export default function VantyAbaPage() {
         </svg>
         <div className="vt-inner" style={{ position: 'relative', zIndex: 1 }}>
           <Reveal>
-            <span className="vt-eyebrow"><ShieldCheck size={13} /> Respaldo clínico</span>
-            <h2 className="vt-h2" style={{ marginTop: 16, maxWidth: 820 }}>Diseñado desde la experiencia clínica. Potenciado por Inteligencia Artificial.</h2>
-            <p className="vt-lead" style={{ marginTop: 14, maxWidth: 680 }}>Vanty ABA no es una adaptación genérica. Es una plataforma nativa construida sobre los estándares y exigencias reales del día a día en los centros de terapia, garantizando que la tecnología se adapte al terapeuta, y no al revés.</p>
+            <div style={{ textAlign: 'center', maxWidth: 980, margin: '0 auto' }}>
+              <span className="vt-eyebrow"><ShieldCheck size={13} /> Respaldo clínico</span>
+              <h2 className="vt-h2" style={{ marginTop: 16, fontSize: 'clamp(30px,4.4vw,52px)' }}>Diseñado desde la experiencia clínica. Potenciado por Inteligencia Artificial.</h2>
+              <p className="vt-lead" style={{ marginTop: 14, maxWidth: 720, marginLeft: 'auto', marginRight: 'auto' }}>Vanty ABA no es una adaptación genérica. Es una plataforma nativa construida sobre los estándares y exigencias reales del día a día en los centros de terapia, garantizando que la tecnología se adapte al terapeuta, y no al revés.</p>
+            </div>
           </Reveal>
 
           <div className="vt-respaldo-grid" style={{ marginTop: 'clamp(40px,6vw,64px)' }}>
@@ -247,12 +249,12 @@ export default function VantyAbaPage() {
 
           <Reveal>
             <div className="vt-credential">
-              <Avatar src="/images/equipo/andrew.png" alt="Andrew Jonathan Manasias Martinez Albitres — CEO de Vanty" />
+              <Avatar src="/images/equipo/andrew.png" alt="Andrew Martinez Albitres — CEO de Vanty" />
               <div>
                 <h4>Ingeniería de grado empresarial</h4>
                 <p>
                   Esta visión clínica se sostiene sobre una arquitectura sólida y escalable liderada por
-                  <strong style={{ color: 'var(--ink)' }}> Andrew Jonathan Manasias Martinez Albitres</strong>, CEO de Vanty.
+                  <strong style={{ color: 'var(--ink)' }}> Andrew Martinez Albitres</strong>, CEO de Vanty.
                   Con un enfoque en el desarrollo nativo con IA, Vanty ABA asegura despliegues rápidos, alta
                   disponibilidad y un entorno donde los datos de cada centro están protegidos bajo estándares modernos.
                 </p>
