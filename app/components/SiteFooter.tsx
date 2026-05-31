@@ -50,7 +50,6 @@ export default function SiteFooter() {
           <ul>
             <li><a href={WA_URL} target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
             <li><a href={`mailto:${EMAIL}`}>{EMAIL}</a></li>
-            <li><a href="/login">{t('footer.login')}</a></li>
           </ul>
         </div>
       </div>

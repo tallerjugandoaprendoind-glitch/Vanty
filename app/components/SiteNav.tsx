@@ -124,7 +124,6 @@ export default function SiteNav() {
 
         <div className="vt-nav-right">
           <LangSwitch />
-          <a href="/login" className="vt-btn vt-btn-ghost vt-btn-sm">{t('nav.login')}</a>
           <a href={WA_URL} className="vt-btn vt-btn-primary vt-btn-sm" target="_blank" rel="noopener noreferrer"><Phone size={15} /> {t('nav.hablemos')}</a>
           <button className="vt-burger" onClick={() => setMobileOpen(o => !o)} aria-label="Menú">
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -149,7 +148,6 @@ export default function SiteNav() {
           <a href="/contacto">{t('nav.contacto')}</a>
           <div style={{ padding: '12px 0' }}><LangSwitch block /></div>
           <div className="vt-mobile-cta">
-            <a href="/login" className="vt-btn vt-btn-ghost">{t('nav.login')}</a>
             <a href={WA_URL} className="vt-btn vt-btn-primary" target="_blank" rel="noopener noreferrer"><Phone size={15} /> {t('nav.hablemos')}</a>
           </div>
         </div>
