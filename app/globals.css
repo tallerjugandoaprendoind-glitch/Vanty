@@ -202,6 +202,11 @@ body {
 .vt-credential-av { width:58px; height:58px; border-radius:14px; overflow:hidden; flex-shrink:0; display:flex; align-items:center; justify-content:center; background:#0c1838; color:#93c5fd; }
 .vt-credential-av img { width:100%; height:100%; object-fit:cover; object-position:center 20%; }
 .vt-media-free.portrait img { object-position:center 18%; }
+
+/* foto recortada (sin fondo) suelta, sin marco */
+.vt-cutout { position:relative; display:flex; justify-content:center; align-items:flex-end; }
+.vt-cutout img { position:relative; z-index:1; width:100%; max-width:440px; height:auto; display:block; filter:drop-shadow(0 26px 44px rgba(11,16,32,.22)); }
+.vt-cutout .blob { position:absolute; z-index:0; width:88%; aspect-ratio:1; left:50%; top:46%; transform:translate(-50%,-50%); border-radius:48% 52% 56% 44% / 54% 46% 54% 46%; background:radial-gradient(circle at 50% 42%, #d6e2ff, #ece2fb); }
 .vt-credential h4 { font-family:'Poppins',sans-serif; font-weight:800; font-size:16px; color:var(--ink); margin:0 0 6px; }
 .vt-credential p { font-size:14px; color:var(--muted); line-height:1.65; margin:0; }
 

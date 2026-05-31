@@ -212,7 +212,10 @@ export default function VantyAbaPage() {
 
           <div className="vt-respaldo-grid" style={{ marginTop: 'clamp(40px,6vw,64px)' }}>
             <Reveal>
-              <Figure src="/images/equipo/francesca.png" alt="Francesca Ramírez Bontá — Co-CEO & Dirección Clínica" caption="Retrato profesional de Francesca" frameless portrait blob="radial-gradient(circle at 50% 35%, #cfe0fb, #e7defb)" />
+              <div className="vt-cutout">
+                <span className="blob" />
+                <img src="/images/equipo/francesca.png" alt="Francesca Ramírez Bontá — Co-CEO & Dirección Clínica" />
+              </div>
             </Reveal>
             <Reveal delay={0.1}>
               <span className="vt-badge-pill" style={{ color: '#1D4ED8', background: '#eff6ff' }}>Co-CEO &amp; Dirección Clínica</span>

@@ -2157,6 +2157,35 @@ body {
   object-position: center 18%;
 }
 
+.vt-cutout {
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  position: relative;
+}
+
+.vt-cutout img {
+  z-index: 1;
+  filter: drop-shadow(0 26px 44px #0b102038);
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.vt-cutout .blob {
+  z-index: 0;
+  aspect-ratio: 1;
+  background: radial-gradient(circle at 50% 42%, #d6e2ff, #ece2fb);
+  border-radius: 48% 52% 56% 44% / 54% 46%;
+  width: 88%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .vt-credential h4 {
   color: var(--ink);
   margin: 0 0 6px;
