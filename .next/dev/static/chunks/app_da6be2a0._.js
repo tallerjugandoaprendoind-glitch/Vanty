@@ -1391,6 +1391,7 @@ function PricingABA() {
     _s();
     const [region, setRegion] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('sudamerica');
     const [billing, setBilling] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('m');
+    const [group, setGroup] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('Personal');
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "PricingABA.useEffect": ()=>{
             let cancelled = false;
@@ -1424,7 +1425,7 @@ function PricingABA() {
                     children: "Más elegido"
                 }, void 0, false, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 28,
+                    lineNumber: 29,
                     columnNumber: 24
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1438,7 +1439,7 @@ function PricingABA() {
                     children: p.name
                 }, void 0, false, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 29,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1450,7 +1451,7 @@ function PricingABA() {
                     children: p.pacientes
                 }, void 0, false, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 30,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, this),
                 price === null ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1463,12 +1464,12 @@ function PricingABA() {
                         children: "Consultar"
                     }, void 0, false, {
                         fileName: "[project]/app/components/PricingABA.tsx",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 41
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 32,
+                    lineNumber: 33,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
@@ -1480,7 +1481,7 @@ function PricingABA() {
                                     children: R.cur
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/PricingABA.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 37,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1491,7 +1492,7 @@ function PricingABA() {
                                     children: fmt(price)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/PricingABA.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 38,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1502,13 +1503,13 @@ function PricingABA() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/PricingABA.tsx",
-                                    lineNumber: 38,
+                                    lineNumber: 39,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/PricingABA.tsx",
-                            lineNumber: 35,
+                            lineNumber: 36,
                             columnNumber: 13
                         }, this),
                         billing === 'y' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1516,7 +1517,7 @@ function PricingABA() {
                             children: "🎁 1 mes gratis"
                         }, void 0, false, {
                             fileName: "[project]/app/components/PricingABA.tsx",
-                            lineNumber: 40,
+                            lineNumber: 41,
                             columnNumber: 33
                         }, this)
                     ]
@@ -1529,7 +1530,7 @@ function PricingABA() {
                     children: p.desc
                 }, void 0, false, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 43,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1543,7 +1544,7 @@ function PricingABA() {
                                     size: 15
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/PricingABA.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 46,
                                     columnNumber: 69
                                 }, this),
                                 " ",
@@ -1551,12 +1552,12 @@ function PricingABA() {
                             ]
                         }, f, true, {
                             fileName: "[project]/app/components/PricingABA.tsx",
-                            lineNumber: 45,
+                            lineNumber: 46,
                             columnNumber: 32
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 44,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1572,18 +1573,18 @@ function PricingABA() {
                     children: price === null ? 'Hablar con ventas' : 'Empezar'
                 }, void 0, false, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 47,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this)
             ]
         }, p.id, true, {
             fileName: "[project]/app/components/PricingABA.tsx",
-            lineNumber: 27,
+            lineNumber: 28,
             columnNumber: 7
         }, this);
     };
-    const personal = __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$pricing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PLANS"].filter((p)=>p.group === 'Personal');
-    const empresa = __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$pricing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PLANS"].filter((p)=>p.group === 'Vanty Empresa');
+    const plans = __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$lib$2f$pricing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PLANS"].filter((p)=>p.group === group);
+    const isPersonal = group === 'Personal';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "vt-section soft",
         id: "precios",
@@ -1600,14 +1601,14 @@ function PricingABA() {
                                     size: 13
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/PricingABA.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 62,
                                     columnNumber: 40
                                 }, this),
                                 " Precios"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/PricingABA.tsx",
-                            lineNumber: 61,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1615,10 +1616,10 @@ function PricingABA() {
                             style: {
                                 marginTop: 16
                             },
-                            children: "Planes claros, en tu moneda"
+                            children: "Planes Vanty"
                         }, void 0, false, {
                             fileName: "[project]/app/components/PricingABA.tsx",
-                            lineNumber: 62,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1632,60 +1633,87 @@ function PricingABA() {
                                     children: "1 mes gratis"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/PricingABA.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 64,
                                     columnNumber: 98
                                 }, this),
                                 "."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/PricingABA.tsx",
-                            lineNumber: 63,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 60,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    style: {
-                        display: 'flex',
-                        justifyContent: 'center',
-                        marginTop: 6
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "vt-bill-toggle",
-                        role: "group",
-                        "aria-label": "Facturación",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: billing === 'm' ? 'on' : '',
-                                onClick: ()=>setBilling('m'),
-                                children: "Mensual"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/PricingABA.tsx",
-                                lineNumber: 69,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: billing === 'y' ? 'on' : '',
-                                onClick: ()=>setBilling('y'),
-                                children: "Anual"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/PricingABA.tsx",
-                                lineNumber: 70,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/components/PricingABA.tsx",
-                        lineNumber: 68,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
+                    className: "vt-pricebar",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "vt-bill-toggle",
+                            role: "group",
+                            "aria-label": "Tipo de plan",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: isPersonal ? 'on' : '',
+                                    onClick: ()=>setGroup('Personal'),
+                                    children: "Personal"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/components/PricingABA.tsx",
+                                    lineNumber: 70,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: !isPersonal ? 'on' : '',
+                                    onClick: ()=>setGroup('Vanty Empresa'),
+                                    children: "Empresa"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/components/PricingABA.tsx",
+                                    lineNumber: 71,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/components/PricingABA.tsx",
+                            lineNumber: 69,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "vt-bill-toggle",
+                            role: "group",
+                            "aria-label": "Facturación",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: billing === 'm' ? 'on' : '',
+                                    onClick: ()=>setBilling('m'),
+                                    children: "Mensual"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/components/PricingABA.tsx",
+                                    lineNumber: 74,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: billing === 'y' ? 'on' : '',
+                                    onClick: ()=>setBilling('y'),
+                                    children: "Anual"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/components/PricingABA.tsx",
+                                    lineNumber: 75,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/components/PricingABA.tsx",
+                            lineNumber: 73,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 67,
+                    lineNumber: 68,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1695,7 +1723,7 @@ function PricingABA() {
                             size: 13
                         }, void 0, false, {
                             fileName: "[project]/app/components/PricingABA.tsx",
-                            lineNumber: 74,
+                            lineNumber: 79,
                             columnNumber: 11
                         }, this),
                         " Región detectada automáticamente: ",
@@ -1707,39 +1735,22 @@ function PricingABA() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 73,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "vt-plan-group-label",
-                    children: "Personal"
-                }, void 0, false, {
-                    fileName: "[project]/app/components/PricingABA.tsx",
                     lineNumber: 78,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "vt-plans-3",
-                    children: personal.map(card)
-                }, void 0, false, {
-                    fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 79,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "vt-plan-group-label",
-                    children: "Vanty Empresa"
+                    className: isPersonal ? 'vt-plans-3' : 'vt-plans-2',
+                    style: {
+                        marginTop: 36,
+                        ...isPersonal ? {} : {
+                            marginLeft: 'auto',
+                            marginRight: 'auto'
+                        }
+                    },
+                    children: plans.map(card)
                 }, void 0, false, {
                     fileName: "[project]/app/components/PricingABA.tsx",
                     lineNumber: 82,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "vt-plans-2",
-                    children: empresa.map(card)
-                }, void 0, false, {
-                    fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 83,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1752,22 +1763,22 @@ function PricingABA() {
                     children: "🔐 Activación en 24 h · Software multilingüe, se adapta a tu idioma · IA propia: ARIA"
                 }, void 0, false, {
                     fileName: "[project]/app/components/PricingABA.tsx",
-                    lineNumber: 85,
+                    lineNumber: 86,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/PricingABA.tsx",
-            lineNumber: 59,
+            lineNumber: 60,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/PricingABA.tsx",
-        lineNumber: 58,
+        lineNumber: 59,
         columnNumber: 5
     }, this);
 }
-_s(PricingABA, "TyfVO+zJVvpH5RPzClIkcE45BHM=");
+_s(PricingABA, "gfSt6mu+5EBW+4fGBj0mdHNT31E=");
 _c = PricingABA;
 var _c;
 __turbopack_context__.k.register(_c, "PricingABA");

@@ -3,4 +3,4 @@
 :HL["/images/aprendo.png","image"]
 :HL["/images/equipo/francesca.png","image"]
 :HL["/images/Testimonial.png","image"]
-0:{"buildId":"41IZrhaIhhOqchL9gVFBb","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"vanty-aba","paramType":null,"paramKey":"vanty-aba","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"YCc4CufExbkk-KVROKPoj","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"vanty-aba","paramType":null,"paramKey":"vanty-aba","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

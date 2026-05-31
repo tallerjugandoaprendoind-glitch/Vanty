@@ -8,6 +8,7 @@ import { WA_URL } from '@/app/lib/site'
 export default function PricingABA() {
   const [region, setRegion] = useState<RegionKey>('sudamerica')
   const [billing, setBilling] = useState<'m' | 'y'>('m')
+  const [group, setGroup] = useState<'Personal' | 'Vanty Empresa'>('Personal')
 
   useEffect(() => {
     let cancelled = false
@@ -51,20 +52,24 @@ export default function PricingABA() {
     )
   }
 
-  const personal = PLANS.filter(p => p.group === 'Personal')
-  const empresa = PLANS.filter(p => p.group === 'Vanty Empresa')
+  const plans = PLANS.filter(p => p.group === group)
+  const isPersonal = group === 'Personal'
 
   return (
     <section className="vt-section soft" id="precios">
       <div className="vt-inner">
         <div className="vt-head-center">
           <span className="vt-eyebrow"><CreditCard size={13} /> Precios</span>
-          <h2 className="vt-h2" style={{ marginTop: 16 }}>Planes claros, en tu moneda</h2>
+          <h2 className="vt-h2" style={{ marginTop: 16 }}>Planes Vanty</h2>
           <p className="vt-lead">El precio se ajusta automáticamente a tu región. Plan anual con <strong style={{ color: 'var(--ink)' }}>1 mes gratis</strong>.</p>
         </div>
 
-        {/* Toggle Mensual / Anual */}
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 6 }}>
+        {/* Selectores: Personal/Empresa + Mensual/Anual */}
+        <div className="vt-pricebar">
+          <div className="vt-bill-toggle" role="group" aria-label="Tipo de plan">
+            <button className={isPersonal ? 'on' : ''} onClick={() => setGroup('Personal')}>Personal</button>
+            <button className={!isPersonal ? 'on' : ''} onClick={() => setGroup('Vanty Empresa')}>Empresa</button>
+          </div>
           <div className="vt-bill-toggle" role="group" aria-label="Facturación">
             <button className={billing === 'm' ? 'on' : ''} onClick={() => setBilling('m')}>Mensual</button>
             <button className={billing === 'y' ? 'on' : ''} onClick={() => setBilling('y')}>Anual</button>
@@ -74,13 +79,9 @@ export default function PricingABA() {
           <Globe size={13} /> Región detectada automáticamente: {R.flag} {R.label} · precios en {R.code}
         </p>
 
-        {/* Personal */}
-        <div className="vt-plan-group-label">Personal</div>
-        <div className="vt-plans-3">{personal.map(card)}</div>
-
-        {/* Vanty Empresa */}
-        <div className="vt-plan-group-label">Vanty Empresa</div>
-        <div className="vt-plans-2">{empresa.map(card)}</div>
+        <div className={isPersonal ? 'vt-plans-3' : 'vt-plans-2'} style={{ marginTop: 36, ...(isPersonal ? {} : { marginLeft: 'auto', marginRight: 'auto' }) }}>
+          {plans.map(card)}
+        </div>
 
         <p style={{ textAlign: 'center', fontSize: 13, color: 'var(--muted-2)', marginTop: 28 }}>🔐 Activación en 24 h · Software multilingüe, se adapta a tu idioma · IA propia: ARIA</p>
       </div>
