@@ -63,7 +63,7 @@ export default function Home() {
           <Reveal className="vt-logos">
             <ClientChip src="/images/clientes/santi.png" name="Neuropsicología y Terapias SANTI" />
             <ClientChip src="/images/aprendo.png" name="Jugando Aprendo" />
-            <ClientChip src="/images/clientes/capyaba.png" alt="capyABA" name={<>capy<span style={{ color: '#e0959c' }}>ABA</span></>} />
+            <ClientChip src="/images/clientes/capyaba.png" alt="capyABA" name={<span>capy<span style={{ color: '#e0959c' }}>ABA</span></span>} />
             <span className="vt-logo-ghost">{t('home.tuOrg')}</span>
           </Reveal>
         </div>
