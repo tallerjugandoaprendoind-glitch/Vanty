@@ -2,6 +2,7 @@
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/admin/page": "app/admin/page.js",
+  "/api/geo/route": "app/api/geo/route.js",
   "/como-trabajamos/page": "app/como-trabajamos/page.js",
   "/contacto/page": "app/contacto/page.js",
   "/login/page": "app/login/page.js",

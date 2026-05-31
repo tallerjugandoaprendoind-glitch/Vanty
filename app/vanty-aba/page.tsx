@@ -11,6 +11,7 @@ import Figure from '@/app/components/Figure'
 import FaqList from '@/app/components/FaqList'
 import Wave from '@/app/components/Wave'
 import Avatar from '@/app/components/Avatar'
+import PricingABA from '@/app/components/PricingABA'
 import { WA_URL, EMAIL } from '@/app/lib/site'
 
 const AGENTS = [
@@ -67,15 +68,9 @@ const CMP_ROWS = [
 ]
 const cellClass = (v: string) => v.startsWith('✅') ? 'yes' : v.startsWith('❌') ? 'no' : v.startsWith('⚠️') ? 'par' : ''
 
-const PLANS = [
-  { name: 'Primer mes · Setup', cur: 'S/', num: '200', per: '', desc: 'Configuración completa, carga de pacientes y capacitación de tu equipo incluida.', feats: ['Setup completo del sistema', 'Carga inicial de pacientes', 'Capacitación del equipo', 'Todos los módulos y el Hub de IA'], feat: false, badge: '' },
-  { name: 'Mensual · Sin permanencia', cur: 'S/', num: '120', per: '/mes', desc: 'Acceso a todo: módulos, Hub de IA ilimitado, actualizaciones y soporte.', feats: ['Todos los módulos activos', 'ARIA y agentes 24/7', 'Facturación, agenda y WhatsApp', 'Usuarios ilimitados', 'Soporte por WhatsApp y email'], feat: true, badge: 'Más elegido' },
-  { name: 'Anual · Pagas 10, usas 12', cur: 'S/', num: '1,180', per: '/año', desc: 'Paga solo 10 meses y usa 12. Ahorra S/260 — sin permanencias.', feats: ['Todo lo del plan mensual', '2 meses gratis', 'Precio bloqueado 12 meses', 'Soporte VIP y onboarding prioritario'], feat: false, badge: '🎁 2 meses gratis' },
-]
-
 const FAQS = [
   { q: '¿En qué se diferencia Vanty ABA del software internacional?', a: 'El software ABA internacional suele ser costoso, rígido y pensado para otra realidad operativa. Vanty ABA te ofrece lo mismo y más —Hub de IA clínica, facturación, agenda y portal familiar—, es multilingüe (se adapta a tu idioma) e incluye setup completo, un rol de secretaría y acompañamiento cercano que otras plataformas no contemplan.' },
-  { q: '¿Cuánto cuesta Vanty ABA para mi centro?', a: 'El primer mes es S/200 e incluye configuración completa, carga inicial de pacientes y capacitación. Desde el segundo mes pagas S/120/mes sin permanencia. Con el plan anual pagas S/1,180 (equivale a 10 meses) y usas 12 — 2 meses gratis y S/260 de ahorro.' },
+  { q: '¿Cuánto cuesta Vanty ABA para mi centro?', a: 'Hay planes desde Basic hasta Enterprise, y el precio se ajusta automáticamente a tu región (Sudamérica, Norteamérica o Europa) — puedes verlo en la sección de Precios. El plan anual incluye 1 mes gratis y el plan Enterprise se cotiza a medida.' },
   { q: '¿Necesito conocimientos técnicos para usarlo?', a: 'Para nada. Vanty ABA está diseñado para analistas y terapeutas, no para perfiles técnicos. La interfaz es intuitiva y está en tu idioma, y nosotros hacemos el setup completo contigo en las primeras 24 horas.' },
   { q: '¿Qué es el Hub de IA y cómo me ayuda?', a: 'Es un equipo de asistentes de IA liderado por ARIA. Generan reportes y notas, auditan documentación, sugieren y evalúan objetivos, detectan patrones y anticipan alertas — para que tu equipo dedique su tiempo a los pacientes, no al papeleo.' },
   { q: '¿Mis datos de pacientes están seguros?', a: 'Absolutamente. Tus datos son 100% tuyos, almacenados con estándares de seguridad clínica. Nunca compartimos información con terceros y tienes control total en todo momento.' },
@@ -365,35 +360,8 @@ export default function VantyAbaPage() {
         </div>
       </section>
 
-      {/* PRECIOS */}
-      <section className="vt-section soft" id="precios">
-        <div className="vt-inner">
-          <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><CreditCard size={13} /> Precios</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>Planes claros, sin sorpresas</h2>
-            <p className="vt-lead">Sin contratos anuales obligatorios. Tu plataforma activa en 24 horas desde el primer pago.</p>
-          </Reveal>
-          <div className="vt-price-grid">
-            {PLANS.map((p, i) => (
-              <Reveal key={p.name} delay={i * 0.08}>
-                <div className={`vt-price${p.feat ? ' feat' : ''}`}>
-                  {p.badge && <span className="vt-price-badge">{p.badge}</span>}
-                  <div className="vt-price-name">{p.name}</div>
-                  <div className="vt-price-amt">
-                    <span className="vt-price-cur">{p.cur}</span>
-                    <span className="vt-price-num">{p.num}</span>
-                    {p.per && <span className="vt-price-per">{p.per}</span>}
-                  </div>
-                  <p className="vt-price-desc">{p.desc}</p>
-                  <ul className="vt-checks">{p.feats.map(f => <li key={f} style={{ fontSize: 13.5 }}><Check size={16} /> {f}</li>)}</ul>
-                  <a href={WA_URL} target="_blank" rel="noopener noreferrer" className={`vt-btn ${p.feat ? 'vt-btn-primary' : 'vt-btn-ghost'}`} style={{ marginTop: 22, width: '100%', justifyContent: 'center' }}>Empezar</a>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <p style={{ textAlign: 'center', fontSize: 13, color: 'var(--muted-2)', marginTop: 22 }}>🔐 Activación en 24 h · Gestionado directamente con el equipo Vanty</p>
-        </div>
-      </section>
+      {/* PRECIOS — por región, auto-detectado */}
+      <PricingABA />
 
       {/* FAQ */}
       <section className="vt-section" id="faq">

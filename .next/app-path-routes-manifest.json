@@ -2,6 +2,7 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/admin/page": "/admin",
+  "/api/geo/route": "/api/geo",
   "/como-trabajamos/page": "/como-trabajamos",
   "/contacto/page": "/contacto",
   "/login/page": "/login",

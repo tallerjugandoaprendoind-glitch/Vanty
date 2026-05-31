@@ -47,6 +47,12 @@
       "namedRegex": "^/admin(?:/)?$"
     },
     {
+      "page": "/api/geo",
+      "regex": "^/api/geo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/geo(?:/)?$"
+    },
+    {
       "page": "/como-trabajamos",
       "regex": "^/como\\-trabajamos(?:/)?$",
       "routeKeys": {},

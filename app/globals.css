@@ -387,6 +387,21 @@ a.vt-card { text-decoration:none; color:inherit; }
 .vt-price-per { font-size:15px; color:var(--muted); }
 .vt-price-desc { font-size:13.5px; color:var(--muted); line-height:1.6; margin:10px 0 20px; }
 
+/* ── Precios por región (Vanty ABA) ────────────── */
+.vt-pricebar { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:center; margin-top:6px; }
+.vt-region-pills, .vt-bill-toggle { display:inline-flex; background:#fff; border:1px solid var(--line); border-radius:99px; padding:4px; gap:2px; box-shadow:var(--shadow-sm); }
+.vt-region-pills button, .vt-bill-toggle button { border:none; background:none; cursor:pointer; padding:8px 15px; border-radius:99px; font-family:'Poppins',sans-serif; font-weight:700; font-size:13px; color:var(--muted); display:inline-flex; align-items:center; gap:6px; transition:background .15s, color .15s; }
+.vt-region-pills button:hover, .vt-bill-toggle button:hover { color:var(--ink); }
+.vt-region-pills button.on, .vt-bill-toggle button.on { background:var(--blue); color:#fff; }
+.vt-region-note { text-align:center; font-size:12.5px; color:var(--muted-2); margin-top:12px; display:flex; align-items:center; justify-content:center; gap:6px; }
+.vt-plans { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; margin-top:40px; align-items:start; }
+@media(max-width:1080px){ .vt-plans{ grid-template-columns:repeat(3,1fr); } }
+@media(max-width:720px){ .vt-plans{ grid-template-columns:repeat(2,1fr); } }
+@media(max-width:480px){ .vt-plans{ grid-template-columns:1fr; } }
+.vt-plans .vt-price { padding:24px 22px; }
+.vt-price-tier { font-family:'Poppins',sans-serif; font-size:10px; font-weight:800; letter-spacing:.07em; text-transform:uppercase; color:var(--blue); margin-bottom:8px; }
+.vt-price-save { display:inline-block; font-size:11px; font-weight:800; color:#16a34a; background:#ecfdf5; border-radius:99px; padding:3px 10px; }
+
 /* ── FAQ ───────────────────────────────────────── */
 .vt-faq { max-width:780px; margin:0 auto; }
 .vt-faq-item { border:1.5px solid var(--line); border-radius:14px; margin-bottom:10px; overflow:hidden; background:#fff; transition:border-color .2s; }

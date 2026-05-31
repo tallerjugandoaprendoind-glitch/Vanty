@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Documents/Vanty/app/api/geo/route.ts"],"sourcesContent":["// Devuelve el país del visitante a partir de las cabeceras de geolocalización.\n// En Vercel: x-vercel-ip-country. En Cloudflare: cf-ipcountry.\nexport const dynamic = 'force-dynamic'\n\nexport async function GET(req: Request) {\n  const country =\n    req.headers.get('x-vercel-ip-country') ||\n    req.headers.get('cf-ipcountry') ||\n    null\n  return Response.json({ country }, { headers: { 'cache-control': 'no-store' } })\n}\n"],"names":[],"mappings":"AAAA,+EAA+E;AAC/E,+DAA+D;;;;;;;AACxD,MAAM,UAAU;AAEhB,eAAe,IAAI,GAAY;IACpC,MAAM,UACJ,IAAI,OAAO,CAAC,GAAG,CAAC,0BAChB,IAAI,OAAO,CAAC,GAAG,CAAC,mBAChB;IACF,OAAO,SAAS,IAAI,CAAC;QAAE;IAAQ,GAAG;QAAE,SAAS;YAAE,iBAAiB;QAAW;IAAE;AAC/E"}}]
+}
