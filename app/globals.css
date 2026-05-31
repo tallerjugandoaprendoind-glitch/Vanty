@@ -203,10 +203,11 @@ body {
 .vt-credential-av img { width:100%; height:100%; object-fit:cover; object-position:center 20%; }
 .vt-media-free.portrait img { object-position:center 18%; }
 
-/* foto recortada (sin fondo) suelta, sin marco */
-.vt-cutout { position:relative; display:flex; justify-content:center; align-items:flex-end; }
-.vt-cutout img { position:relative; z-index:1; width:100%; max-width:440px; height:auto; display:block; filter:drop-shadow(0 26px 44px rgba(11,16,32,.22)); }
-.vt-cutout .blob { position:absolute; z-index:0; width:88%; aspect-ratio:1; left:50%; top:46%; transform:translate(-50%,-50%); border-radius:48% 52% 56% 44% / 54% 46% 54% 46%; background:radial-gradient(circle at 50% 42%, #d6e2ff, #ece2fb); }
+/* foto recortada (sin fondo) en círculo, más grande */
+.vt-cutout { position:relative; width:min(100%,500px); aspect-ratio:1; margin:0 auto; border-radius:50%; overflow:hidden; background:radial-gradient(circle at 50% 36%, #dfe7ff, #ece2fb); box-shadow:0 30px 60px rgba(11,16,32,.12); }
+.vt-cutout img { width:100%; height:100%; object-fit:cover; object-position:center 14%; display:block; }
+/* decoración de red de nodos (sutil) */
+.vt-netdeco { position:absolute; top:6%; right:3%; width:clamp(150px,17vw,250px); height:auto; opacity:.28; pointer-events:none; z-index:0; }
 .vt-credential h4 { font-family:'Poppins',sans-serif; font-weight:800; font-size:16px; color:var(--ink); margin:0 0 6px; }
 .vt-credential p { font-size:14px; color:var(--muted); line-height:1.65; margin:0; }
 

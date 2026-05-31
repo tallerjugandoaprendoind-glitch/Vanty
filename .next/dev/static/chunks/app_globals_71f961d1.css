@@ -2158,32 +2158,33 @@ body {
 }
 
 .vt-cutout {
-  justify-content: center;
-  align-items: flex-end;
-  display: flex;
+  aspect-ratio: 1;
+  background: radial-gradient(circle at 50% 36%, #dfe7ff, #ece2fb);
+  border-radius: 50%;
+  width: min(100%, 500px);
+  margin: 0 auto;
   position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px #0b10201f;
 }
 
 .vt-cutout img {
-  z-index: 1;
-  filter: drop-shadow(0 26px 44px #0b102038);
+  object-fit: cover;
+  object-position: center 14%;
   width: 100%;
-  max-width: 440px;
-  height: auto;
+  height: 100%;
   display: block;
-  position: relative;
 }
 
-.vt-cutout .blob {
+.vt-netdeco {
+  opacity: .28;
+  pointer-events: none;
   z-index: 0;
-  aspect-ratio: 1;
-  background: radial-gradient(circle at 50% 42%, #d6e2ff, #ece2fb);
-  border-radius: 48% 52% 56% 44% / 54% 46%;
-  width: 88%;
+  width: clamp(150px, 17vw, 250px);
+  height: auto;
   position: absolute;
-  top: 46%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 6%;
+  right: 3%;
 }
 
 .vt-credential h4 {

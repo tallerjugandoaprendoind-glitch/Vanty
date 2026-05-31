@@ -203,17 +203,28 @@ export default function VantyAbaPage() {
 
       {/* RESPALDO CLÍNICO */}
       <section className="vt-section vt-rel" id="respaldo">
-        <div className="vt-inner">
-          <Reveal className="vt-head-center">
+        <svg className="vt-netdeco" viewBox="0 0 260 200" fill="none" aria-hidden="true">
+          <g stroke="#1D4ED8" strokeWidth="1">
+            <line x1="30" y1="40" x2="90" y2="20" /><line x1="90" y1="20" x2="150" y2="55" /><line x1="150" y1="55" x2="210" y2="35" />
+            <line x1="30" y1="40" x2="70" y2="100" /><line x1="90" y1="20" x2="120" y2="90" /><line x1="150" y1="55" x2="120" y2="90" />
+            <line x1="150" y1="55" x2="200" y2="110" /><line x1="210" y1="35" x2="200" y2="110" /><line x1="70" y1="100" x2="120" y2="90" />
+            <line x1="120" y1="90" x2="160" y2="150" /><line x1="200" y1="110" x2="160" y2="150" /><line x1="70" y1="100" x2="100" y2="160" /><line x1="100" y1="160" x2="160" y2="150" />
+          </g>
+          <g fill="#1D4ED8">
+            <circle cx="30" cy="40" r="3.5" /><circle cx="90" cy="20" r="3.5" /><circle cx="150" cy="55" r="4.5" /><circle cx="210" cy="35" r="3.5" />
+            <circle cx="70" cy="100" r="3.5" /><circle cx="120" cy="90" r="5" /><circle cx="200" cy="110" r="3.5" /><circle cx="160" cy="150" r="4" /><circle cx="100" cy="160" r="3.5" />
+          </g>
+        </svg>
+        <div className="vt-inner" style={{ position: 'relative', zIndex: 1 }}>
+          <Reveal>
             <span className="vt-eyebrow"><ShieldCheck size={13} /> Respaldo clínico</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>Diseñado desde la experiencia clínica.<br />Potenciado por Inteligencia Artificial.</h2>
-            <p className="vt-lead">Vanty ABA no es una adaptación genérica. Es una plataforma nativa construida sobre los estándares y exigencias reales del día a día en los centros de terapia, garantizando que la tecnología se adapte al terapeuta, y no al revés.</p>
+            <h2 className="vt-h2" style={{ marginTop: 16, maxWidth: 820 }}>Diseñado desde la experiencia clínica. Potenciado por Inteligencia Artificial.</h2>
+            <p className="vt-lead" style={{ marginTop: 14, maxWidth: 680 }}>Vanty ABA no es una adaptación genérica. Es una plataforma nativa construida sobre los estándares y exigencias reales del día a día en los centros de terapia, garantizando que la tecnología se adapte al terapeuta, y no al revés.</p>
           </Reveal>
 
           <div className="vt-respaldo-grid" style={{ marginTop: 'clamp(40px,6vw,64px)' }}>
             <Reveal>
               <div className="vt-cutout">
-                <span className="blob" />
                 <img src="/images/equipo/francesca.png" alt="Francesca Ramírez Bontá — Co-CEO & Dirección Clínica" />
               </div>
             </Reveal>
