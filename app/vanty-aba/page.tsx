@@ -13,6 +13,12 @@ import Wave from '@/app/components/Wave'
 import Avatar from '@/app/components/Avatar'
 import PricingABA from '@/app/components/PricingABA'
 import { WA_URL, EMAIL } from '@/app/lib/site'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+      title: 'Vanty ABA | Automatización Inteligente para Terapia Conductual',
+      description: 'Optimiza la gestión clínica y el análisis de conducta aplicado con las herramientas inteligentes de Vanty ABA.',
+    }
 
 const AGENTS = [
   { icon: Bot, name: 'ARIA', desc: 'Tu copiloto clínico: conversa contigo y coordina todo el trabajo inteligente del centro.' },
