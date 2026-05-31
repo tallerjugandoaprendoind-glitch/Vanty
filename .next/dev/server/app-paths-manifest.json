@@ -1,9 +1,0 @@
-{
-  "/api/geo/route": "app/api/geo/route.js",
-  "/como-trabajamos/page": "app/como-trabajamos/page.js",
-  "/contacto/page": "app/contacto/page.js",
-  "/nosotros/page": "app/nosotros/page.js",
-  "/page": "app/page.js",
-  "/servicios/page": "app/servicios/page.js",
-  "/vanty-aba/page": "app/vanty-aba/page.js"
-}
