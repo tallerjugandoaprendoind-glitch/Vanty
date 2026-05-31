@@ -5,6 +5,7 @@
   "/api/geo/route": "/api/geo",
   "/como-trabajamos/page": "/como-trabajamos",
   "/contacto/page": "/contacto",
+  "/favicon.ico/route": "/favicon.ico",
   "/login/page": "/login",
   "/nosotros/page": "/nosotros",
   "/page": "/",

@@ -2011,9 +2011,86 @@ body {
 
 @media (max-width: 880px) {
   .vt-media-free img, .vt-hero-split .vt-media-free img {
-    width: 104%;
-    max-width: 104%;
-    margin-left: -2%;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .vt-netdeco {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .vt-hero {
+    padding-top: calc(clamp(60px, 8vw, 104px) + 70px);
+  }
+
+  .vt-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .vt-nav-row {
+    height: 58px;
+    padding: 0 10px 0 16px;
+  }
+
+  .vt-logo img {
+    height: 34px;
+  }
+
+  .vt-logo-sub {
+    display: none;
+  }
+
+  .vt-hero-btns {
+    width: 100%;
+  }
+
+  .vt-hero-btns .vt-btn, .vt-cta-btns .vt-btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .vt-cta-btns {
+    width: 100%;
+  }
+
+  .vt-pricebar {
+    gap: 10px;
+  }
+
+  .vt-plan-group-label {
+    margin-top: 30px;
+  }
+
+  .vt-blockquote {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .vt-credential {
+    flex-direction: column;
+    gap: 14px;
+    padding: 22px;
+  }
+
+  .vt-quote-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .vt-nav-right {
+    gap: 6px;
+  }
+
+  .vt-btn-sm {
+    padding: 9px 13px;
+    font-size: 13px;
   }
 }
 

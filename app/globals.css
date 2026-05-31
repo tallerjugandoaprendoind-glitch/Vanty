@@ -179,7 +179,32 @@ body {
 /* imágenes libres más grandes (rellenan el espacio) */
 .vt-media-free img { width:116%; max-width:116%; margin-left:-8%; }
 .vt-hero-split .vt-media-free img { width:128%; max-width:128%; margin-left:-6%; }
-@media(max-width:880px){ .vt-media-free img, .vt-hero-split .vt-media-free img { width:104%; max-width:104%; margin-left:-2%; } }
+@media(max-width:880px){ .vt-media-free img, .vt-hero-split .vt-media-free img { width:100%; max-width:100%; margin-left:0; } }
+
+/* ── Optimización móvil ─────────────────────────── */
+@media(max-width:760px){
+  .vt-netdeco { display:none; }
+}
+@media(max-width:600px){
+  .vt-hero { padding-top: calc(clamp(60px,8vw,104px) + 70px); }
+  .vt-section { padding-left:18px; padding-right:18px; }
+  .vt-nav-row { height:58px; padding:0 10px 0 16px; }
+  .vt-logo img { height:34px; }
+  .vt-logo-sub { display:none; }
+  .vt-hero-btns { width:100%; }
+  .vt-hero-btns .vt-btn, .vt-cta-btns .vt-btn { width:100%; justify-content:center; }
+  .vt-cta-btns { width:100%; }
+  .vt-pricebar { gap:10px; }
+  .vt-plan-group-label { margin-top:30px; }
+  .vt-blockquote { font-size:15px; padding:14px 18px; }
+  .vt-credential { flex-direction:column; gap:14px; padding:22px; }
+  .vt-quote-text { font-size:20px; }
+  .vt-media-blob { inset:-3% -2%; }
+}
+@media(max-width:400px){
+  .vt-nav-right { gap:6px; }
+  .vt-btn-sm { padding:9px 13px; font-size:13px; }
+}
 
 /* tile de logo de producto (en vez de ícono) */
 .vt-logo-tile { width:54px; height:54px; border-radius:14px; background:#fff; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; overflow:hidden; margin-bottom:18px; box-shadow:var(--shadow-sm); flex-shrink:0; }
