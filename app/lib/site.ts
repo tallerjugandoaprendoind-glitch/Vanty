@@ -3,14 +3,15 @@
 // ════════════════════════════════════════════════
 
 export const WA_NUM = '51994196916'
-export const EMAIL = 'soporte@vanty.xyz'
+export const EMAIL = 'vantysupport@gmail.com'
 export const WA_MSG = encodeURIComponent('Hola, vi la página de Vanty y quiero conocer más sobre lo que hacen.')
 export const WA_URL = `https://wa.me/${WA_NUM}?text=${WA_MSG}`
 
 // Enlace de WhatsApp con un mensaje personalizado
 export const waLink = (msg: string) => `https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`
-export const FB_URL = 'https://www.facebook.com/profile.php?id=61587764677406'
-export const IG_URL = 'https://www.instagram.com/vanty.app'
+export const FB_URL = 'https://www.facebook.com/61587764677406'
+export const IG_URL = 'https://www.instagram.com/vantyaba/'
+export const TIKTOK_URL = 'https://www.tiktok.com/@vantyaba'
 
 export type IconKey = 'brain' | 'school'
 

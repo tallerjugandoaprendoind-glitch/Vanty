@@ -82,6 +82,7 @@ export default function SiteNav() {
                 <div className="vt-mega" role="menu">
                   <div className="vt-mega-grid">
                     {SERVICES.map(s => {
+                      const k = s.slug === 'vanty-aba' ? 'aba' : 'school'
                       const inner = (
                         <>
                           <ServiceIcon iconKey={s.icon} logo={s.logo} accent={s.accent} variant="mega" />
@@ -91,7 +92,7 @@ export default function SiteNav() {
                               {s.slug === 'vanty-aba' && <span className="vt-mega-star">{t('nav.estrella')}</span>}
                               {s.soon && <span className="vt-mega-star" style={{ background: '#eef1f6', color: '#7b8499' }}>{t('nav.proximamente')}</span>}
                             </span>
-                            <span className="vt-mega-tag">{s.tagline}</span>
+                            <span className="vt-mega-tag">{t(`svc.${k}.tagline`)}</span>
                           </span>
                         </>
                       )

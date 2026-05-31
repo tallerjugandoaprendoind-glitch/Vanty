@@ -1,9 +1,15 @@
 'use client'
 
 import { Phone, Mail, Instagram, Facebook } from 'lucide-react'
-import { WA_URL, EMAIL, FB_URL, IG_URL, SERVICES } from '@/app/lib/site'
+import { WA_URL, EMAIL, FB_URL, IG_URL, TIKTOK_URL, SERVICES } from '@/app/lib/site'
 import { useT } from '@/app/components/LangProvider'
 import Logo from '@/app/components/Logo'
+
+const TikTokIcon = ({ size = 17 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M16.5 5.82a4.78 4.78 0 0 1-1.03-2.82h-3.2v12.36a2.74 2.74 0 1 1-2-2.64V7.43a5.93 5.93 0 1 0 5.2 5.88V9.01a7.9 7.9 0 0 0 4.6 1.47V7.27a4.77 4.77 0 0 1-3.57-1.45z" />
+  </svg>
+)
 
 export default function SiteFooter() {
   const { t } = useT()
@@ -21,6 +27,7 @@ export default function SiteFooter() {
             <a href={`mailto:${EMAIL}`} className="vt-soc" aria-label="Email"><Mail size={17} /></a>
             <a href={IG_URL} className="vt-soc" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram size={17} /></a>
             <a href={FB_URL} className="vt-soc" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Facebook size={17} /></a>
+            <a href={TIKTOK_URL} className="vt-soc" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><TikTokIcon size={17} /></a>
           </div>
         </div>
         <div>
