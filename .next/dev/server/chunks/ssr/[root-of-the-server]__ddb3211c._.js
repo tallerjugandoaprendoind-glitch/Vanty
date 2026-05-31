@@ -2063,7 +2063,7 @@ function VantyAbaPage() {
                                                 marginTop: 16,
                                                 fontSize: 'clamp(30px,4.4vw,52px)'
                                             },
-                                            children: "Diseñado desde la experiencia clínica. Potenciado por Inteligencia Artificial."
+                                            children: "Diseñado desde la experiencia clínica, potenciado por Inteligencia Artificial"
                                         }, void 0, false, {
                                             fileName: "[project]/app/vanty-aba/page.tsx",
                                             lineNumber: 222,

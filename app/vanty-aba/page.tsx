@@ -219,7 +219,7 @@ export default function VantyAbaPage() {
           <Reveal>
             <div style={{ textAlign: 'center', maxWidth: 980, margin: '0 auto' }}>
               <span className="vt-eyebrow"><ShieldCheck size={13} /> Respaldo clínico</span>
-              <h2 className="vt-h2" style={{ marginTop: 16, fontSize: 'clamp(30px,4.4vw,52px)' }}>Diseñado desde la experiencia clínica. Potenciado por Inteligencia Artificial.</h2>
+              <h2 className="vt-h2" style={{ marginTop: 16, fontSize: 'clamp(30px,4.4vw,52px)' }}>Diseñado desde la experiencia clínica, potenciado por Inteligencia Artificial</h2>
               <p className="vt-lead" style={{ marginTop: 14, maxWidth: 720, marginLeft: 'auto', marginRight: 'auto' }}>Vanty ABA no es una adaptación genérica. Es una plataforma nativa construida sobre los estándares y exigencias reales del día a día en los centros de terapia, garantizando que la tecnología se adapte al terapeuta, y no al revés.</p>
             </div>
           </Reveal>
