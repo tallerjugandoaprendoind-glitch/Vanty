@@ -2,6 +2,21 @@
 
 /* Fuentes (Poppins + Inter) se cargan vía <link> en app/layout.tsx */
 
+/* Protección básica de imágenes: no arrastrar, no seleccionar, sin callout móvil.
+   (Refuerza al componente ImageGuard; no impide capturas ni DevTools.) */
+img, svg {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* ════════════════════════════════════════════════
    VANTY — SISTEMA DE DISEÑO ÚNICO
    Claro + heros oscuros · estilo SaaS profesional
