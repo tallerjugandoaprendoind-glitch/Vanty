@@ -480,3 +480,9 @@ a.vt-card { text-decoration:none; color:inherit; }
 /* ── Reveal on scroll ──────────────────────────── */
 .vt-reveal { opacity:0; transform:translateY(26px); transition:opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1); }
 .vt-reveal.vt-in { opacity:1; transform:none; }
+
+/* ── Overrides móviles (doble clase = mayor especificidad, gana sin depender del orden) ── */
+@media(max-width:560px){
+  .vt-credential.vt-credential { align-items:center; text-align:center; }
+  .vt-credential-av.vt-credential-av { width:72px; height:72px; }
+}
