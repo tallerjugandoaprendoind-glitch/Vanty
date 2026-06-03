@@ -2,16 +2,18 @@
 
 import { useState } from 'react'
 
-// Muestra tu logo transparente de /images/logos/vanty.png.
-// Si todavía no lo has subido, usa /images/logo.png para no romper el diseño.
+// Marca Vanty (azulejo con degradado + V). Usa el SVG nuevo por defecto;
+// si subes tu PNG oficial a /images/logos/vanty.png, cámbialo aquí.
+const SOURCES = ['/images/logos/vanty-mark.svg', '/images/logos/vanty.png', '/images/logo.png']
+
 export default function Logo({ height = 38 }: { height?: number }) {
-  const [src, setSrc] = useState('/images/logos/vanty.png')
+  const [i, setI] = useState(0)
   return (
     <img
-      src={src}
+      src={SOURCES[i]}
       alt="Vanty"
-      onError={() => setSrc('/images/logo.png')}
-      style={{ height, width: 'auto', display: 'block' }}
+      onError={() => setI(n => Math.min(n + 1, SOURCES.length - 1))}
+      style={{ height, width: 'auto', display: 'block', borderRadius: height * 0.26 }}
     />
   )
 }

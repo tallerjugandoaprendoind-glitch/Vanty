@@ -101,7 +101,7 @@ export default function SiteNav() {
                         : <a key={s.slug} href={s.href} className="vt-mega-card">{inner}</a>
                     })}
                     <a href="/contacto" className="vt-mega-card">
-                      <span className="vt-mega-ico" style={{ background: 'linear-gradient(135deg,#1D4ED8,#7c3aed)' }}><ArrowRight size={20} /></span>
+                      <span className="vt-mega-ico" style={{ background: 'linear-gradient(135deg,#1D4ED8,#16a6ff)' }}><ArrowRight size={20} /></span>
                       <span>
                         <span className="vt-mega-name">{t('nav.noSabes')}</span>
                         <span className="vt-mega-tag">{t('nav.noSabesDesc')}</span>

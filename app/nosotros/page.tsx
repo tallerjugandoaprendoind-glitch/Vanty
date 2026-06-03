@@ -11,7 +11,7 @@ import { WA_URL } from '@/app/lib/site'
 const VALUE_ICONS = [
   { icon: Cpu, c: '#1D4ED8', bg: '#e6efff' },
   { icon: Wrench, c: '#0f766e', bg: '#ddf7ef' },
-  { icon: Users, c: '#7c3aed', bg: '#efe7fe' },
+  { icon: Users, c: '#16a6ff', bg: '#e3f3ff' },
 ]
 
 export default function NosotrosPage() {
@@ -23,7 +23,7 @@ export default function NosotrosPage() {
 
       <header className="vt-hero vt-hero-light vt-rel">
         <div className="vt-hero-grid" />
-        <div className="vt-blob" style={{ width: 420, height: 420, top: '-14%', left: '-6%', background: 'rgba(124,58,237,.16)' }} />
+        <div className="vt-blob" style={{ width: 420, height: 420, top: '-14%', left: '-6%', background: 'rgba(22,166,255,.16)' }} />
         <div className="vt-arc" style={{ width: 240, height: 240, bottom: '6%', right: '7%', borderWidth: 2, borderColor: 'rgba(29,78,216,.18)' }} />
         <div className="vt-hero-inner vt-hero-center">
           <span className="vt-eyebrow"><Heart size={13} /> {t('nosotros.eyebrow')}</span>
@@ -74,18 +74,18 @@ export default function NosotrosPage() {
             <p className="vt-card-desc" style={{ fontSize: 15.5 }}>{t('nosotros.misionD')}</p>
           </Reveal>
           <Reveal className="vt-open" as="div" delay={0.1}>
-            <span className="vt-ico-round" style={{ background: '#efe7fe', color: '#7c3aed' }}><Eye size={28} /></span>
+            <span className="vt-ico-round" style={{ background: '#e3f3ff', color: '#16a6ff' }}><Eye size={28} /></span>
             <h2 className="vt-h3" style={{ fontSize: 22 }}>{t('nosotros.visionT')}</h2>
             <p className="vt-card-desc" style={{ fontSize: 15.5 }}>{t('nosotros.visionD')}</p>
           </Reveal>
         </div>
       </section>
 
-      <div style={{ background: '#ffffff' }}><Wave variant={2} fill="#f5f1fe" /></div>
+      <div style={{ background: '#ffffff' }}><Wave variant={2} fill="#eef6ff" /></div>
 
       {/* Valores */}
-      <section className="vt-section vt-rel" style={{ background: '#f5f1fe' }}>
-        <div className="vt-arc" style={{ width: 300, height: 300, top: '-10%', right: '-6%', borderWidth: 1.5, borderColor: 'rgba(124,58,237,.16)' }} />
+      <section className="vt-section vt-rel" style={{ background: '#eef6ff' }}>
+        <div className="vt-arc" style={{ width: 300, height: 300, top: '-10%', right: '-6%', borderWidth: 1.5, borderColor: 'rgba(22,166,255,.16)' }} />
         <div className="vt-inner">
           <Reveal className="vt-head-center">
             <span className="vt-eyebrow"><Heart size={13} /> {t('nosotros.valEyebrow')}</span>
@@ -106,7 +106,7 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      <div style={{ background: '#f5f1fe' }}><Wave flip fill="#0c1838" /></div>
+      <div style={{ background: '#eef6ff' }}><Wave flip fill="#0c1838" /></div>
 
       <section className="vt-cta" style={{ paddingTop: 40 }}>
         <div className="vt-cta-dots" />

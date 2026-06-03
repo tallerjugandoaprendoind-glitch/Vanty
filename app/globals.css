@@ -37,12 +37,20 @@ img, svg {
   --navy-2:#0c1838;
   --navy-3:#13235e;
 
-  --blue:#1D4ED8;
+  --blue:#1257e6;
   --blue-600:#2563eb;
-  --blue-400:#60a5fa;
-  --blue-50:#eff6ff;
-  --violet:#7c3aed;
+  --blue-400:#3ba2ff;
+  --blue-50:#eaf3ff;
+  --violet:#1b6bff;
   --teal:#0f766e;
+
+  /* Marca: degradado azul (cian → azul real → azul profundo), como el logo */
+  --brand-cyan:#16a6ff;
+  --brand-blue:#1257e6;
+  --brand-deep:#0a3fc4;
+  --grad:linear-gradient(135deg,#1aa9ff 0%,#1565ee 48%,#0b41c8 100%);
+  --grad-text:linear-gradient(100deg,#13a6ff 0%,#1257e6 55%,#3b74ff 100%);
+  --grad-soft:linear-gradient(135deg,#e9f4ff,#eef2ff);
 
   --radius:18px;
   --radius-lg:24px;
@@ -63,7 +71,7 @@ body {
 ::-webkit-scrollbar { width:9px; }
 ::-webkit-scrollbar-track { background:#eef1f6; }
 ::-webkit-scrollbar-thumb { background:#c7d0e0; border-radius:99px; }
-::-webkit-scrollbar-thumb:hover { background:#1D4ED8; }
+::-webkit-scrollbar-thumb:hover { background:var(--blue); }
 
 /* ── Tipografía / helpers ───────────────────────── */
 .vt-display { font-family:'Poppins',sans-serif; letter-spacing:-.03em; }
@@ -82,14 +90,16 @@ body {
 .vt-h2 { font-family:'Poppins',sans-serif; font-weight:800; font-size:clamp(27px,3.6vw,42px); line-height:1.12; letter-spacing:-.03em; color:var(--ink); }
 .vt-h3 { font-family:'Poppins',sans-serif; font-weight:700; font-size:20px; letter-spacing:-.01em; color:var(--ink); }
 .vt-lead { font-size:clamp(16px,1.5vw,19px); line-height:1.7; color:var(--muted); }
-.vt-grad { background:linear-gradient(95deg,#60a5fa,#a78bfa 55%,#60a5fa); background-size:200% auto; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; animation:vtShine 6s linear infinite; }
+.vt-grad { background:linear-gradient(95deg,#3ba2ff,#16a6ff 55%,#3ba2ff); background-size:200% auto; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; animation:vtShine 6s linear infinite; }
 @keyframes vtShine { to { background-position:200% center; } }
 
 /* ── Botones ───────────────────────────────────── */
-.vt-btn { display:inline-flex; align-items:center; gap:8px; padding:13px 24px; border-radius:11px; font-family:'Poppins',sans-serif; font-size:15px; font-weight:700; text-decoration:none; cursor:pointer; border:1.5px solid transparent; transition:transform .18s, box-shadow .18s, background .18s, border-color .18s, color .18s; white-space:nowrap; }
+.vt-btn { display:inline-flex; align-items:center; gap:8px; padding:13px 24px; border-radius:11px; font-family:'Poppins',sans-serif; font-size:15px; font-weight:700; text-decoration:none; cursor:pointer; border:1.5px solid transparent; transition:transform .18s, box-shadow .18s, background .18s, border-color .18s, color .18s, filter .18s; white-space:nowrap; }
 .vt-btn:hover { transform:translateY(-2px); }
-.vt-btn-primary { background:var(--blue); color:#fff; box-shadow:0 8px 22px rgba(29,78,216,.28); }
-.vt-btn-primary:hover { background:#1e40af; box-shadow:0 14px 30px rgba(29,78,216,.36); }
+.vt-btn:active { transform:translateY(0) scale(.98); }
+.vt-btn:focus-visible { outline:none; box-shadow:0 0 0 3px #fff, 0 0 0 5.5px var(--brand-blue); }
+.vt-btn-primary { position:relative; background:var(--grad); color:#fff; box-shadow:0 10px 26px rgba(18,87,230,.32); }
+.vt-btn-primary:hover { filter:brightness(1.06) saturate(1.05); box-shadow:0 16px 36px rgba(18,87,230,.42); }
 .vt-btn-light { background:#fff; color:var(--navy); box-shadow:var(--shadow); }
 .vt-btn-light:hover { box-shadow:var(--shadow-lg); }
 .vt-btn-ghost { background:transparent; color:var(--ink-2); border-color:var(--line); }
@@ -172,7 +182,7 @@ body {
 .vt-hero.vt-hero-light h1, .vt-hero.vt-hero-light .vt-h1 { color:var(--ink); }
 .vt-hero.vt-hero-light .vt-lead { color:var(--muted); }
 .vt-hero.vt-hero-light .vt-blob { filter:blur(90px); }
-.vt-grad-ink { background:linear-gradient(95deg,#1d4ed8,#7c3aed); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+.vt-grad-ink { background:var(--grad-text); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
 /* franja de logos sobre hero claro */
 .vt-hero.vt-hero-light .vt-stat-cap { color:var(--muted); }
 
@@ -183,7 +193,7 @@ body {
 
 /* tintes suaves por color para secciones */
 .vt-tint-blue { background:#eef4ff; }
-.vt-tint-violet { background:#f5f1fe; }
+.vt-tint-violet { background:#eef6ff; }
 .vt-tint-teal { background:#ecfaf5; }
 .vt-tint-amber { background:#fef6ec; }
 
@@ -254,7 +264,7 @@ body {
 .vt-media-free.portrait img { object-position:center 18%; }
 
 /* foto recortada dentro de un círculo (recorte circular limpio, sin desvanecimiento) */
-.vt-cutout { position:relative; width:min(100%,560px); aspect-ratio:1; margin:0 auto; border-radius:50%; overflow:hidden; background:radial-gradient(circle at 50% 40%, #dfe7ff, #ece2fb); box-shadow:0 28px 56px rgba(11,16,32,.12); }
+.vt-cutout { position:relative; width:min(100%,560px); aspect-ratio:1; margin:0 auto; border-radius:50%; overflow:hidden; background:radial-gradient(circle at 50% 38%, #d6e9ff, #e6eeff); box-shadow:0 28px 56px rgba(11,16,32,.12); }
 .vt-cutout img { width:100%; height:100%; object-fit:cover; object-position:center 22%; display:block; }
 /* decoración de red de nodos (sutil) */
 .vt-netdeco { position:absolute; top:6%; right:3%; width:clamp(150px,17vw,250px); height:auto; opacity:.28; pointer-events:none; z-index:0; }
@@ -263,7 +273,7 @@ body {
 
 /* tarjeta de marca (Nosotros) */
 .vt-brandcard { position:relative; max-width:480px; margin:0 auto; }
-.vt-brandcard .blob { position:absolute; inset:-12%; border-radius:46% 54% 58% 42% / 52% 44% 56% 48%; background:radial-gradient(circle at 50% 38%, #d4e1ff, #ece2fb); z-index:0; }
+.vt-brandcard .blob { position:absolute; inset:-12%; border-radius:46% 54% 58% 42% / 52% 44% 56% 48%; background:radial-gradient(circle at 50% 38%, #cfe4ff, #e3ebff); z-index:0; }
 .vt-brandcard .inner { position:relative; z-index:1; background:#fff; border:1px solid var(--line); border-radius:26px; box-shadow:var(--shadow-lg); padding:46px 36px; display:flex; flex-direction:column; align-items:center; text-align:center; }
 .vt-brandcard img { height:86px; width:auto; display:block; margin-bottom:14px; }
 .vt-brandcard .nm { font-family:'Poppins',sans-serif; font-weight:900; font-size:30px; letter-spacing:-.02em; color:var(--ink); line-height:1; }
@@ -404,7 +414,7 @@ a.vt-card { text-decoration:none; color:inherit; }
 .vt-ai-card:hover { background:rgba(255,255,255,.08); border-color:rgba(96,165,250,.45); transform:translateY(-3px); }
 .vt-ai-ico { width:42px; height:42px; border-radius:11px; background:rgba(96,165,250,.16); color:#93c5fd; display:flex; align-items:center; justify-content:center; margin-bottom:14px; }
 .vt-ai-name { font-family:'Poppins',sans-serif; font-weight:800; font-size:15.5px; color:#fff; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
-.vt-ai-tag { font-size:9px; font-weight:800; color:#0b1020; background:linear-gradient(90deg,#93c5fd,#c4b5fd); border-radius:6px; padding:2px 6px; letter-spacing:.05em; }
+.vt-ai-tag { font-size:9px; font-weight:800; color:#0b1020; background:linear-gradient(90deg,#9ed2ff,#7fb4ff); border-radius:6px; padding:2px 6px; letter-spacing:.05em; }
 .vt-ai-desc { font-size:13px; color:rgba(255,255,255,.66); line-height:1.55; margin-top:8px; }
 
 /* ── Grid de capacidades (ícono a la izquierda) ── */

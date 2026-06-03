@@ -17,7 +17,7 @@ import { SERVICES, WA_URL } from '@/app/lib/site'
 const PILLARS = [
   { icon: Bot, c: '#1D4ED8', bg: '#e6efff', tk: 'p1' },
   { icon: Database, c: '#0f766e', bg: '#ddf7ef', tk: 'p2' },
-  { icon: Boxes, c: '#7c3aed', bg: '#efe7fe', tk: 'p3' },
+  { icon: Boxes, c: '#16a6ff', bg: '#e3f3ff', tk: 'p3' },
 ]
 const SECTORS = [
   { icon: HeartPulse, c: '#e11d6b', bg: '#fde6ef', tk: 's1' },
@@ -35,9 +35,9 @@ export default function Home() {
       <header className="vt-hero vt-hero-light vt-rel">
         <div className="vt-hero-grid" />
         <div className="vt-blob" style={{ width: 460, height: 460, top: '-14%', left: '-8%', background: 'rgba(37,99,235,.16)' }} />
-        <div className="vt-blob" style={{ width: 380, height: 380, bottom: '-20%', right: '-6%', background: 'rgba(124,58,237,.14)', animationDelay: '5s' }} />
+        <div className="vt-blob" style={{ width: 380, height: 380, bottom: '-20%', right: '-6%', background: 'rgba(22,166,255,.14)', animationDelay: '5s' }} />
         <div className="vt-arc" style={{ width: 280, height: 280, top: '12%', right: '6%', borderWidth: 2, borderColor: 'rgba(29,78,216,.18)' }} />
-        <div className="vt-arc" style={{ width: 130, height: 130, bottom: '14%', left: '7%', borderWidth: 2, borderColor: 'rgba(124,58,237,.2)' }} />
+        <div className="vt-arc" style={{ width: 130, height: 130, bottom: '14%', left: '7%', borderWidth: 2, borderColor: 'rgba(22,166,255,.2)' }} />
         <div className="vt-hero-inner vt-hero-split">
           <div>
             <h1 className="vt-h1">{t('home.h1a')}<span className="vt-grad-ink">{t('home.h1grad')}</span>{t('home.h1b')}</h1>
@@ -136,11 +136,11 @@ export default function Home() {
         </div>
       </section>
 
-      <div style={{ background: '#ffffff' }}><Wave variant={2} fill="#f5f1fe" /></div>
+      <div style={{ background: '#ffffff' }}><Wave variant={2} fill="#eef6ff" /></div>
 
       {/* SECTORES */}
-      <section className="vt-section vt-rel" style={{ background: '#f5f1fe' }}>
-        <div className="vt-arc" style={{ width: 300, height: 300, bottom: '-10%', right: '-6%', borderWidth: 1.5, borderColor: 'rgba(124,58,237,.16)' }} />
+      <section className="vt-section vt-rel" style={{ background: '#eef6ff' }}>
+        <div className="vt-arc" style={{ width: 300, height: 300, bottom: '-10%', right: '-6%', borderWidth: 1.5, borderColor: 'rgba(22,166,255,.16)' }} />
         <div className="vt-inner">
           <Reveal className="vt-head-center">
             <span className="vt-eyebrow"><Sparkles size={13} /> {t('home.secEyebrow')}</span>
@@ -161,7 +161,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div style={{ background: '#f5f1fe' }}><Wave flip fill="#ffffff" /></div>
+      <div style={{ background: '#eef6ff' }}><Wave flip fill="#ffffff" /></div>
 
       {/* CÓMO TRABAJAMOS teaser */}
       <section className="vt-section">

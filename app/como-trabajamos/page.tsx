@@ -10,7 +10,7 @@ import { WA_URL } from '@/app/lib/site'
 
 const STEP_META = [
   { n: '01', c: '#1D4ED8' },
-  { n: '02', c: '#7c3aed' },
+  { n: '02', c: '#16a6ff' },
   { n: '03', c: '#0f766e' },
   { n: '04', c: '#d97706' },
 ]

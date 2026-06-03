@@ -20,7 +20,7 @@ import { WA_URL, EMAIL } from '@/app/lib/site'
 const AGENT_ICONS = [Bot, FileText, ShieldAlert, Target, Activity, TrendingUp, Lightbulb, BookOpen]
 const AGENT_COLORS = [
   { bg: '#e6efff', fg: '#1D4ED8' },
-  { bg: '#efe7fe', fg: '#7c3aed' },
+  { bg: '#e3f3ff', fg: '#16a6ff' },
   { bg: '#ddf7ef', fg: '#0f766e' },
   { bg: '#fdeccf', fg: '#d97706' },
   { bg: '#fde6ef', fg: '#e11d6b' },
@@ -29,7 +29,7 @@ const AGENT_COLORS = [
 const CAP_ICONS = [ClipboardList, Target, BarChart3, CalendarDays, CreditCard, Stethoscope, Users, MessageSquare, Video]
 const ROLE_META = [
   { icon: UserCog, accent: '#1D4ED8' },
-  { icon: Stethoscope, accent: '#7c3aed' },
+  { icon: Stethoscope, accent: '#16a6ff' },
   { icon: Headset, accent: '#0891b2' },
   { icon: HeartHandshake, accent: '#ea580c' },
 ]
@@ -54,7 +54,7 @@ export default function VantyAbaPage() {
       <header className="vt-hero vt-hero-light vt-rel">
         <div className="vt-hero-grid" />
         <div className="vt-blob" style={{ width: 460, height: 460, top: '-14%', left: '-6%', background: 'rgba(37,99,235,.16)' }} />
-        <div className="vt-blob" style={{ width: 360, height: 360, bottom: '-16%', right: '-4%', background: 'rgba(124,58,237,.14)', animationDelay: '5s' }} />
+        <div className="vt-blob" style={{ width: 360, height: 360, bottom: '-16%', right: '-4%', background: 'rgba(22,166,255,.14)', animationDelay: '5s' }} />
         <div className="vt-arc" style={{ width: 260, height: 260, top: '14%', right: '6%', borderWidth: 2, borderColor: 'rgba(29,78,216,.16)' }} />
         <div className="vt-hero-inner vt-hero-split">
           <div>
@@ -73,7 +73,7 @@ export default function VantyAbaPage() {
             </p>
           </div>
           <Reveal delay={0.1}>
-            <Figure src="/images/vanty-aba/dashboard.svg" alt="Dashboard de Vanty ABA" caption="Dashboard de Vanty ABA" frameless blob="radial-gradient(circle at 45% 40%, rgba(96,165,250,.35), rgba(124,58,237,.18))" badge={<><Bot size={15} color="#1D4ED8" /> ARIA · IA</>} />
+            <Figure src="/images/vanty-aba/dashboard.svg" alt="Dashboard de Vanty ABA" caption="Dashboard de Vanty ABA" frameless blob="radial-gradient(circle at 45% 40%, rgba(96,165,250,.35), rgba(22,166,255,.18))" badge={<><Bot size={15} color="#1D4ED8" /> ARIA · IA</>} />
           </Reveal>
         </div>
       </header>
@@ -91,9 +91,9 @@ export default function VantyAbaPage() {
       </section>
 
       {/* HUB DE IA */}
-      <div style={{ background: '#ffffff' }}><Wave variant={2} fill="#f5f1fe" /></div>
-      <section className="vt-section vt-rel" id="aria" style={{ background: '#f5f1fe' }}>
-        <div className="vt-arc" style={{ width: 320, height: 320, top: '-10%', right: '-6%', borderWidth: 1.5, borderColor: 'rgba(124,58,237,.16)' }} />
+      <div style={{ background: '#ffffff' }}><Wave variant={2} fill="#eef6ff" /></div>
+      <section className="vt-section vt-rel" id="aria" style={{ background: '#eef6ff' }}>
+        <div className="vt-arc" style={{ width: 320, height: 320, top: '-10%', right: '-6%', borderWidth: 1.5, borderColor: 'rgba(22,166,255,.16)' }} />
         <div className="vt-inner">
           <Reveal className="vt-head-center">
             <span className="vt-eyebrow"><Sparkles size={13} /> {t('aba.hubEyebrow')}</span>
@@ -115,7 +115,7 @@ export default function VantyAbaPage() {
           </div>
         </div>
       </section>
-      <div style={{ background: '#f5f1fe' }}><Wave flip fill="#ffffff" /></div>
+      <div style={{ background: '#eef6ff' }}><Wave flip fill="#ffffff" /></div>
 
       {/* CAPACIDADES */}
       <section className="vt-section">

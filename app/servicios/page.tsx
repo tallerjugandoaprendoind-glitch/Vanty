@@ -12,7 +12,7 @@ import { SERVICES, WA_URL } from '@/app/lib/site'
 const PILLAR_ICONS = [
   { icon: Bot, c: '#1D4ED8', bg: '#e6efff' },
   { icon: Database, c: '#0f766e', bg: '#ddf7ef' },
-  { icon: Boxes, c: '#7c3aed', bg: '#efe7fe' },
+  { icon: Boxes, c: '#16a6ff', bg: '#e3f3ff' },
 ]
 
 const svcKey = (slug: string) => (slug === 'vanty-aba' ? 'aba' : 'school')
@@ -27,7 +27,7 @@ export default function ServiciosPage() {
       <header className="vt-hero vt-hero-light vt-rel">
         <div className="vt-hero-grid" />
         <div className="vt-blob" style={{ width: 420, height: 420, top: '-14%', right: '-6%', background: 'rgba(37,99,235,.16)' }} />
-        <div className="vt-arc" style={{ width: 200, height: 200, bottom: '8%', left: '8%', borderWidth: 2, borderColor: 'rgba(124,58,237,.18)' }} />
+        <div className="vt-arc" style={{ width: 200, height: 200, bottom: '8%', left: '8%', borderWidth: 2, borderColor: 'rgba(22,166,255,.18)' }} />
         <div className="vt-hero-inner vt-hero-center">
           <span className="vt-eyebrow"><Layers size={13} /> {t('servicios.eyebrow')}</span>
           <h1 className="vt-h1" style={{ marginTop: 18 }}>{t('servicios.h1a')}<span className="vt-grad-ink">{t('servicios.h1grad')}</span></h1>

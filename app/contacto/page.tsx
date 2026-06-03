@@ -16,7 +16,7 @@ const TikTokIcon = ({ size = 17 }: { size?: number }) => (
 const CHANNEL_META = [
   { icon: Phone, href: WA_URL, accent: '#1D4ED8', external: true, useEmail: false },
   { icon: Mail, href: `mailto:${EMAIL}`, accent: '#0f766e', external: false, useEmail: true },
-  { icon: Instagram, href: IG_URL, accent: '#7c3aed', external: true, useEmail: false },
+  { icon: Instagram, href: IG_URL, accent: '#16a6ff', external: true, useEmail: false },
 ]
 
 export default function ContactoPage() {
@@ -29,7 +29,7 @@ export default function ContactoPage() {
       <header className="vt-hero vt-hero-light vt-rel">
         <div className="vt-hero-grid" />
         <div className="vt-blob" style={{ width: 420, height: 420, top: '-14%', right: '-6%', background: 'rgba(37,99,235,.16)' }} />
-        <div className="vt-arc" style={{ width: 200, height: 200, bottom: '8%', left: '8%', borderWidth: 2, borderColor: 'rgba(124,58,237,.18)' }} />
+        <div className="vt-arc" style={{ width: 200, height: 200, bottom: '8%', left: '8%', borderWidth: 2, borderColor: 'rgba(22,166,255,.18)' }} />
         <div className="vt-hero-inner vt-hero-center">
           <span className="vt-eyebrow"><MessageSquare size={13} /> {t('contacto.eyebrow')}</span>
           <h1 className="vt-h1" style={{ marginTop: 18 }}>{t('contacto.h1a')}<span className="vt-grad-ink">{t('contacto.h1grad')}</span></h1>
