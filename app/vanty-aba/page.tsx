@@ -4,7 +4,7 @@ import {
   Brain, Bot, FileText, ShieldAlert, Target, Activity, TrendingUp, Lightbulb, BookOpen,
   ClipboardList, BarChart3, CalendarDays, CreditCard, Stethoscope, Users, MessageSquare,
   Video, ArrowRight, Check, Phone, Star, Sparkles, LayoutGrid, UserCog, Headset, HeartHandshake,
-  ShieldCheck,
+  ShieldCheck, Lock,
 } from 'lucide-react'
 import SiteNav from '@/app/components/SiteNav'
 import SiteFooter from '@/app/components/SiteFooter'
@@ -14,6 +14,7 @@ import FaqList from '@/app/components/FaqList'
 import Wave from '@/app/components/Wave'
 import Avatar from '@/app/components/Avatar'
 import PricingABA from '@/app/components/PricingABA'
+import CountUp from '@/app/components/CountUp'
 import { useT } from '@/app/components/LangProvider'
 import { WA_URL, EMAIL } from '@/app/lib/site'
 
@@ -45,6 +46,7 @@ export default function VantyAbaPage() {
   const faqs = tr<{ q: string; a: string }[]>('aba.faqs') || []
   const f1Checks = tr<string[]>('aba.f1Checks') || []
   const f2Checks = tr<string[]>('aba.f2Checks') || []
+  const statsLabels = tr<string[]>('aba.statsLabels') || []
 
   return (
     <>
@@ -55,7 +57,7 @@ export default function VantyAbaPage() {
         <div className="vt-hero-grid" />
         <div className="vt-blob" style={{ width: 460, height: 460, top: '-14%', left: '-6%', background: 'rgba(37,99,235,.16)' }} />
         <div className="vt-blob" style={{ width: 360, height: 360, bottom: '-16%', right: '-4%', background: 'rgba(22,166,255,.14)', animationDelay: '5s' }} />
-        <div className="vt-arc" style={{ width: 260, height: 260, top: '14%', right: '6%', borderWidth: 2, borderColor: 'rgba(29,78,216,.16)' }} />
+        <div className="vt-arc" data-parallax="0.16" style={{ width: 260, height: 260, top: '14%', right: '6%', borderWidth: 2, borderColor: 'rgba(29,78,216,.16)' }} />
         <div className="vt-hero-inner vt-hero-split">
           <div>
             <span className="vt-eyebrow"><Brain size={13} /> {t('aba.eyebrow')}</span>
@@ -86,6 +88,28 @@ export default function VantyAbaPage() {
             <span className="vt-logo-chip"><img src="/images/clientes/santi.png" alt="SANTI" /> Neuropsicología y Terapias SANTI</span>
             <span className="vt-logo-chip"><img src="/images/aprendo.png" alt="Jugando Aprendo" /> Jugando Aprendo</span>
             <span className="vt-logo-ghost">{t('aba.tuCentro')}</span>
+          </Reveal>
+
+          {/* Banda de métricas clínicas — números que cuentan al hacer scroll */}
+          <Reveal>
+            <div className="vt-statband" style={{ marginTop: 44 }}>
+              <div className="vt-stat-cell2">
+                <div className="vt-stat-big"><CountUp to={4} /></div>
+                <div className="vt-stat-cap">{statsLabels[0]}</div>
+              </div>
+              <div className="vt-stat-cell2">
+                <div className="vt-stat-big"><CountUp to={24} suffix="h" /></div>
+                <div className="vt-stat-cap">{statsLabels[1]}</div>
+              </div>
+              <div className="vt-stat-cell2">
+                <div className="vt-stat-big"><CountUp to={100} suffix="%" /></div>
+                <div className="vt-stat-cap">{statsLabels[2]}</div>
+              </div>
+              <div className="vt-stat-cell2">
+                <div className="vt-stat-big"><CountUp to={8} suffix="+" /></div>
+                <div className="vt-stat-cap">{statsLabels[3]}</div>
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>
@@ -235,7 +259,7 @@ export default function VantyAbaPage() {
                 {f1Checks.map(c => <li key={c}><Check size={18} /> {c}</li>)}
               </ul>
             </Reveal>
-            <Reveal className="vt-feature-media" delay={0.1}>
+            <Reveal className="vt-feature-media vt-mask" delay={0.1}>
               <Figure src="/images/vanty-aba/graficas.svg" alt="Gráficas clínicas ABA" caption={t('aba.f1Title')} frameless blob="radial-gradient(circle at 55% 40%, #cfe0fb, #e7defb)" badge={<><BarChart3 size={15} color="#1D4ED8" /> {t('aba.f1Eyebrow')}</>} />
             </Reveal>
           </div>
@@ -249,7 +273,7 @@ export default function VantyAbaPage() {
                 {f2Checks.map(c => <li key={c}><Check size={18} /> {c}</li>)}
               </ul>
             </Reveal>
-            <Reveal className="vt-feature-media" delay={0.1}>
+            <Reveal className="vt-feature-media vt-mask" delay={0.1}>
               <Figure src="/images/vanty-aba/portal-familiar.svg" alt="Portal familiar de Vanty ABA" caption={t('aba.f2Title')} frameless blob="radial-gradient(circle at 50% 40%, #fde6ef, #cfe0fb)" />
             </Reveal>
           </div>
@@ -293,6 +317,22 @@ export default function VantyAbaPage() {
                 <div className="vt-quote-name">Ana M.</div>
                 <div className="vt-quote-role">{t('aba.testimRole')}</div>
               </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* FRANJA DE CONFIANZA / CUMPLIMIENTO */}
+      <section className="vt-section" style={{ paddingTop: 0 }}>
+        <div className="vt-inner">
+          <Reveal>
+            <div className="vt-trustbar">
+              {[Lock, ShieldCheck, Users, Headset].map((Ic, i) => (
+                <span key={i} className="vt-trustbar-item">
+                  <span className="vt-trustbar-ic"><Ic size={18} /></span>
+                  {(tr<string[]>('aba.trust') || [])[i]}
+                </span>
+              ))}
             </div>
           </Reveal>
         </div>

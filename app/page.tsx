@@ -36,8 +36,8 @@ export default function Home() {
         <div className="vt-hero-grid" />
         <div className="vt-blob" style={{ width: 460, height: 460, top: '-14%', left: '-8%', background: 'rgba(37,99,235,.16)' }} />
         <div className="vt-blob" style={{ width: 380, height: 380, bottom: '-20%', right: '-6%', background: 'rgba(22,166,255,.14)', animationDelay: '5s' }} />
-        <div className="vt-arc" style={{ width: 280, height: 280, top: '12%', right: '6%', borderWidth: 2, borderColor: 'rgba(29,78,216,.18)' }} />
-        <div className="vt-arc" style={{ width: 130, height: 130, bottom: '14%', left: '7%', borderWidth: 2, borderColor: 'rgba(22,166,255,.2)' }} />
+        <div className="vt-arc" data-parallax="0.16" style={{ width: 280, height: 280, top: '12%', right: '6%', borderWidth: 2, borderColor: 'rgba(29,78,216,.18)' }} />
+        <div className="vt-arc" data-parallax="-0.12" style={{ width: 130, height: 130, bottom: '14%', left: '7%', borderWidth: 2, borderColor: 'rgba(22,166,255,.2)' }} />
         <div className="vt-hero-inner vt-hero-split">
           <div>
             <h1 className="vt-h1">{t('home.h1a')}<span className="vt-grad-ink">{t('home.h1grad')}</span>{t('home.h1b')}</h1>
@@ -175,7 +175,7 @@ export default function Home() {
             </ul>
             <a href="/como-trabajamos" className="vt-btn vt-btn-primary" style={{ marginTop: 24 }}>{t('home.comoCta')} <ArrowRight size={16} /></a>
           </Reveal>
-          <Reveal delay={0.1}>
+          <Reveal delay={0.1} className="vt-mask">
             <Figure src="/images/servicios/software-a-medida.svg" alt="Vanty" caption="Proceso" frameless blob="radial-gradient(circle at 60% 40%, #cfeee4, #d9e6ff)" />
           </Reveal>
         </div>

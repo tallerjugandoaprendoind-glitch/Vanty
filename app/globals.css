@@ -603,3 +603,43 @@ a.vt-card { text-decoration:none; color:inherit; }
   .vt-credential.vt-credential { flex-direction:column; align-items:center; text-align:center; gap:18px; padding:24px; }
   .vt-credential-av.vt-credential-av { width:120px; height:120px; }
 }
+
+/* ════ Franja de confianza clínica + Precios premium (v2) ════ */
+.vt-trustbar { display:flex; flex-wrap:wrap; justify-content:center; gap:14px 30px; background:linear-gradient(135deg,#f1f7ff,#eef2ff); border:1px solid #e2ecfb; border-radius:18px; padding:20px 26px; box-shadow:0 10px 30px rgba(18,87,230,.06); }
+.vt-trustbar-item { display:inline-flex; align-items:center; gap:11px; font-family:'Poppins',sans-serif; font-weight:700; font-size:14px; color:var(--ink-2); }
+.vt-trustbar-ic { width:36px; height:36px; border-radius:11px; display:flex; align-items:center; justify-content:center; background:#fff; color:var(--blue); box-shadow:0 6px 16px rgba(18,87,230,.16); flex-shrink:0; }
+
+.vt-price { transition:transform .25s, box-shadow .25s, border-color .25s; }
+.vt-price:hover { transform:translateY(-6px); box-shadow:0 24px 52px rgba(18,87,230,.14); border-color:#cdddf9; }
+.vt-price.feat {
+  border-color:transparent; transform:scale(1.035);
+  background:linear-gradient(#fff,#fff) padding-box, var(--grad) border-box;
+  box-shadow:0 28px 62px rgba(18,87,230,.22);
+}
+.vt-price.feat:hover { transform:scale(1.035) translateY(-6px); }
+.vt-price-badge { background:var(--grad); box-shadow:0 8px 20px rgba(18,87,230,.32); }
+.vt-price.feat .vt-price-num, .vt-price.feat .vt-price-cur {
+  background:var(--grad-text); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+}
+@media(max-width:900px){
+  .vt-price.feat.feat { transform:none; }
+  .vt-price.feat.feat:hover { transform:translateY(-6px); }
+}
+
+/* ════ Scroll FX v2 — barra de progreso + reveal con máscara ════ */
+.vt-progress {
+  position:fixed; top:0; left:0; height:3px; width:100%; z-index:600;
+  background:var(--grad); transform:scaleX(0); transform-origin:0 50%;
+  will-change:transform; box-shadow:0 1px 8px rgba(18,87,230,.4);
+}
+
+/* Reveal con máscara (barrido): para imágenes/medios. Se activa con .vt-in */
+.vt-reveal.vt-mask {
+  opacity:1; transform:none;
+  clip-path:inset(0 100% 0 0 round 22px);
+  transition:clip-path 1s cubic-bezier(.22,1,.36,1);
+}
+.vt-reveal.vt-mask.vt-in { clip-path:inset(0 0 0 0 round 22px); }
+@media (prefers-reduced-motion: reduce) {
+  .vt-reveal.vt-mask { clip-path:none !important; }
+}
