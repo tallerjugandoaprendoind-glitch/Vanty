@@ -26,7 +26,7 @@ export default function ComoTrabajamosPage() {
       <header className="vt-hero vt-hero-light vt-rel">
         <div className="vt-hero-grid" />
         <div className="vt-blob" style={{ width: 420, height: 420, bottom: '-18%', right: '-6%', background: 'rgba(37,99,235,.16)' }} />
-        <div className="vt-arc" style={{ width: 220, height: 220, top: '10%', left: '7%', borderWidth: 2, borderColor: 'rgba(15,118,110,.2)' }} />
+        <div className="vt-arc" data-parallax="0.16" style={{ width: 220, height: 220, top: '10%', left: '7%', borderWidth: 2, borderColor: 'rgba(22,166,255,.22)' }} />
         <div className="vt-hero-inner vt-hero-center">
           <span className="vt-eyebrow"><Zap size={13} /> {t('como.eyebrow')}</span>
           <h1 className="vt-h1" style={{ marginTop: 18 }}>{t('como.h1a')}<span className="vt-grad-ink">{t('como.h1grad')}</span></h1>
@@ -38,12 +38,14 @@ export default function ComoTrabajamosPage() {
 
       <section className="vt-section" style={{ background: '#f7f9fc' }}>
         <div className="vt-inner">
-          <div className="vt-grid-2">
+          <div className="vt-timeline">
             {STEP_META.map((s, i) => (
-              <Reveal key={s.n} delay={i * 0.08} className="vt-open" as="div">
-                <span className="vt-stepc-num" style={{ background: s.c, margin: '0 0 16px' }}>{s.n}</span>
-                <h3 className="vt-h3" style={{ fontSize: 20 }}>{steps[i]?.t}</h3>
-                <p className="vt-card-desc" style={{ fontSize: 15 }}>{steps[i]?.d}</p>
+              <Reveal key={s.n} delay={i * 0.06} className="vt-tl-item" as="div">
+                <span className="vt-tl-node">{s.n}</span>
+                <div className="vt-tl-card">
+                  <h3 className="vt-h3" style={{ fontSize: 20 }}>{steps[i]?.t}</h3>
+                  <p className="vt-card-desc" style={{ fontSize: 15 }}>{steps[i]?.d}</p>
+                </div>
               </Reveal>
             ))}
           </div>

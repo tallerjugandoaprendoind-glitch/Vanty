@@ -259,7 +259,7 @@ export default function VantyAbaPage() {
                 {f1Checks.map(c => <li key={c}><Check size={18} /> {c}</li>)}
               </ul>
             </Reveal>
-            <Reveal className="vt-feature-media vt-mask" delay={0.1}>
+            <Reveal className="vt-feature-media" delay={0.1}>
               <Figure src="/images/vanty-aba/graficas.svg" alt="Gráficas clínicas ABA" caption={t('aba.f1Title')} frameless blob="radial-gradient(circle at 55% 40%, #cfe0fb, #e7defb)" badge={<><BarChart3 size={15} color="#1D4ED8" /> {t('aba.f1Eyebrow')}</>} />
             </Reveal>
           </div>
@@ -273,7 +273,7 @@ export default function VantyAbaPage() {
                 {f2Checks.map(c => <li key={c}><Check size={18} /> {c}</li>)}
               </ul>
             </Reveal>
-            <Reveal className="vt-feature-media vt-mask" delay={0.1}>
+            <Reveal className="vt-feature-media" delay={0.1}>
               <Figure src="/images/vanty-aba/portal-familiar.svg" alt="Portal familiar de Vanty ABA" caption={t('aba.f2Title')} frameless blob="radial-gradient(circle at 50% 40%, #fde6ef, #cfe0fb)" />
             </Reveal>
           </div>

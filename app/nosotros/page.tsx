@@ -24,7 +24,8 @@ export default function NosotrosPage() {
       <header className="vt-hero vt-hero-light vt-rel">
         <div className="vt-hero-grid" />
         <div className="vt-blob" style={{ width: 420, height: 420, top: '-14%', left: '-6%', background: 'rgba(22,166,255,.16)' }} />
-        <div className="vt-arc" style={{ width: 240, height: 240, bottom: '6%', right: '7%', borderWidth: 2, borderColor: 'rgba(29,78,216,.18)' }} />
+        <div className="vt-arc" data-parallax="0.16" style={{ width: 240, height: 240, bottom: '6%', right: '7%', borderWidth: 2, borderColor: 'rgba(29,78,216,.18)' }} />
+        <div className="vt-arc" data-parallax="-0.12" style={{ width: 130, height: 130, top: '16%', left: '8%', borderWidth: 2, borderColor: 'rgba(22,166,255,.2)' }} />
         <div className="vt-hero-inner vt-hero-center">
           <span className="vt-eyebrow"><Heart size={13} /> {t('nosotros.eyebrow')}</span>
           <h1 className="vt-h1" style={{ marginTop: 18 }}>{t('nosotros.h1a')}<span className="vt-grad-ink">{t('nosotros.h1grad')}</span></h1>

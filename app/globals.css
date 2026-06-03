@@ -643,3 +643,35 @@ a.vt-card { text-decoration:none; color:inherit; }
 @media (prefers-reduced-motion: reduce) {
   .vt-reveal.vt-mask { clip-path:none !important; }
 }
+
+/* ════ Timeline "Cómo trabajamos" + brandcard hover (v2) ════ */
+.vt-timeline { position:relative; max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:26px; }
+.vt-timeline::before { content:''; position:absolute; left:27px; top:16px; bottom:16px; width:2px; background:linear-gradient(180deg,var(--brand-cyan),var(--brand-blue),var(--brand-deep)); opacity:.3; border-radius:2px; }
+.vt-tl-item { position:relative; display:grid; grid-template-columns:56px 1fr; gap:22px; align-items:start; }
+.vt-tl-node { width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-weight:900; font-size:18px; color:#fff; background:var(--grad); box-shadow:0 10px 26px rgba(18,87,230,.32); position:relative; z-index:1; }
+.vt-tl-card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:22px 26px; transition:transform .25s, box-shadow .25s, border-color .25s; }
+.vt-tl-item:hover .vt-tl-card { transform:translateX(5px); box-shadow:0 18px 40px rgba(18,87,230,.13); border-color:#cdddf9; }
+@media(max-width:560px){
+  .vt-tl-item.vt-tl-item { grid-template-columns:44px 1fr; gap:14px; }
+  .vt-tl-node.vt-tl-node { width:44px; height:44px; font-size:15px; }
+  .vt-timeline::before { left:21px; }
+}
+
+.vt-brandcard .inner { transition:transform .3s, box-shadow .3s; }
+.vt-brandcard:hover .inner { transform:translateY(-6px); box-shadow:0 30px 60px rgba(18,87,230,.18); }
+
+/* ════ Footer premium ════ */
+.vt-footer { position:relative; overflow:hidden; background:radial-gradient(85% 130% at 95% 100%, rgba(22,166,255,.16) 0%, rgba(22,166,255,0) 58%), linear-gradient(180deg,#070d23 0%, #0a1736 60%, #0b1c44 100%); }
+.vt-footer::before { content:''; position:absolute; top:0; left:0; right:0; height:1px; background:rgba(255,255,255,.07); }
+.vt-footer-grid, .vt-footer-bottom { position:relative; z-index:1; }
+.vt-soc { transition:transform .2s, background .2s, color .2s, box-shadow .2s; }
+.vt-soc:hover { transform:translateY(-3px); background:var(--grad) !important; color:#fff !important; box-shadow:0 8px 20px rgba(18,87,230,.4); }
+.vt-footer ul a { transition:color .15s, padding-left .15s; }
+.vt-footer ul a:hover { color:#fff; padding-left:4px; }
+
+/* ════ Grano / textura global sutil (acabado de agencia) ════ */
+body::after {
+  content:''; position:fixed; inset:0; z-index:1; pointer-events:none; opacity:.022;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode:overlay;
+}

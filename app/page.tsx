@@ -175,7 +175,7 @@ export default function Home() {
             </ul>
             <a href="/como-trabajamos" className="vt-btn vt-btn-primary" style={{ marginTop: 24 }}>{t('home.comoCta')} <ArrowRight size={16} /></a>
           </Reveal>
-          <Reveal delay={0.1} className="vt-mask">
+          <Reveal delay={0.1}>
             <Figure src="/images/servicios/software-a-medida.svg" alt="Vanty" caption="Proceso" frameless blob="radial-gradient(circle at 60% 40%, #cfeee4, #d9e6ff)" />
           </Reveal>
         </div>
