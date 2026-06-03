@@ -4,6 +4,7 @@ import type { Lang } from '@/app/lib/dict'
 export const MORE: Record<Lang, any> = {
   es: {
     common: { conocerMas: 'Conocer más', verTodos: 'Ver todos', empezar: 'Empezar', verPrecios: 'Ver precios', agendaDemo: 'Agenda una demo', hablarWhatsapp: 'Hablar por WhatsApp', irContacto: 'Ir a contacto', hablemosFuturo: 'Hablemos del futuro', contactanos: 'Contáctanos', conoceVantyAba: 'Conoce Vanty ABA', hablarVentas: 'Hablar con ventas', solicitarDemo: 'Solicitar una demo', tengoDudas: 'Tengo dudas', conversemos: 'Conversemos tu proyecto', verServicio: 'Ver' },
+    nf: { title: 'Página no encontrada', lead: 'La página que buscas no existe o fue movida. Volvamos a un lugar seguro.', home: 'Ir al inicio', contact: 'Contáctanos' },
     svc: {
       aba: { tagline: 'Plataforma clínica ABA con IA', desc: 'La primera plataforma ABA multi-rol de LATAM: dirección, especialistas, secretaría y familias en un solo lugar, con IA clínica, facturación y portal familiar.', badge: 'Producto estrella', tags: ['Hub de IA clínica', 'Multi-rol nativo', 'Facturación', 'Portal familiar'] },
       school: { tagline: 'Gestión educativa inteligente', desc: 'La plataforma que llevará la inteligencia de Vanty a la gestión de colegios e instituciones educativas. En desarrollo.', badge: 'Próximamente', tags: ['Educación', 'En desarrollo'] },
@@ -66,6 +67,7 @@ export const MORE: Record<Lang, any> = {
   },
   en: {
     common: { conocerMas: 'Learn more', verTodos: 'See all', empezar: 'Get started', verPrecios: 'See pricing', agendaDemo: 'Book a demo', hablarWhatsapp: 'Chat on WhatsApp', irContacto: 'Go to contact', hablemosFuturo: 'Let\'s talk about the future', contactanos: 'Contact us', conoceVantyAba: 'Discover Vanty ABA', hablarVentas: 'Talk to sales', solicitarDemo: 'Request a demo', tengoDudas: 'I have questions', conversemos: 'Let\'s talk about your project', verServicio: 'View' },
+    nf: { title: 'Page not found', lead: 'The page you\'re looking for doesn\'t exist or was moved. Let\'s get you back on track.', home: 'Go home', contact: 'Contact us' },
     svc: {
       aba: { tagline: 'AI-powered clinical ABA platform', desc: 'LATAM\'s first multi-role ABA platform: management, specialists, front desk and families in one place, with clinical AI, billing and a family portal.', badge: 'Flagship product', tags: ['Clinical AI hub', 'Native multi-role', 'Billing', 'Family portal'] },
       school: { tagline: 'Intelligent education management', desc: 'The platform that will bring Vanty\'s intelligence to the management of schools and educational institutions. In development.', badge: 'Coming soon', tags: ['Education', 'In development'] },
@@ -128,6 +130,7 @@ export const MORE: Record<Lang, any> = {
   },
   pt: {
     common: { conocerMas: 'Saiba mais', verTodos: 'Ver todos', empezar: 'Começar', verPrecios: 'Ver preços', agendaDemo: 'Agendar uma demo', hablarWhatsapp: 'Falar no WhatsApp', irContacto: 'Ir para contato', hablemosFuturo: 'Vamos falar do futuro', contactanos: 'Fale conosco', conoceVantyAba: 'Conheça o Vanty ABA', hablarVentas: 'Falar com vendas', solicitarDemo: 'Solicitar uma demo', tengoDudas: 'Tenho dúvidas', conversemos: 'Vamos falar do seu projeto', verServicio: 'Ver' },
+    nf: { title: 'Página não encontrada', lead: 'A página que você procura não existe ou foi movida. Vamos voltar a um lugar seguro.', home: 'Ir para o início', contact: 'Fale conosco' },
     svc: {
       aba: { tagline: 'Plataforma clínica ABA com IA', desc: 'A primeira plataforma ABA multi-papel da LATAM: direção, especialistas, secretaria e famílias num só lugar, com IA clínica, faturamento e portal familiar.', badge: 'Produto destaque', tags: ['Hub de IA clínica', 'Multi-papel nativo', 'Faturamento', 'Portal familiar'] },
       school: { tagline: 'Gestão educacional inteligente', desc: 'A plataforma que levará a inteligência da Vanty à gestão de escolas e instituições de ensino. Em desenvolvimento.', badge: 'Em breve', tags: ['Educação', 'Em desenvolvimento'] },
@@ -190,6 +193,7 @@ export const MORE: Record<Lang, any> = {
   },
   fr: {
     common: { conocerMas: 'En savoir plus', verTodos: 'Voir tout', empezar: 'Commencer', verPrecios: 'Voir les tarifs', agendaDemo: 'Réserver une démo', hablarWhatsapp: 'Discuter sur WhatsApp', irContacto: 'Aller au contact', hablemosFuturo: 'Parlons de l\'avenir', contactanos: 'Contactez-nous', conoceVantyAba: 'Découvrir Vanty ABA', hablarVentas: 'Parler aux ventes', solicitarDemo: 'Demander une démo', tengoDudas: 'J\'ai des questions', conversemos: 'Parlons de votre projet', verServicio: 'Voir' },
+    nf: { title: 'Page introuvable', lead: 'La page que vous cherchez n\'existe pas ou a été déplacée. Revenons en lieu sûr.', home: 'Aller à l\'accueil', contact: 'Nous contacter' },
     svc: {
       aba: { tagline: 'Plateforme clinique ABA avec IA', desc: 'La première plateforme ABA multi-rôles d\'Amérique latine : direction, spécialistes, secrétariat et familles au même endroit, avec IA clinique, facturation et portail familial.', badge: 'Produit phare', tags: ['Hub d\'IA clinique', 'Multi-rôles natif', 'Facturation', 'Portail familial'] },
       school: { tagline: 'Gestion éducative intelligente', desc: 'La plateforme qui apportera l\'intelligence de Vanty à la gestion des écoles et établissements éducatifs. En développement.', badge: 'Bientôt', tags: ['Éducation', 'En développement'] },

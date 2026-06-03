@@ -661,7 +661,7 @@ a.vt-card { text-decoration:none; color:inherit; }
 .vt-brandcard:hover .inner { transform:translateY(-6px); box-shadow:0 30px 60px rgba(18,87,230,.18); }
 
 /* ════ Footer premium ════ */
-.vt-footer { position:relative; overflow:hidden; background:radial-gradient(85% 130% at 95% 100%, rgba(22,166,255,.16) 0%, rgba(22,166,255,0) 58%), linear-gradient(180deg,#070d23 0%, #0a1736 60%, #0b1c44 100%); }
+.vt-footer { position:relative; overflow:hidden; background:linear-gradient(180deg,#0a1430 0%, #070b1c 100%); }
 .vt-footer::before { content:''; position:absolute; top:0; left:0; right:0; height:1px; background:rgba(255,255,255,.07); }
 .vt-footer-grid, .vt-footer-bottom { position:relative; z-index:1; }
 .vt-soc { transition:transform .2s, background .2s, color .2s, box-shadow .2s; }
@@ -675,3 +675,22 @@ body::after {
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   mix-blend-mode:overlay;
 }
+
+/* ════ 404 + íconos animados (Servicios/Contacto) ════ */
+.vt-404 {
+  font-family:'Poppins',sans-serif; font-weight:900; font-size:clamp(96px,18vw,210px); line-height:.85; letter-spacing:-.04em;
+  background:var(--grad-text); background-size:220% auto;
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+  animation:vtShine 6s linear infinite;
+}
+
+.vt-card .vt-ico, .vt-card .vt-logo-tile { transition:transform .3s cubic-bezier(.34,1.56,.64,1); }
+.vt-card:hover .vt-ico { transform:translateY(-5px) rotate(-7deg) scale(1.08); }
+.vt-card:hover .vt-logo-tile { transform:translateY(-5px) scale(1.06); }
+.vt-mega-ico, .vt-mega-logo { transition:transform .25s; }
+.vt-mega-card:hover .vt-mega-ico, .vt-mega-card:hover .vt-mega-logo { transform:scale(1.1) rotate(-6deg); }
+
+/* ════ Footer: acentos celeste del logo (buen contraste sobre navy) ════ */
+.vt-footer h4 { color:#5bb6ff; }
+.vt-footer ul a:hover { color:#9ed2ff; }
+.vt-footer .vt-footer-tag { color:#aeb8cc; }
