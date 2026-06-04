@@ -66,8 +66,8 @@
   <!-- floating cards -->
   <g>
     <rect x="560" y="180" width="430" height="120" rx="18" fill="#ffffff" stroke="#e3e8f2" filter="url(#psh)"/>
-    <circle class="pulse" cx="606" cy="240" r="22" fill="#25D366"/><path d="M597 240 a9 9 0 1 1 4 8 l-8 2 l2 -7 a9 9 0 0 1 2 -3" fill="#fff"/>
-    <text x="644" y="226" fill="#0b1020" font-size="15" font-weight="700">Notificación por WhatsApp</text>
+    <circle class="pulse" cx="606" cy="240" r="22" fill="#1257e6"/><path d="M606 231 c-4 0 -7 3 -7 7 v3 c0 2 -1 3 -2 4 h18 c-1 -1 -2 -2 -2 -4 v-3 c0 -4 -3 -7 -7 -7z" fill="#fff"/><path d="M603 247 a3 3 0 0 0 6 0" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="644" y="226" fill="#0b1020" font-size="15" font-weight="700">Aviso para la familia</text>
     <text x="644" y="250" fill="#5b647a" font-size="12.5" clip-path="url(#twP)">“Mateo alcanzó un nuevo objetivo 🎉”</text>
     <text x="644" y="272" fill="#9aa3b5" font-size="11">Enviado automáticamente · hoy 12:04</text>
 

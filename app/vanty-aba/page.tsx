@@ -14,11 +14,17 @@ import FaqList from '@/app/components/FaqList'
 import Wave from '@/app/components/Wave'
 import Avatar from '@/app/components/Avatar'
 import PricingABA from '@/app/components/PricingABA'
+import ConsultForm from '@/app/components/ConsultForm'
 import CountUp from '@/app/components/CountUp'
 import { useT } from '@/app/components/LangProvider'
+import { FEATURES } from '@/app/lib/features'
 import { WA_URL, EMAIL } from '@/app/lib/site'
 
-const AGENT_ICONS = [Bot, FileText, ShieldAlert, Target, Activity, TrendingUp, Lightbulb, BookOpen]
+const FEAT_ICONS: Record<string, any> = {
+  bot: Bot, chart: BarChart3, calendar: CalendarDays, card: CreditCard, stethoscope: Stethoscope, family: HeartHandshake, chat: MessageSquare, video: Video,
+}
+
+const AGENT_ICONS = [Bot, FileText, Target, Activity, TrendingUp, Lightbulb, BookOpen]
 const AGENT_COLORS = [
   { bg: '#e6efff', fg: '#1D4ED8' },
   { bg: '#e3f3ff', fg: '#16a6ff' },
@@ -27,7 +33,6 @@ const AGENT_COLORS = [
   { bg: '#fde6ef', fg: '#e11d6b' },
   { bg: '#e0f5fb', fg: '#0891b2' },
 ]
-const CAP_ICONS = [ClipboardList, Target, BarChart3, CalendarDays, CreditCard, Stethoscope, Users, MessageSquare, Video]
 const ROLE_META = [
   { icon: UserCog, accent: '#1D4ED8' },
   { icon: Stethoscope, accent: '#16a6ff' },
@@ -39,7 +44,6 @@ const cellClass = (v: string) => v.startsWith('✅') ? 'yes' : v.startsWith('❌
 export default function VantyAbaPage() {
   const { t, tr } = useT()
   const agents = tr<{ n: string; d: string }[]>('aba.agents') || []
-  const caps = tr<{ t: string; d: string }[]>('aba.caps') || []
   const roles = tr<{ n: string; items: string[] }[]>('aba.roles') || []
   const cmpHead = tr<string[]>('aba.cmpHead') || []
   const cmpRows = tr<string[][]>('aba.cmpRows') || []
@@ -62,10 +66,7 @@ export default function VantyAbaPage() {
           <div>
             <span className="vt-eyebrow"><Brain size={13} /> {t('aba.eyebrow')}</span>
             <h1 className="vt-h1">{t('aba.h1a')}<span className="vt-grad-ink">{t('aba.h1grad')}</span>{t('aba.h1b')}</h1>
-            <p className="vt-lead">
-              {t('aba.lead1')}
-              <strong style={{ color: 'var(--ink)' }}> {t('aba.leadStrong')}</strong>.
-            </p>
+            <p className="vt-lead">{t('aba.lead1')}</p>
             <div className="vt-hero-btns">
               <a href={WA_URL} className="vt-btn vt-btn-primary" target="_blank" rel="noopener noreferrer"><Phone size={16} /> {t('common.agendaDemo')}</a>
               <a href="#precios" className="vt-btn vt-btn-ghost">{t('common.verPrecios')} <ArrowRight size={16} /></a>
@@ -92,7 +93,7 @@ export default function VantyAbaPage() {
 
           {/* Banda de métricas clínicas — números que cuentan al hacer scroll */}
           <Reveal>
-            <div className="vt-statband" style={{ marginTop: 44 }}>
+            <div className="vt-statband vt-sb3" style={{ marginTop: 44 }}>
               <div className="vt-stat-cell2">
                 <div className="vt-stat-big"><CountUp to={4} /></div>
                 <div className="vt-stat-cap">{statsLabels[0]}</div>
@@ -104,10 +105,6 @@ export default function VantyAbaPage() {
               <div className="vt-stat-cell2">
                 <div className="vt-stat-big"><CountUp to={100} suffix="%" /></div>
                 <div className="vt-stat-cap">{statsLabels[2]}</div>
-              </div>
-              <div className="vt-stat-cell2">
-                <div className="vt-stat-big"><CountUp to={8} suffix="+" /></div>
-                <div className="vt-stat-cap">{statsLabels[3]}</div>
               </div>
             </div>
           </Reveal>
@@ -124,7 +121,7 @@ export default function VantyAbaPage() {
             <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('aba.hubTitle')}</h2>
             <p className="vt-lead">{t('aba.hubLead')}</p>
           </Reveal>
-          <div className="vt-grid-4">
+          <div className="vt-agents">
             {agents.map((a, i) => {
               const Icon = AGENT_ICONS[i % AGENT_ICONS.length]
               const c = AGENT_COLORS[i % AGENT_COLORS.length]
@@ -141,26 +138,24 @@ export default function VantyAbaPage() {
       </section>
       <div style={{ background: '#eef6ff' }}><Wave flip fill="#ffffff" /></div>
 
-      {/* CAPACIDADES */}
+      {/* EXPLORA CADA FUNCIÓN → páginas dedicadas */}
       <section className="vt-section">
         <div className="vt-inner">
           <Reveal className="vt-head-center">
-            <span className="vt-eyebrow"><LayoutGrid size={13} /> {t('aba.capEyebrow')}</span>
-            <h2 className="vt-h2" style={{ marginTop: 16 }}>{t('aba.capTitle')}</h2>
-            <p className="vt-lead">{t('aba.capLead')}</p>
+            <h2 className="vt-h2">{t('feat.gridTitle')}</h2>
+            <p className="vt-lead">{t('feat.gridLead')}</p>
           </Reveal>
-          <div className="vt-caps">
-            {caps.map((c, i) => {
-              const Icon = CAP_ICONS[i % CAP_ICONS.length]
+          <div className="vt-grid-3">
+            {FEATURES.map((f, i) => {
+              const Icon = FEAT_ICONS[f.icon]
               return (
-                <Reveal key={c.t} delay={(i % 3) * 0.06}>
-                  <div className="vt-cap">
-                    <span className="vt-cap-ico"><Icon size={22} /></span>
-                    <span>
-                      <span className="vt-cap-t">{c.t}</span>
-                      <span className="vt-cap-d" style={{ display: 'block' }}>{c.d}</span>
-                    </span>
-                  </div>
+                <Reveal key={f.slug} delay={(i % 3) * 0.06}>
+                  <a href={`/vanty-aba/${f.slug}`} className="vt-card" style={{ height: '100%' }}>
+                    <span className="vt-ico" style={{ background: f.accent }}><Icon size={22} /></span>
+                    <h3 className="vt-h3" style={{ fontSize: 18 }}>{t(`feat.items.${f.slug}.name`)}</h3>
+                    <p className="vt-card-desc">{t(`feat.items.${f.slug}.short`)}</p>
+                    <span className="vt-link">{t('feat.conocer')} <ArrowRight size={15} /></span>
+                  </a>
                 </Reveal>
               )
             })}
@@ -328,6 +323,9 @@ export default function VantyAbaPage() {
 
       {/* PRECIOS — por región, auto-detectado */}
       <PricingABA />
+
+      {/* FORMULARIO DE CONSULTA → WhatsApp */}
+      <ConsultForm />
 
       {/* FAQ */}
       <section className="vt-section" id="faq">

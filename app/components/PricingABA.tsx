@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Check, CreditCard, Globe, Phone } from 'lucide-react'
+import { Check, CreditCard, Phone } from 'lucide-react'
 import { PLANS, REGIONS, countryToRegion, regionFromLanguage, type RegionKey, type Plan } from '@/app/lib/pricing'
 import { waLink } from '@/app/lib/site'
 import { useT } from '@/app/components/LangProvider'
@@ -83,9 +83,6 @@ export default function PricingABA() {
             <button className={billing === 'y' ? 'on' : ''} onClick={() => setBilling('y')}>{t('pricing.anual')}</button>
           </div>
         </div>
-        <p className="vt-region-note">
-          <Globe size={13} /> {t('pricing.regionNote')} {R.flag} {t(`pricing.regions.${region}`)} · {t('pricing.precios')} {R.code}
-        </p>
 
         <div className={isPersonal ? 'vt-plans-3' : 'vt-plans-2'} style={{ marginTop: 36, ...(isPersonal ? {} : { marginLeft: 'auto', marginRight: 'auto' }) }}>
           {plans.map(card)}

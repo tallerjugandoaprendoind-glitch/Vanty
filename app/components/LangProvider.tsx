@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import { DICT, langFromCountry, langFromNavigator, type Lang } from '@/app/lib/dict'
 import { MORE } from '@/app/lib/dict-more'
+import { FEAT } from '@/app/lib/dict-feat'
 
 type Ctx = {
   lang: Lang
@@ -16,8 +17,8 @@ function resolve(obj: any, path: string): any {
   return path.split('.').reduce((a, k) => (a == null ? a : a[k]), obj)
 }
 
-const merged = (lang: Lang) => ({ ...DICT[lang], ...MORE[lang] })
-const mergedEs = { ...DICT.es, ...MORE.es }
+const merged = (lang: Lang) => ({ ...DICT[lang], ...MORE[lang], ...FEAT[lang] })
+const mergedEs = { ...DICT.es, ...MORE.es, ...FEAT.es }
 
 export function LangProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<Lang>('es')

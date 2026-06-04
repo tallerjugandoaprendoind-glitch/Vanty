@@ -694,3 +694,58 @@ body::after {
 .vt-footer h4 { color:#5bb6ff; }
 .vt-footer ul a:hover { color:#9ed2ff; }
 .vt-footer .vt-footer-tag { color:#aeb8cc; }
+
+/* ════ Formulario de consulta premium (Vanty ABA) ════ */
+.vt-consult { position:relative; z-index:1; border-radius:28px; overflow:hidden; background:linear-gradient(150deg, #0f2150 0%, #0a1430 48%, #070d23 100%); padding:clamp(28px,4.5vw,56px); box-shadow:0 40px 90px rgba(7,13,35,.45); border:1px solid rgba(255,255,255,.06); }
+.vt-consult::before { content:''; position:absolute; top:-25%; left:-10%; width:520px; height:520px; border-radius:50%; background:radial-gradient(circle, rgba(26,169,255,.18), transparent 68%); pointer-events:none; }
+.vt-consult-split { position:relative; z-index:1; display:grid; grid-template-columns:1fr 1.05fr; gap:clamp(30px,5vw,64px); align-items:center; }
+@media(max-width:880px){ .vt-consult-split{ grid-template-columns:1fr; gap:32px; } }
+.vt-consult-left { max-width:440px; }
+.vt-consult-benefits { list-style:none; margin:26px 0 0; padding:0; display:flex; flex-direction:column; gap:14px; }
+.vt-consult-benefits li { display:flex; align-items:flex-start; gap:12px; color:#dbe6fb; font-size:15px; line-height:1.45; }
+.vt-consult-check { flex-shrink:0; width:24px; height:24px; border-radius:8px; background:var(--grad); color:#fff; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 14px rgba(18,87,230,.4); }
+.vt-consult-wa { display:inline-flex; align-items:center; gap:9px; margin-top:28px; padding:11px 18px; border-radius:99px; background:rgba(26,169,255,.12); border:1px solid rgba(26,169,255,.3); color:#7cc4ff; font-family:'Poppins',sans-serif; font-weight:700; font-size:14.5px; }
+.vt-consult-card { background:rgba(255,255,255,.04); backdrop-filter:blur(16px); border:1px solid rgba(255,255,255,.10); border-radius:22px; padding:clamp(22px,2.6vw,32px); box-shadow:inset 0 1px 0 rgba(255,255,255,.08); }
+.vt-form-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px 20px; }
+.vt-field { display:flex; flex-direction:column; gap:8px; }
+.vt-field-full { grid-column:1 / -1; }
+.vt-field > span { font-family:'Poppins',sans-serif; font-size:12px; font-weight:600; color:#9fb3d8; letter-spacing:.02em; }
+.vt-field input, .vt-field select, .vt-field textarea {
+  width:100%; background:rgba(255,255,255,.05); border:1.5px solid rgba(255,255,255,.14); border-radius:13px;
+  padding:13px 15px; font-family:'Inter',sans-serif; font-size:14.5px; color:#fff;
+  transition:border-color .18s, box-shadow .18s, background .18s; outline:none; resize:vertical;
+  color-scheme:dark;
+}
+.vt-field input::placeholder, .vt-field textarea::placeholder { color:rgba(255,255,255,.38); }
+.vt-field input:hover, .vt-field select:hover, .vt-field textarea:hover { border-color:rgba(255,255,255,.24); }
+.vt-field input:focus, .vt-field select:focus, .vt-field textarea:focus { border-color:var(--brand-cyan); background:rgba(26,169,255,.08); box-shadow:0 0 0 4px rgba(26,169,255,.20); }
+.vt-field select { cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239fb3d8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; padding-right:40px; }
+.vt-field select option { color:#0b1020; background:#fff; }
+.vt-consult-submit { width:100%; justify-content:center; margin-top:26px; font-size:16px; padding:16px 24px; }
+.vt-consult-submit:disabled { opacity:.7; cursor:wait; }
+.vt-consult-note { text-align:center; font-size:12.5px; color:rgba(255,255,255,.5); margin:18px 0 0; }
+@media(max-width:600px){ .vt-form-grid{ grid-template-columns:1fr; } }
+
+/* ════ Páginas de función (Vanty ABA) ════ */
+.vt-feat-back { display:inline-flex; align-items:center; gap:6px; font-family:'Poppins',sans-serif; font-weight:700; font-size:13px; color:var(--blue); text-decoration:none; transition:gap .2s; }
+.vt-feat-back:hover { gap:10px; }
+.vt-feat-eyeico { display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px; border-radius:6px; color:#fff; }
+.vt-checks-2 { display:grid; grid-template-columns:1fr 1fr; gap:12px 26px; }
+@media(max-width:600px){ .vt-checks-2{ grid-template-columns:1fr; } }
+
+/* Foto "en la práctica" (personas usándolo) */
+.vt-feat-photo { width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; border-radius:22px; box-shadow:0 28px 60px rgba(11,16,32,.18); display:block; }
+.vt-feat-role { font-family:'Poppins',sans-serif; font-weight:700; font-size:13.5px; color:var(--muted); margin-top:12px; }
+
+/* Ocultar todas las etiquetas/eyebrows en toda la web (por pedido) */
+.vt-eyebrow { display:none !important; }
+
+/* Banda de métricas a 3 columnas (sin la 4ª) */
+.vt-statband.vt-sb3 { grid-template-columns:repeat(3,1fr); }
+@media(max-width:620px){ .vt-statband.vt-sb3.vt-sb3 { grid-template-columns:1fr; } }
+
+/* Grilla de agentes ARIA: flex centrado (última fila centrada) */
+.vt-agents { display:flex; flex-wrap:wrap; justify-content:center; gap:18px 22px; }
+.vt-agents > * { flex:0 1 calc(25% - 17px); }
+@media(max-width:920px){ .vt-agents > * { flex-basis:calc(50% - 11px); } }
+@media(max-width:620px){ .vt-agents > * { flex-basis:100%; } }
