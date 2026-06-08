@@ -11,16 +11,33 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vanty.xyz"),
   title: "Vanty — Software e IA que resuelve problemas reales",
   description: "Vanty es una empresa de tecnología que diseña software inteligente e IA para sectores con impacto: salud, educación y bienestar. Creamos soluciones a medida y productos propios como Vanty ABA. Desde Perú para toda América Latina.",
   keywords: "Vanty, empresa de tecnología LATAM, software a medida, inteligencia artificial empresas, desarrollo de software Perú, productos SaaS, soluciones tecnológicas salud educación",
   authors: [{ name: "Vanty" }],
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png", sizes: "any" },
+    ],
+    shortcut: "/icon.png",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "Vanty — Software e IA que resuelve problemas reales",
     description: "Empresa de tecnología que crea software inteligente e IA para sectores con impacto. Soluciones a medida y productos propios como Vanty ABA. Desde Perú para toda América Latina.",
     type: "website",
     locale: "es_PE",
     siteName: "Vanty",
+    url: "https://vanty.xyz",
+    images: [{ url: "/images/logo.png", width: 1254, height: 1254, alt: "Vanty" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "Vanty — Software e IA que resuelve problemas reales",
+    description: "Software inteligente e IA para sectores con impacto. Productos propios como Vanty ABA.",
+    images: ["/images/logo.png"],
   },
   robots: { index: true, follow: true },
 }
