@@ -62,7 +62,7 @@ export default function FeaturePage({ slug }: { slug: string }) {
             <p className="vt-lead">{t(`${base}.lead`)}</p>
             <div className="vt-hero-btns">
               <a href={wa} className="vt-btn vt-btn-primary" target="_blank" rel="noopener noreferrer"><Phone size={16} /> {t('common.agendaDemo')}</a>
-              <a href="/vanty-aba#precios" className="vt-btn vt-btn-ghost">{t('common.verPrecios')} <ArrowRight size={16} /></a>
+              <a href="/vanty-aba#consulta" className="vt-btn vt-btn-ghost">{t('common.solicitarDemo')} <ArrowRight size={16} /></a>
             </div>
           </div>
           <Reveal delay={0.1}>

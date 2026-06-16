@@ -13,7 +13,7 @@ import Figure from '@/app/components/Figure'
 import FaqList from '@/app/components/FaqList'
 import Wave from '@/app/components/Wave'
 import Avatar from '@/app/components/Avatar'
-import PricingABA from '@/app/components/PricingABA'
+// import PricingABA from '@/app/components/PricingABA' // oculto temporalmente
 import ConsultForm from '@/app/components/ConsultForm'
 import CountUp from '@/app/components/CountUp'
 import { useT } from '@/app/components/LangProvider'
@@ -69,7 +69,7 @@ export default function VantyAbaPage() {
             <p className="vt-lead">{t('aba.lead1')}</p>
             <div className="vt-hero-btns">
               <a href={WA_URL} className="vt-btn vt-btn-primary" target="_blank" rel="noopener noreferrer"><Phone size={16} /> {t('common.agendaDemo')}</a>
-              <a href="#precios" className="vt-btn vt-btn-ghost">{t('common.verPrecios')} <ArrowRight size={16} /></a>
+              <a href="#consulta" className="vt-btn vt-btn-ghost">{t('common.solicitarDemo')} <ArrowRight size={16} /></a>
             </div>
             <p style={{ marginTop: 18, fontSize: 13.5, color: 'var(--muted-2)', display: 'flex', alignItems: 'center', gap: 8 }}>
               <Check size={15} color="#1D4ED8" /> {t('aba.micro')}
@@ -321,8 +321,8 @@ export default function VantyAbaPage() {
         </div>
       </section>
 
-      {/* PRECIOS — por región, auto-detectado */}
-      <PricingABA />
+      {/* PRECIOS — oculto temporalmente (aún no se usa). Para reactivar: descomentar. */}
+      {/* <PricingABA /> */}
 
       {/* FORMULARIO DE CONSULTA → WhatsApp */}
       <ConsultForm />
