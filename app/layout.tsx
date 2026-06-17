@@ -16,14 +16,9 @@ export const metadata: Metadata = {
   description: "Vanty es una empresa de tecnología que diseña software inteligente e IA para sectores con impacto: salud, educación y bienestar. Creamos soluciones a medida y productos propios como Vanty ABA. Desde Perú para toda América Latina.",
   keywords: "Vanty, empresa de tecnología LATAM, software a medida, inteligencia artificial empresas, desarrollo de software Perú, productos SaaS, soluciones tecnológicas salud educación",
   authors: [{ name: "Vanty" }],
-  icons: {
-    icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/icon.png", type: "image/png", sizes: "any" },
-    ],
-    shortcut: "/icon.png",
-    apple: "/apple-icon.png",
-  },
+  
+  // El bloque "icons" se elimina por completo para evitar conflictos
+  
   openGraph: {
     title: "Vanty — Software e IA que resuelve problemas reales",
     description: "Empresa de tecnología que crea software inteligente e IA para sectores con impacto. Soluciones a medida y productos propios como Vanty ABA. Desde Perú para toda América Latina.",
