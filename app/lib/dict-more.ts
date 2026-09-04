@@ -37,7 +37,7 @@ export const MORE: Record<Lang, any> = {
       infoTime: 'Respondemos rápido, normalmente el mismo día.', infoLoc: 'Lima, Perú · Trabajamos para todo el mundo.',
     },
     aba: {
-      eyebrow: 'Producto · Vanty ABA', h1a: 'La plataforma clínica ', h1grad: 'ABA con IA', h1b: '', lead1: 'Dirección, especialistas, secretaría y familias en una sola plataforma. Con un copiloto IA clínico, facturación, agenda, evaluaciones y portal familiar. Multilingüe y pensada para tu centro.', leadStrong: '', micro: 'Setup en 24 horas · Sin permanencia · Soporte dedicado', logos: 'En uso real en centros terapéuticos', tuCentro: '+ tu centro aquí',
+      eyebrow: 'Producto · Vanty ABA', h1a: 'Vanty ABA, la plataforma clínica ', h1grad: 'ABA con IA', h1b: '', lead1: 'Dirección, especialistas, secretaría y familias en una sola plataforma. Con un copiloto IA clínico, facturación, agenda, evaluaciones y portal familiar. Multilingüe y pensada para tu centro.', leadStrong: '', micro: 'Setup en 24 horas · Sin permanencia · Soporte dedicado', logos: 'En uso real en centros terapéuticos', tuCentro: '+ tu centro aquí',
       statsLabels: ['roles en una plataforma', 'puesta en marcha', 'tus datos, siempre tuyos', 'agentes de IA clínica'],
       trust: ['Datos clínicos cifrados', 'Privacidad por diseño', 'Multi-rol nativo', 'Soporte dedicado'],
       hubEyebrow: 'Inteligencia clínica', hubTitle: 'ARIA, tu copiloto clínico', hubLead: 'Más que un chatbot: una inteligencia entrenada en el flujo real de un centro ABA. ARIA se encarga del trabajo repetitivo —notas, reportes, alertas y análisis— para que tu equipo dedique su tiempo a los pacientes.',
@@ -101,7 +101,7 @@ export const MORE: Record<Lang, any> = {
       infoTime: 'We reply fast, usually the same day.', infoLoc: 'Lima, Peru · We work for the whole world.',
     },
     aba: {
-      eyebrow: 'Product · Vanty ABA', h1a: 'The clinical ', h1grad: 'ABA platform with AI', h1b: '', lead1: 'Management, specialists, front desk and families in one platform. With a clinical AI copilot, billing, scheduling, assessments and a family portal. Multilingual and built for your center.', leadStrong: '', micro: 'Setup in 24 hours · No commitment · Dedicated support', logos: 'In real use at therapy centers', tuCentro: '+ your center here',
+      eyebrow: 'Product · Vanty ABA', h1a: 'Vanty ABA, the clinical ', h1grad: 'ABA platform with AI', h1b: '', lead1: 'Management, specialists, front desk and families in one platform. With a clinical AI copilot, billing, scheduling, assessments and a family portal. Multilingual and built for your center.', leadStrong: '', micro: 'Setup in 24 hours · No commitment · Dedicated support', logos: 'In real use at therapy centers', tuCentro: '+ your center here',
       statsLabels: ['roles in one platform', 'to get set up', 'your data, always yours', 'clinical AI agents'],
       trust: ['Encrypted clinical data', 'Privacy by design', 'Native multi-role', 'Dedicated support'],
       hubEyebrow: 'Clinical intelligence', hubTitle: 'ARIA, your clinical copilot', hubLead: 'More than a chatbot: an intelligence trained on the real workflow of an ABA center. ARIA handles the repetitive work —notes, reports, alerts and analysis— so your team can spend time with patients.',
@@ -165,7 +165,7 @@ export const MORE: Record<Lang, any> = {
       infoTime: 'Respondemos rápido, normalmente no mesmo dia.', infoLoc: 'Lima, Peru · Trabalhamos para o mundo todo.',
     },
     aba: {
-      eyebrow: 'Produto · Vanty ABA', h1a: 'A plataforma clínica ', h1grad: 'ABA com IA', h1b: '', lead1: 'Direção, especialistas, secretaria e famílias numa só plataforma. Com um copiloto IA clínico, faturamento, agenda, avaliações e portal familiar. Multilíngue e pensada para o seu centro.', leadStrong: '', micro: 'Setup em 24 horas · Sem fidelidade · Suporte dedicado', logos: 'Em uso real em centros terapêuticos', tuCentro: '+ o seu centro aqui',
+      eyebrow: 'Produto · Vanty ABA', h1a: 'Vanty ABA, a plataforma clínica ', h1grad: 'ABA com IA', h1b: '', lead1: 'Direção, especialistas, secretaria e famílias numa só plataforma. Com um copiloto IA clínico, faturamento, agenda, avaliações e portal familiar. Multilíngue e pensada para o seu centro.', leadStrong: '', micro: 'Setup em 24 horas · Sem fidelidade · Suporte dedicado', logos: 'Em uso real em centros terapêuticos', tuCentro: '+ o seu centro aqui',
       statsLabels: ['papéis numa só plataforma', 'para a implementação', 'seus dados, sempre seus', 'agentes de IA clínica'],
       trust: ['Dados clínicos criptografados', 'Privacidade por design', 'Multi-papel nativo', 'Suporte dedicado'],
       hubEyebrow: 'Inteligência clínica', hubTitle: 'ARIA, seu copiloto clínico', hubLead: 'Mais que um chatbot: uma inteligência treinada no fluxo real de um centro ABA. A ARIA cuida do trabalho repetitivo —notas, relatórios, alertas e análises— para que a sua equipe dedique tempo aos pacientes.',
@@ -229,7 +229,7 @@ export const MORE: Record<Lang, any> = {
       infoTime: 'Nous répondons vite, généralement le jour même.', infoLoc: 'Lima, Pérou · Nous travaillons pour le monde entier.',
     },
     aba: {
-      eyebrow: 'Produit · Vanty ABA', h1a: 'La plateforme clinique ', h1grad: 'ABA avec IA', h1b: '', lead1: 'Direction, spécialistes, secrétariat et familles sur une seule plateforme. Avec un copilote IA clinique, facturation, agenda, évaluations et portail familial. Multilingue et pensée pour votre centre.', leadStrong: '', micro: 'Mise en place en 24 h · Sans engagement · Support dédié', logos: 'En usage réel dans des centres de thérapie', tuCentro: '+ votre centre ici',
+      eyebrow: 'Produit · Vanty ABA', h1a: 'Vanty ABA, la plateforme clinique ', h1grad: 'ABA avec IA', h1b: '', lead1: 'Direction, spécialistes, secrétariat et familles sur une seule plateforme. Avec un copilote IA clinique, facturation, agenda, évaluations et portail familial. Multilingue et pensée pour votre centre.', leadStrong: '', micro: 'Mise en place en 24 h · Sans engagement · Support dédié', logos: 'En usage réel dans des centres de thérapie', tuCentro: '+ votre centre ici',
       statsLabels: ['rôles sur une plateforme', 'de mise en route', 'vos données, toujours à vous', 'agents d\'IA clinique'],
       trust: ['Données cliniques chiffrées', 'Confidentialité dès la conception', 'Multi-rôles natif', 'Support dédié'],
       hubEyebrow: 'Intelligence clinique', hubTitle: 'ARIA, votre copilote clinique', hubLead: 'Plus qu\'un chatbot : une intelligence entraînée sur le flux réel d\'un centre ABA. ARIA s\'occupe du travail répétitif —notes, rapports, alertes et analyses— pour que votre équipe consacre son temps aux patients.',
