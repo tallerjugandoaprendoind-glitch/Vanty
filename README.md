@@ -26,8 +26,6 @@ La plataforma centraliza la gestión de pacientes, historiales clínicos, contro
 
 * 🏢 **Gestión de Centros:** Administración multi-cliente para el control de sedes y perfiles clínicos.
 * 📊 **Panel de Administración (Admin Dashboard):** Métricas clave en tiempo real sobre centros activos, ingresos y estados de cuenta.
-* 💳 **Módulo de Pagos:** Registro y validación de transacciones locales (Yape, Plin y transferencias bancarias).
-* ⚡ **Activación Automatizada:** Activación y suspensión dinámica de cuentas basada en la validación de suscripciones.
 * 📱 **Landing Page Comercial:** Interfaz pública optimizada para la conversión y captación de clientes con integración directa a canales de contacto y WhatsApp.
 
 ## 🛠️ Stack Tecnológico
